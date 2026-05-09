@@ -48,3 +48,7 @@ This course strengthened my understanding of the importance of cybersecurity in 
 
 Course Completion: Completed  
 Certificate Earned: Yes
+
+## Note:
+All notes are rewritten in my own words for learning purposes and do not reproduce original course material.
+Due to strict confidentiality policies, final assignments cannot be shared publicly.
