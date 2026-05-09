@@ -1,0 +1,430 @@
+Play It Safe: Manage Security Risks
+
+Security posture - An organization's ability to manage its defense of critical assets and data, and react to change.
+
+Domain 1
+security and risk management - Focused on defining security goals and objectives, risk mitigation, compliance, business continuity, and legal regulations.
+
+Risk mitigation - the process of having the right procedures and rules in place to quickly reduce the impact of a risk like a breach.
+
+compliance - it is the primary method used to develop an organization's internal security policies, regulatory requirements, and independent standards.
+
+Business continuity - An organization's ability to maintain their everyday productivity by establishing risk disaster recovery plans.
+
+
+
+Domain 2
+Asset security - Focused on securing digital and physical assets. It's also related to storage, maintenance, retention, and destruction of data.
+
+
+
+Domain 3
+Security architecture and engineering - Focused on optimizing data security by ensuring effective tools, systems, and processes are in place to protect an organization's assets and data.
+
+Shared responsibility - All individuals within an organization take an active role in lowering risk and maintaining both physical and virtual security.
+
+
+
+domain 4
+communication and network security - Focused on managing and securing physical networks and wireless communications.
+
+
+
+domain 5
+Identity and access management - Focused on access and authorization to keep data secure, by making sure users follow established policies to control and manage assets.
+
+components of IAM: 
+Identification
+Authentication 
+Authorization
+Accountability
+
+
+
+domain 6
+security assessment and testing - Focused on conducting security control testing, collecting and analyzing data, and conducting security audits to monitor for risks, threats and vulnerabilities.
+
+
+
+domain 7
+security operations - Focused on conducting investigations and implementing preventative measures.
+
+
+
+domain 8
+software development security - Focused on using secure coding practices.
+
+
+
+CISSP Security Domains – Simplified Notes
+Domain 1: Security and Risk Management
+
+This domain focuses on building and maintaining an organization’s overall security posture, which is its ability to protect systems, assets, and data while adapting to evolving threats.
+
+Key areas include:
+
+Security goals and policies
+Risk management and mitigation
+Regulatory compliance
+Business continuity planning
+Legal and ethical responsibilities
+
+Information Security (InfoSec) is a major part of this domain and involves processes designed to protect organizational data and systems.
+
+Common InfoSec activities include:
+
+Incident response
+Vulnerability management
+Application security
+Cloud security
+Infrastructure protection
+
+Organizations may also use playbooks and employee training programs to improve security awareness and incident response readiness.
+
+For example, companies handling personal data may need to update security procedures to comply with regulations such as the General Data Protection Regulation (GDPR).
+
+Domain 2: Asset Security
+
+Asset security focuses on protecting an organization’s physical and digital assets throughout their lifecycle.
+
+This includes:
+
+Data storage
+Maintenance
+Retention
+Backup management
+Secure destruction of data
+
+Because stolen or exposed assets can increase organizational risk, proper asset tracking and recovery planning are essential.
+
+Security teams often create backups and disaster recovery strategies to ensure data can be restored after security incidents.
+
+Domain 3: Security Architecture and Engineering
+
+This domain focuses on designing secure systems, tools, and processes that protect organizational data and infrastructure.
+
+Security architects and engineers implement security models and design principles to reduce risks.
+
+Important concepts include:
+
+Threat modeling
+Least privilege
+Defense in depth
+Zero trust
+Separation of duties
+Fail securely
+Simplicity in design
+
+A shared responsibility approach is also important, meaning everyone involved in system design contributes to improving security.
+
+For example, organizations may use SIEM tools to detect suspicious login activity and identify possible unauthorized access attempts.
+
+Domain 4: Communication and Network Security
+
+This domain focuses on securing network infrastructure and communication systems, including:
+
+Physical networks
+Wireless communications
+Remote access systems
+Cloud-based communication environments
+
+Organizations with hybrid or remote work environments must ensure employees can securely access company resources from different locations.
+
+Security controls such as restricted access, VPNs, and network monitoring help protect organizational networks.
+
+Domain 5: Identity and Access Management (IAM)
+
+The IAM domain focuses on verifying user identities and controlling access to systems and data.
+
+Its goal is to:
+
+Prevent unauthorized access
+Ensure users only access what they need
+
+This domain commonly uses the principle of least privilege, which means users receive only the minimum permissions required to perform their tasks.
+
+For example, customer support employees may only have temporary access to limited customer information while resolving an issue.
+
+Domain 6: Security Assessment and Testing
+
+This domain involves evaluating systems for risks, vulnerabilities, and security weaknesses.
+
+Common activities include:
+
+Security assessments
+Penetration testing
+Security audits
+Control testing
+Data analysis
+
+Organizations use these practices to identify weaknesses before attackers can exploit them.
+
+Cybersecurity professionals may also review user permissions and system configurations to ensure security policies are being followed.
+
+Domain 7: Security Operations
+
+This domain focuses on monitoring, detecting, responding to, and recovering from security incidents.
+
+Key operational activities include:
+
+Incident response
+Threat monitoring
+Intrusion detection and prevention
+Log management
+SIEM monitoring
+Reporting and documentation
+Digital forensics
+Security awareness training
+
+Security operations teams work together to investigate suspicious activity and reduce the impact of cyberattacks.
+
+After incidents occur, teams review lessons learned to improve future defenses.
+
+Domain 8: Software Development Security
+
+This domain focuses on integrating security into the software development lifecycle (SDLC).
+
+The goal is to build secure applications by applying secure coding practices during:
+
+Design
+Development
+Testing
+Deployment
+Maintenance
+
+Security should be considered throughout the entire development process rather than being added later.
+
+Common practices include:
+
+Application security testing
+Code reviews
+Vulnerability scanning
+Encryption implementation
+Quality assurance testing
+
+For example, security analysts may verify that sensitive user or patient data is properly encrypted within software systems or devices.
+
+
+
+Threat - Any circumstance or event that can negatively impact assets.
+
+social engineering - A manipulation technique that exploits human error to gain private information, access, or valuables.
+
+Risk - Anything that can impact the confidentiality, integrity, or availability of an asset.
+
+low-risk asset - Information that would not harm the organization's reputation or ongoing operations, and would not cause financial damage if compromised.
+
+medium-risk asset - Information that's not available to the public and may cause some damage to the organization's finances, reputation, or ongoing operations.
+
+High-risk asset - Information protected by regulations or laws, which if compromised would have a severe negative impact on an organization's finances, ongoing operations, or reputation.
+
+vulnerability - A weakness that can be exploited by a threat.
+
+Ransomware - A malicious attack where threat actors encrypt an organization's data and demand payment to restore access.
+
+layers of the web:
+Surface web
+Deep web
+Dark web
+
+key impacts of web:
+financial
+identity theft
+reputation
+
+
+
+Risk Management Framework (RMF) (7):
+Prepare - Activities that are necessary to manage security and privacy risks before a breach occurs.
+Categorize - Used to develop risk management processes and tasks.
+Select - Choose, customize, and capture documentation of the controls that protect an organization.
+Implement - Implement security and privacy plans for the organization.
+Assess - Determine if established controls are implemented correctly.
+Authorize - Being accountable for the security and privacy risks that may exist in an organization.
+Monitor - Be aware of how system are operating.
+
+
+
+Risk Management
+
+One of the main goals of cybersecurity is protecting organizational assets. An asset is anything valuable to an organization, whether digital or physical.
+
+Examples of Digital Assets
+Social Security Numbers (SSNs) or national identification numbers
+Dates of birth
+Bank account information
+Mailing addresses
+Examples of Physical Assets
+Payment kiosks
+Servers
+Desktop computers
+Office buildings and workspaces
+Risk Management Strategies
+
+Organizations use different approaches to manage cybersecurity risks:
+
+Acceptance
+
+Accepting a risk when avoiding or reducing it may disrupt business operations.
+
+Avoidance
+
+Eliminating activities or situations that create the risk.
+
+Transference
+
+Shifting responsibility for the risk to a third party, such as an insurance provider or vendor.
+
+Mitigation
+
+Reducing the likelihood or impact of a known risk through security measures.
+
+Security Frameworks
+
+Organizations often follow industry-recognized frameworks to strengthen risk management and protect assets.
+
+Examples include:
+
+National Institute of Standards and Technology Risk Management Framework (NIST RMF)
+Health Information Trust Alliance (HITRUST)
+
+These frameworks provide structured guidance for managing cybersecurity threats, risks, and vulnerabilities.
+
+Common Threats, Risks, and Vulnerabilities
+Threats
+
+A threat is any event or circumstance capable of harming systems, data, or organizational assets.
+
+Common Threat Types
+Insider Threats
+
+Employees, contractors, or vendors misuse authorized access to damage the organization or steal information.
+
+Advanced Persistent Threats (APTs)
+
+Highly skilled attackers maintain unauthorized access to systems over long periods without detection.
+
+Risks
+
+A risk is anything that can negatively affect the confidentiality, integrity, or availability of an asset.
+
+Risk is often evaluated based on the likelihood of a threat occurring and the potential impact it could cause.
+
+Common Risk Factors
+External Risks
+
+Threats originating outside the organization, such as cyberattacks or unauthorized access attempts.
+
+Internal Risks
+
+Risks caused by employees, former staff members, vendors, or trusted partners.
+
+Legacy Systems
+
+Outdated systems or devices that are no longer properly maintained or secured.
+
+Multiparty Risks
+
+Risks introduced when third-party vendors gain access to sensitive systems or intellectual property.
+
+Software Compliance and Licensing Risks
+
+Outdated software, missing patches, or non-compliant systems that increase exposure to attacks.
+
+Industry Resources
+
+Cybersecurity organizations regularly publish guidance on current risks and vulnerabilities.
+
+Examples include:
+
+National Institute of Standards and Technology (NIST)
+Open Web Application Security Project (OWASP)
+
+OWASP publishes the “Top 10 Web Application Security Risks,” which highlights major web security threats and is updated periodically.
+
+Recent additions include:
+
+Insecure design
+Software and data integrity failures
+Server-side request forgery (SSRF)
+
+These updates demonstrate how cybersecurity threats constantly evolve over time.
+
+Vulnerabilities
+
+A vulnerability is a weakness in a system that attackers can exploit.
+
+Organizations must continuously monitor and patch vulnerabilities to reduce security risks.
+
+Examples of Common Vulnerabilities
+ProxyLogon
+
+A Microsoft Exchange Server vulnerability that allows remote attackers to deploy malicious code.
+
+ZeroLogon
+
+A flaw in Microsoft’s Netlogon authentication protocol that can allow attackers to gain unauthorized access.
+
+Log4Shell
+
+A major Java-based vulnerability that enables remote code execution and data exposure.
+
+PetitPotam
+
+A Windows NTLM-related attack technique that can trigger unauthorized authentication requests.
+
+Security Logging and Monitoring Failures
+
+Weak monitoring systems that allow attackers to operate without detection.
+
+Server-Side Request Forgery (SSRF)
+
+A vulnerability that manipulates servers into accessing internal or backend resources.
+
+Vulnerability Management
+
+Cybersecurity analysts often work in vulnerability management, which involves:
+
+Identifying weaknesses
+Monitoring systems continuously
+Applying updates and patches
+Reducing organizational exposure to threats
+
+Regular patching and monitoring are essential because even known vulnerabilities remain dangerous if they are not properly fixed.
+
+
+
+
+Assess: The fifth stage of the NIST Risk Management Framework (RMF), focused on evaluating whether security controls are correctly implemented and functioning effectively.
+
+Authorize: The sixth stage of the NIST RMF, where leadership accepts responsibility for existing security and privacy risks before approving system operations.
+
+Business continuity: An organization’s ability to continue essential operations during and after disruptions through recovery and contingency planning.
+
+Categorize: The second stage of the NIST RMF, involving the classification of systems and data based on their level of importance and risk.
+
+External threat: Any threat originating outside the organization that could harm systems, networks, or data.
+
+Implement: The fourth stage of the NIST RMF, where selected security and privacy controls are deployed within organizational systems.
+
+Internal threat: A security risk caused by individuals with authorized access, such as employees, vendors, or trusted partners.
+
+Monitor: The seventh stage of the NIST RMF, focused on continuously observing systems and security controls to ensure ongoing protection.
+
+Prepare: The first stage of the NIST RMF that involves planning and organizing activities needed to manage security and privacy risks before incidents occur.
+
+Ransomware: A malicious attack in which threat actors encrypt organizational data and demand payment to restore access.
+
+Risk: Any condition or situation that could affect the confidentiality, integrity, or availability of an asset.
+
+Risk mitigation: The process of reducing the likelihood or impact of risks through proper controls, procedures, and response strategies.
+
+Security posture: An organization’s overall ability to defend critical systems, assets, and data while adapting to evolving threats.
+
+Select: The third stage of the NIST RMF, where organizations choose and document the security controls needed to protect systems and data.
+
+Shared responsibility: The concept that everyone within an organization contributes to maintaining physical and digital security.
+
+Social engineering: A manipulation technique used to exploit human behavior in order to gain sensitive information, access, or valuables.
+
+Vulnerability: A weakness in a system, application, or process that can be exploited by a threat actor.
