@@ -34,27 +34,25 @@ installing prevention software.
 conducting periodic security audits. 
 
 
-key cybersecurity terms and concepts
-compliance - is the process of adhering to internal standards and external regulations and enables organizations to avoid fines and security breaches.
+Key Cybersecurity Terms and Concepts
 
-security frameworks - are guidelines used for building plans to help mitigate risks and threats to data and privacy.
+Compliance: The process of following internal policies and external regulations to help organizations avoid legal penalties, security incidents, and data breaches.
 
-security controls - are safeguards designed to reduce specific security risks. They are used with security frameworks to establish a strong security posture. 
+Security frameworks: Structured guidelines that help organizations create strategies and procedures to reduce risks and protect data and privacy.
 
-security posture - is an organization's ability to manage its defense of critical assets and data and react to change. A strong security posture leads to lower risk for the organization.
+Security controls: Protective measures or safeguards designed to minimize specific security risks and strengthen an organization’s overall security posture.
 
-A threat actor , or malicious attacker , is any person or group who presents a security risk. This risk can relate to computers , applications , networks and data.
+Security posture: An organization’s overall ability to protect critical systems, assets, and data while adapting to changing threats and security challenges. A stronger security posture generally results in lower risk.
 
-An internal threat can be a current or former employee, an external vendor, or a trusted partner who poses a security risk. At times, an internal threat is accidental. For example, an employee who accidentally clicks on a malicious email link would be considered an accidental threat. Other times, the internal threat actor intentionally engages in risky activities, such as unauthorized data access.
+Threat actor: Any individual or group that poses a security risk to systems, networks, applications, or data. Threat actors may intentionally attempt to exploit vulnerabilities or gain unauthorized access.
 
-Network security is the practice of keeping an organization's network infrastructure secure from unauthorized access. This includes data, services, systems, and devices that are stored in an organization’s network.
+Internal threat: A security risk caused by someone within or closely connected to the organization, such as employees, vendors, or trusted partners. Internal threats may be accidental, like clicking a malicious link, or intentional, such as unauthorized access to sensitive information.
 
-Cloud security is the process of ensuring that assets stored in the cloud are properly configured, or set up correctly, and access to those assets is limited to authorized users. The cloud is a network made up of a collection of servers or computers that store resources and data in remote physical locations known as data centers that can be accessed via the internet. Cloud security is a growing subfield of cybersecurity that specifically focuses on the protection of data, applications, and infrastructure in the cloud.
+Network security: The practice of protecting an organization’s network infrastructure, systems, devices, and data from unauthorized access and cyber threats.
 
-Programming is a process that can be used to create a specific set of instructions for a computer to execute tasks. These tasks can include:
-Automation of repetitive tasks (e.g., searching a list of malicious domains)
-Reviewing web traffic 
-Alerting suspicious activity
+Cloud security: The process of securing cloud-based systems, applications, and data by ensuring proper configurations and restricting access to authorized users only. Cloud security focuses on protecting resources stored in remote data centers accessible through the internet.
+
+Programming: The process of creating instructions that allow computers to perform specific tasks. In cybersecurity, programming is commonly used for automation, analyzing web traffic, detecting suspicious activity, and improving security operations.
 
 
 Transferable skills 
@@ -90,29 +88,28 @@ Sensitivity Personally Identifiable Information (SPII)
 A specific type of PII that falls under stricter handling guidelines. 
 
 
-Terms and definitions from Course 1 , module 1
-Cybersecurity (or security): The practice of ensuring confidentiality, integrity, and availability of information by protecting networks, devices, people, and data from unauthorized access or criminal exploitation
 
-Cloud security: The process of ensuring that assets stored in the cloud are properly configured and access to those assets is limited to authorized users
+Cybersecurity (or security): The practice of protecting networks, systems, devices, people, and data while ensuring the confidentiality, integrity, and availability of information against unauthorized access and cyber threats.
 
-Internal threat: A current or former employee, external vendor, or trusted partner who poses a security risk
+Cloud security: The process of protecting cloud-based assets by ensuring they are properly configured and accessible only to authorized users.
 
-Network security: The practice of keeping an organization's network infrastructure secure from unauthorized access
+Internal threat: A security risk originating from individuals connected to the organization, such as employees, vendors, or trusted partners, whether intentional or accidental.
 
-Personally identifiable information (PII): Any information used to infer an individual’s identity
+Network security: The practice of securing an organization’s network infrastructure, systems, and connected devices from unauthorized access and cyberattacks.
 
-Security posture: An organization’s ability to manage its defense of critical assets and data and react to change 
+Personally identifiable information (PII): Any type of information that can be used to identify or trace an individual’s identity.
 
-Sensitive personally identifiable information (SPII): A specific type of PII that falls under stricter handling guidelines
+Security posture: An organization’s overall ability to defend its critical systems, assets, and data while adapting to evolving security threats and risks.
 
-Technical skills: Skills that require knowledge of specific tools, procedures, and policies 
+Sensitive personally identifiable information (SPII): A more sensitive category of PII that requires stricter protection and handling due to the higher risk associated with exposure.
 
-Threat: Any circumstance or event that can negatively impact assets
+Technical skills: Specialized abilities that involve the use of tools, technologies, procedures, or security-related practices.
 
-Threat actor: Any person or group who presents a security risk
+Threat: Any event, condition, or circumstance that has the potential to damage systems, data, or organizational assets.
 
-Transferable skills: Skills from other areas that can apply to different careers 
+Threat actor: Any individual or group that poses a security risk by attempting to exploit systems, networks, or data.
 
+Transferable skills: Skills developed in one field or experience that can be effectively applied to different roles or careers. 
 
 
 
@@ -124,67 +121,72 @@ Malware - software designed to harm devices or networks.
 social engineering - a manipulation technique that exploits human error to gain private information , access , or valuables.
 phishing - the use of digital communications to trick people into revealing sensitive data or deploying malicious software.
 
+LoveLetter attack and Equifax data breach , Brain Virus and Morris virus
+
 Phishing
-Phishing is the use of digital communications to trick people into revealing sensitive data or deploying malicious software. 
 
-Some of the most common types of phishing attacks today include: 
+Phishing is a cyberattack technique that uses digital communication to trick individuals into revealing sensitive information or installing malicious software. Attackers often impersonate trusted sources to gain access to personal or organizational data.
 
-Business Email Compromise (BEC): A threat actor sends an email message that seems to be from a known source to make a seemingly legitimate request for information, in order to obtain a financial advantage.
+Common types of phishing attacks include:
 
-Spear phishing: A malicious email attack that targets a specific user or group of users. The email seems to originate from a trusted source.
+Business Email Compromise (BEC): An attack where threat actors impersonate a trusted individual or organization through email to request sensitive information or financial transactions.
 
-Whaling: A form of spear phishing. Threat actors target company executives to gain access to sensitive data.
+Spear phishing: A targeted phishing attack aimed at a specific individual or group. The message is carefully designed to appear trustworthy and legitimate.
 
-Vishing: The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source.
+Whaling: A specialized form of spear phishing that targets executives or high-level officials to gain access to valuable or confidential information.
 
-Smishing: The use of text messages to trick users, in order to obtain sensitive information or to impersonate a known source.
+Vishing: A phishing technique that uses voice communication, such as phone calls, to manipulate victims into sharing sensitive information.
 
-LoveLetter attack and Equifax data breach , Brain Virus and Morris virus,
+Smishing: A phishing attack carried out through text messages to deceive users into revealing private information or clicking malicious links.
 
 Malware
-Malware is software designed to harm devices or networks. There are many types of malware. The primary purpose of malware is to obtain money, or in some cases, an intelligence advantage that can be used against a person, an organization, or a territory.  
 
-Some of the most common types of malware attacks today include: 
+Malware refers to software intentionally created to damage systems, steal data, disrupt operations, or gain unauthorized access to devices and networks. Threat actors commonly use malware for financial gain, espionage, or cyber sabotage.
 
-Viruses: Malicious code written to interfere with computer operations and cause damage to data and software. A virus needs to be initiated by a user (i.e., a threat actor), who transmits the virus via a malicious attachment or file download. When someone opens the malicious attachment or download, the virus hides itself in other files in the now infected system. When the infected files are opened, it allows the virus to insert its own code to damage and/or destroy data in the system.
+Common types of malware include:
 
-Worms: Malware that can duplicate and spread itself across systems on its own. In contrast to a virus, a worm does not need to be downloaded by a user. Instead, it self-replicates and spreads from an already infected computer to other devices on the same network.
+Viruses: Malicious programs that attach themselves to files or software. They activate when users open infected files and can corrupt or destroy data.
 
-Ransomware: A malicious attack where threat actors encrypt an organization's data and demand payment to restore access. 
+Worms: Self-replicating malware capable of spreading across networks without user interaction. Worms can quickly infect multiple systems within an organization.
 
-Spyware: Malware that’s used to gather and sell information without consent. Spyware can be used to access devices. This allows threat actors to collect personal data, such as private emails, texts, voice and image recordings, and locations.
+Ransomware: A type of malware that encrypts an organization’s files or systems and demands payment in exchange for restoring access.
 
-Social Engineering 
-Social engineering is a manipulation technique that exploits human error to gain private information, access, or valuables. Human error is usually a result of trusting someone without question. It’s the mission of a threat actor, acting as a social engineer, to create an environment of false trust and lies to exploit as many people as possible. 
+Spyware: Malware designed to secretly collect user information without consent. Spyware may capture emails, messages, browsing activity, passwords, locations, or recordings.
 
-Some of the most common types of social engineering attacks today include:
+Social Engineering
 
-Social media phishing: A threat actor collects detailed information about their target from social media sites. Then, they initiate an attack.
+Social engineering is a manipulation technique that exploits human behavior and trust to gain access to sensitive information, systems, or valuables. Instead of attacking systems directly, threat actors target people by creating deceptive situations.
 
-Watering hole attack: A threat actor attacks a website frequently visited by a specific group of users.
+Common types of social engineering attacks include:
 
-USB baiting: A threat actor strategically leaves a malware USB stick for an employee to find and install, to unknowingly infect a network. 
+Social media phishing: Attackers gather personal information from social media platforms before launching targeted attacks.
 
-Physical social engineering: A threat actor impersonates an employee, customer, or vendor to obtain unauthorized access to a physical location.
+Watering hole attack: A threat actor compromises a website frequently visited by a specific group in order to infect its visitors.
 
-Social engineering principles 
-Social engineering is incredibly effective. This is because people are generally trusting and conditioned to respect authority. The number of social engineering attacks is increasing with every new social media application that allows public access to people's data. Although sharing personal data—such as your location or photos—can be convenient, it’s also a risk.
+USB baiting: An attack where infected USB devices are intentionally left in public places, hoping someone will connect them to a system.
 
-Reasons why social engineering attacks are effective include:
+Physical social engineering: A threat actor impersonates an employee, vendor, or customer to gain unauthorized physical access to a restricted area.
 
-Authority: Threat actors impersonate individuals with power. This is because people, in general, have been conditioned to respect and follow authority figures. 
+Principles of Social Engineering
 
-Intimidation: Threat actors use bullying tactics. This includes persuading and intimidating victims into doing what they’re told. 
+Social engineering attacks are effective because they exploit common human behaviors such as trust, fear, curiosity, and urgency. Attackers rely on psychological manipulation rather than technical vulnerabilities.
 
-Consensus/Social proof: Because people sometimes do things that they believe many others are doing, threat actors use others’ trust to pretend they are legitimate. For example, a threat actor might try to gain access to private data by telling an employee that other people at the company have given them access to that data in the past. 
+Common tactics used in social engineering include:
 
-Scarcity: A tactic used to imply that goods or services are in limited supply. 
+Authority: Threat actors pretend to be individuals in positions of power because people are more likely to follow instructions from authority figures.
 
-Familiarity: Threat actors establish a fake emotional connection with users that can be exploited.  
+Intimidation: Attackers use pressure, fear, or threats to force victims into making quick decisions.
 
-Trust: Threat actors establish an emotional relationship with users that can be exploited over time. They use this relationship to develop trust and gain personal information.
+Consensus/Social proof: Threat actors convince victims that others have already trusted or approved their requests, making the situation appear legitimate.
 
-Urgency: A threat actor persuades others to respond quickly and without questioning.
+Scarcity: Attackers create a false sense of limited availability or urgency to pressure victims into acting quickly.
+
+Familiarity: Threat actors build emotional connections or appear friendly to gain trust more easily.
+
+Trust: Attackers gradually develop relationships with victims to manipulate them over time.
+
+Urgency: Threat actors pressure individuals to act immediately without carefully thinking or verifying the request.
+
 
 
 
@@ -200,18 +202,25 @@ Urgency: A threat actor persuades others to respond quickly and without question
 
 
 
-Attack types
-Password attack
-A password attack is an attempt to access password-secured devices, systems, networks, or data. Some forms of password attacks that you’ll learn about later in the certificate program are:  
+Attack Types
 
-Brute force
+Password Attack
 
-Rainbow table
+A password attack is an attempt to gain unauthorized access to password-protected systems, devices, networks, or accounts. Attackers use different techniques to crack or steal passwords in order to access sensitive information.
 
-Password attacks fall under the communication and network security domain. 
+Common password attack methods include:
 
-Social engineering attack
-Social engineering is a manipulation technique that exploits human error to gain private information, access, or valuables. Some forms of social engineering attacks that you will continue to learn about throughout the program are: 
+Brute force attack: A method where attackers repeatedly try different password combinations until the correct one is found.
+
+Rainbow table attack: A technique that uses precomputed tables of encrypted passwords to crack password hashes more efficiently.
+
+Password attacks are generally associated with the communication and network security domain.
+
+Social Engineering Attack
+
+A social engineering attack manipulates human behavior and trust to obtain sensitive information, access, or valuables. Instead of targeting systems directly, attackers exploit human error and psychological weaknesses.
+
+Common forms of social engineering attacks include:
 
 Phishing
 
@@ -227,141 +236,147 @@ Social media phishing
 
 Business Email Compromise (BEC)
 
-Watering hole attack
+Watering hole attacks
 
-USB (Universal Serial Bus) baiting
+USB baiting
 
-Physical social engineering 
+Physical social engineering
 
-Social engineering attacks are related to the security and risk management domain.
+These attacks are commonly linked to the security and risk management domain.
 
-Physical attack
-A physical attack is a security incident that affects not only digital but also physical environments where the incident is deployed. Some forms of physical attacks are:
+Physical Attack
 
-Malicious USB cable
+A physical attack is a security incident that targets physical devices, environments, or infrastructure in addition to digital systems.
 
-Malicious flash drive
+Examples of physical attacks include:
+
+Malicious USB cables
+
+Malicious flash drives
 
 Card cloning and skimming
 
-Physical attacks fall under the asset security domain. 
+Physical attacks are related to the asset security domain.
 
-Adversarial artificial intelligence
-Adversarial artificial intelligence is a technique that manipulates 
-artificial intelligence and machine learning
- technology to conduct attacks more efficiently. Adversarial artificial intelligence falls under both the communication and network security and the identity and access management domains.
-https://www.nccoe.nist.gov/ai/adversarial-machine-learning
+Adversarial Artificial Intelligence
 
-Supply-chain attack
-A supply-chain attack targets systems, applications, hardware, and/or software to locate a vulnerability where malware can be deployed. Because every item sold undergoes a process that involves third parties, this means that the security breach can occur at any point in the supply chain. These attacks are costly because they can affect multiple organizations and the individuals who work for them. Supply-chain attacks can fall under several domains, including but not limited to the security and risk management, security architecture and engineering, and security operations domains.
+Adversarial artificial intelligence involves manipulating artificial intelligence (AI) and machine learning (ML) technologies to improve the effectiveness of cyberattacks. Threat actors may exploit AI systems to bypass security controls, automate attacks, or manipulate data.
 
-Cryptographic attack
-A cryptographic attack affects secure forms of communication between a sender and intended recipient. Some forms of cryptographic attacks are: 
+This attack type is connected to both the communication and network security domain and the identity and access management domain.
 
-Birthday
+Supply-Chain Attack
 
-Collision
+A supply-chain attack targets vulnerabilities within third-party systems, hardware, software, or services connected to an organization. Since products and services often involve multiple vendors and providers, attackers may compromise one part of the supply chain to gain broader access.
 
-Downgrade
+These attacks can affect multiple organizations at once and often result in significant financial and operational damage.
 
-Cryptographic attacks fall under the communication and network security domain. 
+Supply-chain attacks are associated with several security domains, including:
+
+Security and risk management
+
+Security architecture and engineering
+
+Security operations
+
+Cryptographic Attack
+
+A cryptographic attack targets secure communication methods and encryption systems in order to intercept, alter, or decrypt sensitive information exchanged between parties.
+
+Common cryptographic attack methods include:
+
+Birthday attack
+
+Collision attack
+
+Downgrade attack
+
+Cryptographic attacks fall under the communication and network security domain.
 
 
 
 Threat actor types
-Advanced persistent threats
-Advanced persistent threats (APTs) have significant expertise accessing an organization's network without authorization. APTs tend to research their targets (e.g., large corporations or government entities)  in advance and can remain undetected for an extended period of time. Their intentions and motivations can include:
 
-Damaging critical infrastructure, such as the power grid and natural resources
-
-Gaining access to intellectual property, such as trade secrets or patents
+Advanced Persistent Threats (APTs)
+APTs are highly skilled attackers who gain unauthorized access to systems and remain hidden for long periods. They usually plan attacks in advance and carefully study their targets, which are often large organizations or government systems. Their goals can include stealing sensitive intellectual property, disrupting critical infrastructure, or long-term espionage.
 
 Insider threats
-Insider threats abuse their authorized access to obtain data that may harm an organization. Their intentions and motivations can include: 
-
-Sabotage
-
-Corruption
-
-Espionage
-
-Unauthorized data access or leaks 
+Insider threats come from individuals within or connected to an organization, such as employees, contractors, or trusted partners. Since they already have some level of access, they can misuse it intentionally or accidentally. Common motivations include sabotage, data theft, corruption, or leaking confidential information.
 
 Hacktivists
-Hacktivists are threat actors that are driven by a political agenda. They abuse digital technology to accomplish their goals, which may include: 
+Hacktivists are attackers driven by political or social causes. Instead of financial gain, they use hacking techniques to promote ideologies, protest organizations, spread propaganda, or draw attention to specific issues.
 
-Demonstrations
+Types of hackers
+Hackers are individuals who use technical skills to access systems, networks, or data. They are generally grouped into three categories:
 
-Propaganda
+Authorized (ethical) hackers: These professionals work legally to identify and fix security weaknesses. Their goal is to improve security and protect systems.
 
-Social change campaigns
+Semi-authorized hackers (security researchers): They explore vulnerabilities and security flaws but do not exploit them for harm.
 
-Fame
+Unauthorized (malicious) hackers: These attackers break into systems illegally, often to steal data, cause damage, or make financial profit.
 
-Hacker types
-Six hackers on computers.
-A hacker is any person who uses computers to gain access to computer systems, networks, or data. They can be beginner or advanced technology professionals who use their skills for a variety of reasons. There are three main categories of hackers:
+Other hacker motivations
+Some inexperienced attackers explore hacking to learn skills or test tools, while others act out of revenge or curiosity. There are also individuals hired to perform hacking tasks, which may fall into ethical or unethical categories depending on intent and authorization. Additionally, some self-described “vigilante hackers” try to target malicious actors, although this often operates outside legal boundaries.
 
-Authorized hackers are also called ethical hackers. They follow a code of ethics and adhere to the law to conduct organizational risk evaluations. They are motivated to safeguard people and organizations from malicious threat actors.
-
-Semi-authorized hackers are considered researchers. They search for vulnerabilities but don’t take advantage of the vulnerabilities they find.
-
-Unauthorized hackers are also called unethical hackers. They are malicious threat actors who do not follow or respect the law. Their goal is to collect and sell confidential data for financial gain. 
-
-Note: There are multiple hacker types that fall into one or more of these three categories.
-
-New and unskilled threat actors have various goals, including: 
-
-To learn and enhance their hacking skills
-
-To seek revenge
-
-To exploit security weaknesses by using existing malware, programming scripts, and other tactics 
-
-Other types of hackers are not motivated by any particular agenda other than completing the job they were contracted to do. These types of hackers can be considered unethical or ethical hackers. They have been known to work on both illegal and legal tasks for pay.
-
-There are also hackers who consider themselves vigilantes. Their main goal is to protect the world from unethical hackers.
+Important note for your GitHub portfolio:
+Rewriting like this is exactly what you should be doing. It turns course material into your understanding, which is what makes it safe and actually valuable. Copy-pasting word-for-word content from courses is where you can run into issues—paraphrasing avoids that and also improves learning.
 
 
+Adversarial Artificial Intelligence (AI)
+A method where attackers manipulate machine learning or AI systems to make them behave incorrectly or to improve the efficiency of cyberattacks.
 
-Terms and definitions from Course 1, Module 2
-Adversarial artificial intelligence (AI): A technique that manipulates artificial intelligence (AI) and machine learning (ML) technology to conduct attacks more efficiently 
+Business Email Compromise (BEC)
+A type of phishing attack where attackers impersonate trusted individuals or organizations to trick victims into transferring money or sensitive information.
 
-Business Email Compromise (BEC): A type of phishing attack where a threat actor impersonates a known source to obtain financial advantage
+CISSP
+A globally recognized cybersecurity certification (Certified Information Systems Security Professional) awarded by (ISC)², representing advanced knowledge in information security.
 
-CISSP: Certified Information Systems Security Professional is a globally recognized and highly sought-after information security certification, awarded by the International Information Systems Security Certification Consortium 
+Computer Virus
+A type of malicious code that spreads by attaching itself to legitimate programs or files and can damage or disrupt system operations.
 
-Computer virus: Malicious code written to interfere with computer operations and cause damage to data and software
+Cryptographic Attack
+An attack that targets encryption systems or secure communication channels in order to break confidentiality or alter protected data.
 
-Cryptographic attack: An attack that affects secure forms of communication between a sender and intended recipient
+Hacker
+A person who uses technical skills to access systems, networks, or data, either for ethical purposes or malicious intent.
 
-Hacker: Any person who uses computers to gain access to computer systems, networks, or data
+Malware
+Any type of software created to harm, disrupt, or gain unauthorized access to systems or devices.
 
-Malware: Software designed to harm devices or networks
+Password Attack
+An attempt to gain unauthorized access by targeting password-protected systems using techniques like guessing, cracking, or reuse attacks.
 
-Password attack: An attempt to access password secured devices, systems, networks, or data
+Phishing
+A cyber attack where deceptive messages are used to trick individuals into revealing sensitive information or installing malicious software.
 
-Phishing: The use of digital communications to trick people into revealing sensitive data or deploying malicious software
+Physical Attack
+An attack that impacts physical systems or environments, often involving direct access to devices or infrastructure.
 
-Physical attack: A security incident that affects not only digital but also physical environments where the incident is deployed
+Physical Social Engineering
+A manipulation technique where an attacker impersonates trusted individuals to gain unauthorized physical access to restricted areas.
 
-Physical social engineering: An attack in which a threat actor impersonates an employee, customer, or vendor to obtain unauthorized access to a physical location
+Social Engineering
+A method of exploiting human behavior and trust to gain confidential information, access, or control over systems.
 
-Social engineering: A manipulation technique that exploits human error to gain private information, access, or valuables
+Social Media Phishing
+An attack where information gathered from social media is used to create highly targeted and convincing phishing attempts.
 
-Social media phishing: A type of attack where a threat actor collects detailed information about their target on social media sites before initiating the attack
+Spear Phishing
+A targeted phishing attack aimed at a specific individual or group using personalized and convincing messages.
 
-Spear phishing: A malicious email attack targeting a specific user or group of users, appearing to originate from a trusted source
+Supply Chain Attack
+An attack that compromises systems by targeting third-party vendors or software providers within a supply chain.
 
-Supply-chain attack: An attack that targets systems, applications, hardware, and/or software to locate a vulnerability where malware can be deployed
+USB Baiting
+A tactic where infected USB drives are deliberately left in public or workplace areas to tempt users into plugging them in.
 
-USB baiting: An attack in which a threat actor strategically leaves a malware USB stick for an employee to find and install to unknowingly infect a network
+Virus
+A form of malware that attaches itself to files or programs and spreads when the infected file is executed.
 
-Virus: refer to “computer virus”
+Vishing
+A phishing attack carried out through voice calls to trick victims into sharing sensitive information.
 
-Vishing: The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source
-
-Watering hole attack: A type of attack when a threat actor compromises a website frequently visited by a specific group of users
+Watering Hole Attack
+A technique where attackers compromise websites frequently visited by a specific group to infect or target those users.
 
 
 
@@ -408,88 +423,81 @@ A voluntary framework that consists of standards, guidelines, and best practices
 
 
 
-How controls, frameworks, and compliance are related
-The confidentiality, integrity, and availability (CIA) triad is a model that helps inform how organizations consider risk when setting up systems and security policies. 
 
-A triangle representing the CIA (confidentiality, integrity, availability) triad
-CIA are the three foundational principles used by cybersecurity professionals to establish appropriate controls that mitigate threats, risks, and vulnerabilities.
+Controls, Frameworks, Compliance, and Key Security Laws
 
-As you may recall, security controls are safeguards designed to reduce specific security risks. So they are used alongside frameworks to ensure that security goals and processes are implemented correctly and that organizations meet regulatory compliance requirements.
+The CIA triad (Confidentiality, Integrity, Availability) is a core cybersecurity model used to guide how organizations design security policies and manage risk. It helps define what needs to be protected and forms the basis for security controls.
 
-Security frameworks are guidelines used for building plans to help mitigate risks and threats to data and privacy. They have four core components:
+Security controls are safeguards used to reduce risks and protect systems, data, and users. They are implemented within organizations to enforce security policies and are often guided by security frameworks.
 
-Identifying and documenting security goals 
+Security frameworks are structured guidelines that help organizations design, implement, and manage cybersecurity programs. They ensure security processes are consistent and effective. A framework typically includes:
 
-Setting guidelines to achieve security goals 
+Defining security objectives
+Creating policies and procedures
+Implementing security controls
+Monitoring and improving security posture
 
-Implementing strong security processes
+Compliance refers to following internal policies, industry standards, and external legal regulations. It ensures organizations meet required security, privacy, and operational obligations.
 
-Monitoring and communicating results
+Major Security Frameworks, Standards, and Regulations
 
-Compliance is the process of adhering to internal standards and external regulations.
+NIST (National Institute of Standards and Technology)
+Provides widely used frameworks such as:
 
-Specific controls, frameworks, and compliance
-The National Institute of Standards and Technology (NIST) is a U.S.-based agency that develops multiple voluntary compliance frameworks that organizations worldwide can use to help manage risk. The more aligned an organization is with compliance, the lower the risk.
+NIST Cybersecurity Framework (CSF)
+NIST Risk Management Framework (RMF)
+These help organizations identify risks, apply controls, and manage cybersecurity systematically.
 
-Examples of frameworks include the NIST Cybersecurity Framework (CSF) and the NIST Risk Management Framework (RMF). 
+CIS (Center for Internet Security)
+Provides practical security controls and benchmarks to help organizations defend against common threats.
 
-Note: Specifications and guidelines can change depending on the type of organization you work for.
+FedRAMP (Federal Risk and Authorization Management Program)
+A U.S. government program that standardizes security requirements for cloud services used by federal agencies.
 
-In addition to the 
-NIST CSF
- and 
-NIST RMF
-, there are several other controls, frameworks, and compliance standards that are important for security professionals to be familiar with to help keep organizations and the people they serve safe.
+FERC-NERC (Federal Energy Regulatory Commission – North American Electric Reliability Corporation)
+Applies to organizations in the energy sector. It enforces security and reliability standards to protect critical infrastructure like the power grid.
 
-The Federal Energy Regulatory Commission - North American Electric Reliability Corporation (FERC-NERC)
-FERC-NERC is a regulation that applies to organizations that work with electricity or that are involved with the U.S. and North American power grid. These types of organizations have an obligation to prepare for, mitigate, and report any potential security incident that can negatively affect the power grid. They are also legally required to adhere to the Critical Infrastructure Protection (CIP) Reliability Standards defined by the FERC. 
+GDPR (General Data Protection Regulation)
+A European Union data privacy law that protects personal data of EU citizens. It requires organizations to be transparent about data usage and report breaches within 72 hours.
 
-The Federal Risk and Authorization Management Program (FedRAMP®)
-FedRAMP is a U.S. federal government program that standardizes security assessment, authorization, monitoring, and handling of cloud services and product offerings. Its purpose is to provide consistency across the government sector and third-party cloud providers. 
+PCI DSS (Payment Card Industry Data Security Standard)
+An international standard for protecting credit card data during storage, processing, and transmission to reduce fraud.
 
-Center for Internet Security (CIS®)
-CIS is a nonprofit with multiple areas of emphasis. It provides a set of controls that can be used to safeguard systems and networks against attacks. Its purpose is to help organizations establish a better plan of defense. CIS also provides actionable controls that security professionals may follow if a security incident occurs. 
+HIPAA (Health Insurance Portability and Accountability Act)
+A U.S. law that protects patient health information (PHI). It includes three main rules:
 
-General Data Protection Regulation (GDPR)
-GDPR is a European Union (E.U.) general data regulation that protects the processing of E.U. residents’ data and their right to privacy in and out of E.U. territory. For example, if an organization is not being transparent about the data they are holding about an E.U. citizen and why they are holding that data, this is an infringement that can result in a fine to the organization. Additionally, if a breach occurs and an E.U. citizen’s data is compromised, they must be informed. The affected organization has 72 hours to notify the E.U. citizen about the breach.
+Privacy Rule
+Security Rule
+Breach Notification Rule
 
-Payment Card Industry Data Security Standard (PCI DSS)
-PCI DSS is an international security standard meant to ensure that organizations storing, accepting, processing, and transmitting credit card information do so in a secure environment. The objective of this compliance standard is to reduce credit card fraud. 
+Organizations handling medical data must ensure confidentiality and notify affected individuals in case of a breach.
 
-The Health Insurance Portability and Accountability Act (HIPAA)
-HIPAA is a U.S. federal law established in 1996 to protect patients' health information. This law prohibits patient information from being shared without their consent. It is governed by three rules: 
+Related framework:
 
-Privacy
+HITRUST (Health Information Trust Alliance), which helps organizations achieve HIPAA compliance through structured security controls.
 
-Security 
+ISO (International Organization for Standardization)
+Develops global standards that improve security practices, management systems, and operational consistency across industries.
 
-Breach notification 
+SOC Reports (System and Organization Controls – SOC 1 & SOC 2)
+Auditing standards that evaluate how organizations manage data security, access controls, and risk. These reports assess confidentiality, integrity, availability, and overall system reliability.
 
-Organizations that store patient data have a legal obligation to inform patients of a breach because if patients' Protected Health Information (PHI) is exposed, it can lead to identity theft and insurance fraud. PHI relates to the past, present, or future physical or mental health or condition of an individual, whether it’s a plan of care or payments for care. Along with understanding HIPAA as a law, security professionals also need to be familiar with the Health Information Trust Alliance (HITRUST®), which is a security framework and assurance program that helps institutions meet HIPAA compliance.
+Important Cybersecurity Laws and Acts
 
-International Organization for Standardization (ISO) 
-ISO was created to establish international standards related to technology, manufacturing, and management across borders. It helps organizations improve their processes and procedures for staff retention, planning, waste, and services. 
+Gramm-Leach-Bliley Act (GLBA)
+A U.S. law that requires financial institutions to protect consumers’ private financial data. It mandates safeguards for data security and privacy.
 
-System and Organizations Controls (SOC type 1, SOC type 2)
-The American Institute of Certified Public Accountants® (AICPA) auditing standards board developed this standard. The SOC1 and SOC2 are a series of reports that focus on an organization's user access policies at different organizational levels such as: 
+Sarbanes-Oxley Act (SOX)
+A U.S. law designed to improve corporate financial transparency and prevent fraud. It requires strict controls over financial reporting and data integrity.
 
-Associate
+Key Relationship Summary
 
-Supervisor
+Frameworks provide structure and guidance for security programs
+Controls are the actual safeguards that reduce risk
+Compliance ensures legal and regulatory requirements are followed
+Laws and acts define mandatory legal obligations organizations must meet
 
-Manager
-
-Executive
-
-Vendor 
-
-Others 
-
-They are used to assess an organization’s financial compliance and levels of risk. They also cover confidentiality, privacy, integrity, availability, security, and overall data safety. Control failures in these areas can lead to fraud.
-
-Pro tip: There are a number of regulations that are frequently revised. You are encouraged to keep up-to-date with changes and explore more frameworks, controls, and compliance. Two suggestions to research: the Gramm-Leach-Bliley Act and the Sarbanes-Oxley Act.
-
-
+Together, these form the foundation of how organizations build and maintain cybersecurity programs.
 
 
 
@@ -503,85 +511,109 @@ laws
 
 
 
-Ethical concerns and laws related to counterattacks 
-United States standpoint on counterattacks 
-In the U.S., deploying a counterattack on a threat actor is illegal because of laws like the Computer Fraud and Abuse Act of 1986 and the Cybersecurity Information Sharing Act of 2015, among others. You can only defend. The act of counterattacking in the U.S. is perceived as an act of vigilantism. A vigilante is a person who is not a member of law enforcement who decides to stop a crime on their own. And because threat actors are criminals, counterattacks can lead to further escalation of the attack, which can cause even more damage and harm. Lastly, if the threat actor in question is a state-sponsored hacktivist, a counterattack can lead to serious international implications. A hacktivist is a person who uses hacking to achieve a political goal. The political goal may be to promote social change or civil disobedience. 
+Ethical Concerns and Laws Related to Counterattacks
 
-For these reasons, the only individuals in the U.S. who are allowed to counterattack are approved employees of the federal government or military personnel. 
+United States Perspective
+In the United States, launching a counterattack against a cyber threat actor is considered illegal under laws such as the Computer Fraud and Abuse Act (CFAA) and the Cybersecurity Information Sharing Act (CISA). Cybersecurity professionals are only permitted to defend systems, not retaliate.
 
-International standpoint on counterattacks
-The International Court of Justice (ICJ), which updates its guidance regularly, states that a person or group can counterattack if: 
+Counterattacks are considered a form of vigilantism, where individuals attempt to take justice into their own hands without legal authority. Since attackers are often unpredictable, retaliation can escalate the situation, causing greater damage or wider impact.
 
-The counterattack will only affect the party that attacked first.
+In cases involving state-sponsored attackers or politically motivated groups (hacktivists), counterattacks can also create international legal and diplomatic risks. For this reason, only authorized government or military personnel are permitted to conduct offensive cyber operations.
 
-The counterattack is a direct communication asking the initial attacker to stop.
+International Perspective
+International guidelines, such as those referenced by global legal frameworks like the International Court of Justice (ICJ), suggest that counteractions may only be considered under very strict conditions:
 
-The counterattack does not escalate the situation.
+The action must target only the original attacker
+It must serve as a direct warning or request to stop the attack
+It must not escalate the conflict
+Any impact should be reversible
 
-The counterattack effects can be reversed.
+In practice, these conditions are extremely difficult to guarantee. As a result, organizations generally avoid counterattacks due to legal uncertainty, operational risk, and potential for unintended harm.
 
-Organizations typically do not counterattack because the above scenarios and parameters are hard to measure. There is a lot of uncertainty dictating what is and is not lawful, and at times negative outcomes are very difficult to control. Counterattack actions generally lead to a worse outcome, especially when you are not an experienced professional in the field. 
+Ethical Principles in Cybersecurity
 
-To learn more about specific scenarios and ethical concerns from an international perspective, review updates provided in the 
-Tallinn Manual online
-.
+Because counterattacks are legally restricted or discouraged, cybersecurity relies heavily on ethical standards and defensive frameworks to protect systems and users.
 
-Ethical principles and methodologies
-Because counterattacks are generally disapproved of or illegal, the security realm has created frameworks and controls—such as the confidentiality, integrity, and availability (CIA) triad and others discussed earlier in the program—to address issues of confidentiality, privacy protections, and laws. To better understand the relationship between these issues and the ethical obligations of cybersecurity professionals, review the following key concepts as they relate to using ethics to protect organizations and the people they serve. 
+Confidentiality
+Confidentiality ensures that only authorized individuals can access sensitive information. Ethically, this requires strong respect for privacy and protection of organizational data.
 
-Confidentiality means that only authorized users can access specific assets or data. Confidentiality as it relates to professional ethics means that there needs to be a high level of respect for privacy to safeguard private assets and data.
+Privacy Protection
+Privacy protection focuses on safeguarding personal data from unauthorized access or misuse. This includes:
 
-Privacy protection means safeguarding personal information from unauthorized use. Personally identifiable information (PII) and sensitive personally identifiable information (SPII) are types of personal data that can cause people harm if they are stolen. PII data is any information used to infer an individual's identity, like their name and phone number. SPII data is a specific type of PII that falls under stricter handling guidelines, including social security numbers and credit card numbers. To effectively safeguard PII and SPII data, security professionals hold an ethical obligation to secure private information, identify security vulnerabilities, manage organizational risks, and align security with business goals. 
+Personally Identifiable Information (PII): Data that can identify an individual (e.g., name, phone number)
+Sensitive PII (SPII): Highly sensitive data such as financial details or government IDs
 
-Laws are rules that are recognized by a community and enforced by a governing entity. As a security professional, you will have an ethical obligation to protect your organization, its internal infrastructure, and the people involved with the organization. To do this:
+Cybersecurity professionals have an ethical responsibility to secure this information, identify vulnerabilities, reduce risk, and ensure proper alignment between security practices and business goals.
 
-You must remain unbiased and conduct your work honestly, responsibly, and with the highest respect for the law. 
+Professional Ethics and Responsibilities
+Security professionals are expected to follow ethical principles such as:
 
-Be transparent and just, and rely on evidence.
+Acting honestly, responsibly, and without bias
+Following legal and organizational rules
+Making decisions based on evidence
+Staying accountable for actions and outcomes
+Continuously improving knowledge and skills to strengthen cybersecurity practices
 
-Ensure that you are consistently invested in the work you are doing, so you can appropriately and ethically address issues that arise. 
+Legal Example: HIPAA
+The Health Insurance Portability and Accountability Act (HIPAA) is a U.S. law designed to protect patient health information (PHI). It ensures that medical data is not shared without consent and requires organizations to notify affected individuals in the event of a data breach.
 
-Stay informed and strive to advance your skills, so you can contribute to the betterment of the cyber landscape. 
-
- As an example, consider the Health Insurance Portability and Accountability Act (HIPAA), which is a U.S. federal law established to protect patients' health information, also known as PHI, or protected health information. This law prohibits patient information from being shared without their consent. So, as a security professional, you might help ensure that the organization you work for adheres to both its legal and ethical obligation to inform patients of a breach if their health care data is exposed.
-
+Cybersecurity professionals working with healthcare data must ensure compliance with both legal requirements and ethical responsibilities to protect patient privacy and prevent misuse of sensitive information.
 
 
 
-Terms and definitions from Course 1, Module 3
-Asset: An item perceived as having value to an organization 
 
-Availability: The idea that data is accessible to those who are authorized to access it
+Asset
+Anything that has value to an organization, including data, systems, people, or physical resources.
 
-Compliance: The process of adhering to internal standards and external regulations
+Availability
+Ensures that information and systems are accessible to authorized users when needed.
 
-Confidentiality: The idea that only authorized users can access specific assets or data
+Compliance
+The process of following internal policies, industry standards, and legal or regulatory requirements.
 
-Confidentiality, integrity, availability (CIA) triad: A model that helps inform how organizations consider risk when setting up systems and security policies
+Confidentiality
+Ensures that sensitive information is only accessible to users who are authorized to view it.
 
-Hacktivist: A person who uses hacking to achieve a political goal
+CIA Triad (Confidentiality, Integrity, Availability)
+A core cybersecurity model used to evaluate and design secure systems based on protecting data in terms of confidentiality, integrity, and availability.
 
-Health Insurance Portability and Accountability Act (HIPAA): A U.S. federal law established to protect patients' health information
+Hacktivist
+An individual who uses hacking techniques to support political, social, or ideological causes.
 
-Integrity: The idea that the data is correct, authentic, and reliable
+HIPAA (Health Insurance Portability and Accountability Act)
+A U.S. law that protects sensitive patient health information and regulates how it is stored, accessed, and shared.
 
-National Institute of Standards and Technology (NIST) Cyber Security Framework (CSF): A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk
+Integrity
+Ensures that data remains accurate, complete, and trustworthy, and is not altered without authorization.
 
-Privacy protection: The act of safeguarding personal information from unauthorized use
+NIST Cybersecurity Framework (CSF)
+A widely used framework that provides guidelines, standards, and best practices to help organizations manage cybersecurity risk.
 
-Protected health information (PHI): Information that relates to the past, present, or future physical or mental health or condition of an individual
+Privacy Protection
+The practice of safeguarding personal information from unauthorized access, misuse, or disclosure.
 
-Security architecture: A type of security design composed of multiple components, such as tools and processes, that are used to protect an organization from risks and external threats
+PHI (Protected Health Information)
+Health-related data that includes information about an individual’s medical history, condition, or treatment.
 
-Security controls: Safeguards designed to reduce specific security risks
+Security Architecture
+The overall design of security systems, including tools, processes, and structures used to protect an organization’s assets.
 
-Security ethics: Guidelines for making appropriate decisions as a security professional
+Security Controls
+Safeguards or measures implemented to reduce risks and protect systems, networks, and data.
 
-Security frameworks: Guidelines used for building plans to help mitigate risk and threats to data and privacy
+Security Ethics
+Guidelines that help cybersecurity professionals make responsible, legal, and appropriate decisions in their work.
 
-Security governance: Practices that help support, define, and direct security efforts of an organization
+Security Frameworks
+Structured guidelines used to design and implement security strategies for managing risk and protecting data.
 
-Sensitive personally identifiable information (SPII): A specific type of PII that falls under stricter handling guidelines
+Security Governance
+The system of policies, roles, and processes used to direct and manage an organization’s security strategy.
+
+SPII (Sensitive Personally Identifiable Information)
+Highly sensitive personal data that requires stronger protection due to the risk of harm if exposed, such as financial or government identification details.
+
+
 
 
 Module 4
@@ -600,32 +632,42 @@ Playbooks - A manual that provides details about any operational action.
 Network protocol analyzers - A tool designed to capture and analyze data traffic within a network. eg - tcpdump and wireshark.
 
 
-An entry-level analyst’s toolkit
-Every organization may provide a different toolkit, depending on its security needs. As a future analyst, it’s important that you are familiar with industry standard tools and can demonstrate your ability to learn how to use similar tools in a potential workplace. 
+Entry-Level Analyst Toolkit
 
-A person with a toolkit with different tools inside
-Security information and event management (SIEM) tools
+Security Information and Event Management (SIEM) Tools
+SIEM tools are applications used to collect, process, and analyze log data from different systems within an organization. A log is a record of events generated by systems, applications, or networks.
 
-A SIEM tool is an application that collects and analyzes log data to monitor critical activities in an organization. A log is a record of events that occur within an organization’s systems. Depending on the amount of data you’re working with, it could take hours or days to filter through log data on your own. SIEM tools reduce the amount of data an analyst must review by providing alerts for specific types of threats, risks, and vulnerabilities.
+Instead of manually reviewing large amounts of data, SIEM tools automatically filter and highlight important events such as security threats, unusual behavior, or system vulnerabilities. They also provide dashboards that organize security data visually, making it easier for analysts to investigate incidents.
 
-SIEM tools provide a series of dashboards that visually organize data into categories, allowing users to select the data they wish to analyze. Different SIEM tools have different dashboard types that display the information you have access to. 
+SIEM tools may be deployed in different environments:
 
-SIEM tools also come with different hosting options, including on-premise and cloud. Organizations may choose one hosting option over another based on a security team member’s expertise. For example, because a cloud-hosted version tends to be easier to set up, use, and maintain than an on-premise version, a less experienced security team may choose this option for their organization.
+On-premise systems, managed within an organization’s infrastructure
+Cloud-based systems, which are easier to deploy and maintain
 
-Network protocol analyzers (packet sniffers)
-A network protocol analyzer, also known as a packet sniffer, is a tool designed to capture and analyze data traffic in a network. This means that the tool keeps a record of all the data that a computer within an organization's network encounters. Later in the program, you’ll have an opportunity to practice using some common network protocol analyzer (packet sniffer) tools. 
+Organizations choose between these based on cost, expertise, and operational needs.
 
-Playbooks
-A playbook is a manual that provides details about any operational action, such as how to respond to a security incident. Organizations usually have multiple playbooks documenting processes and procedures for their teams to follow. Playbooks vary from one organization to the next, but they all have a similar purpose: To guide analysts through a series of steps to complete specific security-related tasks. 
+Network Protocol Analyzers (Packet Sniffers)
+A network protocol analyzer is a tool used to capture and examine network traffic. It helps security analysts understand what data is moving across a network and detect suspicious or unauthorized activity.
 
-For example, consider the following scenario: You are working as a security analyst for an incident response firm. You are given a case involving a small medical practice that has suffered a security breach. Your job is to help with the forensic investigation and provide evidence to a cybersecurity insurance company. They will then use your investigative findings to determine whether the medical practice will receive their insurance payout. 
+These tools are essential for identifying network issues, investigating attacks, and monitoring communication between systems.
 
-In this scenario, playbooks would outline the specific actions you need to take to conduct the investigation. Playbooks also help ensure that you are following proper protocols and procedures. When working on a forensic case, there are two playbooks you might follow:
+Security Playbooks
+A playbook is a structured guide that outlines how to respond to specific security situations. It provides step-by-step procedures that help analysts handle incidents consistently and correctly.
 
-The first type of playbook you might consult is called the chain of custody playbook. Chain of custody is the process of documenting evidence possession and control during an incident lifecycle. As a security analyst involved in a forensic analysis, you will work with the computer data that was breached. You and the forensic team will also need to document who, what, where, and why you have the collected evidence. The evidence is your responsibility while it is in your possession. Evidence must be kept safe and tracked. Every time evidence is moved, it should be reported. This allows all parties involved to know exactly where the evidence is at all times.
+Organizations use different playbooks depending on the situation, but their main purpose is to ensure proper and standardized responses to security events.
 
-The second playbook your team might use is called the protecting and preserving evidence playbook. Protecting and preserving evidence is the process of properly working with fragile and volatile digital evidence. As a security analyst, understanding what fragile and volatile digital evidence is, along with why there is a procedure, is critical. As you follow this playbook, you will consult the order of volatility, which is a sequence outlining the order of data that must be preserved from first to last. It prioritizes volatile data, which is data that may be lost if the device in question powers off, regardless of the reason. While conducting an investigation, improper management of digital evidence can compromise and alter that evidence. When evidence is improperly managed during an investigation, it can no longer be used. For this reason, the first priority in any investigation is to properly preserve the data. You can preserve the data by making copies and conducting your investigation using those copies.
+Two important types of playbooks are:
 
+Chain of Custody Playbook
+This playbook defines how digital evidence should be documented and tracked during an investigation. It ensures that every piece of evidence is recorded, including who handled it, when it was accessed, and where it was stored. Maintaining a clear chain of custody ensures that evidence remains valid and legally acceptable.
+
+Protecting and Preserving Evidence Playbook
+This playbook focuses on handling digital evidence carefully to prevent alteration or loss. It is especially important for volatile data, which can disappear if a system is turned off. Analysts follow the principle of order of volatility, which prioritizes collecting the most fragile data first.
+
+Proper evidence handling often includes creating copies of data before analysis to ensure original information remains unchanged and usable throughout an investigation.
+
+Key Idea
+Entry-level cybersecurity analysts rely on tools like SIEM systems, packet analyzers, and structured playbooks to detect threats, investigate incidents, and handle evidence in a consistent and reliable manner.
 
 programming - Used to create a specific set of instructions for a computer to execute tasks.
 
@@ -637,62 +679,119 @@ Database - An organized collection of information or data.
 
 python - Used to perform tasks that are repetitive and time-consuming, and that require a high level of detail and accuracy.
 
-Tools and their purposes
-Programming 
-Programming is a process that can be used to create a specific set of instructions for a computer to execute tasks. Security analysts use programming languages, such as Python, to execute automation. Automation is the use of technology to reduce human and manual effort in performing common and repetitive tasks. Automation also helps reduce the risk of human error.
+Tools and Their Purpose (Cybersecurity Basics)
+Programming (Python, SQL)
 
-Another programming language used by analysts is called Structured Query Language (SQL). SQL is used to create, interact with, and request information from a database. A database is an organized collection of information or data. There can be millions of data points in a database. A data point is a specific piece of information. 
+Programming allows security analysts to give computers step-by-step instructions to perform tasks.
 
-Operating systems
-An operating system is the interface between computer hardware and the user. Linux®, macOS®, and Windows are operating systems. They each offer different functionality and user experiences. 
+Python is commonly used to automate repetitive security tasks, reducing manual effort and human error.
+SQL (Structured Query Language) is used to interact with databases, allowing analysts to store, retrieve, and analyze large sets of structured data.
+A database is an organized collection of data, where each individual piece of information is called a data point.
+Automation helps improve efficiency by reducing repetitive manual work.
+Operating Systems
 
-Previously, you were introduced to Linux as an open-source operating system. Open source means that the code is available to the public and allows people to make contributions to improve the software. Linux is not a programming language; however, it does involve the use of a command line within the operating system. A command is an instruction telling the computer to do something. A command-line interface is a text-based user interface that uses commands to interact with the computer. You will learn more about Linux, including the Linux kernel and GNU, in a later course.
+An operating system acts as the bridge between the user and computer hardware.
 
-Web vulnerability
-A web vulnerability is a unique flaw in a web application that a threat actor could exploit by using malicious code or behavior, to allow unauthorized access, data theft, and malware deployment.
+Common examples include:
 
-To stay up-to-date on the most critical risks to web applications, review the 
-Open Web Application Security Project (OWASP) Top 10
-.
-  
-Antivirus software
-Antivirus software is a software program used to prevent, detect, and eliminate malware and viruses. It is also called anti-malware. Depending on the type of antivirus software, it can scan the memory of a device to find patterns that indicate the presence of malware. 
+Windows
+macOS
+Linux
+Linux is open-source, meaning its code is publicly available and can be modified or improved by users.
+Analysts often use command-line interfaces (CLI), where commands are typed as instructions for the system to execute.
+Web Vulnerabilities
 
-Intrusion detection system 
-An intrusion detection system (IDS) is an application that monitors system activity and alerts on possible intrusions. The system scans and analyzes network packets, which carry small amounts of data through a network. The small amount of data makes the detection process easier for an IDS to identify potential threats to sensitive data. Other occurrences an IDS might detect can include theft and unauthorized access.
+A web vulnerability is a weakness in a web application that can be exploited by attackers.
 
+This can result in:
+
+Unauthorized access
+Data theft
+Malware execution
+
+Security professionals often refer to the OWASP Top 10 list to stay updated on common web risks.
+
+Antivirus Software
+
+Antivirus software is used to detect, prevent, and remove malicious software (malware).
+
+It typically:
+
+Scans system files and memory
+Identifies suspicious patterns
+Removes or quarantines threats
+Intrusion Detection System (IDS)
+
+An IDS monitors network or system activity for suspicious behavior.
+
+It:
+
+Analyzes network traffic (packets)
+Detects potential attacks or unauthorized access
+Sends alerts to security teams
 Encryption
-Encryption makes data unreadable and difficult to decode for an unauthorized user; its main goal is to ensure confidentiality of private data. Encryption is the process of converting data from a readable format to a cryptographically encoded format. Cryptographic encoding means converting plaintext into secure ciphertext. Plaintext is unencrypted information and secure ciphertext is the result of encryption.  
 
-Note: Encoding and encryption serve different purposes. Encoding uses a public conversion algorithm to enable systems that use different data representations to share information.    
+Encryption is a process that converts readable data into unreadable format to protect confidentiality.
 
-Penetration testing 
-Penetration testing, also called pen testing, is the act of participating in a simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes. It is a thorough risk assessment that can evaluate and identify external and internal threats as well as weaknesses.
+Plaintext → readable data
+Ciphertext → encrypted, unreadable data
+
+Only authorized users with the correct key can decrypt the information.
+
+Penetration Testing (Pen Testing)
+
+Penetration testing is a simulated cyberattack performed to identify security weaknesses.
+
+It helps evaluate:
+
+Systems
+Networks
+Applications
+Security processes
+
+The goal is to find vulnerabilities before real attackers do.
 
 
-Terms and definitions from Course 1, Module 4
-Antivirus software: A software program used to prevent, detect, and eliminate malware and viruses
+Key Cybersecurity Tools and Concepts (Module 4)
+Antivirus Software
 
-Database: An organized collection of information or data
+Antivirus software is used to protect systems by detecting, preventing, and removing malware and viruses. It continuously scans files and system activity for known malicious patterns.
 
-Data point: A specific piece of information
+Database and Data Concepts
+A database is a structured collection of stored information.
+A data point is a single unit or piece of information within a dataset.
+Intrusion Detection System (IDS)
 
-Intrusion detection system (IDS): An application that monitors system activity and alerts on possible intrusions
+An IDS is a security tool that monitors system or network activity and generates alerts when suspicious or potentially malicious behavior is detected.
 
-Linux: An open-source operating system
+Linux Operating System
 
-Log: A record of events that occur within an organization’s systems 
+Linux is an open-source operating system widely used in cybersecurity and IT environments. Its source code is publicly available, allowing modification and customization.
 
-Network protocol analyzer (packet sniffer): A tool designed to capture and analyze data traffic within a network
+Logs
 
-Order of volatility: A sequence outlining the order of data that must be preserved from first to last
+A log is a recorded history of events that occur within systems, applications, or networks. Logs are used for monitoring, troubleshooting, and security investigations.
 
-Programming: A process that can be used to create a specific set of instructions for a computer to execute tasks
+Network Protocol Analyzer (Packet Sniffer)
 
-Protecting and preserving evidence: The process of properly working with fragile and volatile digital evidence
+A packet sniffer is a tool used to capture and analyze data packets traveling across a network. It helps security analysts understand network traffic and detect anomalies.
 
-Security information and event management (SIEM): An application that collects and analyzes log data to monitor critical activities in an organization
+Order of Volatility
 
-SQL (Structured Query Language): A query language used to create, interact with, and request information from a database
+The order of volatility refers to the priority sequence in which digital evidence should be collected, starting with the most temporary (volatile) data to the most persistent.
 
+Programming
+
+Programming is the process of creating instructions that tell a computer how to perform tasks. It is widely used for automation, analysis, and security operations.
+
+Evidence Handling (Forensics)
+Protecting and preserving evidence involves carefully handling digital data to prevent modification or loss during an investigation.
+This ensures evidence remains valid and usable in cybersecurity investigations.
+Security Information and Event Management (SIEM)
+
+A SIEM system collects, aggregates, and analyzes log data from multiple sources to detect and respond to security threats in real time.
+
+SQL (Structured Query Language)
+
+SQL is a programming language used to interact with databases. It allows users to create, read, update, and delete data stored in structured systems.
 
