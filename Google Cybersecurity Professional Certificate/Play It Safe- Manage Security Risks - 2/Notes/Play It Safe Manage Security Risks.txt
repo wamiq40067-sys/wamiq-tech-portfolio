@@ -428,3 +428,322 @@ Shared responsibility: The concept that everyone within an organization contribu
 Social engineering: A manipulation technique used to exploit human behavior in order to gain sensitive information, access, or valuables.
 
 Vulnerability: A weakness in a system, application, or process that can be exploited by a threat actor.
+
+
+
+
+
+
+module 2 
+Security Frameworks - Guidelines used for building plans to help mitigate risk and threats to data and privacy.
+
+Security controls - Safeguards designed to reduce specific security risks.
+
+Encryption - The process of converting data from a readable format to an encoded format.
+
+ciphertext - it is the raw, encoded message that's unreadable to humans and computers. ciphertext data cannot be read until its been decrypted into its original plaintext form.
+
+Authentication - The process of verifying who someone or something is.
+
+Biometrics - Unique physical characteristics that can be used to verify a person's identity.
+
+vishing - The exploitation of electronic voice communication to obtain sensitive information or to impersonate a known source.
+
+Authorization - The concept of granting access to specific resources within a system.
+
+
+
+
+
+
+A framework is basically a blueprint or organized structure that helps organizations:
+
+Identify risks
+Protect systems and data
+Detect threats
+Respond to attacks
+Recover from incidents
+
+Without frameworks, every company would handle security differently, chaotically, and inconsistently.
+
+Think of it like this:
+
+A hospital follows medical procedures.
+A construction company follows building standards.
+A cybersecurity team follows security frameworks.
+
+Frameworks help everyone speak the same language and follow proven practices.
+
+For example:
+
+International Organization for Standardization / IEC 27001 gives organizations a structured way to manage information security.
+The Office of the Director of National Intelligence Cyber Threat Framework helps cybersecurity professionals describe cyber threats consistently.
+
+So when your material says “frameworks and controls,” it means:
+
+Term	Meaning
+Framework	The overall plan/structure
+Control	The actual security measure used inside the framework
+
+Example:
+
+Framework: HIPAA compliance requirements
+Control: MFA, firewalls, access badges, CCTV, antivirus, etc.
+
+A simple real-world analogy:
+
+Real Life	Cybersecurity
+Building blueprint	Security framework
+Locks and cameras	Security controls
+
+The blueprint tells you how the building should be secured, while the locks and cameras are the actual protections.
+
+So the purpose of frameworks is mainly to:
+
+Standardize security practices
+Reduce risks and threats
+Help organizations comply with laws/regulations
+Improve communication between security teams
+Create repeatable and reliable security processes
+
+That’s why cybersecurity professionals rely heavily on frameworks instead of randomly implementing security measures.
+
+
+
+
+
+
+CIA triad 
+A model that helps inform how organizations consider risk when setting up systems and security policies.
+
+confidentiality - Only authorized users can access specific assets or data.
+
+Integrity - The data is correct, authentic, and reliable.
+
+Availability - Data is accessible to those who are authorized to access it.
+
+
+
+
+The CIA triad is a fundamental cybersecurity model used by organizations to evaluate risks and build secure systems and policies. It consists of three key principles: confidentiality, integrity, and availability. These principles help organizations maintain a strong security posture, which refers to their ability to protect important systems and data while responding effectively to security challenges and changes.
+
+Confidentiality
+
+Confidentiality ensures that sensitive information is only accessible to authorized individuals. Organizations often apply the principle of least privilege, which gives users access only to the resources necessary for their job responsibilities. Restricting unnecessary access helps protect private and confidential data from unauthorized use or exposure.
+
+Integrity
+
+Integrity focuses on ensuring that data remains accurate, authentic, and trustworthy. Organizations use different methods to maintain data integrity, including cryptography and encryption. Cryptography helps secure information by preventing unauthorized users from altering or reading it, while encryption converts readable data into encoded information to reduce the risk of tampering or unauthorized access.
+
+Availability
+
+Availability means that authorized users can access systems and data whenever needed. Organizations maintain availability by ensuring reliable access to networks, applications, and resources, including for remote employees. Access is still controlled based on job roles, so employees can only use the information necessary for their specific duties. For example, accounting staff may access financial records but not confidential development data.
+
+
+
+NIST Cybersecurity Framework (CSF)
+A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk.
+
+
+Core functions of CSF:
+Govern - emphasizing the importance of strong cybersecurity governance across all levels of the organization.This function highlights the need for effective cybersecurity governance throughout an organization. It focuses on creating and maintaining the policies, processes, and structures required to manage cybersecurity risks successfully. This involves defining clear security goals, ensuring support from leadership, developing and applying a strong risk management strategy, and regularly improving the organization’s overall cybersecurity practices and performance.
+
+Identify - The management of cybersecurity risk and its effect on an organization's people and assets.
+
+Protect - The strategy used to protect an organization through the implementation of policies, procedures, training, and tools that help mitigate cybersecurity threats.
+
+Detect - Identifying potential security incidents and improving monitoring capabilities to increase the speed and efficiency of detections.
+
+Respond - Making sure that the proper procedures are used to contain, neutralize, and analyze security incidents, and implement improvements to the security process.
+
+Recover - The process of returning affected systems back to normal operation.
+
+
+
+NIST S.P. 800-53 (S.P stands for special publication):
+A unified framework for protecting the security of information systems within the federal government, including the systems provided by private companies for federal government use.
+
+
+
+OWASP - open web application security project.
+
+
+OWASP security principles:
+1) Minimize the attack surface area - attack surface refers to all the potential vulnerabilities that a threat actor could exploit, like attack vectors, which are pathways use to penetrate security defenses.
+example of common attack vectors - phishing emails and weak passwords.
+to minimize the attack surface area - security teams disable software features, restrict who can access certain assets, more complex password.
+
+2) principle of least privilege - its to limit access from the employees from organizational information in order to reduce security breaches. 
+
+3) Defense in depth - organizations should have multiple security controls which addresses risk and threats in different ways. example - Multi-Factor Authentication, firewalls, intrusion detection systems.
+
+4) Separation of duties - no one should get so many privileges that they can misuse the system.
+
+5) Keep security simple - if the security is too complex, it will be hard for employees to work collaboratively.
+
+6) Fix security issues correctly - security professionals should know the root cause of the incident quickly, and when they do, they should correct any identified vulnerabilities and conduct test to ensure that all the repairs are successful. 
+
+
+
+Establish Secure Defaults
+
+This principle states that an application should be secure by default. Users should automatically operate in the safest configuration, and making the system less secure should require additional actions or changes.
+
+Fail Securely
+
+Fail securely means that if a security control or system stops working, it should switch to the safest possible state. For example, if a firewall encounters a failure, it should block all traffic and close connections instead of allowing unrestricted access.
+
+Don’t Trust Services
+
+Organizations often rely on third-party vendors and external services, but those partners may follow different security standards. Because of this, organizations should not automatically assume external systems are secure. For instance, if an airline uses a third-party service to manage customer reward points, the airline should verify the information before presenting it to customers.
+
+Avoid Security by Obscurity
+
+A system should not depend on secrecy alone for protection. Hiding source code or system details is not enough to guarantee security. Strong protection should instead come from multiple security measures such as secure passwords, layered defenses, reliable network design, monitoring systems, and audit controls.
+
+
+
+OWASP is recently renamed from open web application security project to open worldwide application security project (OWASP).
+
+
+
+Security audit - A review of an organization's security controls, policies, and procedures against a set of expectations.
+two types of security audits - External and Internal.
+
+An internal security audit is typically conducted by a team of people that might include an organization's compliance officer, security manager, and other security team members. Internal security audits are used to help improve an organization's security posture and help organizations avoid fines from governing agencies due to a lack of compliance. 
+
+Purpose of internal security audits:
+Identify organizational risk
+Assess controls 
+correct compliance issues
+
+Common elements of internal audits:
+Establishing the scope and goals
+Conducting a risk assessment 
+completing a controls assessment 
+Assessing compliance 
+Communicating results
+
+Establishing the scope and goals:
+scope refers to the specific criteria of an internal security audit.
+goals are an outline of the organization's security objectives.
+
+
+Conducting a risk assessment:
+there will be risk descriptions in security audit
+
+
+controls assessment:
+Controls assessment involves closely reviewing an organization's existing assets, then evaluating potential risks to those assets, to ensure internal controls and processes are effective.
+
+Control categories:
+Administrative controls
+Technical controls 
+Physical controls 
+
+
+Assessing compliance:
+checking whether the organization is adhering to necessary compliance regulations or not.
+
+
+communication results:
+recommendations need to be communicated to stakeholders 
+
+Stakeholder communication:
+Summarizes scope and goals 
+Lists existing risks 
+Notes how quickly those risks need to be addressed.
+Identifies compliance regulations 
+Provides recommendations f
+
+
+
+Security Audits
+
+A security audit is an independent evaluation of an organization’s security policies, procedures, and controls to determine whether they meet required standards and expectations. These expectations may include internal company policies, industry best practices, legal requirements, and government regulations.
+
+Security audits are also used to examine the effectiveness of security controls, which are safeguards implemented to reduce risks and protect systems and data. Regular audits help organizations verify that security activities, such as monitoring security dashboards and identifying threats or vulnerabilities, are being carried out properly. If weaknesses are discovered, organizations must establish a remediation process to resolve them and maintain a strong security posture.
+
+Goals and Objectives of a Security Audit
+
+The main goal of a security audit is to ensure that an organization’s information technology practices align with organizational standards and industry requirements. Audits help identify weaknesses, areas for improvement, and security gaps that need corrective action.
+
+Another important objective is to protect sensitive data and avoid penalties or fines related to noncompliance with laws and regulations. The frequency of audits often depends on government requirements, industry regulations, and organizational policies.
+
+Factors That Influence Audits
+
+Several factors determine the type and frequency of audits an organization may conduct, including:
+
+The industry the organization operates in
+The size of the organization
+Government regulations that apply to the business
+The organization’s geographical location
+Voluntary compliance with specific regulatory standards
+Role of Frameworks and Controls in Audits
+
+Security frameworks and controls play an important role in preparing organizations for audits. Frameworks such as the National Institute of Standards and Technology Cybersecurity Framework (NIST CSF) and the International Organization for Standardization 27000 series provide structured guidance that helps organizations meet compliance requirements more effectively.
+
+When combined with security controls, these frameworks improve an organization’s ability to meet security standards and simplify both internal and external audits.
+
+The three primary categories of security controls reviewed during audits are:
+
+Administrative or managerial controls
+Technical controls
+Physical controls
+Audit Checklist
+
+Before starting an audit, organizations typically create an audit checklist that outlines the audit process and objectives.
+
+Identify the Scope of the Audit
+
+The audit scope should define:
+
+Which assets and systems will be evaluated
+The goals of the audit
+How frequently audits should occur
+Whether policies, procedures, and protocols are functioning properly and being followed by employees
+Perform a Risk Assessment
+
+A risk assessment helps identify and evaluate risks related to internal operations, budgets, security controls, and compliance requirements.
+
+Conduct the Audit
+
+During the audit process, the organization examines the security of the identified systems, assets, and controls to determine whether they meet required standards.
+
+Develop a Mitigation Plan
+
+A mitigation plan is created to reduce identified risks and minimize the likelihood of financial losses, penalties, or security incidents that could impact the organization.
+
+Share Results With Stakeholders
+
+After the audit is completed, a detailed report is provided to stakeholders. This report includes findings, identified risks, recommended improvements, and any compliance standards the organization must continue to follow.
+
+
+
+
+
+Asset: Anything considered valuable to an organization, such as data, systems, or resources.
+Attack vectors: Methods or paths used by attackers to bypass security and gain unauthorized access to systems.
+Authentication: The process of confirming a user’s identity before granting access.
+Authorization: The process of determining what resources or actions a user is permitted to access within a system.
+Availability: Ensuring that authorized users can access data and systems whenever needed.
+Biometrics: Physical characteristics, such as fingerprints or facial recognition, used to identify and verify individuals.
+Confidentiality: The principle that sensitive information should only be accessible to authorized users.
+CIA Triad (Confidentiality, Integrity, Availability): A cybersecurity model used to guide organizations in managing risks and designing secure systems and policies.
+Detect: A National Institute of Standards and Technology core function focused on identifying cybersecurity incidents and improving monitoring systems for faster threat detection.
+Encryption: The method of transforming readable information into coded data to prevent unauthorized access.
+Govern: A NIST core function that involves establishing and improving cybersecurity strategies, policies, leadership roles, and risk management practices to support organizational goals and compliance.
+Identify: A NIST core function related to recognizing cybersecurity risks and understanding how they affect organizational assets and people.
+Integrity: The assurance that data remains accurate, trustworthy, and unchanged by unauthorized users.
+National Institute of Standards and Technology Cybersecurity Framework (CSF): A voluntary set of standards, recommendations, and best practices designed to help organizations manage cybersecurity risks.
+National Institute of Standards and Technology Special Publication 800-53: A security framework created to protect information systems used by the U.S. federal government.
+Open Worldwide Application Security Project (OWASP): A nonprofit organization dedicated to improving software and application security.
+Protect: A NIST core function that focuses on implementing safeguards such as policies, tools, and training to reduce cybersecurity risks.
+Recover: A NIST core function related to restoring systems and operations after a cybersecurity incident.
+Respond: A NIST core function that ensures organizations can contain, investigate, and manage security incidents effectively while improving future response processes.
+Risk: Any factor or event that could negatively affect the confidentiality, integrity, or availability of an asset.
+Security audit: An independent examination of an organization’s security controls, procedures, and policies to verify compliance with required standards.
+Security controls: Protective measures implemented to minimize cybersecurity threats and vulnerabilities.
+Security frameworks: Structured guidelines organizations use to develop strategies for reducing security risks and protecting data privacy.
+Security posture: An organization’s overall ability to defend its systems, data, and assets against cybersecurity threats and adapt to changes.
+Threat: Any event, condition, or action that could cause harm to organizational assets or systems.
