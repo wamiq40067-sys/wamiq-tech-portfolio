@@ -747,3 +747,207 @@ Security controls: Protective measures implemented to minimize cybersecurity thr
 Security frameworks: Structured guidelines organizations use to develop strategies for reducing security risks and protecting data privacy.
 Security posture: An organization’s overall ability to defend its systems, data, and assets against cybersecurity threats and adapt to changes.
 Threat: Any event, condition, or action that could cause harm to organizational assets or systems.
+
+
+
+
+
+
+
+
+module 3 
+log - A record of events that occur within an organization's systems and networks.
+
+3 common log sources:
+Firewall logs
+Network logs
+security logs
+
+
+firewall log - A firewall log is a record of attempted or established connections for incoming traffic from internet. It also includes outbound requests to the internet from within the network.
+
+network log - A network log is a record of all computers and devices that enter and leave the network. It also records connections between devices and services on the network.
+
+server log - A server log is a record of events related to services, such as websites, emails, or file shares. It includes actions such as login, password, and username requests.
+
+
+SIEM (security information and event management) - An application that collects and analyzes log data to monitor critical activities in an organization.
+
+metrics - Key technical attributes, such as response time, availability, and failure rate, which are used to access the performance of a software application.
+
+
+
+Different types of SIEM tools:
+self-hosted - require organizations to install, operate, and maintain the tool using their own physical infrastructure, such as server capacity. 
+
+Cloud-hosted - maintained and managed by the SIEM providers, making them accessible through the internet
+
+Hybrid - both self-hosted as well as cloud-hosted.
+ 
+
+
+Current SIEM Solutions
+A Security Information and Event Management (SIEM) system is a software solution that gathers and examines log data to track important activities within an organization. These tools provide real-time monitoring of security events and help security teams detect possible threats, risks, or vulnerabilities. The collected data is analyzed to support investigations and improve overall security management.
+
+SIEM platforms also include different types of dashboards that allow cybersecurity professionals to organize, monitor, and manage large amounts of security-related information. Despite their advanced capabilities, most existing SIEM solutions still depend heavily on human analysts to review alerts and interpret security events before action can be taken.
+
+The Future of SIEM Tools
+As cybersecurity technologies continue to advance, organizations increasingly rely on cloud-based solutions. Modern SIEM platforms are evolving to support both cloud-hosted and cloud-native environments.
+
+Cloud-hosted SIEM solutions are maintained by third-party vendors who manage the infrastructure, updates, and maintenance. Organizations can access these tools through the internet without building their own systems, making them cost-effective and easier to manage.
+
+Cloud-native SIEM solutions go a step further by being specifically designed for cloud environments. They make better use of cloud computing features such as scalability, flexibility, and high availability, allowing organizations to process and store larger volumes of data efficiently.
+
+The future development of SIEM technology is also being influenced by emerging technologies such as the Internet of Things (IoT). As more internet-connected devices are introduced, the number of potential attack points increases, generating even more security data that must be analyzed. This growth will require SIEM systems to become more intelligent and capable of handling diverse and complex threats.
+In addition, advancements in Artificial Intelligence (AI) and Machine Learning (ML) are expected to improve SIEM capabilities significantly. These technologies can enhance threat detection, automate pattern recognition, improve data visualization, and optimize data storage processes.
+
+Automation is also becoming an important feature in cybersecurity operations. Security Orchestration, Automation, and Response (SOAR) solutions are being integrated with SIEM platforms to automate responses to common security incidents. By reducing the need for manual intervention, SOAR allows security analysts to focus on more advanced and unusual threats that cannot easily be automated.
+
+Overall, future cybersecurity platforms are expected to become more interconnected, enabling systems and devices to communicate and coordinate security responses more effectively. Although this level of integration is still developing, it represents an important direction for the future of cybersecurity operations.
+
+
+
+
+Splunk - Splunk is a data analysis platform and Splunk Enterprise provides SIEM solutions.
+
+Splunk Enterprise - A self-hosted tool used to retain, analyze, and search an organization's log data to provide security information and alerts in real-time.  
+
+Splunk cloud - A cloud-hosted tool used to collect, search, and monitor log data.
+
+Chronicle - A cloud-native tool designed to retain, analyze, and search data.
+
+cloud-native tools are also fully maintained and managed by the vendor. They are specifically designed to take full advantage of cloud computing capabilities such as availability, flexibility and scalability.
+
+
+
+
+
+Open-Source Tools
+
+Open-source tools are software solutions that are usually available at no cost and are often designed to be accessible and easy to use. These tools are developed collaboratively by communities of developers and contributors, which can improve both innovation and security. Because the source code is publicly available, users are able to customize the software according to their own requirements, leading to the creation of many different services and features from the same base software.
+
+Developers create open-source projects with the goal of improving software quality while allowing others to use, study, and modify the code under specific licensing terms. In addition to the source code, training resources and documentation are commonly provided, making it easier for users to learn, adapt, and enhance the software.
+
+Proprietary Tools
+
+Proprietary tools are software products that are created and controlled by an individual or organization. Users generally need to purchase licenses or subscriptions to access the software and its training materials. Unlike open-source software, the source code of proprietary tools is restricted and can only be modified by the owners or authorized developers.
+
+As a result, users depend on the software provider for updates, bug fixes, and new features, which may sometimes involve additional costs. Although proprietary software may allow limited customization, the flexibility is usually not as extensive as with open-source tools. Common examples of proprietary security tools include Splunk SIEM solutions and Google SecOps.
+
+Common Misconceptions About Open-Source Software
+
+A frequent misconception is that open-source tools are less secure or less effective than proprietary alternatives. In reality, many open-source projects have become widely accepted industry standards over time.
+
+Although attackers may attempt to exploit vulnerabilities in open-source software, the public availability of the source code often works as an advantage. Security professionals and developers worldwide can quickly inspect the code, identify issues, and release fixes. This collaborative approach can improve transparency and speed up vulnerability detection and resolution.
+
+Examples of Open-Source Security Tools
+Linux
+
+Linux is a widely used open-source operating system that provides users with extensive control and customization options, mainly through its command-line interface (CLI). An operating system acts as the connection between the user and the computer’s hardware, while also managing software applications and system resources.
+
+There are many Linux distributions available, each designed for different purposes such as servers, cybersecurity, development, or personal use. Linux is especially popular in cybersecurity because of its flexibility and powerful command-line tools.
+ 
+Suricata
+
+Suricata is an open-source tool used for network monitoring, traffic analysis, and threat detection. It examines network activity to identify suspicious behavior and creates logs that help security teams investigate possible threats, risks, or vulnerabilities.
+
+The software was developed by the Open Information Security Foundation (OISF), an organization focused on maintaining Suricata as a free and publicly accessible project. Suricata is commonly used in both private companies and public organizations, and it can integrate with SIEM platforms and other cybersecurity tools to strengthen network security monitoring.
+
+
+
+
+
+
+
+Splunk provides different SIEM solutions, including Splunk Enterprise and Splunk Cloud. These platforms enable organizations to collect, monitor, search, and analyze log data from multiple systems through interactive dashboards. By centralizing security information, Splunk helps security teams gain visibility into organizational activities and manage security operations more effectively.
+
+Below are some important Splunk dashboards and their functions:
+
+Security Posture Dashboard
+
+The security posture dashboard is mainly used in Security Operations Centers (SOCs). It presents an overview of significant security events and trends from the past 24 hours. Analysts use this dashboard to confirm whether security controls and policies are functioning properly. It also supports real-time monitoring of suspicious activities, such as unusual traffic coming from a particular IP address.
+
+Executive Summary Dashboard
+
+The executive summary dashboard provides a broad overview of an organization’s security condition over a period of time. It helps security teams evaluate security performance and identify areas that need improvement. Analysts often use this dashboard to present summarized reports of incidents, trends, and risks to management or stakeholders.
+
+Incident Review Dashboard
+
+The incident review dashboard helps analysts investigate suspicious events by displaying patterns related to security incidents. It prioritizes high-risk activities that require immediate attention and often includes a visual timeline of events leading up to an incident, making investigations more efficient.
+
+Risk Analysis Dashboard
+
+The risk analysis dashboard focuses on measuring the risk associated with different assets such as users, devices, or IP addresses. It tracks unusual behaviors, including abnormal login times or unexpected increases in network activity. Analysts use this information to identify vulnerabilities and prioritize security responses based on risk levels.
+
+Google SecOps (Chronicle)
+
+Chronicle is a cloud-native SIEM platform developed by Google. It is designed to store, search, and analyze large amounts of log data to detect potential cybersecurity threats, risks, and vulnerabilities. Chronicle allows analysts to investigate security events related to specific users, assets, domains, or IP addresses.
+
+The platform includes several dashboards that assist security professionals in monitoring and analyzing organizational activity.
+
+Enterprise Insights Dashboard
+
+The enterprise insights dashboard displays recent alerts and identifies suspicious domain names, also known as Indicators of Compromise (IOCs). Each alert is assigned a confidence score and severity level to indicate the probability and impact of a threat. Analysts use this dashboard to detect suspicious access attempts or unusual activities affecting important systems or applications.
+
+Data Ingestion and Health Dashboard
+
+This dashboard monitors the flow and processing of log data into Chronicle. It displays information such as the number of event logs received, log source availability, and processing success rates. Security teams use it to verify that logging systems are functioning correctly and that important security data is not being lost.
+
+IOC Matches Dashboard
+
+The IOC matches dashboard highlights major threats, vulnerabilities, and risks detected within the organization. It helps analysts observe trends involving suspicious IP addresses, domains, or devices over time. This information supports threat prioritization and further investigation into unusual activity.
+
+Main Dashboard
+
+The main dashboard offers a high-level summary of security events, alerts, and data ingestion activities across the organization. Analysts can use it to monitor trends such as increases in failed login attempts, suspicious network behavior, or abnormal activity across multiple systems and locations.
+
+Rule Detections Dashboard
+
+The rule detections dashboard provides statistical information about recurring alerts and incidents generated by detection rules. Analysts use this dashboard to identify commonly triggered threats and evaluate the effectiveness of security rules. This helps organizations improve mitigation strategies and reduce future risks.
+
+User Sign-In Overview Dashboard
+
+The user sign-in overview dashboard focuses on user authentication behavior throughout the organization. It allows analysts to monitor login activities and identify suspicious patterns, such as simultaneous logins from different geographic locations. This information helps security teams detect compromised accounts and strengthen account security measures.
+
+
+
+
+ (Chronicle): A cloud-based security platform designed to store, examine, and search large amounts of security data for threat detection and investigation.
+
+
+Incident response: The process an organization follows to quickly detect, contain, investigate, and recover from a cybersecurity incident or attack.
+
+
+Log: A documented record of activities and events that take place within computer systems, applications, or networks.
+
+
+Metrics: Measurable technical values, such as uptime, response speed, and error rates, used to evaluate the efficiency and performance of software systems.
+
+
+Operating system (OS): System software that manages computer hardware resources and provides an interface for users and applications to interact with the device.
+
+
+Playbook: A structured guide or manual that outlines procedures and steps for handling operational or security-related tasks.
+
+
+Security Information and Event Management (SIEM): A security solution that gathers and analyzes log information from different systems to monitor, detect, and investigate security events.
+
+
+Security Orchestration, Automation, and Response (SOAR): A group of integrated tools and workflows that automate and coordinate responses to cybersecurity incidents.
+
+
+SIEM tools: Security platforms that collect, correlate, and analyze security data from multiple sources across an organization’s infrastructure to identify threats, support investigations, and assist with compliance requirements.
+
+
+Splunk Cloud: A cloud-hosted platform used for collecting, monitoring, and searching log and security data.
+
+
+Splunk Enterprise: A self-managed SIEM solution that stores, analyzes, and searches organizational log data while providing real-time security monitoring and alerts.
+
+
+
+
+
+
+
+
