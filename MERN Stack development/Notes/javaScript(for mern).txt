@@ -1,0 +1,200 @@
+function --> a block of code which can be reused. function runs only when we call it. 
+
+function functionName(){
+		
+	}
+
+example - function greet(){
+		console.log("welcome");
+		}
+
+		greet();
+
+parameters are inputs which are written inside function
+
+function with return --> code is not executed;
+
+	function add(a,b){
+		return a+b;
+	}
+
+function with multiple parameters
+
+
+arrow functions code is more sorted (modern javascript)
+es6 --> modern javascript
+
+difference between normal function and arrow function 
+normal function - function keyword is used , this keyword is used, old method , long syntax
+arrow function -  "=>" keyword is used ,this keyword is not used, new method , short syntax
+
+hw --> normal function is odd or even , using arrow function - find square of numbers, with both function , print name and age.
+
+arrays --> is a special type of variable , we can store multiple type of variable.
+	   let arr = [10,20,30,40];
+array maybe of different type => let arr = [10,""adarsh,True];
+
+looping with array 
+for loop --> used for iteration (initialization , condition and increment/decrement).
+
+for-of loop --> used in modern javascript.
+for(let fruit of fruits){
+	CONSOLE.log(fruits);
+}
+
+no need of indexing , direct value , code is sorted and clean.
+
+for-each loop --> will be used more in react . it is a method of array. and this runs function on every array element. this works like loop but the syntax is modern.
+
+difference of for ,for-of and for-each
+
+control of index			for-of direct control 			for-each value comes with function
+we can break in for 			we can break for-of 			we cannot break for-each 
+for is old style 			for-of is modern 			for-each is modern (used in react)
+syntax is long 				syntax is short 			syntax is shortest 
+
+methods of array -->
+
+
+
+array methods --> 1) map -- it is also a array method , this runs on every element's function , map creates a new array by applying the function on each element of an array. and returns a new array
+
+		2) filter -- filter returns a new array containing only those conditions which satisfies it.
+			filer() --> only return a new element which satisfies the condition 
+
+difference between map and filter 
+
+		map								filter 
+	changes value in map 						values are selected 
+	gives output for every element 					gives output of conditional statements
+	transforms 							selects 
+	length is same 							length mostly smaller than original 
+	
+
+
+3) reduce -- reduces an array to a single value .
+ let sum = numbers.reduce((total,current) => {
+    return total + current ;
+},0)
+console.log(sum);
+
+in (total,current) , total is the accumulator , current is the current value in the array 
+and 0 is the initial value. 
+
+array methods are built in functions used to manage data of the array. 
+push() --> push method is used to add one or more element in array. adds element in the end.
+pop() --> pop method is used to remove the last element.
+unshift --> used to add one or more element in the beginning of the array
+shift --> used to remove one or more element in the beginning of the array
+
+array search --> to search element in an array.
+includes() :  checks whether the value is available or not.(it returns the value in Boolean type).
+indexOf() : it tells the index number of the element in an array. if we don't get the output , we get index value as -1.
+find() : returns the first element that satisfies the condition. if nothing is found , then we get output as undefined.
+findIndex() : returns the index of the first element that satisfies the condition.
+some() : it checks that atleast one element is satisfying the condition.
+every() : it checks that every element in an array is satisfying the condition or not.
+
+objects --> an object is a data structure that store value in key value pairs.
+there are 2 ways to access objects --> most common is (.notion)
+					bracket notion
+
+how to add elements or new keys in an object --> students.city = "lucknow";
+we can pass arrays in object. 
+nested objects --> objects inside an object.
+
+loops inside object.
+
+let student = {
+        name: "Aman",
+        age: 10,
+        class: 5
+};
+
+for(let key in student){
+        console.log(key);
+}
+
+
+with this loop , only key is passed.
+
+let student = {
+  name: "Aman",
+  age: 10,
+  class: 5,
+};
+
+for (let key in student) {
+  console.log(key + ":" + student[key]);
+}
+
+with this loop , key and value both will be passed. 
+
+
+loop (forEach) in object
+
+for in is used for object 
+
+for each Is used for array 
+
+arrays of object (used in real life applications) 
+when we have multiple object in an array. it is known as arrays of object.
+
+array + combination of object = array of object.
+
+
+a function inside a object is called object method.
+
+this keyword always stores current object 
+
+
+
+string , String , math , math method --> HW
+
+Strings are a collection of characters. Strings are basically used to manipulate texts. it is used to save texts in javascript
+2 ways to use strings :- single quote literals 
+			 double quote literals 
+			 template literals
+
+
+
+DOM is a programming interface which is used in html to access html elements and changes the element and also use for the update and control in html.
+DOM is tree-like structure 
+
+uses of DOM --> used to change the content of html 
+		used to change the content of css as well. 
+		and also use to make dynamic websites. 
+
+there are 3 types to access DOM elements --> 1)getElementById.
+					     2)querySelector.
+					     3)querySelectorAll.
+
+getElementById = it is used to select an element of an html with their unique ID 
+ syntax = document.getElementById("idName")
+		
+
+querySelector = it is used to target css selector.
+syntax = document.querySelector("selector")
+
+difference between getElementById , querySelector , querySelectorAll
+
+
+select only ID 					only first matching			matches with all elements
+access only one element				returns only one element		returns all elements
+single element is returned 
+
+
+
+text and html change --> innerText , innerHTML , innerValue 
+
+innerHTML - it is used to change complete html
+
+innerValue = It is used to change value in form.
+
+
+
+synchronous - it means the code is running in a particular sequence of instructions given in the program. each instruction waits for the previous instruction to complete its execution.
+
+asynchronous - sometimes important instructions get blocked due to some previous instructions, which causes a delay in the UI. asynchronous code execution allows to execute next instructions immediately and doesn't block the flow.
+
+

@@ -1,0 +1,361 @@
+react is SPA ( single page application)
+
+js - map and reduce and filter
+
+jsx file - html, css and js all together
+
+
+react- it is js library which is used for making frontend UI. developed by facebook meta
+component - piece of code , reusable.
+eg - navbar , header , footer
+
+setup -
+npm create vite@latest
+select project name
+select framework- react
+variant - js
+
+live server
+prettier
+es7- auto suggestions for hooks , usestate
+eslint- error suggestions
+auto close tag
+inside
+
+task - make new component named Welcome.jsx and import it to App.jsx
+another component - Counter.jsx
+and push it to GitHub
+
+
+props- passing data in components , read only  , immutable
+props destructuring - no need of props
+
+usestate - it is used when we want to update the data.
+
+components - reusable UI , independent piece of code
+2 types of components - function component --> just like JS function
+ 						Always jsx
+ 						use state and use effect (API calling)
+ 						modern and recommended
+class component - used in ES6 model
+ 		  used render() for return jsx
+note - in modern react ,class component are rarely used , provides hook , which makes are websites faster and easier
+
+components making rules -  components must start with capital letters
+ 				Header, Footer (Card)
+ 				components name match with file name.
+ 				Always return with single parent element
+ 				components can have only one function
+
+Nested component - a component can contain another component
+ 			function Header(){
+ 					return <h1>Thin is header</h1>
+ 				}
+ 			function Footer(){
+ 					return<h2> This is footer </h2>
+ 				}
+ 			function App(){
+ 				<>
+ 					<Header/>
+ 					<p>This is Nested Component</p>
+ 					<Footer/>
+ 				</>
+ 			}
+
+
+component lifecycle- 3 steps in component lifecycle --> 1. Mounting -> when component is created.
+ 							2. Updation -> when props or state changes.
+ 							3. unmounting - when we remove the component
+
+props- function card({name})
+string , number, Boolean, array , object
+eg - function info({name, count, isActive, items, User, onClick})
+
+Hooks -> functions in react
+hooks are used to update the data
+hooks are used to call API
+
+rules to make hooks --> -Hooks call only inside the function
+ 			-when we declare hooks , we create hook on top of function and we don't create it inside 			 the loop or nested function.
+ 
+2 types of hooks --> built in Hooks -- useState, useEffect, useContext, useReducer, useRef, useMemo, useCallback
+ 		     custom Hooks -- user defined Hooks - starts with prefix use
+
+useState- used to update data
+useEffect- useEffect used to call API , data fetching , DOM manipulation
+
+useState hook is to create and manage states in functional components.
+ 
+ 		const[stateValue,setStatevalue] = useState (initial value);
+ 	eg- 	const[email,setEmail] = useState("");
+ 	eg- 	const[name,setName] = useState("");
+
+stateValue --> holds initial value
+setStatevalue --> hold supdated value
+
+eg - 	const[count,setCount] = useState(1);
+
+
+homework -- color change (just like count)
+homework -- style our counter.jsx
+homework -- another example of useState
+
+
+useEffect Is a react hook which is used to run side Effects of components.
+side effect = renderings in react connect with outside activity.
+ 		outside activities -->  FETCHING API
+ 					updation document state
+ 					setting timer (setTimeOut,setIntervals)
+
+synxtax of useEffect -->
+
+ 			useEffect(() => {
+ 			   return() => {
+
+ 				}
+ 			},[]);
+
+
+how useEffect works --> there are 3 main ways to use it, depending on the dependency array.
+
+run on every render ->	useEffect(() => {
+
+** 				console.log("Components rendered or updated")**
+ 			**});**
+
+disadvantage->	can cause performance issue.
+
+2. run only once -> If you pass and empty array(means empty dependency array) then it will run only once when the 		    component is mounting(creating component).
+
+ 				useEffect(() =>{
+ 					console.log("component rendered only once")
+ 				},[])
+
+3. run on specific dependency change -> If you pass [variable] it will run when the variable changes.
+
+ 				useEffect(() =>{
+ 					console.log("count change");
+ 				}[count]);
+
+eg :- useEffect(() =>{
+ 	console.log("will run when the name changes");
+},[name]);
+
+
+
+multiple useEffect in a component -->
+function User() {
+ 	const[user,newUser] = useState(" ");
+ 		useEffect(() =>{
+ 			console.log("useEffect User run")
+ 		},[user]);
+
+
+Custom Hooks --> 	User Defined Hooks.
+ 			custom Hooks are user for fetching API , Dark mode Toggle.
+
+how to make custom hooks --> 	Start with the word "use".
+ 				Inside the custom hooks we can use useState And useEffect.
+ 				It helps to reuse our logic.
+
+
+Routing --> when URL changes without page rendering to show another component.
+/ -> homepage
+/about -> about
+/contactUs -> contact Us
+
+npm install react-route-dom (run in cmd)
+<BrowserRouter> -> allows us to route in entire page.
+
+
+forms and control components in react ->  form is used to take data from user.
+ 	types of forms --> login form
+ 			   sign-up form
+ 			   contact form
+
+there are 2 types of forms in react --> control components
+ 					uncontrol components
+
+control components --> control components are form's data are controlled by react State(eg- useState).
+
+first field is empty --> React state
+user types wamiq --> state updated
+user clicks on submit --> value updated
+
+when we click on the button -->
+const handleSubmit =(e) => {
+ 			e.preventDefault();
+ 			console.log(name,email,password);
+ 		}
+ 		<form onSubmit={handleSubmit}>
+ 		<input
+ 		type
+ 		value
+ 		onChange
+ 		placeholder/>
+ 		<button>
+ 		</form>
+
+
+
+
+
+mini project --> student management app
+features --> home page
+ 	add student page
+ 	add faculty page
+ 	add student list
+ 	routing through navbar
+
+API (Application programming interface) --> Data Fetch
+ 	fetches the data from backend , and backend sends the request to database, and then sends back to backend 	and backend sends frontend
+
+Things API needs to fetch - 1) UseState() -->(to store data)
+ 			  - 2) UseEffect() --> (when page renders, then API is called for that render)
+ 			  - 3) Fetch() --> (for API Calling)
+
+ 			UseEffect calls Fetch and then Fetch Calls the API and then API is stored in UseState
+
+
+import {useState,useEffect} from react;
+
+Function Student(){
+ const[student,setStudent] = useState("");
+ useEffect(() => {
+ 	//API Fetching
+ 	fetch("API url")
+ 	.then((response) => response.json())
+ 	.then((data) => {
+ 	setStudent(data);
+ 	console.log(data); //when we want to use console to show data
+});
+ },[]);
+ 	return(
+ 		<div> Student </div>
+
+ 		)
+ 	}
+export Default Student;
+
+
+in API there are 2 parts --> Url (till ".com")
+			     endpoint --> after ".com"
+ 
+
+fetching API with axios -(easy and powerful than fetch)
+axios is a library which is used to call API . It is just like fetch but it is more powerful and easier.
+In our real world mern projects , we will be using axios library more to fetch data. to use it we need install 
+npm install axios
+
+Difference between fetch and axios 
+fetch -- we were converting data into JSON format (.then((res) => res.json()), complex and large code , manual error handling , for basic purpose 
+
+
+axios -- automatic JSON format , code is clean and short , automatic error handling , for professionals and for industry 
+
+basic Syntax --> 
+			axios.get("API url")
+			.then((response) => {
+				console.log(response.data);
+					})
+			.catch((error) => {
+				console.log("error");
+					})
+
+
+HTTP method - 
+
+
+method 					use 					real meaning
+
+Get					to fetch data 				when we want to read data 
+post					send new data 				create data 
+put 					update full data 			to replace data 
+patch 					update some data 			to update partially 
+delete 					remove data 				to delete the entire data 
+
+
+note:- ALL are HTTP method , HTTP method tells the server on what kind of action is supposed to be performed on data.
+
+axios.get("API url")
+.then((response) = > {
+	console.log(response.data);
+		})
+	.catch((error) => {
+		console.log("error")
+			})
+
+axios.post("http:api.com/user"){
+	name: "Rahul" 
+	email: "Rahul123@gmail.com"
+}
+.then((response) => {
+	console.log("created!", response.data)	
+		})
+	.catch((error) => {
+		console.log("error")
+			})
+axios.put("http:api.com/user"){
+	name: "Rahul" 
+	email: "Rahul123@gmail.com"
+}
+.then((response) => {
+	console.log("created!", response.data)	
+		})
+	.catch((error) => {
+		console.log("error")
+			})
+axios.delete("http:api.com/user"){
+	name: "Rahul" 
+	email: "Rahul123@gmail.com"
+}
+.then((response) => {
+	console.log("created!", response.data)	
+		})
+	.catch((error) => {
+		console.log("error")
+			})
+axios.patch("http:api.com/user"){
+	name: "Aman" 
+}
+.then((response) => {
+	console.log("created!", response.data)	
+		})
+	.catch((error) => {
+		console.log("error")
+			})
+
+
+react icons
+google fonts 
+design tailwind css with responsive design
+react toast 
+
+pages
+components 
+footer
+
+
+GitHub use 
+
+
+folder structure should be proper 
+google font 
+code turned into tailwind 
+react toast (where we use alert)
+push in GitHub
+
+
+no pasting with AI , but can take help of AI
+
+
+
+
+
+
+
+
+
+
+
+ 

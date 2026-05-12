@@ -1,0 +1,809 @@
+node js is a javascript runtime environment that allows developer to execute javascript code on server side 
+this is a v8 engine . 
+it is built on chrome v8 javascript engine and it is designed for building fast scalable and real time applications .
+ node js is commonly used for creating web servers, API and backend services.
+
+keypoints - server side javascript execution 
+	    non blocking , event driven architecture 
+	    fast and efficient for I/O operations 
+
+node js doesn't wait for one task to end before starting another (non blocking) .
+it handles multiple tasks together (event driven architecture).
+node js follow asynchronous method (which means doing multiple tasks together).
+we can handle multiple requests together (for I/O operations) and server doesn't get down like other technologies like php.
+
+why do we use node js -- fast 
+			 asynchronous 
+			 non blocking 
+			 node is used in Netflix , paypal , linkedIn 
+			 
+
+setting up node js 
+npm init -y --> node returns 
+
+
+
+
+
+express js
+express js is a fast and flexible way of application framework of node js.
+it provides a setup feature to build a web applications and API easily such as routing , middleware, and handling http request and response.
+
+setup of express 
+npm install express --> express returns
+multiple --> (server js) --> used express 
+
+const PORT - 3000;
+app.listen(port, () => {
+	console.log(`server running at http://localhost:${PORT}`);
+});
+
+
+
+now whatever data we send , we send it in JSON format 
+app.get("/data",(req,res) => {
+    res.json({name:"wamiq" , role:"student"})
+})
+
+interview theory question : what is file system in node js?
+when we want to interact something with our file like read , create , delete , write .
+
+file system (fs module)
+the fs module in node js allow you to interact with the file system on your computer.
+it lets you read , write , delete, update and manage folder from your application.
+
+key points : built in model (no need to install) 
+	     can work synchronously(one by one) and asynchronously (simultaneously) 
+	     very useful for storing data in files instead of database.
+
+how to use file system - 
+
+	const fs = require("fs");      //we need to import fs module
+	
+	1)create or write a file
+	fs.writeFile
+
+	2) read file 
+	fs.readFile 
+
+	3) append data to a file 
+	fs.appendFile
+
+	4) delete a file 
+	fs.unLink
+
+
+npm and packet json 
+
+what is npm --> npm means node packet manager. npm is a tool that helps developers install, manage , share and update javascript libraries and packages for node js projects. 
+
+example: instead of writing everything from scratch. we can install packages like express, mongoose , nodemon and json web token using npm. 
+
+why we use npm --> to install external libraries.
+		   to manage project dependencies .
+		   to reuse code .
+		   to save development time.
+		   to manage project configuration 
+
+what is npm init --> 	it is a command used to create a new node js project and generate a package json file.
+			it initializes a project by asking some basic questions 
+			first -- project name , version , description , entry file , author , license.
+
+npm init -y --> -y here is allowing all default settings.
+
+package.json --> package.json is a configuration file that contains all important informations about a node js project.
+it stores -- project details, install packages, script, project setting.
+
+
+name:"   " ,
+version: 10.8.0,
+description: "Myfirstnode.js",
+main:"server.js",
+script{
+start:"nodeserver.js"
+}
+
+dependency -->	dependencies are external libraries or packages that our project needs to run properly.
+		they automatically installed inside the node module folders.
+
+example: npm install express (to install express)#dependencies{
+express: "5.21.1"
+}
+
+type of dependencies: 	used in production (dependencies) 
+		     	used only during development(dev dependencies)
+			npm install nodemon --save --dev
+
+
+node module -- it is a folder where all installed packages and their internal dependencies are stored.
+		we never upload module to GitHub. because we have all the details of our packages and dependencies. 
+
+express.js: express js is a fast , like weight, and flexible web framework for node js. used to build web servers 
+and rest API easily.
+
+features of express js: simple and fast , easy routing system, middleware support, rest API development, easy request and response handling , and scalable.
+
+
+WorkFlow --> 	1)import express 
+		const express = require("express"); //import express
+		2)const app = express(); // start express
+	
+		3)create route 
+		app.get("/",(req,res) => {
+		res.send("hello world");
+	});
+
+		4)create port 
+		const PORT = 3000;
+		
+		5)start server 
+		app.listen(PORT,() => {
+		console.log(`server running at http://localhost:${PORT}`)
+	});
+
+
+client --> request --> express server --> processing --> response --> client.
+
+
+routing --> routing means defining different URL's (endpoints) and handling different request
+	    
+example: app.get("/",(req,res) => {
+	res.send("homepage");
+});
+
+app.get("/about",(req,res) => {
+	res.send("my about page");
+});
+
+http method in express:	1)get -- to read data
+			2)post -- to send data 
+			3)put -- to update data 
+			4)delete -- to delete data
+			5)patch -- partially update data 
+
+
+middleware:- it is a function which runs between request and response.
+
+why do we use middleware:- it is used for authentication , authorization , validation , login , error handling ,
+ 					and request response.
+
+authentication -it is used to verify user identity before allowing accesses to protected route.
+
+authorization - it is used to check user permission and decide what actions a user can perform(privileges).
+
+validation - it is used to check request data before sending to it's server.
+
+login - login records request information for debugging and tracking.
+
+error handling - we can use middleware to catch and handle error gracefully.
+
+middleware handles error and send proper error response.
+
+requestBody Parsing -> middleware.
+
+middleware is used to convert incoming javascript object into json data.
+
+app.use(express.json());  // body parsing  object-->JSON format.
+
+types of middleware:- 	application level middleware
+			route level middleware
+			built-in middleware
+			error handling middleware
+
+
+rest API --> rest API is a way of frontend and backend to communicate using http request and response.
+
+representational state transfer (rest).it is also known as restful API.
+
+why do we use rest API - 	to connect frontend to backend.
+				to perform crud operation.
+				same backend for mobile application and web application 
+				secure communication.
+
+rest API principle:	-use HTTP method.
+			-stateless - the server does not store any client-session data.
+			-client-server architecture(frontend is client and backend is server) they are separate. 			they communicate through API
+			-client and server work independently and communicate using restful API.
+			
+
+
+resource-based URL -	rest API use meaningful URL's that represent resources.
+			eg- /user --> user data
+			    /product --> product data 
+			    /order --> order data
+
+
+			
+
+mongodb - nosql database.
+	  we need to install in our system locally 
+	  we have to manage everything (install,backup,secure,scaling)
+
+advantages - 	this is free 
+	  	we have full control 
+		we can work offline
+		
+
+disadvantages -	manual setup
+		manual backup and security 
+		it is difficult to scale
+		
+
+how to install - we install using chrome browser 
+
+
+
+
+mongodb atlas -- it is a cloud based database services by mongodb
+		 no installation needed 
+		 the database is available online
+		 automatic backup , security and scaling 
+
+
+advantages - 	easy setup 
+		automatic backup 
+		high security 
+		auto-scaling 
+		free trial is available 
+		
+
+disadvantage - 	internet requirement 
+		limited in free plan 
+		
+
+what is mongodb - mongodb is a NoSQL , document-based database used to store data in json like format
+
+advantages of mongodb - it is really fast 
+			it is flexible 
+			scalable 
+			json like structure 
+			perfect for mern stack
+
+
+difference sql and NoSQL 
+
+sql										NoSQL
+
+table-based								document-based
+row and column								json document 
+fix schema 								flexible schema 
+MySQL									MongoDB
+
+
+MongoDB Structure (very important) 
+MongoDB have 4 level structure-	Database
+				collection 
+				document 
+				field 
+
+database -- it is like a top-level container where all data is stored.
+			eg- collegeDB
+			  - EcommerceDB
+			  - schoolDB
+
+collection - it is a group of similar documents. 
+		eg - amityDB - 	student collection 
+				teacher collection 
+				worker collection
+
+documents - it is a single record stored inside the collections 
+		{id:1 , name:Wamiq , Email:wamiq@gmail.com}
+
+field - fields are the individual key-value pair in the document.
+
+
+what is schema -- schema define the structure of the document. 
+
+	eg- const userSchema = new mongoose.Schema({
+					name = String,
+					age = number,
+					email:String
+				});
+
+name:{
+  type:String;
+  require:True;
+  min length:3;
+  max length:20
+}
+
+email:{
+  type:String;
+  require:True;
+  unique:true(means f user is already logged in, it will show that user already)
+}
+
+password:{
+   type:String;
+   require:True;
+   min length:0;
+   select:false
+}
+ 
+regex: regular expressions is a sequence of character that defines a search pattern used for matching , validating and manipulating texts.
+
+why we use regex: to validate input data
+		  to check email format 
+		  to create Strong password rules 
+		  to search specific pattern in text 
+
+
+model: model is a class created from a schema that is used to interact with the database
+	to perform curd operations. 
+
+const user = mongoose.model("user", "userSchema");
+
+create - it is used to create a new data in our database.
+
+CREATE -> insert data 
+	  eg: const user = new User({name:"Ankit",age:22});
+		await user.save();
+		
+		new User() --> make new document
+ 		    save() --> save in database
+		    
+
+READ -> (GET DATA) read method is used to read the data or get the data.
+	how do we get data: find() --> find method is used to fetch all data.
+				       
+	const user = await User.find();
+
+
+UPDATE -> used to modify data in mongoDB
+	  eg: findByIdAndUpdate() --> await.UserfindByIdAndUpdate(id,{age:30});
+
+DELETE -> used to remove data in mongoDB.
+	  eg: findByIdAndDelete() --> await.UserfindByIdAndDelete(id,{age:22});
+
+
+
+MiddleWare
+
+BCRYPT - it is a in built library which helps us to  securely hash passwords before storing them in the database.
+	normal password: 123456
+	hash password: $12a4$#
+
+advantages of bcrypt: improves security
+		      one-way process (you cannot get the original password back from the hash)
+		      this is protected from attackers and brute force. industry standard practice.
+
+
+what is hashing: this is a one-way encryption technique where original data cannot be converted back.
+		 password-->hash-->store
+
+bcrypt initialization-> we install the bcrypt library through dependency by using npm install bcryptjs
+
+JWT Authentication --> Jason web token. jwt is a secure token used to authenticate user after login .jwt is just like a digital id card.
+
+advantages of jwt - 	to maintain user login
+			stateless authentication(the token which is generated. it is not stored locally).jwt is a stateless 				meaning the server does not need to store session info. this makes the system faster and more scalable.
+			secure data transfer.jwt is digitally signed so data inside it cannot be changed.
+			this is best for API.
+			
+how to install jwt - we install jwt in the terminal through their dependency - npm install jsonwebtoken
+
+role-based authentication - role-based authentication is a system where different user have different access permission based on 				their role
+
+			    Admin - full access 
+			    user - limited access
+			    in real world projects - 99% projects are based on role-based system
+
+why role-based system is important - it provides security to our project
+					data protection
+					system control.
+					real world implementation
+
+folder structure - projectname(backend) --> 	npm init y -- packet.json 
+
+folder structure contains the structure of our project - folder --> 	controller
+								 	models
+									routes
+									middleware
+									config
+									utils
+									server.js
+
+controller --> what is the purpose -> this contains all the business logics. handles requests and response and also handles 
+		what does this controller do -> handles all requests and response ,contains functions for API, connect route with 						database logic
+						example: login logic , we make this in controller
+							 curd operations , we make this in controller	
+		
+
+controller(folder) -> 	userController.js(file) {file always saved in camelCase)
+		     	in simple method - controller is the brain of our application
+					eg - signup logic , registration logic , login logic , curd operation logic
+
+ 
+			eg(code): export.registerUser = (req,es) => {
+							res.send("user registered successfully");
+							}
+
+
+models(folder) -> the folder contains database Schema and models. 
+			what does it do ->	define structure of data 
+						create mongoDB collections 
+						
+			example:- we have to make 3 schema - userSchema, productSchema, employeeSchema
+
+			eg(code):- userModel.js ->	const mongoose = require("mongoose");
+							const userSchema = new mongoose.Schema({
+											name:String,
+											age:Number,
+											email:String,
+											password:String
+										});
+			        			module.exports = mongoose.model("user",userSchema) - this will always be 									same in case of users
+
+			in simple words -> models is a structure of database.
+
+
+Routes(folder) -> this folder contains API routes and end points.
+		what does it do -> define URL paths.
+				   it connects routes with controllers.		
+				   eg:- /login,/user,/register,/addproduct
+				   eg(code) = userRoute.js  
+
+
+middleware(folder) -> this folder contains all the middleware functions
+			what does it do -> this runs between requests and response . used for authentication , authorization , 							validation and error handling
+			eg -> jwt authentication 
+			      role checking 
+			      error handler 
+			      hashing 
+
+			eg(code):- authMiddleware.js
+				jwt implement --> const jwt = require("jsonwebtoken");
+				module.exports = (req,res,next) => {
+								console.log("middleware executed");
+								next();
+								};
+ 				use of next() function - next function is used to forward the request from middleware to other 								route. if we did not use the next() function. all are requests will be 								stuck and our application can hang 
+
+				middleware works like a security guard. 
+
+
+
+
+config(folder) -> this folder contains the configuration of all files. 
+		what does it do -> database connection.
+				   environment settings.
+				   server setup logic.
+			  	   mongoDB connection.
+				   cloudinary configuration.
+		
+		eg:- const mongoose = require("mongoose");
+			mongoose.connect(
+					 "mongodb+srv://wamiq40067_db_user:wamiq@cluster0.qinz6as.mongodb.net/myDatabase?							retryWrites=true&w=majority"
+					)
+					 .then(() => console.log("atlas connected successfully"))
+					 .catch((err) => {err});
+
+		
+utils(folder) -> this is a helper function. logics which are reusable. it contains all the utility.
+		what does it do -> it is a reusable function 
+				   it is used for writing the logic
+				   common logic used in many case
+				   eg: email send , token send , opt generation. 
+
+				   eg(code): sendEmail.js
+						const sendEmail = (email,manage) => {
+									console.log("email sent");
+									};
+						module.exports = sendEmail;
+
+server.js - this is a main entry point of backend server.
+		what does it do -> it starts the server , 
+				   we can connect database also,
+				   define routes and middleware also, 
+				   also defines schema and models also,
+				   
+
+			we save it like - server.js
+					const express = require("express");
+					const app = express();
+			
+					app.get("/" , (req,res) => {
+						res.send("hello world");
+						});
+
+					const PORT = 3000;
+					app.listen(PORT, (req,res) => {
+						console.log(`server running at http://localhost:${PORT}`);
+						});
+
+			in simple words -- server.js is the heart of our application 
+
+			
+client->route->middleware->controller->model->database--> model-database-->database will send response.
+
+
+
+.env file --> it means environmental variables 
+		it is used to store the secret keys 
+		eg:- mongodb key,payment gateway keys,API keys, etc.
+
+
+file save --> .env 
+		PORT = 5000;
+		jwt_secret > 123&fghjq
+		DB_URL = 123@#
+
+how to install --> it is also stored through dependency 
+		command - npm install .env 
+
+we never push our .env file on GitHub.
+
+npm install dotenv
+
+
+
+what is salt -> salt is a random extra String added to the password before hashing . 
+		salt = extra security layer 
+
+why do we use salt --> salt generate different hashes for the same password.
+		
+	1234 --> salt1 --> xyz 
+	1234 --> salt2 --> pqr
+
+
+advantages of salt --> 	increase password security 
+			protects us in rainbow table attack
+			generate unique hashes even for the same password
+			
+
+sale(10) --> the (10) is the cost factor or salt rounds . complexity level of hashing 
+common cost factor values --> 	
+value 						security 						speed
+(8)						low							fast
+(10)(recommended) 				medium 							medium
+(12)						high							slow
+(40)						very high 						very slow 
+
+token generation 
+
+
+difference between require and import -->
+require 								import 
+used in core old node.js 						used in modern js and node js 
+const express = require("express);					import express from "express"; 
+export --> module.exports						export 
+loading --> loads on runtime 						loads on compile time 
+configuration --> not needed 						package.json --> type:"module"
+
+
+nodemon --> it is a development tool that automatically restarts node js application whenever changes are detected in the source code , we do not need to re-run our server . it helps developer avoid help manually restarting the server. 
+
+npm install -g nodemon
+
+this command is used to install globally. 
+
+npm install --save-dev nodemon 
+
+this command is used to install nodemon in a particular folder
+
+using nodemon - while using nodemon in our project , then the running command for the backend(Server.js) will be nodemon Server.js.
+
+"script":{
+"start":"nodeserver.js",
+"dev" : "nodemonserver.js"
+} 
+
+
+advantages of nodemon: automatically restarts the sever 
+			make development faster 
+			save time for a developers 
+			improve developrers exceprience 
+
+
+
+authentication system 
+
+bearer --> token which is stored in header , it checks whether this particular token is for the valid user or not . this is called bearer. it is an authentication schema 
+
+token 3 part --> header , payload , signature 
+		header --> information 
+		payload --> user's data 
+		signature --> security verification 
+
+
+
+
+
+status code --> 
+1) 200(ok) -> went ok on server side 
+2) 201(created) -> got your data , new profile is now live!
+3) 204(no content) -> sending request to delete a user data , it worked but there is nothing to send back.
+
+4) 400(bad request) -> a bad request is like a server asking , huh! what is this?
+5) 401(unauthorized) -> missing the right credentials, like trying to get into the locked room without key. server says "btw,who are you?
+6) 403(forbidden) -> I know you , but you cant get here, you don't have that privilege 
+7) 404(not found) -> asked for a credential , but its not there 
+8) 429(too many request) -> server says , slow down , we are slower than the rate limit of requests we are receiving 
+
+9) 500(server errors) -> server needs help , dig into logs for clues and fix issues 
+10) 502(bad gateway) -> requests are ignored , due to overloading , network glitches , or misconfigurations 
+11) 503(service unavailable) -> requests cannot be handled right now , due to maintenance or traffic overload 
+
+12)301(moved permanently) -> forwarding address with the location header pointing towards the new URL
+13)302(found) -> it points to the new location but the original URL still works 
+14)304(not modified) -> browser asks , has this changed since I cached it ? the response is , nope your good!
+
+
+
+
+module --> validation in error handling 
+
+it is used for the validation and checks for error . 
+
+input validation --> it means checking the user input before saving in the database . eg --> when a user registers , required fields are name , email and password . if any field is missing , the api should return a error
+
+duplicate email check --> ensures that one email can only register once.
+
+password validation --> it ensures that password is strong enough. 
+			requirements --> require minimum 6 characters 
+					 sometimes lowercase , uppercase and numbers  
+
+try - catch error handling --> try catch is usually to handle errors in asynchronous code. it prevents the server from crashing 				and allow us to send a proper error response
+			syntax --> try{
+					code execution
+				} catch(error){
+					  error handling
+					}
+
+http-status code--> this code tells the client whether the request was successful or not.
+
+some common status code --> 200(ok),201(resource created),400(bad request),401(unauthorized),404(NOT FOUND),500(server error).
+
+
+
+module--> file upload 
+
+file upload means sending a file from the client(frontend) or postman to the server(backend) 
+server receives the files , and save it in the specific folder . 
+example: profile image upload , product image upload , resume upload , document upload .
+
+example: a user uploads a profile photo, the backend receives the file and save it inside a folder. 
+
+uploads(folder) --> profile.png.
+
+multer--> what is multer ? 
+	ans) multer is a middleware for nodeJS and express that is used to handle file uploads.
+	it helps the server receive file sent through http request.
+	
+	why we use multer? 
+	ans) by default , express cannot file upload.
+		multer makes it easy to: receive files from the client .
+					 save files to a folder .
+					 change file names. 
+					 filter file types.
+
+		how to install in node js: npm install multer
+
+	storage configuration: storage configuration tells multer where to store the file and next what file name should we use 
+	
+	file filter: file filter is used to restrict file type.
+			it ensure that user can upload image only 
+
+
+// multer code
+const multer = require("multer");
+
+const storage = multer.diskStorage({
+
+  destination: function (req, file, cb) {
+    cb(null, "uploads/");
+  },
+
+  filename: function (req, file, cb) {
+    cb(null, Date.now() + "-" + file.originalname);
+  }
+
+});
+
+const fileFilter = (req, file, cb) => {
+
+  if (
+    file.mimetype === "image/jpeg" ||
+    file.mimetype === "image/png" ||
+    file.mimetype === "image/jpg"
+  ) {
+    cb(null, true);
+  } else {
+    cb(new Error("Only images allowed"), false);
+  }
+
+};
+
+const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter
+});
+
+module.exports = upload;
+			
+
+
+last module: pagination , and search API 
+
+
+pagination means divide large data into small page.
+
+instead of sending all record at ones , the server send data page by page.
+
+advantages of pagination: fast API response 
+			  less server load 
+			  better user experience
+
+
+search API : we search our data with keywords. 
+		search API allow user to find data based on keywords.
+
+example : search user by name.
+		we searching ravi by name.
+		API returns users whose name contains ravi
+
+
+// note 
+const User = require("../models/User");
+
+const getUsers = async (req, res) => {
+
+  try {
+
+    const page = Number(req.query.page) || 1;
+    const limit = 5;
+
+    const search = req.query.search || "";
+
+    const query = {
+      name: { $regex: search, $options: "i" }
+    };
+
+    const users = await User.find(query)
+      .limit(limit)
+      .skip((page - 1) * limit);
+
+    const totalUsers = await User.countDocuments(query);
+
+    res.json({
+      page,
+      totalPages: Math.ceil(totalUsers / limit),
+      totalUsers,
+      users
+    });
+
+  } catch (error) {
+
+    res.status(500).json({
+      message: "Server Error"
+    });
+
+  }
+
+};
+
+module.exports = { getUsers };
+	
+
+router.get("/users", getUsers);   ---   routes
+
+app.use("/api", userRoutes); - ---  server.js
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			 

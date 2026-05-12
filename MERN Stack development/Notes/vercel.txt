@@ -1,0 +1,113 @@
+vercel
+
+signup from GitHub
+
+import project 
+
+install vercel 
+
+import TraceHub 
+
+edit the root directory 
+select frontend
+and then deploy
+
+
+suggestions:
+
+contact us component 
+navbar should be in list form 
+how can user contact with the person who has the lost item 
+to have a remove option in admin panel , so that duplicate items aren't uploaded on lost item 
+ to send request 
+on double click , its not working , the report page 
+
+
+
+
+search by item name (search & filter)
+
+removing fake or duplicate or unnecessary requests.
+
+similar title will be removed from backend
+
+date of lost item 
+
+image , title , location (this is done)
+
+resolve section -- section resolve (this is done)
+
+validation from backend for multiple uploading for same picture 
+
+new item notification for admin , whether it is lost or found 
+
+claim button notification for admin (node mailer)
+
+
+
+
+
+notification part is left for both the user and the admin
+resolve part should also be there 
+we need to remove inbox part
+in our report page , there should valid proof for the item , we have to include image part as well 
+
+
+
+
+
+
+understand how user model/database/schema is created
+
+create item schema in mongoDB 
+
+create endpoint /item (POST).
+
+test out /item in postman. 
+
+then connect the frontend with /item.
+
+calling /item using fetch in the upload page.
+
+
+
+
+
+GET /items 	in the backend
+test the above endpoint in postman 
+integrate this endpoint 
+
+GET endpoint , we call database , and we get all items in our admin panel
+
+
+
+// 🔥 Requests SENT (I am client)
+    const sent = await Report.find({
+      reporterId: req.user.userId
+    })
+      .populate("itemId")
+      .populate("itemOwnerId"); // owner info
+
+
+    res.json({
+      received, // 👤 owner side
+      sent      // 🙋 client side
+    });
+
+  } catch (err) {
+    res.status(500).json({ message: err.message });
+  }
+};
+
+module.exports = { getInbox };
+
+
+
+
+
+
+
+
+
+
+
