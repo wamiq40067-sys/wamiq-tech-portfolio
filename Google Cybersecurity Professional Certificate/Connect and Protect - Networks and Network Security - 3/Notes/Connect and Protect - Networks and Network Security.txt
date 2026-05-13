@@ -1,0 +1,949 @@
+Connect and Protect: Networks and Network Security
+
+
+Network - A group of connected devices.
+
+Local Area Network (LAN) - A network that spans a small area like an office building, a school, or a home.
+
+Wide Area Network (WAN) - A network that spans a large geographic area like a city, state, or country.
+
+Hub - A network device that broadcasts information to every device on the network.
+
+Switch - A device that makes connections between specific devices on a network by sending and receiving data between them.
+
+Router - A network device that connects multiple networks together.
+
+Modem - A device that connects your router to the internet and brings internet access to the LAN.
+
+Virtualization tools - Pieces of software that perform network operations.
+
+
+
+
+
+Network Devices
+Network devices help maintain communication and services across a network. These devices connect through wired or wireless connections and exchange information using data packets. Each data packet contains details about the sender and the destination, allowing information to travel correctly between devices.
+A network is the complete infrastructure that enables devices to communicate with one another. Specialized devices such as routers and switches manage the flow of data across the network, while devices like computers, smartphones, and tablets connect through them to access network resources.
+Basic Network Structure
+In a typical home or office setup:
+
+
+A modem connects the network to the internet through an Internet Service Provider (ISP).
+
+
+A firewall monitors and filters incoming and outgoing traffic to improve security.
+
+
+A router distributes internet connectivity to devices within the network.
+
+
+Devices such as computers, phones, tablets, and printers communicate through the router.
+
+
+A server may store files or provide services accessible to all connected devices.
+
+
+A switch can be added to expand the number of available wired connections.
+
+
+Multiple routers may also be connected for load balancing to improve network performance.
+
+
+
+Devices and Desktop Computers
+Common devices connected to networks include desktop computers, laptops, smartphones, and tablets. Each device has:
+
+
+A unique MAC address for hardware identification
+
+
+An IP address for network communication
+
+
+A network interface card (NIC) that sends and receives data packets
+
+
+These devices can connect using either wired Ethernet connections or wireless Wi-Fi connections.
+
+Firewalls
+A firewall is a security device that monitors and controls network traffic entering or leaving a network. It acts as an important first layer of defense by enforcing security rules configured by an organization.
+Firewalls are usually placed between:
+
+
+The trusted internal network
+
+
+External and untrusted networks such as the internet
+
+
+They help block malicious traffic and restrict unauthorized access, although they are only one component of overall cybersecurity protection.
+
+Servers
+Servers provide resources, information, and services to devices on a network. Devices that request services from a server are called clients.
+This setup is known as the client-server model, where:
+
+
+Clients send requests
+
+
+Servers process the requests
+
+
+Servers return the requested information or service
+
+
+Common types of servers include:
+
+
+DNS servers for domain name lookups
+
+
+File servers for storing and retrieving files
+
+
+Mail servers for managing organizational email systems
+
+
+
+Hubs and Switches
+Hubs
+A hub is a basic networking device that connects multiple devices together. It broadcasts all incoming data to every connected port.
+Because all traffic is shared with every device, hubs are vulnerable to eavesdropping and are considered less secure. They are rarely used in modern enterprise networks and are mostly limited to small or simple setups.
+Switches
+Switches are more advanced and commonly used in modern networks. A switch:
+
+
+Sends data only to the intended device
+
+
+Uses a MAC address table to identify connected devices
+
+
+Improves network efficiency and security
+
+
+Switches operate at the Data Link Layer of the TCP/IP model.
+
+Routers
+Routers connect different networks and direct data traffic using IP addresses. They determine the best path for data packets to reach their destination network.
+Routers:
+
+
+Read destination IP information from packet headers
+
+
+Forward packets between networks
+
+
+Allow communication across multiple networks
+
+
+Often include firewall capabilities for added security
+
+
+Routers operate at the Network Layer of the TCP/IP model.
+
+Modems and Wireless Access Points
+Modems
+A modem connects a home or office network to an ISP. It converts internet signals into a format compatible with local devices.
+ISPs may provide internet through:
+
+
+Telephone lines
+
+
+Coaxial cables
+
+
+Fiber optic cables
+
+
+The modem usually connects to a router, which then distributes connectivity throughout the network.
+Large enterprise networks often use more advanced broadband technologies instead of traditional modems.
+Wireless Access Points (WAPs)
+A wireless access point creates a wireless network using radio waves. Devices connect through Wi-Fi using wireless adapters.
+Wireless access points:
+
+
+Send and receive wireless signals
+
+
+Allow devices to connect without cables
+
+
+Forward traffic to routers and switches for further transmission
+
+
+Wi-Fi refers to the wireless communication standards used by these devices.
+
+Importance of Network Diagrams
+Network diagrams visually represent the structure of a network. They show:
+
+
+Devices connected to the network
+
+
+Relationships between devices
+
+
+Paths used for communication
+
+
+Administrators and security analysts use these diagrams to:
+
+
+Understand network architecture
+
+
+Identify potential vulnerabilities
+
+
+Plan security strategies
+
+
+Improve network management and troubleshooting
+
+
+These diagrams use symbols and connection lines to simplify complex network layouts and make analysis easier.
+
+
+
+
+
+
+
+
+Cloud computing - The practice of using remote servers, applications, and network services that are hosted on the internet instead of on local physical devices.
+
+Cloud network - A collection of servers or computers that store resources and data in remote data centers that can be accessed via the internet.
+
+Cloud service providers offer:
+On-demand storage
+Processing power
+Analytics
+
+
+
+
+Cloud Computing and Network Processes
+
+Traditional networks are commonly known as on-premise networks, where all networking equipment, servers, and storage devices are physically located within a company’s own facilities, such as offices or data centers. In this setup, the organization is responsible for purchasing, maintaining, upgrading, and securing all hardware and software components.
+
+Cloud computing works differently. Instead of relying entirely on hardware stored at a company’s physical location, businesses can use computing resources hosted remotely over the internet. These resources may include servers, applications, databases, networking services, and storage systems that are managed by external providers.
+
+A company that offers these online computing resources is known as a Cloud Service Provider (CSP). CSPs operate massive data centers around the world that contain large numbers of servers and networking equipment. Through these data centers, they provide services such as computing power, storage, databases, and networking solutions to organizations on a subscription or usage-based model.
+
+Organizations access cloud services through:
+
+Web-based management consoles
+APIs (Application Programming Interfaces)
+Remote management tools
+
+This allows companies to use advanced computing infrastructure without having to build and maintain it themselves.
+
+Main Types of Cloud Services
+
+Cloud service providers generally offer three primary service models: SaaS, IaaS, and PaaS.
+
+Software as a Service (SaaS)
+
+Software as a Service allows organizations to use software applications that are fully managed by the cloud provider. The software runs on the provider’s infrastructure, and users access it remotely through a web browser or internet connection.
+
+With SaaS:
+
+Companies do not need to install or maintain the software locally
+Updates and maintenance are handled by the provider
+Users can access applications from different devices and locations
+
+Examples include cloud-based email platforms, office productivity tools, and collaboration applications.
+
+Infrastructure as a Service (IaaS)
+
+Infrastructure as a Service provides virtualized computing resources through the cloud. Instead of buying physical servers or storage devices, organizations can rent these resources from a CSP.
+
+IaaS services may include:
+
+Virtual machines
+Cloud storage
+Networking components
+Containers
+Load balancers
+
+These resources are managed remotely through APIs or web dashboards. Organizations can run their existing applications on cloud infrastructure with little or no major redesign. Additionally, businesses can take advantage of cloud-specific features such as enhanced security, availability, and performance optimization.
+
+Platform as a Service (PaaS)
+
+Platform as a Service provides a development environment where programmers can build, test, and deploy custom applications without managing the underlying infrastructure.
+
+PaaS platforms usually offer:
+
+Development frameworks
+Databases
+Testing tools
+Deployment services
+Application hosting environments
+
+This allows developers to focus mainly on writing and improving applications while the cloud provider manages the servers, operating systems, and networking infrastructure.
+
+Hybrid and Multi-Cloud Environments
+
+Many organizations combine cloud services with their existing on-premise systems. This setup is called a hybrid cloud environment.
+
+In a hybrid cloud model:
+
+Some resources remain within the company’s physical infrastructure
+Other services operate through cloud providers
+
+Organizations often use hybrid environments to balance flexibility, cost savings, and control over sensitive systems or data.
+
+When a company uses services from multiple cloud providers simultaneously, it is known as a multi-cloud environment. Businesses may choose this strategy to improve redundancy, reduce dependency on a single provider, or select specialized services from different vendors.
+
+Today, hybrid cloud adoption is extremely common because it allows organizations to modernize their infrastructure while still maintaining some direct control over critical operations.
+
+Software-Defined Networking (SDN)
+
+Cloud providers also offer virtual networking technologies similar to physical networking hardware found in traditional environments.
+
+Software-Defined Networking (SDN) refers to networking systems that use software-based controls instead of relying only on dedicated hardware devices. In SDN environments, virtual versions of networking components are created and managed through software.
+
+Examples of virtualized network devices include:
+
+Virtual switches
+Virtual routers
+Virtual firewalls
+Virtual load balancers
+
+These services operate within the cloud provider’s infrastructure and are controlled through software interfaces rather than manual hardware configuration.
+
+Modern physical networking devices also support software-defined features, allowing network management and traffic routing to be handled programmatically.
+
+In cloud environments, SDN tools are hosted within the CSP’s data centers, enabling organizations to quickly configure and manage networks remotely.
+
+Advantages of Cloud Computing and SDNs
+
+Cloud computing and software-defined networking provide several major benefits to organizations. The most significant advantages include reliability, cost efficiency, and scalability.
+
+Reliability
+
+Cloud services are designed to provide consistent availability and stable performance. Reliability in cloud environments depends on factors such as:
+
+Service uptime
+Secure connections
+Data redundancy
+Continuous operation of systems
+
+Because cloud providers operate large-scale infrastructures with backup systems and global data centers, users can often access applications and services with minimal downtime or interruptions.
+
+This reliability supports both employees and customers by ensuring continuous access to important resources and services.
+
+Reduced Costs
+
+Traditional network infrastructure often requires substantial investment in hardware, software licenses, maintenance, upgrades, and technical staff.
+
+Cloud computing reduces these expenses because organizations can rent resources instead of purchasing and managing everything themselves.
+
+Cloud providers benefit from economies of scale since they operate enormous data centers capable of serving many customers simultaneously. As a result:
+
+Businesses avoid major upfront hardware costs
+Maintenance and updates are handled by the CSP
+Organizations only pay for the resources they use
+
+This makes advanced technology solutions more affordable for companies of different sizes.
+
+Scalability
+
+Scalability refers to the ability of systems to grow or shrink based on changing business demands.
+
+In traditional environments, scaling often requires purchasing additional equipment, which can be expensive and time-consuming. If demand later decreases, the organization may be left with unused infrastructure and unnecessary expenses.
+
+Cloud services solve this issue through an elastic usage model. Companies can quickly increase or decrease resources depending on current needs.
+
+For example, businesses can:
+
+Expand storage capacity
+Add virtual servers
+Increase network bandwidth
+Deploy additional security tools
+
+These changes can often be completed within minutes using APIs or web management consoles instead of physically installing new hardware.
+
+Cloud scalability also improves security response capabilities. Organizations can rapidly deploy protective technologies such as:
+
+Web Application Firewalls (WAFs)
+Intrusion Detection and Prevention Systems (IDS/IPS)
+Layer 3 and Layer 4 firewalls
+
+This flexibility allows businesses to respond faster to threats while maintaining strong network performance and operational efficiency.
+
+
+
+
+
+
+Data packet - A basic unit of information that travels from one device to another within a network.
+
+Bandwidth - The amount of data a device receives every second.
+
+Speed - The rate at which data packets are received or downloaded.
+
+Packet sniffing - The practice of capturing and inspecting data packets across a network.
+
+
+
+
+
+Transmission control protocol (TCP) - An internet communication protocol that allows two devices to form a connection and stream data.
+
+Internet protocol (IP) - A set of standards used for routing and addressing data packets as they travel between devices on a network.
+
+Port - A software-based location that organizes the sending and receiving of data between devices on a network.
+
+examples of Port numbers - Port 25 - Email
+			   Port 443 - Secure internet communication
+			   Port 20 - Large file transfer 
+
+
+
+TCP/IP model 
+A framework used to visualize how data is organized and transmitted across the network.
+
+4 layers of TCP/IP model:
+1. Network access layer
+2. Internet layer
+3. Transport layer 
+4. Application layer
+
+  
+
+
+
+The TCP/IP Model
+
+The TCP/IP model is a networking framework used to explain how data travels across networks and the internet. It helps network engineers, administrators, and cybersecurity professionals understand how communication occurs between devices and how different networking processes interact with one another.
+
+This model is especially useful when identifying network problems or investigating security incidents because it organizes communication into separate layers. By determining which layer is affected, professionals can better locate failures, attacks, or misconfigurations within a network.
+
+The TCP/IP model consists of four layers:
+
+Network Access Layer
+Internet Layer
+Transport Layer
+Application Layer
+
+Each layer performs specific tasks that contribute to the successful transmission of data from one device to another.
+
+Network Access Layer
+
+The Network Access Layer, also called the Data Link Layer, is responsible for handling the physical transmission of data across a local network. This layer manages how data packets are created and transferred between devices connected to the same network.
+
+It includes the hardware and physical components used for communication, such as:
+
+Network cables
+Switches
+Hubs
+Modems
+Network interface cards (NICs)
+Wireless connections
+
+One important protocol operating at this layer is the Address Resolution Protocol (ARP).
+
+Address Resolution Protocol (ARP)
+
+ARP is used to associate an IP address with a device’s physical MAC address on a local network. Since devices on the same network communicate using MAC addresses, ARP helps identify which MAC address belongs to a specific IP address.
+
+This process allows devices to locate and communicate with each other within the same physical network environment.
+
+Internet Layer
+
+The Internet Layer, sometimes referred to as the Network Layer, is responsible for routing data packets between networks and ensuring that packets reach the correct destination.
+
+This layer adds IP addressing information to packets so that devices know where the data originated and where it should be delivered.
+
+The Internet Layer also determines the protocols used to transport packets across interconnected networks.
+
+Common Protocols at the Internet Layer
+Internet Protocol (IP)
+
+The Internet Protocol is responsible for sending packets to the correct destination network. IP assigns addressing information that identifies both the sender and the receiver.
+
+IP works together with transport protocols such as TCP and UDP to complete communication between devices across networks.
+
+In TCP/IP communication:
+
+IP handles addressing and routing
+TCP or UDP handles delivery to applications and services
+
+TCP also helps retransmit lost or corrupted data to improve reliability.
+
+Internet Control Message Protocol (ICMP)
+
+ICMP is used to share network status information and report communication errors.
+
+It helps network administrators troubleshoot connectivity problems by providing information about:
+
+Lost or dropped packets
+Routing issues
+Connectivity failures
+Redirected traffic
+
+ICMP is commonly used by network diagnostic tools such as ping.
+
+Transport Layer
+
+The Transport Layer manages end-to-end communication between systems and controls how data is transmitted across the network.
+
+This layer is responsible for:
+
+Data delivery
+Traffic flow control
+Error handling
+Communication reliability
+
+The two primary protocols used at this layer are TCP and UDP.
+
+Transmission Control Protocol (TCP)
+
+Transmission Control Protocol (TCP) is a connection-oriented communication protocol. Before transmitting data, TCP establishes a reliable connection between devices.
+
+TCP ensures:
+
+Data arrives successfully
+Packets are received in the correct order
+Missing data is retransmitted
+Communication errors are detected
+
+TCP also uses port numbers to identify the destination application or service on a device.
+
+Because of its reliability, TCP is commonly used for:
+
+Web browsing
+Email services
+File transfers
+Secure communications
+User Datagram Protocol (UDP)
+
+User Datagram Protocol (UDP) is a connectionless protocol that sends data without first establishing a formal connection between devices.
+
+Unlike TCP, UDP:
+
+Does not guarantee delivery
+Does not retransmit lost packets
+Performs minimal error checking
+
+This makes UDP faster and more efficient for applications where speed is more important than reliability.
+
+UDP is often used for:
+
+Video streaming
+Online gaming
+Voice calls
+Live broadcasts
+
+These applications prioritize real-time performance over perfect accuracy.
+
+Application Layer
+
+The Application Layer is the top layer of the TCP/IP model and is responsible for enabling users and applications to interact with network services.
+
+This layer handles:
+
+Network requests
+Responses between applications
+User-facing internet services
+Data formatting and communication rules
+
+Protocols at this layer determine how applications exchange information across networks.
+
+Common Application Layer Protocols
+Hypertext Transfer Protocol (HTTP)
+
+HTTP is used for transferring web pages and website content across the internet.
+
+Simple Mail Transfer Protocol (SMTP)
+
+SMTP is used for sending and transferring email messages between mail servers.
+
+Secure Shell (SSH)
+
+SSH provides secure remote access to systems through encrypted communication.
+
+File Transfer Protocol (FTP)
+
+FTP allows files to be uploaded, downloaded, and transferred between systems.
+
+Domain Name System (DNS)
+
+DNS translates domain names, such as website names, into IP addresses that computers can understand and use for communication.
+
+TCP/IP Model vs OSI Model
+
+The TCP/IP model and the OSI model are both frameworks used to explain how networking and communication operate.
+
+The OSI model divides networking functions into seven layers, while the TCP/IP model simplifies these functions into four layers.
+
+Although structured differently, both models:
+
+Organize network communication into layers
+Define networking standards
+Help professionals troubleshoot network issues
+Improve understanding of data transmission processes
+
+The TCP/IP model combines several OSI layers together, making it a more practical and widely used model in real-world networking environments.
+
+Overall, the TCP/IP model serves as a simplified representation of how communication occurs across modern computer networks and the internet.
+
+
+
+
+
+
+
+
+
+
+TCP/IP and OSI Networking Models
+
+Two of the most important communication protocols used in networking are the Transmission Control Protocol (TCP) and the Internet Protocol (IP).
+
+TCP establishes and manages reliable connections between devices.
+IP handles addressing and routing so that data packets can travel across networks and reach the correct destination.
+
+These protocols operate within specific layers of the TCP/IP networking model.
+
+The TCP/IP model is a simplified networking framework made up of four layers, while the OSI (Open Systems Interconnection) model provides a more detailed structure consisting of seven layers. Both models are used to explain how data moves through a network and how communication occurs between devices.
+
+Understanding both models is important for network administrators and cybersecurity professionals because they help identify where communication failures, performance issues, or security threats occur.
+
+TCP/IP Model vs OSI Model
+
+The TCP/IP model organizes network communication into four layers:
+
+Application Layer
+Transport Layer
+Internet Layer
+Network Access Layer
+
+The OSI model expands these networking processes into seven layers:
+
+Application Layer
+Presentation Layer
+Session Layer
+Transport Layer
+Network Layer
+Data Link Layer
+Physical Layer
+
+The TCP/IP model combines several OSI layers into broader categories, making it more streamlined and commonly used in practical networking environments. The OSI model, however, provides a more detailed explanation of networking operations and is widely used for learning, troubleshooting, and security analysis.
+
+Security professionals often use both models to determine where attacks, communication failures, or protocol issues occur during network operations.
+
+Layer 7: Application Layer
+
+The Application Layer is the layer closest to the end user. It includes the protocols and services that applications use to communicate over the internet.
+
+This layer is responsible for enabling user interaction with network services through software applications such as:
+
+Web browsers
+Email clients
+Messaging applications
+File-sharing tools
+
+For example:
+
+Web browsers use HTTP or HTTPS to exchange website data with web servers.
+Email systems use SMTP to send and receive messages.
+DNS is used to convert domain names into IP addresses so devices can locate web servers.
+
+The defining feature of this layer is that it directly supports communication between users and network applications.
+
+Layer 6: Presentation Layer
+
+The Presentation Layer focuses on data formatting, translation, and encryption. Its job is to ensure that data sent from one system can be correctly interpreted by another system, even if they use different formats.
+
+Functions performed at this layer include:
+
+Data conversion
+Compression
+Encryption and decryption
+Character encoding
+
+One common example is SSL/TLS encryption, which secures communication between web browsers and web servers on HTTPS websites.
+
+The Presentation Layer helps standardize how information is represented across different systems and applications.
+
+Layer 5: Session Layer
+
+The Session Layer manages the establishment, maintenance, and termination of communication sessions between devices.
+
+A session begins when two systems create a connection for communication and ends when the data transfer is complete.
+
+Responsibilities of this layer include:
+
+Session creation and termination
+Authentication processes
+Session synchronization
+Reconnection management
+Checkpoint creation during transfers
+
+Checkpoints are especially useful during interruptions because they allow communication to resume from the last successful point instead of restarting the entire transfer.
+
+The Session Layer acts as a coordinator between higher-level applications and lower networking layers.
+
+Layer 4: Transport Layer
+
+The Transport Layer handles the reliable delivery of data between systems.
+
+Its main responsibilities include:
+
+Managing data transfer speed
+Controlling traffic flow
+Segmenting large data into smaller pieces
+Reassembling data at the destination
+Detecting transmission errors
+
+Large transmissions are divided into smaller segments so they can travel more efficiently across the network. Once received, the segments are rebuilt into the original data.
+
+The two primary protocols operating at this layer are:
+
+Transmission Control Protocol (TCP)
+
+TCP establishes a reliable connection before sending data. It ensures that:
+
+Data arrives completely
+Packets remain in the correct order
+Lost data is retransmitted
+
+TCP is commonly used for applications requiring reliable communication, such as web browsing, email, and file transfers.
+
+User Datagram Protocol (UDP)
+
+UDP is a connectionless protocol that sends data without creating a dedicated connection first.
+
+UDP prioritizes speed over reliability and is commonly used in:
+
+Video streaming
+Online gaming
+Voice and video calls
+Live broadcasts
+
+Because it performs less error checking, UDP enables faster communication for real-time applications.
+
+Layer 3: Network Layer
+
+The Network Layer is responsible for moving data packets between networks.
+
+This layer:
+
+Receives frames from the Data Link Layer
+Determines packet destinations using IP addresses
+Routes packets across networks
+Helps routers forward traffic correctly
+
+Data packets contain addressing information that tells routers where the data should be delivered. Routers then guide the packets from the sender’s network to the destination network.
+
+This layer plays a major role in internet communication and routing.
+
+Layer 2: Data Link Layer
+
+The Data Link Layer controls communication within the same local network.
+
+It organizes how devices send and receive data frames across physical network connections.
+
+Devices and technologies associated with this layer include:
+
+Switches
+Network Interface Cards (NICs)
+MAC addresses
+
+The Data Link Layer helps ensure that data moves correctly between devices connected to the same network infrastructure.
+
+Some protocols operating at this layer include:
+
+Network Control Protocol (NCP)
+High-Level Data Link Control (HDLC)
+Synchronous Data Link Control (SDLC)
+
+This layer focuses on local delivery rather than routing data across multiple networks.
+
+Layer 1: Physical Layer
+
+The Physical Layer represents the actual hardware and physical connections used for network communication.
+
+This includes:
+
+Ethernet cables
+Fiber optic cables
+Wireless signals
+Hubs
+Modems
+Connectors
+Electrical transmissions
+
+At this layer, data is converted into binary signals consisting of 0s and 1s so it can travel through cables, radio waves, or other transmission media.
+
+The receiving device then interprets these signals and passes the data upward through the higher layers of the OSI model for processing.
+
+The Physical Layer forms the foundation of all network communication because it handles the actual transmission of data between devices.
+
+
+
+
+
+
+Internet Protocol (IP) address - A unique string of characters that identifies the location of a device on the internet.
+
+2 types of Ip addresses:
+IPv4
+IPv6
+
+MAC address - A unique alphanumeric identifier that is assigned to each physical device on a network.
+
+
+
+Operations at the network layer
+Functions at the network layer organize the addressing and delivery of data packets across the network from the host device to the destination device. This includes directing the packets from one router to another router across the internet, till it reaches the internet protocol (IP) address of the destination network. The destination IP address is contained within the header of each data packet. This address will be stored for future routing purposes in  routing tables along the packet’s path to its destination.
+
+All data packets include an IP address. A data packet is also referred to as an IP packet for TCP connections or a datagram for UDP connections. A router uses the IP address to route packets from network to network based on information contained in the IP header of a data packet. Header information communicates more than just the address of the destination. It also includes information such as the source IP address, the size of the packet, and which protocol will be used for the data portion of the packet. 
+
+Format of an IPv4 packet
+An IP packet divided into two parts: a section on the left marked “header,” and section on the right marked “data”
+Next, you can review the format of an IP version 4 (IPv4) packet and review a detailed graphic of the packet header. An IPv4 packet is made up of two sections, the header and the data:
+
+An IPv4 header format is determined by the IPv4 protocol and includes the IP routing information that devices use to direct the packet. The size of the IPv4 header ranges from 20 to 60 bytes. The first 20 bytes are a fixed set of information containing data such as the source and destination IP address, header length, and total length of the packet. The last set of bytes can range from 0 to 40 and consists of the options field.
+
+The length of the data section of an IPv4 packet can vary greatly in size. However, the maximum possible size of an IPv4 packet is 65,535 bytes. It contains the message being transferred over the internet, like website information or email text. 
+
+Diagram of an IPv4 packet header, 13 fields, and bit size
+There are 13 fields within the header of an IPv4 packet:
+
+Version (VER): This 4 bit component tells receiving devices what protocol the packet is using. The packet used in the illustration above is an IPv4 packet.
+
+IP Header Length (HLEN or IHL): HLEN is the packet’s header length. This value indicates where the packet header ends and the data segment begins. 
+
+Type of Service (ToS): Routers prioritize packets for delivery to maintain quality of service on the network. The ToS field provides the router with this information.
+
+Total Length: This field communicates the total length of the entire IP packet, including the header and data. The maximum size of an IPv4 packet is 65,535 bytes.
+
+Identification: IPv4 packets can be up to 65, 535 bytes, but most networks have a smaller limit. In these cases, the packets are divided, or fragmented, into smaller IP packets. The identification field provides a unique identifier for all the fragments of the original IP packet so that they can be reassembled once they reach their destination.
+
+Flags: This field provides the routing device with more information about whether the original packet has been fragmented and if there are more fragments in transit.
+
+Fragmentation Offset: The fragment offset field tells routing devices where in the original packet the fragment belongs.
+
+Time to Live (TTL): TTL prevents data packets from being forwarded by routers indefinitely. It contains a counter that is set by the source. The counter is decremented by one as it passes through each router along its path. When the TTL counter reaches zero, the router currently holding the packet will discard the packet and return an ICMP Time Exceeded error message to the sender. 
+
+Protocol: The protocol field tells the receiving device which protocol will be used for the data portion of the packet.
+
+Header Checksum: The header checksum field contains a checksum that can be used to detect corruption of the IP header in transit. Corrupted packets are discarded.
+
+Source IP Address: The source IP address is the IPv4 address of the sending device.
+
+Destination IP Address: The destination IP address is the IPv4 address of the destination device.
+
+Options: The options field allows for security options to be applied to the packet if the HLEN value is greater than five. The field communicates these options to the routing devices.
+
+Difference between IPv4 and IPv6
+In an earlier part of this course, you learned about the history of IP addressing. As the internet grew, it became clear that all of the IPv4 addresses would eventually be depleted; this is called IPv4 address exhaustion. At the time, no one had anticipated how many computing devices would need an IP address. IPv6 was developed to mitigate IPv4 address exhaustion and other related concerns. 
+
+Some of the key differences between IPv4 and IPv6 include the length and the format of the addresses. IPv4 addresses are made up of four decimal numbers separated by periods, each number ranging from 0 to 255. Together the numbers span 4 bytes, and allow for up to 4.3 billion possible addresses. An example of an IPv4 address would be: 198.51.100.0. IPv6 addresses are made of eight hexadecimal numbers separated by colons, each number consisting of up to four hexadecimal digits. Together, all numbers span 16 bytes, and allow for up to 340 undecillion addresses (340 followed by 36 zeros). An example of an IPv6 address would be: 2002:0db8:0000:0000:0000:ff21:0023:1234.
+
+Note: to represent one or more consecutive sets of all zeros, you can replace the zeros with a double colon "::", so the above IPv6 address would be "2002:0db8::ff21:0023:1234."
+
+There are also some differences in the layout of an IPv6 packet header. The IPv6 header format is much simpler than IPv4. For example, the IPv4 Header includes the IHL, Identification, and Flags fields, whereas the IPv6 does not. The IPv6 header only introduces the Flow Label field, where the Flow Label identifies a packet as requiring special handling by other IPv6 routers. 
+
+Side by side diagrams of an IPv4 packet header and a simplified IPv6 packet
+There are some important security differences between IPv4 and IPv6. IPv6 offers more efficient routing and eliminates private address collisions that can occur on IPv4 when two devices on the same network are attempting to use the same address. 
+
+
+
+
+Networking and Cloud Computing Terms
+Bandwidth
+
+Bandwidth refers to the maximum amount of data that can be transferred across a network within a given period of time. It is commonly measured in bits per second (bps).
+
+Cloud Computing
+
+Cloud computing is the use of internet-based servers, applications, and networking services instead of relying only on local physical hardware and systems.
+
+Cloud Network
+
+A cloud network is a group of remote servers and computing resources located in data centers that store and manage data accessible through the internet.
+
+Data Packet
+
+A data packet is a small unit of information transmitted between devices across a network during communication.
+
+Hub
+
+A hub is a networking device that sends incoming data to every connected device on the network rather than directing it to a specific destination.
+
+Internet Protocol (IP)
+
+Internet Protocol is a collection of rules and standards used to address and route data packets between devices on a network.
+
+Internet Protocol (IP) Address
+
+An IP address is a unique numerical identifier assigned to a device so it can be recognized and located on a network or the internet.
+
+Local Area Network (LAN)
+
+A LAN is a network that covers a limited geographic area such as a house, office, or school building.
+
+Media Access Control (MAC) Address
+
+A MAC address is a unique hardware identifier assigned to a network-enabled physical device for communication within a local network.
+
+Modem
+
+A modem is a device that connects a local network or router to an internet service provider (ISP), enabling internet access.
+
+Network
+
+A network is a collection of connected devices that can communicate and exchange information with one another.
+
+Open Systems Interconnection (OSI) Model
+
+The OSI model is a seven-layer framework that explains how computers communicate and transfer data across networks.
+
+Packet Sniffing
+
+Packet sniffing is the process of capturing and analyzing network data packets as they travel across a network.
+
+Port
+
+A port is a logical communication point used by devices and applications to organize incoming and outgoing network traffic.
+
+Router
+
+A router is a networking device that connects multiple networks and forwards data packets between them.
+
+Speed
+
+Network speed refers to how quickly data is transmitted or received by a device, usually measured in bits per second.
+
+Switch
+
+A switch is a networking device that sends data directly between connected devices within a network, improving communication efficiency.
+
+TCP/IP Model
+
+The TCP/IP model is a networking framework that explains how data is structured, transmitted, and received across networks.
+
+Transmission Control Protocol (TCP)
+
+TCP is a connection-oriented communication protocol that establishes reliable connections between devices for accurate data transfer.
+
+User Datagram Protocol (UDP)
+
+UDP is a connectionless communication protocol that sends data without establishing a dedicated connection beforehand.
+
+Wide Area Network (WAN)
+
+A WAN is a network that extends across large geographic regions such as cities, countries, or even globally.
+
+
+
+
+
+

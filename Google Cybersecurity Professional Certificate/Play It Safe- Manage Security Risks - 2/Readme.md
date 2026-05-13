@@ -80,8 +80,8 @@ This module helped me understand how cybersecurity is not just about tools, but 
 
 ## Status
 
-Learning Progress: In Progress 
-Certificate Progress: In Progress  
+Learning Progress: Completed
+Certificate Progress: Completed
 
 ---
 
