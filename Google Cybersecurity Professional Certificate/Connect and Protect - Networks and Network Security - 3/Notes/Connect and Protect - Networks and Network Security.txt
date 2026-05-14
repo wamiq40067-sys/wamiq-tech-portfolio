@@ -947,3 +947,1418 @@ A WAN is a network that extends across large geographic regions such as cities, 
 
 
 
+
+
+
+Module 2
+Network protocols - A set of rules used by two or more devices on a network to describe the order of delivery and structure of data.
+
+Transmission Control Protocol (TCP) - An internet communications protocol that allows 2 devices to form a connection and stream data.
+
+Address Resolution Protocol (ARP) - A network protocol used to determine the MAC address of the next router or device on a path.
+
+HyperText Transfer Protocol Secure (HTTPS) - A network protocol that provides a secure method of communication between clients and website servers.
+
+Domain Name System (DNS) - A network protocol that translates internet domain names into IP addresses.
+
+HTTPS Encrypts data using the Secure Sockets Layer and Transport Layer Security. (SSL/TLS)
+
+
+
+
+
+Overview of Network Protocols
+
+A network protocol is a collection of rules and standards that devices use to communicate across a network. These protocols define how data should be structured, transmitted, received, and processed between connected systems.
+
+When data travels across a network, the protocol information acts like a shared language between devices. It provides instructions that tell the receiving device how to interpret and handle the incoming data. Without protocols, devices from different manufacturers and systems would not be able to communicate effectively.
+
+Network protocols are essential for internet communication, file transfers, email services, remote access, and many other network operations.
+
+Although protocols are necessary for communication, they can also introduce security risks. Some protocols contain weaknesses that attackers may attempt to exploit. For example, cybercriminals may abuse the Domain Name System (DNS) protocol to redirect users from legitimate websites to harmful or fake websites that distribute malware or steal information.
+
+Because of these risks, cybersecurity professionals must understand both the functionality and security implications of common network protocols.
+
+Categories of Network Protocols
+
+Network protocols are generally grouped into three major categories:
+
+Communication Protocols
+Management Protocols
+Security Protocols
+
+There are many networking protocols in use today, but understanding the most common ones is especially important for network administrators and entry-level security analysts.
+
+Communication Protocols
+
+Communication protocols control how information is exchanged between devices on a network. They define:
+
+How data is transmitted
+The timing of communication
+Error handling methods
+Recovery procedures for lost data
+
+Below are some widely used communication protocols.
+
+Transmission Control Protocol (TCP)
+
+TCP is a transport-layer protocol that creates a reliable connection between two devices before data transmission begins.
+
+TCP uses a process called the three-way handshake to establish a connection:
+
+The client sends a SYN (synchronize) request
+The server responds with a SYN/ACK acknowledgment
+The client sends a final ACK response
+
+After this process, the connection becomes active and data transfer can begin.
+
+TCP focuses on reliability by:
+
+Confirming packet delivery
+Reordering packets correctly
+Retransmitting missing data
+Detecting transmission errors
+
+In the TCP/IP model, TCP operates at the Transport Layer.
+
+User Datagram Protocol (UDP)
+
+UDP is also a transport-layer protocol, but unlike TCP, it does not establish a formal connection before sending data.
+
+Because UDP skips connection setup and extensive error checking:
+
+Data transmission is faster
+Reliability is lower than TCP
+Lost packets are usually not retransmitted
+
+UDP is commonly used for applications that prioritize speed and real-time communication, such as:
+
+Streaming services
+Online gaming
+DNS requests
+Voice and video communication
+
+UDP also operates at the Transport Layer of the TCP/IP model.
+
+Hypertext Transfer Protocol (HTTP)
+
+HTTP is an application-layer protocol used for communication between web browsers and website servers.
+
+It allows clients to request web pages and receive website content from servers.
+
+Key characteristics of HTTP include:
+
+Uses port 80
+Transfers website data without encryption
+Considered insecure for sensitive communication
+
+Because HTTP traffic is not encrypted, many websites now use HTTPS instead.
+
+HTTP operates at the Application Layer.
+
+Domain Name System (DNS)
+
+DNS is responsible for translating domain names into IP addresses.
+
+For example, when a user types a website name into a browser, a DNS server locates the corresponding IP address needed to access the website.
+
+Important DNS details include:
+
+Commonly uses UDP port 53
+May switch to TCP when responses are large
+Operates at the Application Layer
+
+DNS is one of the most essential services on the internet because it allows users to access websites using readable names instead of numerical IP addresses.
+
+Management Protocols
+
+Management protocols are used to monitor, configure, and maintain network devices and performance.
+
+These protocols help administrators manage network operations and troubleshoot problems efficiently.
+
+Simple Network Management Protocol (SNMP)
+
+SNMP is used to monitor and manage devices connected to a network.
+
+With SNMP, administrators can:
+
+Monitor bandwidth usage
+Change device settings
+Reset passwords
+Modify network configurations
+Collect device performance data
+
+SNMP operates at the Application Layer of the TCP/IP model.
+
+Internet Control Message Protocol (ICMP)
+
+ICMP is used by networking devices to communicate error information and network status updates.
+
+It helps identify problems related to:
+
+Connectivity failures
+Packet loss
+Routing issues
+Network latency
+
+One common use of ICMP is the ping command, which tests whether a device is reachable across a network.
+
+ICMP operates at the Internet Layer of the TCP/IP model.
+
+Security Protocols
+
+Security protocols are designed to protect data as it travels across networks. These protocols use encryption and secure communication methods to reduce the risk of unauthorized access or interception.
+
+Hypertext Transfer Protocol Secure (HTTPS)
+
+HTTPS is the secure version of HTTP.
+
+It protects communication between web browsers and servers using SSL/TLS encryption.
+
+Important HTTPS characteristics include:
+
+Uses port 443
+Encrypts transmitted data
+Prevents attackers from easily reading network traffic
+Improves website security and user privacy
+
+HTTPS operates at the Application Layer.
+
+Secure File Transfer Protocol (SFTP)
+
+SFTP is a secure method for transferring files across networks.
+
+It operates using Secure Shell (SSH) technology and commonly uses TCP port 22.
+
+SFTP protects file transfers using strong encryption methods such as:
+
+Advanced Encryption Standard (AES)
+SSH encryption mechanisms
+
+SFTP is widely used in:
+
+Cloud storage systems
+Secure remote file management
+Enterprise file transfers
+
+Whenever users upload or download files securely from cloud storage platforms, SFTP is often involved behind the scenes.
+
+SFTP also operates at the Application Layer of the TCP/IP model.
+
+Important Security Note
+
+Although encryption protocols such as HTTPS and SFTP protect the contents of transmitted data, they do not completely hide all network information.
+
+For example, attackers may still be able to view:
+
+Source IP addresses
+Destination IP addresses
+Traffic patterns
+Communication timing
+
+This means that while encryption significantly improves confidentiality, some metadata about the communication can still be observed if network traffic is intercepted.
+
+
+
+
+
+
+
+Network Address Translation (NAT)
+
+Devices connected within a home or office network usually communicate using private IP addresses. These addresses are used only inside the local network and are not directly accessible from the public internet.
+
+However, when devices on a Local Area Network (LAN) need internet access, they must communicate through a public IP address. Instead of assigning a separate public IP address to every device, the router uses a process called Network Address Translation (NAT).
+
+NAT allows a router or firewall to:
+
+Replace a device’s private IP address with the network’s public IP address for outgoing traffic
+Convert the public address back to the correct private address when responses return
+
+This enables multiple devices on the same local network to share a single public IP address while still communicating independently with the internet.
+
+NAT typically operates across the:
+
+Internet Layer
+Transport Layer
+
+of the TCP/IP model.
+
+Private vs Public IP Addresses
+Private IP Addresses
+
+Private IP addresses are used inside local networks and are assigned by routers.
+
+Characteristics of private IP addresses:
+
+Used only within internal networks
+Not directly reachable from the public internet
+Free to use
+Unique only inside the local network
+
+Common private IPv4 address ranges include:
+
+10.0.0.0−10.255.255.255
+
+172.16.0.0−172.31.255.255
+
+192.168.0.0−192.168.255.255
+
+Public IP Addresses
+
+Public IP addresses are globally unique addresses used for communication over the internet.
+
+These addresses are:
+
+Assigned through Internet Service Providers (ISPs)
+Managed under internet authorities such as IANA
+Reachable from anywhere on the internet
+Usually leased or purchased by organizations and providers
+
+Public IPv4 address ranges include nearly all address spaces outside the reserved private ranges.
+
+Dynamic Host Configuration Protocol (DHCP)
+
+Dynamic Host Configuration Protocol (DHCP) is a management protocol used to automatically configure devices on a network.
+
+DHCP works with routers or DHCP servers to assign devices important network settings such as:
+
+IP addresses
+Default gateways
+DNS server addresses
+Subnet masks
+
+Without DHCP, network administrators would need to manually configure each device individually.
+
+DHCP uses:
+
+UDP port 67 for DHCP servers
+UDP port 68 for DHCP clients
+
+DHCP operates at the Application Layer of the TCP/IP model.
+
+Address Resolution Protocol (ARP)
+
+ARP is used to translate IP addresses into MAC addresses within a local network.
+
+Every network device has:
+
+An IP address used for logical communication
+A MAC address permanently assigned to its network interface card (NIC)
+
+Although IP addresses may change, MAC addresses remain fixed for the hardware device.
+
+When a device needs to communicate locally but only knows the target IP address, ARP helps identify the matching MAC address.
+
+ARP functions include:
+
+Mapping IP addresses to MAC addresses
+Maintaining ARP cache tables
+Supporting local network communication
+
+ARP operates mainly at the Network Access Layer of the TCP/IP model.
+
+Because ARP functions below the application layer, it does not use port numbers.
+
+Telnet
+
+Telnet is an application-layer protocol used for remote access and device management.
+
+It allows users to connect to another system using command-line communication. However, Telnet sends all data in plain text, making it insecure for modern environments.
+
+Characteristics of Telnet:
+
+Uses TCP port 23
+Does not encrypt traffic
+Vulnerable to interception and credential theft
+
+Because of its security weaknesses, Telnet has largely been replaced by SSH.
+
+Secure Shell (SSH)
+
+SSH is a secure protocol used for encrypted remote access to systems and devices.
+
+SSH provides:
+
+Secure authentication
+Encrypted communication
+Safer remote administration
+
+Unlike Telnet, SSH protects transmitted data from interception.
+
+Key SSH details:
+
+Uses TCP port 22
+Replaces insecure remote access protocols
+Operates at the Application Layer
+
+SSH is widely used by system administrators, cybersecurity teams, and cloud infrastructure managers.
+
+Post Office Protocol (POP3)
+
+POP3 is an email retrieval protocol used to download messages from a mail server to a local device.
+
+When users refresh their email application, POP3 may retrieve newly received messages from the mail server.
+
+Characteristics of POP3:
+
+Downloads emails locally before reading
+Messages may optionally be removed from the server after download
+Limited synchronization across multiple devices
+
+POP3 commonly uses:
+
+TCP/UDP port 110 for unencrypted communication
+TCP/UDP port 995 for encrypted communication using SSL/TLS
+
+POP3 operates at the Application Layer.
+
+Internet Message Access Protocol (IMAP)
+
+IMAP is another protocol used for receiving email, but unlike POP3, it keeps messages stored on the mail server.
+
+This allows users to access the same mailbox from multiple devices while maintaining synchronization.
+
+Features of IMAP include:
+
+Downloads email headers and content as needed
+Supports multi-device synchronization
+Allows partial reading before full download
+Keeps mail stored remotely on the server
+
+IMAP uses:
+
+TCP port 143 for unencrypted communication
+TCP port 993 for encrypted communication over TLS
+
+IMAP also operates at the Application Layer.
+
+Simple Mail Transfer Protocol (SMTP)
+
+SMTP is used to send and route outgoing email messages between mail servers and recipients.
+
+SMTP works with mail transfer systems to ensure messages reach the correct destination by resolving email server addresses through DNS.
+
+SMTP functions include:
+
+Sending outgoing mail
+Routing email between servers
+Supporting mail delivery infrastructure
+Assisting spam control measures
+
+SMTP commonly uses:
+
+TCP/UDP port 25 for unencrypted email
+TCP/UDP port 587 for encrypted communication using TLS
+
+SMTP operates at the Application Layer.
+
+Importance of Ports and Protocols
+
+Port numbers help devices determine which service or application should process incoming data packets.
+
+Firewalls and security systems often use port numbers to:
+
+Allow trusted traffic
+Block unwanted communication
+Restrict access to sensitive services
+
+For example, an organization may configure its firewall to only allow secure email traffic through encrypted POP3 port 995 from approved IP addresses.
+
+Understanding protocols and port numbers is extremely important for cybersecurity professionals because they are frequently involved in:
+
+Network analysis
+Security monitoring
+Incident investigations
+Firewall configuration
+Technical interviews
+Common Protocols and Port Numbers
+Protocol	Port Information
+DHCP	UDP 67 (server), UDP 68 (client)
+ARP	No port number
+Telnet	TCP 23
+SSH	TCP 22
+POP3	TCP/UDP 110 (unencrypted), TCP/UDP 995 (encrypted)
+IMAP	TCP 143 (unencrypted), TCP 993 (encrypted)
+SMTP	TCP/UDP 25 (unencrypted)
+SMTPS	TCP/UDP 587 (encrypted with TLS)
+
+
+
+
+
+
+
+IEEE802.11 (Wi-Fi)
+A set of standards that define communication for wireless LANs
+
+IEEE - Institute of Electrical and Electronics Engineers.
+
+802.11 is a suite of protocols used in wireless communication 
+
+
+WiFi Protected Access (WPA)  - A wireless security protocol for devices to connect to the internet.
+
+
+
+
+
+
+
+
+Introduction to Wireless Communication Protocols
+
+Wireless internet access is commonly referred to as Wi-Fi. Wi-Fi is based on a group of communication standards used for wireless local area networks (WLANs). The term “Wi-Fi” was originally created by the Wireless Ethernet Compatibility Alliance (WECA), which later became known as the Wi-Fi Alliance.
+
+The technical standards behind Wi-Fi are part of the IEEE 802.11 family of networking standards developed by the Institute of Electrical and Electronics Engineers (IEEE). Because of this, wireless networking technologies are often identified as IEEE 802.11 standards.
+
+To protect wireless communication, different wireless security protocols have been developed over time. As older protocols became vulnerable to attacks, newer versions were introduced with stronger encryption and improved authentication methods.
+
+This evolution moved from:
+
+WEP
+WPA
+WPA2
+WPA3
+
+Each new version improved wireless security and addressed weaknesses found in earlier technologies.
+
+Wired Equivalent Privacy (WEP)
+
+Wired Equivalent Privacy (WEP) was the first widely used wireless security protocol and was introduced in 1999.
+
+The goal of WEP was to provide wireless networks with a level of privacy similar to traditional wired networks.
+
+Although WEP was important during the early growth of wireless networking, it is now considered outdated and insecure.
+
+Key Characteristics of WEP
+Designed for early wireless networks
+Intended to secure Wi-Fi communication
+Used encryption to protect wireless traffic
+Became vulnerable due to weaknesses in the protocol itself
+
+Today, WEP is rarely used because attackers can break its encryption relatively easily.
+
+However, cybersecurity professionals may still encounter WEP in:
+
+Older routers
+Legacy devices
+Outdated network environments
+
+Because WEP contains major security flaws, it is considered a high-risk wireless protocol.
+
+Wi-Fi Protected Access (WPA)
+
+Wi-Fi Protected Access (WPA) was introduced in 2003 as an improvement over WEP.
+
+WPA was designed to:
+
+Fix WEP vulnerabilities
+Improve wireless security
+Maintain compatibility with older hardware devices
+
+WPA introduced a stronger encryption system known as:
+
+Temporal Key Integrity Protocol (TKIP)
+
+TKIP improved security by:
+
+Using larger encryption keys
+Dynamically changing encryption information
+Making brute-force attacks more difficult
+
+WPA also introduced a message integrity check, which helps detect whether transmitted data has been altered during communication.
+
+This feature helps prevent:
+
+Packet tampering
+Replay attacks
+Unauthorized modification of transmissions
+WPA Vulnerabilities
+
+Although WPA improved wireless security significantly, it still contained weaknesses.
+
+One major vulnerability is the:
+
+KRACK Attack (Key Reinstallation Attack)
+
+In a KRACK attack, attackers manipulate the WPA authentication handshake process and may force the reuse of encryption keys.
+
+Under certain conditions, attackers can:
+
+Intercept wireless traffic
+Decrypt communications
+Inject malicious data into transmissions
+
+Because of these security concerns, WPA was eventually replaced by WPA2.
+
+WPA2
+
+WPA2 was released in 2004 and became the primary wireless security standard for Wi-Fi networks.
+
+WPA2 improved wireless protection by replacing older encryption methods with:
+
+Advanced Encryption Standard (AES)
+
+AES provides much stronger encryption than earlier wireless security methods.
+
+WPA2 also introduced:
+
+Counter Mode Cipher Block Chaining Message Authentication Code Protocol (CCMP)
+
+CCMP improves:
+
+Data confidentiality
+Message authentication
+Data integrity
+
+Due to these improvements, WPA2 became the standard security protocol for most wireless networks worldwide.
+
+However, WPA2 is still vulnerable to KRACK attacks, which contributed to the development of WPA3.
+
+WPA2 Modes
+
+WPA2 includes two operating modes:
+
+WPA2 Personal
+
+WPA2 Personal is commonly used for home networks.
+
+Characteristics include:
+
+Easier setup process
+Shared password across devices
+Suitable for small environments
+
+Because all devices use the same wireless passphrase, managing large numbers of users becomes difficult in enterprise environments.
+
+WPA2 Enterprise
+
+WPA2 Enterprise is designed for businesses and organizations.
+
+It provides:
+
+Centralized authentication
+Individual user access management
+Better administrative control
+Stronger enterprise security
+
+In enterprise mode:
+
+Users do not directly access encryption keys
+Administrators can easily add or remove network access
+Authentication is managed through centralized systems
+
+Although setup is more complex than WPA2 Personal, it provides much stronger organizational security.
+
+WPA3
+
+WPA3 was introduced in 2018 as the newest generation of Wi-Fi security protocols.
+
+It was specifically developed to address vulnerabilities found in WPA2 and improve wireless protection overall.
+
+Major Improvements in WPA3
+Protection Against KRACK Attacks
+
+WPA3 improves the authentication process and reduces the risk of key reinstallation attacks that affected WPA2.
+
+Simultaneous Authentication of Equals (SAE)
+
+WPA3 replaces older authentication methods with:
+
+Simultaneous Authentication of Equals (SAE)
+
+SAE improves password security by:
+
+Protecting authentication exchanges
+Preventing offline password-guessing attacks
+Making it more difficult for attackers to capture and crack wireless credentials
+
+This mechanism prevents attackers from downloading authentication data and attempting to decode passwords later.
+
+Stronger Encryption
+
+WPA3 increases encryption strength for wireless communication.
+
+Key encryption improvements include:
+
+Standard 128-bit encryption
+Optional 192-bit encryption in WPA3-Enterprise mode
+
+These enhancements improve protection for sensitive business and enterprise environments.
+
+Evolution of Wireless Security Protocols
+
+The development of wireless security protocols reflects the ongoing effort to improve Wi-Fi protection against evolving cyber threats.
+
+Protocol	Release Year	Main Features	Security Status
+WEP	1999	Basic wireless encryption	Insecure and outdated
+WPA	2003	TKIP encryption, integrity checks	Vulnerable to KRACK
+WPA2	2004	AES encryption, CCMP	Strong but still vulnerable to KRACK
+WPA3	2018	SAE authentication, stronger encryption	Most secure modern standard
+
+
+
+Wi-Fi technology is based on IEEE 802.11 standards.
+Wireless security protocols protect wireless network communication.
+WEP is outdated and vulnerable to attacks.
+WPA improved security using TKIP and message integrity checks.
+WPA2 introduced AES encryption and became the industry standard.
+WPA3 improves authentication security and provides stronger encryption.
+Enterprise wireless environments usually use WPA2-Enterprise or WPA3-Enterprise for better access control and security management.
+
+
+
+
+
+
+
+
+
+Firewall - A network security device that monitors traffic to and from your network.
+
+Port filtering - A firewall function that blocks or allows certain port numbers to limit unwanted communication
+
+Hardware firewall - The most basic way to defend against threats to a network. It inspects each data packet before it's allowed to enter the network.
+
+Software firewall - performs the same function to Hardware firewall, instead it's a software program.
+
+Cloud-based firewall - Cloud service providers offer firewalls as a service, or FaaS, for organizations.
+
+Cloud-based firewall is a software firewall that are hosted by a cloud service provider.
+
+
+Stateful firewalls - A class of firewall that keeps track of information passing through it and proactively filters out threats.
+
+Stateless - A class of firewall that operates based on predefined rules and does not keep track of information from data packets.
+
+
+Benefits of next generation firewalls (NGFWs):
+Deep packet inspection
+Intrusion protection
+Threat intelligence
+
+
+
+Virtual Private Network (VPN) - A network security service that changes your public IP address and hides your virtual location so that you can keep your data private when you are using a public network like the internet.
+
+Encapsulation - A process performed by a VPN service that protects your data by wrapping sensitive data in other data packets. 
+
+security zone - A segment of a network that protects internal network from the internet.
+
+Network Segmentation - A security technique that divides the network into segments.
+
+Uncontrolled zone - Any network outside of the organization's control.
+
+Controlled zone - A subnet that protects the internal network from the uncontrolled zone.
+
+Areas in the controlled zone:
+Demilitarized zone (DMZ)
+Internal network
+Restricted zone (inside Internal network)
+
+
+
+
+
+
+
+
+Overview of Subnetting
+
+Subnetting is the practice of dividing a large network into multiple smaller sections called subnets. Each subnet functions as its own smaller network within the larger overall network.
+
+A simple way to understand subnetting is to imagine a large city divided into separate neighborhoods. The entire city represents the main network, while each neighborhood represents an individual subnet.
+
+Subnetting helps organize network traffic more efficiently by grouping devices into smaller sections. Every subnet is identified through a combination of:
+
+An IP address
+A subnet mask (or network prefix)
+
+This combination defines which devices belong to a particular subnet.
+
+Purpose of Subnetting
+
+Subnetting is commonly used to improve:
+
+Network organization
+Communication efficiency
+Bandwidth management
+Security segmentation
+
+When devices communicate within the same subnet, the traffic usually remains inside that subnet instead of traveling across the entire network. This reduces unnecessary traffic and improves overall network performance.
+
+For example:
+
+Devices in one department may communicate within one subnet
+Another department may use a separate subnet
+Routers manage communication between these subnetworks
+
+This structure allows networks to operate more efficiently and securely.
+
+Classless Inter-Domain Routing (CIDR)
+
+Modern subnetting commonly uses Classless Inter-Domain Routing (CIDR).
+
+CIDR is a method of assigning subnet masks to IP addresses in a more flexible and efficient way than older addressing systems.
+
+CIDR replaced the older classful addressing model that grouped IP addresses into fixed classes:
+
+Class A
+Class B
+Class C
+Class D
+Class E
+
+The older class-based system became inefficient as the number of internet-connected devices rapidly increased during the 1990s. CIDR was introduced to make better use of available IPv4 addresses.
+
+CIDR Notation
+
+CIDR notation combines an IP address with a slash (/) followed by a number known as the network prefix.
+
+Example:
+
+198.51.100.0/24
+
+In this example:
+
+198.51.100.0 represents the network address
+/24 represents the network prefix
+
+The /24 indicates that the first 24 bits identify the network portion of the address, while the remaining bits identify individual devices within that subnet.
+
+This subnet typically includes addresses ranging from:
+
+198.51.100.0−198.51.100.255
+
+CIDR allows network administrators to divide networks into smaller, manageable subnetworks without being limited by rigid address classes.
+
+Advantages of CIDR
+
+CIDR offers several important benefits:
+
+More efficient use of IPv4 addresses
+Reduced size of routing tables
+Improved flexibility in network design
+Better scalability for growing networks
+
+By allowing variable subnet sizes, CIDR helps organizations allocate only the number of IP addresses they actually need.
+
+Security Benefits of Subnetting
+
+Subnetting is also valuable for improving network security.
+
+By separating devices into different subnetworks, organizations can:
+
+Create isolated security zones
+Reduce unnecessary network exposure
+Limit the spread of attacks
+Control communication between departments or systems
+
+For example:
+
+Employee devices may exist on one subnet
+Servers may exist on another subnet
+Guest Wi-Fi users may use a completely separate subnet
+
+Firewalls and routing rules can then regulate communication between these subnetworks.
+
+This layered approach improves both security and traffic management.
+
+Network Efficiency and Performance
+
+Subnetting improves network performance by reducing broadcast traffic and limiting unnecessary communication across the entire network.
+
+Benefits include:
+
+Faster local communication
+Better bandwidth usage
+Reduced congestion
+Improved troubleshooting and management
+
+When devices communicate within the same subnet, switches can keep traffic localized rather than forwarding it across multiple network segments.
+
+
+
+
+
+
+
+
+Proxy servers are another system that helps secure networks.
+
+Proxy server - A server that fulfills the requests of a client by forwarding them on to other servers.
+
+The proxy server is a dedicated server that sits between the internet and rest of the network.
+
+Forward proxy server - Regulates and restricts a person's access to the internet.
+
+Reverse proxy server - Regulates and restricts the internet's access to an internal server.
+
+
+
+
+
+
+
+Common Network Protocols
+
+Network protocols are standardized rules that allow devices on a network to communicate with each other correctly. These protocols determine how information is transmitted, received, interpreted, and routed between devices and services across a network.
+
+Protocols ensure that different devices and systems can exchange data using a shared communication structure, regardless of hardware or software differences.
+
+Network protocols are generally grouped into three major categories:
+
+Communication Protocols
+Management Protocols
+Security Protocols
+Communication Protocols
+
+Communication protocols are responsible for establishing and maintaining data exchange between systems and applications.
+
+Some common communication protocols include:
+
+Transmission Control Protocol (TCP)
+
+TCP is a transport-layer protocol that creates a reliable connection between two devices before transmitting data.
+
+TCP ensures:
+
+Reliable delivery
+Error checking
+Packet reordering
+Retransmission of lost data
+
+It is commonly used for services that require accurate and complete communication.
+
+User Datagram Protocol (UDP)
+
+UDP is a connectionless transport protocol that sends data without establishing a dedicated connection first.
+
+UDP prioritizes speed and efficiency over reliability, making it useful for:
+
+Streaming services
+Voice and video communication
+Real-time applications
+Simple Mail Transfer Protocol (SMTP)
+
+SMTP is a communication protocol used to send and route email messages across networks.
+
+SMTP provides the framework for transferring outgoing email between mail servers and recipient systems.
+
+Management Protocols
+
+Management protocols help monitor, troubleshoot, and manage network operations.
+
+Internet Control Message Protocol (ICMP)
+
+ICMP is commonly used for reporting network errors and testing connectivity between devices.
+
+Functions of ICMP include:
+
+Diagnosing network issues
+Reporting unreachable systems
+Measuring latency
+Supporting tools such as ping
+
+ICMP plays an important role in network troubleshooting and performance monitoring.
+
+Security Protocols
+
+Security protocols are designed to protect data as it moves across networks by using encryption and authentication methods.
+
+Examples include:
+
+Internet Protocol Security (IPSec)
+
+IPSec secures network communication by encrypting IP traffic and authenticating transmitted data.
+
+It is widely used in VPN technologies and secure communications between networks.
+
+SSL/TLS
+
+Secure Sockets Layer (SSL) and Transport Layer Security (TLS) provide encrypted communication between systems, especially for websites and online services.
+
+TLS is the modern replacement for SSL and is commonly used in HTTPS connections.
+
+Other Commonly Used Protocols
+HyperText Transfer Protocol (HTTP)
+
+HTTP is an application-layer protocol that allows communication between web browsers and web servers.
+
+It enables users to:
+
+Access websites
+Request web pages
+Receive online content
+
+HTTP itself does not encrypt transmitted data.
+
+Domain Name System (DNS)
+
+DNS is an application-layer protocol responsible for translating domain names into IP addresses.
+
+For example, DNS converts a website name into the numerical address needed to locate the server hosting the site.
+
+Without DNS, users would need to remember numerical IP addresses instead of readable website names.
+
+Address Resolution Protocol (ARP)
+
+ARP is used to map IP addresses to physical MAC addresses on a local network.
+
+When devices communicate within the same LAN, ARP helps identify the correct hardware destination associated with an IP address.
+
+Wi-Fi Security Protocols
+
+Wireless networks use specialized security protocols to protect Wi-Fi communication.
+
+Over time, wireless security standards have evolved to improve encryption and reduce vulnerabilities.
+
+Major wireless security protocols include:
+
+WEP
+WPA
+WPA2
+WPA3
+WPA2 and WPA3
+
+Modern wireless networks commonly use WPA2 or WPA3 for protection.
+
+These protocols use:
+
+Advanced Encryption Standard (AES)
+
+AES encrypts wireless traffic as data travels between devices and wireless access points.
+
+Both WPA2 and WPA3 offer two operating modes:
+
+Personal Mode
+Best suited for home networks
+Uses shared passwords
+Enterprise Mode
+Designed for businesses and organizations
+Provides centralized authentication and stronger access control
+
+WPA3 offers stronger security improvements compared to WPA2, including enhanced protection against authentication attacks.
+
+Network Security Tools and Practices
+
+Organizations use several technologies to secure networks and protect data traffic.
+
+Firewalls
+
+Firewalls are security devices or software systems that monitor and filter network traffic entering or leaving a network.
+
+They inspect data packets and determine whether traffic should be allowed or blocked based on predefined security rules.
+
+Traditional firewall rules are commonly based on:
+
+IP addresses
+Port numbers
+Protocol types
+Types of Firewalls
+Stateless Firewalls
+
+Stateless firewalls filter traffic using fixed rules without remembering previous network activity.
+
+Characteristics include:
+
+Evaluates packets individually
+Does not track active sessions
+Requires separate rules for incoming and outgoing traffic
+Stateful Firewalls
+
+Stateful firewalls track active network connections using a state table.
+
+Advantages include:
+
+Monitors ongoing sessions
+Automatically recognizes return traffic
+Requires fewer rule configurations
+Provides stronger traffic awareness
+
+Because they understand connection states, stateful firewalls offer improved security compared to stateless firewalls.
+
+Next-Generation Firewalls (NGFWs)
+
+Next-generation firewalls provide advanced security features beyond traditional firewall protection.
+
+NGFW capabilities may include:
+
+Deep packet inspection
+Intrusion prevention systems (IPS)
+Application awareness
+Malware sandboxing
+Network antivirus
+URL filtering
+DNS filtering
+
+Unlike traditional firewalls that mainly filter traffic by ports and IP addresses, NGFWs can identify and control traffic based on specific applications.
+
+NGFWs also inspect traffic at the Application Layer of the TCP/IP model.
+
+Proxy Servers
+
+A proxy server acts as an intermediary between internal users and external networks.
+
+Proxy servers often use:
+
+Network Address Translation (NAT)
+
+to help conceal internal network structures and provide an additional security layer.
+
+Forward Proxy
+
+A forward proxy handles requests from internal users attempting to access external resources on the internet.
+
+Reverse Proxy
+
+A reverse proxy handles incoming requests from external systems attempting to access internal servers or services.
+
+Proxy servers can also:
+
+Filter malicious websites
+Block unwanted content
+Enforce access policies
+Improve privacy and monitoring
+Virtual Private Networks (VPNs)
+
+A Virtual Private Network (VPN) secures internet communication by encrypting data traffic and hiding a user’s IP address.
+
+VPNs use a method called:
+
+Encapsulation
+
+Encapsulation wraps unencrypted data inside encrypted packets before transmission over public networks.
+
+This helps protect data confidentiality and user privacy.
+
+Benefits of VPNs
+
+VPNs help organizations and individuals:
+
+Secure sensitive communications
+Protect remote access connections
+Hide IP addresses
+Reduce tracking and surveillance risks
+Safeguard data on public networks
+
+Businesses often use VPNs to connect employees securely to internal systems, applications, and corporate servers.
+
+Software-Defined Wide Area Network (SD-WAN)
+
+Many organizations now combine VPN technology with:
+
+Software-Defined Wide Area Networks (SD-WAN)
+
+SD-WAN is a virtual networking technology that securely connects users, applications, and branch locations across wide geographic regions.
+
+Benefits of SD-WAN include:
+
+Improved network flexibility
+Centralized management
+Enhanced security
+Better application performance
+Efficient multi-location connectivity
+
+SD-WAN has become increasingly important in modern enterprise networking environments.
+
+
+
+
+
+
+
+
+
+
+Virtual Private Networks (VPNs)
+
+A Virtual Private Network (VPN) is a security technology that helps protect internet activity by hiding a user’s public IP address and encrypting data transmitted over the internet.
+
+VPNs create a secure connection between a device and a network, especially when users are connected through public or untrusted networks such as public Wi-Fi or the internet.
+
+A VPN works by routing internet traffic through a secure server that acts as an intermediary between the user’s device and the internet. This process creates a protected virtual tunnel that:
+
+Conceals the user’s real IP address
+Encrypts data while it is in transit
+Helps maintain privacy and confidentiality online
+
+The primary goal of a VPN is to establish a secure communication channel between systems and networks.
+
+VPNs are especially important because they allow trusted and encrypted communication even across networks that are not inherently secure.
+
+VPN Protocols
+
+VPNs rely on specialized communication standards known as VPN protocols.
+
+A VPN protocol is a set of rules that determines:
+
+How secure tunnels are created
+How data is encrypted
+How information travels between connected devices
+
+In networking, any connected device is called an endpoint. Examples of endpoints include:
+
+Computers
+Smartphones
+Tablets
+Servers
+
+Different VPN providers support different VPN protocols depending on performance, compatibility, and security requirements.
+
+Types of VPNs
+
+VPNs are commonly divided into two major categories:
+
+Remote Access VPNs
+Site-to-Site VPNs
+Remote Access VPNs
+
+Remote access VPNs are typically used by individual users who need secure access to a private network from a personal device.
+
+These VPNs create an encrypted connection between:
+
+A user’s device
+A remote VPN server
+
+The connection is established over the internet and protects the user’s transmitted data from interception.
+
+Remote access VPNs are commonly used for:
+
+Working remotely
+Secure browsing
+Protecting public Wi-Fi sessions
+Accessing organizational resources securely
+Site-to-Site VPNs
+
+Site-to-site VPNs are commonly used by organizations to securely connect multiple office networks across different locations.
+
+These VPNs create encrypted tunnels between entire networks rather than individual devices.
+
+For example:
+
+A company headquarters may securely connect with branch offices
+Multiple geographic locations can communicate over secure connections
+
+Site-to-site VPNs are widely used in enterprise environments where organizations need secure communication across large distances.
+
+One commonly used protocol in site-to-site VPNs is:
+
+Internet Protocol Security (IPSec)
+
+IPSec helps encrypt and authenticate traffic moving between connected networks.
+
+Challenges of Site-to-Site VPNs
+
+Although site-to-site VPNs provide strong security, they can also be:
+
+More difficult to configure
+More complex to manage
+Harder to troubleshoot compared to remote access VPNs
+
+Large enterprise deployments may require significant networking expertise to maintain them properly.
+
+WireGuard VPN vs IPSec VPN
+
+WireGuard and IPSec are two widely used VPN protocols designed to secure data traveling through encrypted tunnels.
+
+VPN providers often allow users to choose between multiple protocols depending on:
+
+Performance requirements
+Compatibility
+Security preferences
+Infrastructure design
+WireGuard VPN
+
+WireGuard is a modern VPN protocol designed to provide:
+
+High-speed performance
+Strong encryption
+Simplified configuration
+
+WireGuard is known for being lightweight and efficient because it uses fewer lines of code compared to many older VPN protocols.
+
+Advantages of WireGuard
+Faster connection and download speeds
+Easier setup and maintenance
+Open-source design
+Efficient performance
+Strong encryption methods
+
+WireGuard supports both:
+
+Site-to-site VPN connections
+Client-server VPN connections
+
+Because of its speed and efficiency, WireGuard is often preferred for activities such as:
+
+Streaming media
+Downloading large files
+High-performance internet usage
+
+Its open-source nature also makes it easier for developers and administrators to:
+
+Inspect the code
+Debug issues
+Improve security transparency
+IPSec VPN
+
+IPSec is one of the older and most widely adopted VPN protocols.
+
+It is commonly used to:
+
+Encrypt network traffic
+Authenticate data packets
+Establish secure VPN tunnels
+
+Many operating systems and enterprise networking systems include built-in support for IPSec because of its long history and broad adoption.
+
+Advantages of IPSec
+Strong security reputation
+Extensive testing over many years
+Broad compatibility with devices and operating systems
+Commonly used in enterprise networking
+Comparing WireGuard and IPSec
+
+Although both protocols provide encrypted VPN communication, they differ in several areas.
+
+Feature	WireGuard	IPSec
+Age	Newer protocol	Older protocol
+Complexity	Simpler configuration	More complex setup
+Speed	Generally faster	May be slower
+Code Size	Lightweight	Larger and more complex
+Compatibility	Growing support	Widely supported
+Open Source	Yes	Varies by implementation
+Choosing Between WireGuard and IPSec
+
+The choice between WireGuard and IPSec depends on organizational or personal requirements.
+
+Some users prefer IPSec because:
+
+It has been extensively tested
+It is trusted in enterprise environments
+It is compatible with many systems
+
+Others prefer WireGuard because:
+
+It offers better performance
+It is easier to configure
+It uses modern cryptographic design
+It performs efficiently with fewer resources
+
+Both protocols are capable of providing secure VPN communication when implemented correctly.
+
+
+
+
+
+
+Networking and Security Terms
+Address Resolution Protocol (ARP)
+
+A networking protocol used to identify the MAC address associated with an IP address on a local network. ARP helps devices locate the next device or router needed to forward data.
+
+Cloud-Based Firewalls
+
+Firewall solutions hosted and managed by a cloud service provider rather than installed on local hardware. These firewalls filter and monitor network traffic in cloud environments.
+
+Controlled Zone
+
+A protected subnet within a network that helps secure internal systems from less trusted or external networks.
+
+Domain Name System (DNS)
+
+A protocol that converts human-readable domain names into IP addresses so devices can locate websites and services on the internet.
+
+Encapsulation
+
+A VPN security process where sensitive information is wrapped inside encrypted packets before being transmitted across a network.
+
+Firewall
+
+A security device or software solution that monitors, filters, and controls incoming and outgoing network traffic based on defined security rules.
+
+Forward Proxy Server
+
+A server that sits between internal users and the internet, controlling and filtering outbound internet access requests from clients.
+
+Hypertext Transfer Protocol (HTTP)
+
+An application-layer communication protocol used for transmitting web content between browsers and web servers.
+
+Hypertext Transfer Protocol Secure (HTTPS)
+
+A secure version of HTTP that uses encryption technologies such as SSL/TLS to protect communication between clients and servers.
+
+IEEE 802.11 (Wi-Fi)
+
+A family of wireless networking standards that define how devices communicate over wireless local area networks (WLANs).
+
+Network Protocols
+
+Standardized rules and procedures that govern how devices exchange data and communicate across a network.
+
+Network Segmentation
+
+A cybersecurity practice that divides a network into smaller sections or segments to improve security, performance, and access control.
+
+Port Filtering
+
+A firewall capability that permits or blocks traffic based on port numbers in order to control specific types of network communication.
+
+Proxy Server
+
+An intermediary server that receives requests from clients and forwards them to other servers on behalf of the client.
+
+Reverse Proxy Server
+
+A server positioned in front of internal servers that manages and filters incoming requests from external networks or internet users.
+
+Secure File Transfer Protocol (SFTP)
+
+A secure network protocol used to transfer files safely across a network using encrypted communication.
+
+Secure Shell (SSH)
+
+A cryptographic network protocol that enables secure remote access and encrypted communication between systems.
+
+Security Zone
+
+A protected portion of a network designed to separate and defend internal systems from external or untrusted networks.
+
+Simple Network Management Protocol (SNMP)
+
+A protocol used to monitor, manage, and collect information from devices connected to a network.
+
+Stateful Firewall
+
+A firewall that monitors active network connections and keeps track of traffic sessions to intelligently filter threats.
+
+Stateless Firewall
+
+A firewall that filters packets using fixed rules without tracking the state or history of network connections.
+
+Subnetting
+
+The practice of dividing a larger network into smaller logical subnetworks to improve organization, efficiency, and security.
+
+Transmission Control Protocol (TCP)
+
+A reliable communication protocol that establishes a connection between devices and ensures accurate delivery of transmitted data.
+
+Uncontrolled Zone
+
+The external or untrusted part of a network environment that exists outside an organization’s protected infrastructure.
+
+Virtual Private Network (VPN)
+
+A security service that encrypts internet traffic, hides a user’s public IP address, and helps maintain privacy on public networks.
+
+Wi-Fi Protected Access (WPA)
+
+A wireless security protocol developed to secure Wi-Fi networks and protect wireless communications from unauthorized access.
+
+
+
+
