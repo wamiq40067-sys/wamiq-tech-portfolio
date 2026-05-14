@@ -112,13 +112,6 @@
 
 ---
 
-# Key Takeaways
-- Network protocols are essential for device communication.
-- Different protocols serve communication, management, and security purposes.
-- Security professionals must understand how protocols work and their risks.
-- Modern networks rely heavily on secure protocols and encryption.
-
----
 
 # Key Notes: System Identification
 
@@ -233,8 +226,3 @@ Common tools used for system identification include:
 
 ---
 
-# Key Takeaways
-- System identification helps recognize and manage network devices.
-- IP addresses, MAC addresses, hostnames, and ports are key identifiers.
-- Accurate system identification improves network security and monitoring.
-- Security professionals use identification techniques to detect threats and maintain secure operations.
