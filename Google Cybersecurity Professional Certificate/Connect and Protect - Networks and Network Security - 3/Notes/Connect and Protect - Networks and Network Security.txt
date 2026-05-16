@@ -2362,3 +2362,326 @@ A wireless security protocol developed to secure Wi-Fi networks and protect wire
 
 
 
+
+
+
+
+
+
+
+
+
+
+Module - 3
+
+Common network intrusion attacks:
+Malware
+Spoofing
+Packet sniffing
+
+
+Attacks can harm an organization by:
+Leaking valuable or confidential information
+Damaging an organization's reputation
+Impacting customer retention
+Costing money and time
+
+
+
+
+
+
+Network Interception Attacks
+
+Network interception attacks occur when attackers capture or interfere with data as it travels across a network. Their objective is often to steal sensitive information, monitor communications, or manipulate transmitted data.
+
+Cybercriminals may use specialized hardware or software tools to examine network traffic, a technique commonly called packet sniffing. Through this method, attackers can observe information being exchanged between devices, even when they are not authorized to access it. In some cases, attackers go beyond monitoring and actively modify the intercepted data before it reaches its destination.
+
+These attacks can seriously disrupt network operations. Attackers may inject malicious code, alter messages, or interrupt communication between systems. For example, during an online banking transaction, a malicious actor could intercept the transfer request and replace the recipient’s bank account details with their own account information.
+
+Additional forms of interception-based attacks include on-path attacks and replay attacks, both of which exploit weaknesses in communication processes to compromise data security.
+
+Backdoor Attacks
+
+Backdoor attacks are another major threat that security professionals must understand. Consider a secure office building that uses cameras, access cards, and biometric scanners to control entry and exit. If someone discovers an unmonitored entrance and uses it to bypass security checks, they gain unauthorized access without detection.
+
+In cybersecurity, a backdoor functions in a similar way. A backdoor is a hidden method of bypassing standard authentication or access controls within a system, application, or network. Sometimes developers or administrators intentionally create backdoors to simplify troubleshooting or maintenance tasks. However, these hidden access points can become dangerous if discovered or exploited by attackers.
+
+Hackers may also install their own backdoors after compromising a system. This allows them to maintain long-term access even after the initial vulnerability is fixed. Once inside the network, attackers can carry out additional malicious activities such as installing malware, stealing confidential information, launching denial of service (DoS) attacks, or weakening existing security settings.
+
+A denial of service attack is designed to overwhelm a server or network with excessive traffic, preventing legitimate users from accessing services or resources.
+
+Potential Effects on Organizations
+
+Cyberattacks can create severe consequences for organizations in several areas, including finances, reputation, and public safety.
+
+Financial Consequences
+
+Attacks such as DoS incidents can force systems offline, interrupting business operations and preventing organizations from generating revenue. For large companies, even short periods of downtime can result in significant financial losses. Organizations may also face high recovery expenses related to rebuilding infrastructure, restoring systems, or paying ransomware demands.
+
+If attackers gain access to customer or client information, companies may additionally face lawsuits, regulatory penalties, and compensation claims, all of which can further increase financial damage.
+
+Reputational Damage
+
+A cyberattack can weaken public trust in an organization. When news of a security breach becomes public, customers may question whether the company can adequately protect sensitive information. As confidence declines, customers may decide to move to competing businesses that appear more secure and reliable.
+
+Risks to Public Safety
+
+Cyberattacks targeting government agencies or critical infrastructure can create risks beyond financial loss. If attackers compromise systems connected to power grids, water treatment facilities, transportation systems, or military communications, the effects could directly impact public safety and national security.
+
+Because of these risks, governments and defense organizations worldwide continue investing heavily in cybersecurity measures to defend against increasingly advanced cyber threats.
+
+
+
+
+
+
+
+
+
+Denial of service attack (DoS):
+An attack that targets a network or server and floods it with network traffic.
+
+
+Distributed denial of service attack (DDoS):
+A type of denial of service attack that uses multiple devices or servers in different locations to flood the target network with unwanted traffic.
+
+
+SYN (synchronize) flood attack:
+A type of DoS attack that simulates a TCP connection and floods a server with SYN packets.
+
+Internet Control Message Protocol (ICMP):
+An internet protocol used by devices to tell each other about data transmission errors across the network.
+
+Internet Control Message Protocol (ICMP) flood:
+A type of DoS attack performed by an attacker repeatedly sending ICMP packets to a network server.
+
+Ping of death:
+A type of DoS attack caused when a hacker pings a system by sending it an oversized ICMP packet that is bigger than 64KB.
+
+
+
+
+
+Network Protocol Analyzers
+
+A network protocol analyzer, also known as a packet analyzer or packet sniffer, is a tool used to capture, inspect, and analyze data moving across a network. These tools are widely used by cybersecurity professionals and network administrators to monitor traffic, troubleshoot problems, and investigate suspicious activity.
+
+There are many network protocol analyzers available today. Some commonly used tools include:
+
+SolarWinds NetFlow Traffic Analyzer
+ManageEngine OpManager
+Azure Network Watcher
+Wireshark
+tcpdump
+
+This discussion mainly focuses on tcpdump, although many of the same concepts apply to other protocol analyzers used in cybersecurity. These tools help analysts investigate network intrusions, detect unusual traffic patterns, and identify attacks such as denial of service (DoS) incidents.
+
+tcpdump
+
+tcpdump is a lightweight, command-line-based network protocol analyzer commonly used on Unix and Linux systems. It relies on the open-source libpcap library to capture packets traveling through a network.
+
+Because tcpdump operates entirely in the terminal, users interact with it through text commands rather than a graphical interface. It is preinstalled on many Linux distributions and can also run on other Unix-based operating systems, including macOS.
+
+The tool provides a concise summary of captured network packets, presenting important traffic details in a readable format. Information displayed by tcpdump often includes:
+
+Source IP address
+Destination IP address
+Port numbers used in communication
+Protocol information
+Packet transmission details
+
+This makes tcpdump useful for quickly examining live network activity directly from the command line.
+
+Understanding tcpdump Output
+
+After a capture command is executed, tcpdump displays packet information directly in the terminal and can optionally save the output into a log file for later analysis.
+
+A packet capture generated by tcpdump typically contains several important fields:
+
+Timestamp
+
+Each packet entry begins with a timestamp showing when the packet was captured. The format usually includes hours, minutes, seconds, and fractions of a second.
+
+Source IP Address
+
+This identifies the original sender of the packet.
+
+Source Port
+
+The source port indicates the port number from which the packet originated.
+
+Destination IP Address
+
+This field identifies the intended recipient of the packet.
+
+Destination Port
+
+The destination port specifies the port number receiving the packet.
+
+By default, tcpdump may also translate IP addresses into hostnames and replace certain port numbers with the names of commonly associated services.
+
+Common Applications of Network Protocol Analyzers
+
+Tools like tcpdump are frequently used to observe network communications and evaluate network performance. They also help organizations maintain visibility into network activity and security conditions.
+
+Some common uses include:
+
+Creating baselines for normal network traffic behavior
+Monitoring network utilization and performance metrics
+Detecting suspicious or malicious communications
+Identifying potential security incidents
+Configuring custom alerts for network or security issues
+Discovering unauthorized messaging traffic or rogue wireless access points
+
+These capabilities make protocol analyzers valuable tools for cybersecurity investigations and network troubleshooting.
+
+Misuse by Attackers
+
+Although network analyzers are important defensive tools, attackers can also misuse them for malicious purposes. Cybercriminals may capture packets containing sensitive information such as usernames, passwords, or confidential communications.
+
+For this reason, cybersecurity analysts must understand both the legitimate uses and potential risks associated with packet analysis tools. Knowledge of how these analyzers work helps security teams better detect threats and protect network communications from unauthorized monitoring.
+
+
+
+
+
+
+
+DDoS Attack on a Major DNS Service Provider
+
+DNS (Domain Name System) servers play a key role in how the internet works. They convert human-readable website addresses (like a URL) into numerical IP addresses that computers use to locate web servers. In simple terms, when a user enters a website in a browser, the DNS system ensures the request is routed to the correct destination server.
+
+In this case study, a large DNS service provider that supported multiple organizations became the target of a Distributed Denial of Service (DDoS) attack on October 21, 2016.
+
+Background of the Incident
+
+Before the attack, a group of university students had developed a botnet intended for attacking gaming servers and online services. A botnet is a network of compromised devices infected with malware and controlled remotely by a single operator (often called a bot-herder). Each infected device (or “bot”) can be instructed to send traffic or requests to a chosen target.
+
+The creators of this botnet publicly shared its code online. This made it accessible to a large number of users, including malicious actors who later repurposed it for larger-scale attacks. As a result, the botnet was eventually used against the DNS service provider.
+
+How the Attack Happened
+
+On the morning of the incident, at around 7:00 a.m., the attackers launched a massive flood of DNS requests toward the provider’s infrastructure. The botnet generated tens of millions of requests in a very short period of time.
+
+Because DNS services are critical for routing internet traffic, this sudden overload caused the system to become unresponsive. As a result, websites relying on the affected DNS provider could no longer be reached, even though their actual servers were still online.
+
+The impact was widespread, causing disruptions across multiple regions, including parts of North America and Europe, as users were unable to resolve domain names into IP addresses.
+
+Impact and Recovery
+
+The attack led to a significant outage lasting around two hours before services were restored. During this period, many online platforms experienced downtime because users could not access their websites through normal domain names.
+
+Although additional waves of botnet traffic were launched afterward, the DNS provider had already strengthened its defenses and was able to reduce the impact of further attacks.
+
+
+
+
+
+
+
+
+
+
+
+packet sniffing - It is a practice of using software tools to observe data as it moves across a network 
+
+Passive packet sniffing - A type of attack where data packets are read in transit.
+
+Active packet sniffing - A type of attack where data packets are manipulated in transit.
+
+
+
+IP spoofing - A network attack performed when an attacker changes the source IP of a data packet to impersonate an authorized system and gain access to a network.
+
+Common IP spoofing attacks:
+On-path attack
+Replay attack
+smurf attack
+
+
+On-path attack - An attack where a malicious actor places themselves in the middle of an authorized connection and intercepts or alters the data in transit.
+
+Replay attack - A network attack performed when a malicious actor intercepts a data packet in transit and delays it or repeats it at another time.
+
+Smurf attack - A network attack performed when an attacker sniffs an authorized user's IP address and flood it with packets.
+
+
+
+
+
+
+Understanding Packet Sniffing
+
+Packet sniffing is the process of capturing and analyzing data packets as they move across a network. In a normal network environment, packets are delivered only to the intended destination device. Each device uses a Network Interface Card (NIC), which is the hardware responsible for connecting the system to the network and handling incoming traffic. The NIC checks whether the packet contains the device’s MAC address before accepting and processing it according to the required protocol.
+
+A NIC can also operate in promiscuous mode, where it accepts all network traffic instead of only packets addressed to its device. Attackers may use tools such as Wireshark to capture network traffic in this mode. The collected information can later be used to steal sensitive data or imitate trusted users on the network through spoofing techniques.
+
+Understanding IP Spoofing
+
+After monitoring network traffic, attackers can impersonate legitimate systems by falsifying IP or MAC address information. This technique is known as IP spoofing. By pretending to be an authorized device, attackers may bypass trust relationships within a network.
+
+One way organizations defend against spoofing is by configuring firewalls to block suspicious or unauthorized packets. Monitoring unusual traffic patterns is also important for detecting these attacks early.
+
+On-Path Attacks
+
+An on-path attack occurs when a malicious actor secretly places themselves between two trusted devices or systems that are communicating with each other. The attacker can intercept sensitive information such as login credentials, session data, or confidential communications. This type of attack is also commonly called a “man-in-the-middle” attack.
+
+Attackers may also target DNS requests. By intercepting a DNS lookup, they can send a fake response that redirects users to a harmful or fraudulent website instead of the legitimate destination.
+
+Encrypting data while it is traveling across the network, such as by using TLS, is one of the most effective protections against on-path attacks because it prevents attackers from easily reading or modifying intercepted traffic.
+
+Smurf Attacks
+
+A smurf attack is a form of network flooding attack that combines IP spoofing with denial-of-service techniques. In this attack, the attacker spoofs the victim’s IP address and sends large numbers of ICMP requests to a network broadcast address. The broadcast system then forwards the requests to many devices on the network at once.
+
+As all systems reply simultaneously, the victim becomes overwhelmed with traffic, which can slow down or completely disable network services. Because ICMP is commonly used for diagnostics and troubleshooting, excessive ICMP responses can heavily impact servers and network performance.
+
+Modern firewalls, especially Next Generation Firewalls (NGFWs), help defend against smurf attacks by identifying abnormal traffic patterns and blocking unusually large broadcasts before they disrupt operations.
+
+Denial of Service (DoS) Attacks
+
+A Denial of Service (DoS) attack aims to make a system or service unavailable to legitimate users. Attackers overwhelm the target with excessive traffic or requests until the server can no longer respond properly.
+
+Unlike spoofing attacks where fake addresses are used to impersonate users, DoS attacks may involve traffic that appears legitimate. However, attackers often continue sending massive numbers of malicious packets until the target system crashes or becomes unresponsive.
+
+Organizations reduce the risk of DoS attacks by applying layered security measures such as firewalls, traffic filtering, rate limiting, and encryption technologies.
+
+Defense-in-Depth Strategy
+
+No single security control can stop every attack. A stronger security posture is achieved by combining multiple layers of defense. Firewalls, encryption, traffic monitoring, intrusion detection systems, and secure network configurations all work together to reduce the chances of successful attacks and improve overall network resilience.
+
+
+
+
+
+
+
+
+Active packet sniffing: A network attack technique where an attacker not only captures packets but also modifies or manipulates the traffic while it is being transmitted.
+Botnet: A group of malware-infected devices remotely controlled by a threat actor, often called a bot-herder, to perform coordinated malicious activities.
+Denial of Service (DoS) attack: An attack designed to overwhelm a server or network with excessive traffic, preventing legitimate users from accessing services.
+Distributed Denial of Service (DDoS) attack: A large-scale DoS attack that uses many compromised systems from different locations to flood a target with traffic simultaneously.
+Internet Control Message Protocol (ICMP): A network protocol used by devices to communicate error messages and diagnostic information related to network connectivity.
+ICMP flood: A DoS attack where an attacker continuously sends ICMP request packets, such as ping requests, to overload a target server or network.
+IP spoofing: A cyberattack method where an attacker falsifies the source IP address of packets to appear as a trusted or authorized device.
+On-path attack: An attack in which a malicious actor secretly intercepts communication between two trusted systems and may monitor or alter the transmitted data.
+Packet sniffing: The process of capturing and examining network packets traveling across a network for monitoring or malicious purposes.
+Passive packet sniffing: A method of monitoring network traffic without altering it, commonly performed by listening to all traffic passing through a network hub.
+Ping of death: A DoS attack that crashes or destabilizes a system by sending oversized ICMP packets exceeding the normal packet size limit of 64 KB.
+Replay attack: A type of attack where a valid data transmission is intercepted, stored, and resent later to deceive or gain unauthorized access to a system.
+Smurf attack: A network flooding attack where an attacker uses a spoofed IP address and sends large numbers of ICMP packets to broadcast addresses, overwhelming the victim with responses.
+SYN flood attack: A DoS attack that abuses the TCP handshake process by sending a large number of SYN requests without completing the connection, exhausting server resources.
+
+
+
+
+
+
+
+
+
+
+
+
+
