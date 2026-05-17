@@ -1,4 +1,4 @@
-# Key Takeaways: Introduction to Networks, Network Communication, and Local & Wide Network Communication
+# Key Takeaways: Network Architecture
 
 ## Introduction to Networks
 - Networks connect devices to enable communication and resource sharing.

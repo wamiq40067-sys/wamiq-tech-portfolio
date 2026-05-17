@@ -1,4 +1,4 @@
-# Key Notes: Introduction to Network Protocols
+# Key Notes: Network Protocols
 
 ## What are Network Protocols?
 - Network protocols are standardized rules that allow devices to communicate over a network.

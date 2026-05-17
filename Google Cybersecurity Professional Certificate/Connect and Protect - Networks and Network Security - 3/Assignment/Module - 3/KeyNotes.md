@@ -1,4 +1,4 @@
-# Key Notes: Network Intrusion Tactics & Defense
+# Key Notes: Network Intrusion Tactics
 
 ## 1. Introduction to Network Intrusion Tactics
 

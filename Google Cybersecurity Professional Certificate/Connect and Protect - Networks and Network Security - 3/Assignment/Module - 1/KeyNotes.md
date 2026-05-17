@@ -1,4 +1,4 @@
-# Key Notes: Introduction to Networks, Network Communication, and Local & Wide Network Communication
+# Key Notes: Network Architecture
 
 # Introduction to Networks
 

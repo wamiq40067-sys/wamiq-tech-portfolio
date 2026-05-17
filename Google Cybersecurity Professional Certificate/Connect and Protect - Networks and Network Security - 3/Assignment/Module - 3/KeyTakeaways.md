@@ -1,4 +1,4 @@
-# Key Takeaways: Network Intrusion & Defense
+# Key Takeaways: Network Intrusion Tactics
 
 ## Introduction to Network Intrusion Tactics
 - Network intrusion involves unauthorized access to systems or interception of data.

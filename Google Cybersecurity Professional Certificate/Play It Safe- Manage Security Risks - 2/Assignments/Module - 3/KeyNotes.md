@@ -1,4 +1,4 @@
-# Key Notes: Security Information and Event Management (SIEM) Dashboards
+# Key Notes: Introduction to cybersecurity tools
 
 ## What is a SIEM Dashboard?
 - A SIEM dashboard is a visual interface used to monitor, analyze, and manage security events within an organization.

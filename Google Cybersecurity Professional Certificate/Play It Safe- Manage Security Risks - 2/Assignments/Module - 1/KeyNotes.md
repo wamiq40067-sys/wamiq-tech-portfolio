@@ -1,4 +1,4 @@
-# More About CISSP Security Domains
+# Security Domains
 
 ## 🔐 Key Notes
 

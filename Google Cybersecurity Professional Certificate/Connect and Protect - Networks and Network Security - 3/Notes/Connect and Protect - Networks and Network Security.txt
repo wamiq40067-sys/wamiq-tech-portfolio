@@ -2656,8 +2656,6 @@ No single security control can stop every attack. A stronger security posture is
 
 
 
-
-
 Active packet sniffing: A network attack technique where an attacker not only captures packets but also modifies or manipulates the traffic while it is being transmitted.
 Botnet: A group of malware-infected devices remotely controlled by a threat actor, often called a bot-herder, to perform coordinated malicious activities.
 Denial of Service (DoS) attack: An attack designed to overwhelm a server or network with excessive traffic, preventing legitimate users from accessing services.
@@ -2674,6 +2672,408 @@ Smurf attack: A network flooding attack where an attacker uses a spoofed IP addr
 SYN flood attack: A DoS attack that abuses the TCP handshake process by sending a large number of SYN requests without completing the connection, exhausting server resources.
 
 
+
+
+
+
+
+
+
+
+
+Module 4
+security hardening - The process of strengthening a system to reduce its vulnerability and attack surface.
+
+Attack surface - All the potential vulnerabilities that a threat actor could exploit.
+
+security hardening is conducted on:
+Hardware
+Operating system
+Applications
+Computer networks
+Databases
+
+
+penetration test - A simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes.
+
+
+Operating system (OS)
+The interface between computer hardware and the user.
+
+
+Patch update - A software and operating system update that addresses security vulnerabilities within a program or product.
+
+Baseline configuration (baseline image) - A documented set of specifications within a system that is used as a basis of future builds, releases, and updates.
+
+Multi-factor authentication (MFA) - A security measure which requires a user to verify their identity in 2 or more ways to access a system or network.
+
+Categories of multi-factor identification:
+Something you know 
+Something you have 
+Something unique about you
+
+
+
+
+
+
+
+
+Brute Force Attacks
+
+A brute force attack is a method attackers use to gain unauthorized access by repeatedly trying different combinations of usernames, passwords, or encryption keys until the correct one is found. It relies on trial and error rather than exploiting software vulnerabilities. Several forms of brute force attacks exist:
+
+Simple Brute Force Attacks
+
+In a simple brute force attack, an attacker manually or automatically attempts different username and password combinations to log into an account. These attacks are often successful when users choose weak or predictable passwords.
+
+Dictionary Attacks
+
+Dictionary attacks are a more targeted form of brute force attack. Instead of testing random combinations, attackers use a predefined list of common passwords, leaked credentials, and dictionary words. Since many users reuse simple passwords, this method can quickly compromise accounts.
+
+Because manually performing these attacks is slow and inefficient, attackers commonly rely on automated tools to speed up the process and test thousands of password combinations within seconds.
+
+Assessing Security Vulnerabilities
+
+Organizations often perform security testing to identify weaknesses before attackers can exploit them. Security analysts use controlled environments to safely analyze suspicious files, test software, and simulate cyberattacks.
+
+Virtual Machines (VMs)
+
+A virtual machine is a software-based version of a physical computer that operates in an isolated environment. VMs are widely used in cybersecurity because they allow analysts to safely execute unknown or potentially harmful programs without affecting the host system.
+
+Benefits of virtual machines include:
+
+Isolation from the main operating system
+Ability to restore systems to a previous clean state
+Safe malware analysis and testing
+Easy switching between multiple operating systems or configurations
+
+Despite these advantages, VMs are not completely risk-free. In rare cases, advanced malware can escape the virtual environment and interact with the host machine.
+
+Sandbox Environments
+
+A sandbox is a secure testing environment used to run software separately from a production network or system. Sandboxes help organizations safely examine suspicious applications, test updates, identify vulnerabilities, and simulate attack scenarios.
+
+Sandbox environments may consist of:
+
+Stand-alone physical systems disconnected from networks
+Cloud-based virtual environments
+Isolated software containers
+
+Some advanced malware can detect when it is being executed inside a sandbox or VM and may alter its behavior to avoid detection.
+
+Prevention Measures Against Brute Force Attacks
+
+Organizations implement multiple security controls to reduce the risk of brute force and credential-based attacks.
+
+Salting and Hashing
+
+Hashing converts data, such as passwords, into fixed-length encrypted values that cannot easily be reversed. Salting improves security by adding random characters to passwords before hashing them, making password hashes more difficult for attackers to crack.
+
+Multi-Factor Authentication (MFA) and Two-Factor Authentication (2FA)
+
+MFA requires users to verify their identity using multiple authentication methods, such as:
+
+Passwords
+Fingerprints
+Facial recognition
+One-time verification codes
+
+2FA is a subset of MFA that specifically uses two verification methods instead of multiple layers.
+
+CAPTCHA and reCAPTCHA
+
+CAPTCHA systems are designed to distinguish humans from automated bots by requiring users to complete simple tasks. This helps prevent automated password-guessing attempts. reCAPTCHA, developed by Google, is a widely used version that protects websites from malicious automated activity.
+
+Password Policies
+
+Organizations enforce password policies to encourage stronger account security. These policies may include:
+
+Minimum password complexity requirements
+Regular password updates
+Restrictions on password reuse
+Account lockouts after repeated failed login attempts
+
+Strong password policies significantly reduce the effectiveness of brute force attacks.
+
+
+
+
+
+
+
+
+
+
+
+Network security hardening:
+Port filtering
+Network access privilege
+Encryption
+
+
+Task performed regularly:
+Firewall rules maintenance
+Network log analysis
+Patch updates
+server backups
+
+Network log analysis - The process of examining network logs to identify events of interest.
+
+Security Information and Event Management tool (SIEM) - An application that collects and analyzes log data to monitor critical activites in an organization.
+
+
+Port filtering - A firewall function that blocks or allows certain port numbers to limit unwanted communication.
+
+
+
+
+
+
+
+
+Network Security Tools and Technologies
+Firewall
+
+Throughout network security, different types of firewalls are commonly used, including stateless firewalls, stateful firewalls, and next-generation firewalls (NGFWs). Although these firewalls differ in functionality, they all serve the primary purpose of controlling network traffic according to predefined security rules.
+
+Traditional firewalls inspect packet headers and either allow or block traffic based on information such as IP addresses, protocols, and port numbers. NGFWs provide additional protection by inspecting packet payloads, allowing them to identify malicious content more effectively. In practice, every system should ideally have its own local firewall in addition to the organization’s network firewall.
+
+Advantages
+Controls incoming and outgoing network traffic
+Blocks unauthorized access based on security policies
+NGFWs provide deeper packet inspection for enhanced protection
+Limitations
+Standard firewalls mainly inspect packet headers
+They may not detect advanced attacks hidden within allowed traffic
+Intrusion Detection System (IDS)
+
+An Intrusion Detection System (IDS) is a security solution designed to monitor network or system activity and generate alerts when suspicious behavior or known attack patterns are detected.
+
+IDS tools often analyze network packets and compare them against databases of known attack signatures. Some IDS solutions can also identify unusual behavior patterns that may indicate malicious activity. When suspicious activity is discovered, the IDS notifies administrators for further investigation.
+
+IDS systems are typically positioned behind a firewall so that unnecessary or blocked traffic is filtered out before analysis. This setup helps reduce false positives and improves monitoring efficiency.
+
+Advantages
+Detects suspicious activity and known attack signatures
+Alerts administrators about possible security incidents
+Helps identify abnormal network behavior
+Limitations
+Cannot actively block malicious traffic
+May fail to detect new or sophisticated attacks
+Relies heavily on administrator response
+Intrusion Prevention System (IPS)
+
+An Intrusion Prevention System (IPS) performs many of the same monitoring functions as an IDS, but it also takes direct action to stop detected threats automatically.
+
+An IPS analyzes traffic for malicious signatures and abnormal activity. If a threat is identified, the system can block traffic, reject suspicious packets, or prevent communication from a malicious source. Like IDS solutions, IPS devices are generally deployed behind a firewall to stop dangerous traffic before it reaches internal systems.
+
+Advantages
+Detects and automatically blocks malicious activity
+Provides real-time threat prevention
+Reduces response time during attacks
+Limitations
+Operates inline, meaning a failure can interrupt network connectivity
+False positives may block legitimate traffic
+Full Packet Capture Devices
+
+Full packet capture devices record all network traffic transmitted across a network. These tools are valuable for network administrators and cybersecurity teams because they allow detailed analysis of communications during investigations or security incidents.
+
+Packet capture tools are especially useful when reviewing alerts generated by IDS or IPS systems, helping analysts understand the source and impact of suspicious activity.
+
+Advantages
+Captures complete network traffic for analysis
+Assists with incident response and forensic investigations
+Helps validate IDS and IPS alerts
+Limitations
+Requires significant storage capacity
+Analyzing captured data can be time-consuming
+Security Information and Event Management (SIEM)
+
+A Security Information and Event Management (SIEM) system is a centralized platform used to collect, monitor, and analyze security logs from multiple devices and applications across an organization.
+
+SIEM tools gather data from sources such as firewalls, IDSs, IPSs, VPNs, DNS logs, and proxies, then display the information within a single dashboard. This centralized monitoring approach is often called a “single pane of glass” because it allows analysts to view security events from one location.
+
+Common SIEM solutions include Google Chronicle and Splunk Splunk. These tools help security analysts monitor networks in real time and investigate suspicious activities efficiently.
+
+Advantages
+Centralizes security monitoring and log analysis
+Provides real-time visibility into network events
+Helps security teams correlate data from multiple sources
+Limitations
+Does not directly stop attacks
+Requires skilled analysts to interpret and respond to alerts
+Can be costly to deploy and maintain
+Summary of Security Tools
+Security Tool	Main Function	Key Limitation
+Firewall	Filters network traffic based on rules	Limited visibility into packet contents
+IDS	Detects and alerts on suspicious activity	Cannot block attacks
+IPS	Detects and prevents malicious activity	May block legitimate traffic
+SIEM	Aggregates and analyzes security logs	Does not actively prevent threats
+
+Organizations must carefully balance security requirements, operational needs, and costs when selecting and deploying these tools. Effective cybersecurity typically involves combining multiple security technologies with experienced security professionals to create a layered defense strategy.
+
+
+
+
+
+
+
+
+
+cloud networks - A collection of servers or computers that stores resources and data in remote data centers that can be accessed via the internet.
+
+
+
+
+
+Cloud Security Considerations
+
+Many organizations adopt cloud services due to benefits such as rapid deployment, reduced costs, scalability, and operational flexibility. However, cloud environments also introduce specific security challenges that cybersecurity professionals must carefully manage.
+
+Identity and Access Management (IAM)
+
+Identity and Access Management (IAM) refers to the frameworks, policies, and technologies used to control how digital identities are created, managed, and granted access to cloud resources.
+
+A common risk in cloud environments is improper configuration of user roles and permissions. If access controls are not correctly set, unauthorized users may gain access to sensitive systems or critical operations, increasing the risk of data breaches and misuse of cloud resources.
+
+Configuration Management
+
+Cloud environments are highly complex, with multiple services requiring precise configuration to ensure security and compliance. This complexity becomes even more challenging during cloud migration processes, where misconfigurations can easily occur.
+
+Improperly configured cloud services are one of the leading causes of security incidents. Even small configuration errors can expose systems to vulnerabilities, making careful setup and continuous monitoring essential for maintaining security.
+
+Attack Surface Expansion
+
+Cloud service providers (CSPs) offer a wide range of applications and services, which can improve functionality but also introduce additional risks.
+
+Each service added to an environment increases the potential attack surface, creating more possible entry points for attackers. If not properly secured, these entry points can be exploited to introduce malware or gain unauthorized access. While cloud environments can be highly secure when properly designed, organizations must ensure that additional services do not unintentionally increase exposure to threats.
+
+Zero-Day Threats
+
+Zero-day vulnerabilities are security flaws that are unknown to vendors or security teams at the time of exploitation. These attacks pose a serious risk in both cloud and traditional environments.
+
+Cloud service providers are often able to respond faster to zero-day threats due to their centralized infrastructure. They can apply patches at the hypervisor level or migrate workloads to safer environments, minimizing disruption for customers. Many also provide tools that help organizations apply operating system-level patches quickly and efficiently.
+
+Visibility and Monitoring
+
+In traditional on-premises environments, network administrators often have full visibility into network traffic, allowing them to inspect and analyze packets directly.
+
+In cloud environments, visibility is different. While organizations can use tools like flow logs and packet mirroring, they do not always have direct access to underlying infrastructure traffic. Instead, much of the monitoring capability is provided through the cloud service provider.
+
+Cloud providers typically secure their infrastructure and undergo third-party audits to validate compliance and security standards. However, organizations must understand the limitations of their visibility and ensure they are monitoring what they are responsible for.
+
+Rapid Changes in Cloud Environments
+
+Cloud service providers frequently update their platforms, introduce new features, and modify existing services. While these updates improve functionality and security, they can also require organizations to adjust configurations and processes.
+
+For teams used to full control over infrastructure, this constant change can be challenging. Organizations must stay proactive and adapt their security practices to align with provider updates while maintaining compliance and stability.
+
+Shared Responsibility Model
+
+A key principle in cloud security is the shared responsibility model. This framework clearly defines security duties between the cloud service provider and the customer.
+
+The cloud service provider is responsible for securing the underlying infrastructure, including physical data centers, networking hardware, hypervisors, and host systems.
+The customer is responsible for securing their own data, applications, configurations, and user access within the cloud environment.
+
+Security issues often arise when organizations assume that the provider handles all aspects of security. In reality, misconfigurations, weak access controls, and improper setup remain the responsibility of the organization using the cloud services.
+
+
+
+
+
+
+
+
+
+
+
+Cloud Security Hardening Techniques
+
+Securing cloud infrastructure requires a combination of tools, configurations, and best practices designed to reduce vulnerabilities and strengthen overall system protection. Key cloud hardening methods include identity management, virtualization security, baseline configurations, encryption, and secure key handling.
+
+Identity and Access Management (IAM)
+
+Identity and Access Management (IAM) is a framework of processes and technologies used to control and manage digital identities within cloud environments. It determines who can access specific cloud resources and what actions they are allowed to perform. Proper IAM configuration is essential to prevent unauthorized access and enforce least-privilege principles.
+
+Hypervisors
+
+A hypervisor is a layer of software or firmware that separates physical hardware from virtual machines, enabling multiple operating systems to run on a single physical system.
+
+There are two main types:
+
+Type 1 hypervisors run directly on hardware (e.g., VMware ESXi)
+Type 2 hypervisors run on top of an operating system (e.g., VirtualBox)
+
+Cloud providers typically use Type 1 hypervisors because they are more efficient and secure. These systems are maintained by the cloud service provider, including updates and patch management. However, vulnerabilities or misconfigurations can lead to “VM escape” attacks, where an attacker breaks out of a virtual machine and gains access to the underlying host system or other virtual machines.
+
+Baselining
+
+Baselining refers to establishing a standard, fixed configuration for a cloud environment that serves as a reference point for detecting changes over time.
+
+A baseline helps ensure consistency, security, and performance across cloud systems. Common baseline practices include:
+
+Restricting administrative access to cloud portals
+Enabling password and identity controls
+Activating encryption for stored data
+Configuring threat detection for services such as databases
+
+By comparing current system states against the baseline, organizations can quickly identify unauthorized or risky changes.
+
+Cryptography in Cloud Security
+
+Cryptography protects data in cloud environments by ensuring confidentiality, integrity, and secure storage through encryption and key management.
+
+Encryption converts readable data into ciphertext that cannot be understood without the correct decryption key. Modern encryption relies primarily on secret keys rather than secret algorithms, making key security critical for protecting cloud data both at rest and in transit.
+
+Cryptographic Erasure
+
+Cryptographic erasure, also known as crypto-shredding, is a data destruction method where encryption keys are permanently deleted instead of deleting the data itself.
+
+Once the keys are destroyed, the encrypted data becomes unreadable and effectively inaccessible. This method is especially useful in cloud environments where physical data destruction is not practical. For effective security, all copies of the encryption key must be removed to ensure the data cannot be recovered.
+
+Key Management in Cloud Security
+
+Secure management of encryption keys is essential for protecting cloud data.
+
+Common key protection tools include:
+
+Trusted Platform Module (TPM): A hardware chip used to securely store cryptographic keys, passwords, and certificates.
+Cloud Hardware Security Module (CloudHSM): A dedicated hardware device used in cloud environments to securely generate, store, and manage encryption keys while performing cryptographic operations.
+
+In most cloud systems, customers do not directly manage the underlying encryption infrastructure, but many providers allow customers to manage or supply their own encryption keys. In such cases, the customer becomes responsible for protecting those keys.
+
+Cloud service providers typically follow a shared responsibility model, where they secure the infrastructure while customers secure their data and configurations. Independent audits and compliance frameworks (such as FedRAMP for government-related services) help verify provider security standards.
+
+
+
+
+
+
+
+
+
+Key Cybersecurity Terms (Reframed)
+
+A baseline configuration (baseline image) refers to a documented standard setup of a system that serves as a reference point for building, updating, and maintaining future versions of that system. It ensures consistency across deployments and helps detect unauthorized changes.
+
+Hardware is the collection of physical components that make up a computer system, such as the processor, memory, storage devices, and input/output devices.
+
+Multi-factor authentication (MFA) is a security control that requires users to confirm their identity using two or more different verification methods before accessing a system or network, improving protection against unauthorized access.
+
+Network log analysis is the process of reviewing and examining network-generated logs to detect unusual behavior, security incidents, or other important events within a system.
+
+An operating system (OS) acts as the primary interface between computer hardware and the user, managing system resources and enabling software applications to run.
+
+A patch update is a software or operating system modification designed to fix vulnerabilities, improve performance, or resolve bugs within a program or system.
+
+Penetration testing (pen testing) is a controlled and simulated cyberattack performed to identify weaknesses in systems, networks, applications, or processes before malicious actors can exploit them.
+
+Security hardening is the practice of strengthening systems by reducing vulnerabilities, minimizing attack surfaces, and implementing protective security controls.
+
+Security Information and Event Management (SIEM) is a tool that gathers, aggregates, and analyzes log data from multiple sources to help organizations detect, monitor, and respond to security events in real time.
+
+A world-writable file is a file permission setting that allows any user, regardless of ownership, to modify or alter the file, which can introduce significant security risks if not properly controlled.
 
 
 
