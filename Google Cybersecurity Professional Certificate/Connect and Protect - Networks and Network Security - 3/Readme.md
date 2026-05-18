@@ -101,8 +101,8 @@ This module helped me understand how modern networks function and why securing c
 
 ## Status
 
-**Learning Progress:** In Progress  
-**Certificate Progress:** In Progress
+**Learning Progress:** Completed 
+**Certificate Progress:** Completed
 
 ## Note:
 

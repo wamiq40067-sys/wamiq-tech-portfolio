@@ -1,0 +1,425 @@
+Tools of the Trade: Linux and SQL
+
+
+
+module 1
+Operating system (OS) - The interface between computer hardware and the user.
+
+Hardware - The physical components of a computer.
+
+ 
+
+
+
+
+Common Operating Systems
+
+Several operating systems are widely used in the cybersecurity field, including Windows, macOS, Linux, ChromeOS, Android, and iOS. Understanding these systems is important because each has unique security features, architectures, and vulnerabilities.
+
+Windows and macOS
+
+Windows and macOS are two of the most commonly used operating systems for personal and business computers.
+
+Windows, introduced in 1985, is a closed-source operating system. This means its source code is not publicly available.
+macOS, first released in 1984, combines both open-source and proprietary components. Some parts, such as the kernel, are open source, while other sections remain private.
+
+Both operating systems are heavily used in enterprise environments and are frequent targets for cyberattacks due to their popularity.
+
+Linux
+
+Linux was first released in 1991 and is fully open source. Anyone can access, modify, and distribute its source code. Because of this openness, developers worldwide contribute to improving Linux distributions.
+
+Linux plays a major role in cybersecurity because many security tools and specialized operating systems are built on it. Certain Linux distributions are specifically designed for penetration testing, digital forensics, and security analysis.
+
+ChromeOS
+
+ChromeOS became available in 2011 and is based on Chromium OS. Chromium OS is entirely open source, while ChromeOS includes both open-source and proprietary elements.
+
+ChromeOS is commonly used in educational institutions because of its lightweight design, cloud integration, and simplified management features.
+
+Android and iOS
+
+Android and iOS are operating systems designed primarily for mobile devices such as smartphones, tablets, and smartwatches.
+
+Android was publicly released in 2008 and is largely open source.
+iOS, introduced in 2007, is partially open source with many proprietary components.
+
+Mobile operating systems have become increasingly important in cybersecurity due to the growth of mobile applications, cloud services, and mobile-based attacks.
+
+Operating Systems and Security Risks
+
+All operating systems can contain vulnerabilities, regardless of how secure they are designed to be. One of the most effective ways to reduce security risks is by regularly updating the operating system and its software components.
+
+Legacy Operating Systems
+
+A legacy operating system refers to software that is outdated but still in use. Organizations may continue using older systems because certain applications or hardware are incompatible with newer versions.
+
+This is especially common in industries that rely on specialized equipment with embedded software.
+
+Legacy systems create significant security concerns because vendors may stop providing updates and patches. Without ongoing support, these systems become more exposed to newly discovered threats and attacks.
+
+Additional Vulnerabilities
+
+Even fully updated operating systems can still face security issues. Cybersecurity professionals often monitor official vulnerability databases and vendor security bulletins to stay informed about emerging threats.
+
+Examples include:
+
+Microsoft Security Response Center (MSRC) for Microsoft products
+Apple Security Updates for macOS and iOS
+Ubuntu CVE reports for Linux vulnerabilities
+Google Cloud Security Bulletins for Google-related services
+
+Staying informed about vulnerabilities and maintaining updated systems are essential responsibilities for security analysts and IT professionals.
+
+
+
+
+
+Application - A program that performs a specific task.
+
+
+
+
+
+
+Booting a Computer
+
+When a computer is powered on, a small chip called either the BIOS or UEFI begins the startup process.
+
+BIOS (Basic Input/Output System) is an older firmware technology that contains startup instructions for the computer.
+UEFI (Unified Extensible Firmware Interface) is the modern replacement for BIOS and includes improved functionality and stronger security features.
+
+Both BIOS and UEFI perform similar tasks during startup. Their role is to initialize the system, check hardware components, and prepare the computer to load the operating system. UEFI became more common after 2007 and is now standard in most modern computers.
+
+One important responsibility of BIOS or UEFI is verifying that hardware components are functioning properly. After these checks are completed, the firmware activates the bootloader, which is a program responsible for loading the operating system into memory.
+
+Once the operating system finishes loading, the computer becomes ready for normal use.
+
+How a Computer Completes Tasks
+
+After startup, computers perform tasks through cooperation between four main components:
+
+User
+Application
+Operating System
+Hardware
+1. User
+
+The process begins with the user. A user starts an action they want the computer to perform, such as opening a website, editing a document, or downloading a file.
+
+2. Application
+
+Applications are software programs designed to help users complete specific tasks.
+
+Examples include:
+
+A calculator app for mathematical operations
+A word processor for creating documents
+A web browser for accessing the internet
+
+The application receives the user’s input and forwards the request to the operating system.
+
+3. Operating System
+
+The operating system (OS) acts as a manager between software and hardware. It interprets requests from applications and decides how system resources should be used to complete the task.
+
+The OS communicates with hardware components and coordinates the work required for processing data.
+
+4. Hardware
+
+Hardware components perform the actual processing work.
+
+Examples include:
+
+The CPU handling calculations and instructions
+The hard drive or SSD storing and retrieving files
+Memory components temporarily holding data during processing
+
+After the hardware completes the requested action, the result is returned to the operating system, then back to the application, where it is displayed to the user.
+
+Understanding the OS Through Analogies
+Car Analogy
+
+Using a computer is similar to driving a car. A driver presses the accelerator and the car moves forward, even though the driver may not fully understand the engine’s internal processes.
+
+In the same way, users interact with applications while the operating system quietly handles complex background operations.
+
+Restaurant Analogy
+
+The operating system can also be compared to a restaurant kitchen.
+
+The customer represents the user.
+The food order represents the request made through an application.
+The kitchen staff represent the operating system and hardware working behind the scenes.
+
+A customer only sees the final meal, not the preparation process. Similarly, computer users only see the completed result, while the OS manages the internal operations required to fulfill the request.
+
+Example: Downloading a File
+
+The process of downloading a file demonstrates how users, applications, the OS, and hardware work together.
+
+Step 1: User Action
+
+The user clicks a download button in a web browser.
+
+Step 2: Application Request
+
+The web browser sends the download request to the operating system.
+
+Step 3: OS Coordination
+
+The operating system processes the request and directs the appropriate hardware components to begin downloading the file.
+
+Step 4: Hardware Processing
+
+The hardware handles network communication and stores the downloaded file on the storage device.
+
+Step 5: Output to User
+
+After the download is complete, the operating system informs the browser application, which then notifies the user that the file has been successfully downloaded.
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is a Virtual Machine?
+
+A virtual machine (VM) is a software-based version of a physical computer. It behaves like a real computer even though it does not exist as separate physical hardware.
+
+Virtual machines are created through a technology called virtualization. Virtualization uses software to simulate physical hardware components such as:
+
+CPU
+Storage
+Memory (RAM)
+Network interfaces
+
+Because of virtualization, a single physical computer can run multiple independent virtual machines at the same time.
+
+How Virtual Machines Work
+
+A physical computer, known as the host machine, shares its hardware resources with several virtual machines.
+
+Each VM functions like an independent computer and usually includes:
+
+Its own operating system
+Applications
+Virtual hardware resources
+
+For example, if a host computer has 16 GB of RAM, the memory can be divided among multiple virtual machines and the host system itself. Three virtual machines could each receive 4 GB of RAM while the remaining memory is used by the host operating system.
+
+Even though the virtual machines share the same physical hardware, they operate separately from one another.
+
+Benefits of Virtual Machines
+
+Virtual machines are widely used in cybersecurity and IT because they improve both security and efficiency.
+
+Security Advantages
+
+One major advantage of virtualization is isolation. Virtual machines operate in separate environments called sandboxes.
+
+Because VMs are isolated:
+
+Problems inside one VM usually do not affect others
+Malware infections can be contained more safely
+Security professionals can analyze suspicious files in controlled environments
+
+For example, cybersecurity analysts often run malware inside a VM to study its behavior without risking the main system.
+
+However, virtualization is not completely risk-free. Some advanced malicious software may escape the virtual environment and access the host machine. Because of this, virtual machines should still be used carefully and securely.
+
+Efficiency Advantages
+
+Virtualization also improves efficiency by allowing multiple systems to run on one physical computer.
+
+Benefits include:
+
+Running several operating systems simultaneously
+Quickly switching between environments
+Testing software without separate hardware
+Reducing equipment costs
+
+A useful comparison is a city bus. Instead of every person driving a separate car, many passengers share one vehicle. Similarly, many virtual machines can share one physical computer, reducing hardware usage and resource waste.
+
+Managing Virtual Machines
+
+Virtual machines are controlled using software called a hypervisor.
+
+A hypervisor:
+
+Creates and manages virtual machines
+Connects virtual hardware to physical hardware
+Allocates system resources such as CPU power, RAM, and storage
+
+One important hypervisor is KVM (Kernel-based Virtual Machine).
+
+KVM:
+
+Is open source
+Works with many Linux distributions
+Is built directly into the Linux kernel
+Allows Linux systems to create and manage virtual machines without requiring additional virtualization software
+Other Types of Virtualization
+
+Virtualization is not limited to virtual machines. Other forms include:
+
+Virtual servers: Multiple server environments created from one physical server
+Virtual networks: Software-based networks that improve resource usage and flexibility
+Storage virtualization: Combining multiple storage devices into a single virtual storage system
+
+These technologies help organizations use hardware resources more effectively while improving scalability and management.
+
+
+
+
+
+
+
+
+
+
+User interface - A program that allows the user to control the functions of the operating system.
+
+Graphical user interface (GUI) - A user interface that uses icons on the screen to manage different tasks on the computer.
+
+Basic GUI components:
+Start menu
+Task bar
+Desktop with icons and shortcuts
+
+
+
+Command-line interface (CLI) - A text-based user interface that use commands to interact with the computer.
+
+
+
+
+
+
+
+
+CLI vs GUI
+
+Computers can be interacted with through different types of user interfaces. Two of the most common are the Graphical User Interface (GUI) and the Command-Line Interface (CLI).
+
+A GUI allows users to interact with the computer using graphical elements such as icons, buttons, and menus.
+A CLI is a text-based interface where users type commands to communicate with the system.
+
+Both interfaces are important in computing and cybersecurity, and each has its own strengths.
+
+Display Differences
+
+One major difference between a GUI and a CLI is how they appear to users.
+
+Graphical User Interface (GUI)
+
+A GUI includes visual components such as:
+
+Icons
+Windows
+Menus
+Toolbars
+
+Examples include desktop environments where users click icons to open applications or manage files.
+
+GUIs are designed to be visually friendly and easier for beginners to navigate.
+
+Command-Line Interface (CLI)
+
+A CLI contains only text. Users interact with the system by entering commands into a terminal or command prompt.
+
+Instead of clicking buttons, users type instructions directly for the operating system to execute.
+
+The interface often resembles programming code because it displays lines of text-based commands and outputs.
+
+Functional Differences
+
+GUIs and CLIs also differ in how tasks are performed.
+
+GUI Functionality
+
+A GUI generally handles one action at a time through visual interaction. Users complete tasks step-by-step by clicking through menus or windows.
+
+For example:
+
+Opening folders
+Dragging files
+Clicking application icons
+
+This makes GUIs convenient for everyday tasks and beginner users.
+
+CLI Functionality
+
+A CLI allows users to perform multiple operations quickly using commands. Complex tasks can often be automated or combined into a single command.
+
+This makes CLIs especially powerful for system administration, scripting, and cybersecurity operations.
+
+Advantages of CLI in Cybersecurity
+
+Cybersecurity professionals commonly use both GUIs and CLIs, but the CLI offers several important advantages.
+
+Efficiency
+
+Experienced users can often work faster in a CLI because commands allow direct interaction with the operating system.
+
+For example, creating many files through a GUI may require repeating the same steps multiple times. In a CLI, a single command can complete the task instantly.
+
+CLIs are also useful for:
+
+Automating repetitive tasks
+Managing systems remotely
+Running scripts
+Processing large amounts of data quickly
+Command History
+
+One major benefit of a CLI is the ability to maintain a history file that records previously executed commands.
+
+This is particularly valuable in cybersecurity because analysts can:
+
+Review the exact steps they performed
+Verify procedures during incident response
+Troubleshoot mistakes
+Audit system activity
+
+For example, when following an incident response playbook, analysts can check command history to confirm that all required commands were executed correctly.
+
+Command history may also help investigators track suspicious or malicious actions if a system has been compromised.
+
+Choosing Between CLI and GUI
+
+The choice between a GUI and CLI often depends on the task and the user’s experience level.
+
+GUIs are generally easier for beginners and casual users.
+CLIs provide greater speed, flexibility, and control for advanced tasks.
+
+In cybersecurity and system administration, learning both interfaces is important because each is useful in different situations.
+
+
+
+
+
+
+
+Application: Software designed to carry out a particular function or task for the user.
+Basic Input/Output System (BIOS): Firmware found in older computers that initializes hardware and starts the boot process.
+Bootloader: A program responsible for loading and starting the operating system during system startup.
+Command-Line Interface (CLI): A text-based environment where users interact with the system by entering commands.
+Graphical User Interface (GUI): A visual interface that allows users to interact with the computer through icons, menus, and windows.
+Hardware: The tangible physical parts of a computer system, such as the CPU, keyboard, monitor, and storage devices.
+Legacy Operating System: An older operating system that continues to be used despite no longer being current or fully supported.
+Operating System (OS): Core system software that manages hardware resources and enables communication between the user, applications, and hardware.
+Random Access Memory (RAM): Temporary memory used by a computer to store data and programs currently in use.
+Unified Extensible Firmware Interface (UEFI): Modern firmware that replaces BIOS and manages hardware startup while providing enhanced security and functionality.
+User Interface: The medium through which users communicate and interact with a computer or operating system.
+Virtual Machine (VM): A software-based simulation of a physical computer that can run its own operating system and applications independently.
+
+
+
+
