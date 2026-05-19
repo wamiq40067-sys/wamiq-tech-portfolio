@@ -423,3 +423,364 @@ Virtual Machine (VM): A software-based simulation of a physical computer that ca
 
 
 
+
+
+
+
+
+
+
+
+
+Module 2
+Linux - An open-source operating system.
+
+
+Components of Linux:
+User
+Applications 
+shell
+Filesystem Hierarchy Standard
+Kernel
+Hardware
+
+
+User - The person interacting with a computer.
+
+Application - A program that performs a specific task.
+
+Shell - The command-line interpreter.
+
+File Hierarchy Standard (FHS) - The component of the Linux OS that organizes data.
+
+Kernel - The component of the Linux OS that manages processes and memory.
+
+Hardware - The physical components of the computer.
+
+
+
+
+
+
+
+
+
+
+Linux System Components
+User
+
+The user is the individual who interacts with the computer system. Users start, control, and manage tasks on the computer. Linux is known as a multi-user operating system, meaning several users can access and use the same system resources simultaneously.
+
+Applications
+
+Applications are software programs designed to perform specific tasks for users. Some applications, like calculators and calendars, are usually pre-installed on a computer, while others, such as web browsers or email clients, may need to be installed separately.
+
+In Linux, applications are commonly installed using a package manager. A package manager is a utility that helps users install, update, manage, and remove software packages. A package contains software components that work together to create an application.
+
+Shell
+
+The shell acts as the command-line interface between the user and the operating system. It interprets text-based commands entered by the user and communicates them to the kernel for execution.
+
+The shell can be considered a translator between the user and the computer, converting user commands into instructions the system can understand and process.
+
+Filesystem Hierarchy Standard (FHS)
+
+The Filesystem Hierarchy Standard (FHS) defines how data and directories are organized within the Linux operating system. It determines where files, programs, and system data are stored so the OS can locate them efficiently.
+
+A directory, also called a folder, is used to organize files and other directories. The FHS provides a structured layout for storing and managing data across the system.
+
+Kernel
+
+The kernel is the core component of the Linux operating system. It manages system resources such as processes and memory and serves as the bridge between software applications and hardware.
+
+The Linux kernel is responsible for handling major hardware operations, allocating resources, and ensuring efficient communication between applications and the computer’s physical components.
+
+Hardware
+
+Hardware refers to the physical parts of a computer system. Examples include hard drives, processors, keyboards, and monitors. Hardware is generally divided into two categories: peripheral devices and internal hardware.
+
+Peripheral Devices
+
+Peripheral devices are external hardware components connected to the computer system. These devices are not essential for the computer to function and can usually be added or removed easily.
+
+Examples include:
+
+Monitor
+Keyboard
+Mouse
+Printer
+Internal Hardware
+
+Internal hardware consists of the essential components required for a computer to operate. These parts are connected to the motherboard, the main circuit board of the computer.
+
+Key internal hardware components include:
+
+Central Processing Unit (CPU):
+The CPU is the primary processor of the computer. It executes instructions from programs and performs general computing tasks.
+Random Access Memory (RAM):
+RAM provides temporary or short-term memory for the computer. It stores data currently being used by programs and processes. Data in RAM is lost when the computer is turned off.
+Hard Drive:
+The hard drive is used for long-term storage of files, programs, and operating system data. Unlike RAM, data stored on a hard drive remains available even after the computer is powered off. Some systems may contain multiple hard drives.
+
+
+
+
+
+Distributions - The different version of Linux.
+
+Parent Distributions:
+Red Hat Enterprise Linux (CentOS)
+Slackware (SUSE)
+Debian (Ubuntu and KALI LINUX)
+
+
+
+Penetration test - A simulated attack that helps identify vulnerabilities in systems, networks, websites, applications, and processes.
+
+
+
+Penetration testing tools in Kali Linux:
+Metasploit - It can be used to look for and exploit vulnerabilities on machines.
+
+Burp Suite - It is a tool that helps to test for weaknesses in web applications.
+
+John the Ripper - A tool used to guess passwords.
+
+Digital forensics - The practice of collecting and analyzing data to determine what has happened after an attack.
+
+
+Digital forensics tools in KALI LINUX:
+tcpdump - A command-line packet analyzer. It's used to capture network traffic.
+Wireshark - It has GUI that can be used to analyze live and captured network traffic.
+Autopsy - It is a forensic tool used to analyze hard drives and smartphones.
+
+
+
+
+
+
+
+
+Popular Linux Distributions Used in Cybersecurity
+Kali Linux
+
+Kali Linux is a widely recognized open-source Linux distribution commonly used by cybersecurity professionals. It is specifically designed for security-related tasks and comes with a large collection of pre-installed tools for activities such as penetration testing and digital forensics.
+
+Penetration testing involves simulating cyberattacks to discover weaknesses in systems, applications, or networks before real attackers can exploit them. Digital forensics focuses on gathering and examining digital evidence after a security incident to understand what occurred.
+
+Although Kali Linux is very popular in cybersecurity, it is not the only Linux distribution used in the field.
+
+Ubuntu
+
+Ubuntu is a beginner-friendly and widely adopted Linux distribution used across many industries, including cybersecurity. It offers both a graphical user interface (GUI) and a command-line interface (CLI), making it suitable for both new and experienced users.
+
+Ubuntu is based on Debian and includes several essential applications by default. Additional software, including security tools, can be installed through its package management system. Due to its large user community, Ubuntu has extensive online documentation and support resources.
+
+Ubuntu is also commonly used in cloud computing environments, which makes it important for cybersecurity professionals working with cloud infrastructure and servers.
+
+Parrot OS
+
+Parrot OS is another open-source Linux distribution designed for cybersecurity and privacy-focused tasks. Similar to Kali Linux, it includes many built-in tools for penetration testing, ethical hacking, and digital investigations.
+
+Parrot OS is known for being lightweight and user-friendly. It supports both GUI and CLI environments, allowing users to choose how they prefer to interact with the system.
+
+Red Hat Enterprise Linux
+
+Red Hat Enterprise Linux, often called RHEL, is a commercial Linux distribution developed for enterprise and business environments. Unlike many open-source distributions, it requires a paid subscription.
+
+RHEL is valued for its stability, security, and professional support services. Organizations often use it in corporate environments where reliability and dedicated technical assistance are important.
+
+AlmaLinux
+
+AlmaLinux is a free, community-supported Linux distribution created to serve as an alternative to CentOS after CentOS 8 reached end-of-life.
+
+AlmaLinux is designed to maintain compatibility with systems previously running CentOS, allowing organizations to continue using their existing applications and configurations with minimal changes. It is commonly used in servers and enterprise environments that require long-term stability.
+
+
+
+
+
+
+
+
+
+Introduction to Package Managers
+What is a Package?
+
+A package is a collection of software files used to install and run applications on a Linux system. Some packages work together with other packages to create a complete application, while others may function independently as standalone software.
+
+Packages usually include important components such as program files, configuration files, and dependencies. Dependencies are additional libraries or supporting files required for the application to work correctly.
+
+What is a Package Manager?
+
+A package manager is a utility that helps users install, update, manage, and remove software packages from a system. It simplifies software management by automatically handling dependencies and ensuring that required files are installed properly.
+
+Using updated package versions is important because newer releases often contain security patches, performance improvements, and bug fixes that help protect the system.
+
+Types of Package Managers
+
+Different Linux distributions use different package management systems. Many Linux distributions are based on parent distributions, which determines the package manager they support.
+
+For example:
+
+Kali Linux, Ubuntu, and Parrot OS are based on Debian.
+CentOS and other similar distributions are derived from Red Hat.
+
+Because of this relationship, Debian-based systems commonly use package managers such as dpkg, while Red Hat-based systems use RPM.
+
+Debian Package Manager (dpkg)
+
+dpkg is a package manager used in Debian-based Linux distributions. It works with software packages that use the .deb file format.
+
+Example format:
+
+Package_Version-Release_Architecture.deb
+Red Hat Package Manager (RPM)
+
+RPM is used in Red Hat-based Linux distributions. It manages packages with the .rpm file extension.
+
+Example format:
+
+Package-Version-Release_Architecture.rpm
+Package Management Tools
+
+In addition to package managers, Linux also provides package management tools that make software management easier through the command-line interface.
+
+These tools simplify tasks such as:
+
+Installing software
+Updating packages
+Searching repositories
+Removing applications
+Advanced Package Tool (APT)
+
+APT is a command-line package management tool used on Debian-based distributions. It works together with dpkg to install, update, search, and manage packages efficiently.
+
+APT is commonly used on systems like:
+
+Ubuntu
+Kali Linux
+Parrot OS
+Yellowdog Updater Modified (YUM)
+
+YUM is a package management tool designed for Red Hat-based Linux distributions. It helps users manage .rpm packages through the command line.
+
+YUM can:
+
+Install packages
+Update software
+Search repositories
+Resolve dependencies automatically
+
+It is commonly used in Red Hat-related distributions and enterprise environments.
+
+
+
+
+
+
+
+
+command - An instruction telling the computer to do something.
+
+
+
+
+
+
+
+Communicating Through a Shell
+
+A shell is a command-line interface that allows users to interact with the operating system. It works as a bridge between the user and the computer by interpreting commands and sending them to the system for execution.
+
+When a user enters a command, the shell processes the instruction, communicates with the kernel, and then displays the result back to the user. This makes the shell an essential component for managing and controlling Linux systems.
+
+Common Types of Linux Shells
+
+Linux provides several types of shells, each with its own features and functionality. Some commonly used shells include:
+
+Bourne-Again Shell (bash)
+C Shell (csh)
+Korn Shell (ksh)
+Enhanced C Shell (tcsh)
+Z Shell (zsh)
+
+Although these shells support many standard Linux commands, they differ in syntax, customization options, and advanced features.
+
+For example:
+
+bash and ksh typically use the dollar sign ($) as the command prompt.
+zsh often uses the percent sign (%) as the prompt symbol.
+Bash Shell
+
+Bash, short for Bourne-Again Shell, is the default shell for most Linux distributions. It is widely preferred because of its simplicity, flexibility, and user-friendly design.
+
+Bash supports:
+
+Basic Linux commands
+Shell scripting
+Automation tasks
+System administration activities
+
+It is also one of the most commonly used shells in cybersecurity and system administration, making it an important tool for learning Linux and security operations.
+
+
+
+
+
+
+
+
+
+
+Standard input - Information received by the OS via the command line.
+
+Echo - A Linux command that outputs a specified string of text.
+
+String data - Data consisting of an ordered sequence of characters.
+
+Standard output - Information returned by the OS through the shell.
+
+Standard error - Error messages returned by the OS through the shell.
+
+
+
+
+
+
+
+
+
+
+Linux and Cybersecurity Terms
+Application: Software designed to carry out a particular function or task.
+Bash: Bash The standard shell used in most Linux operating systems.
+CentOS: CentOS A free Linux distribution developed using source code from Red Hat Enterprise Linux.
+Central Processing Unit (CPU): The main processor of a computer responsible for executing instructions and handling processing tasks.
+Command: An instruction entered by a user to tell the computer to perform a specific action.
+Digital Forensics: The process of collecting, examining, and interpreting digital evidence after a cybersecurity incident or attack.
+Directory: A container used to organize and store files and other directories within a filesystem.
+Distributions: Different versions or variants of the Linux operating system.
+File Path: The exact location of a file or directory within a filesystem.
+Filesystem Hierarchy Standard (FHS): The Linux standard that defines how directories and files are organized within the operating system.
+Graphical User Interface (GUI): A visual interface that allows users to interact with a computer through icons, windows, and menus.
+Hard Drive: A storage device used for saving data and programs permanently.
+Hardware: The physical parts and components of a computer system.
+Internal Hardware: Essential hardware components located inside the computer that are required for operation.
+Kali Linux: Kali Linux A Linux distribution widely used for cybersecurity tasks such as penetration testing and digital forensics.
+Kernel: The central component of the Linux operating system that manages hardware resources, memory, and system processes.
+Linux: Linux An open-source operating system commonly used in servers, development, and cybersecurity.
+Package: A collection of software files used to install and run an application.
+Package Manager: A utility that helps users install, update, manage, and remove software packages.
+Parrot OS: Parrot OS A Linux distribution focused on security, privacy, and penetration testing.
+Penetration Test (Pen Test): A controlled cybersecurity assessment that simulates attacks to identify vulnerabilities in systems or networks.
+Peripheral Devices: External hardware devices connected to a computer, such as keyboards, printers, or monitors.
+Random Access Memory (RAM): Temporary memory used by the computer to store active data and running processes.
+Red Hat Enterprise Linux (RHEL): Red Hat Enterprise Linux A commercial Linux distribution designed for enterprise and business environments.
+Shell: A command-line interpreter that allows users to communicate with the operating system.
+Standard Error (stderr): Error messages generated by the operating system and displayed through the shell.
+Standard Input (stdin): Data or information provided to the operating system through the command line.
+Standard Output (stdout): Information or results returned by the operating system through the shell.
+String Data: Data made up of a sequence of characters such as letters, numbers, or symbols.
+Ubuntu: Ubuntu A popular and beginner-friendly Linux distribution used in many environments, including cybersecurity and cloud computing.
+User: The individual who interacts with and operates a computer system.
