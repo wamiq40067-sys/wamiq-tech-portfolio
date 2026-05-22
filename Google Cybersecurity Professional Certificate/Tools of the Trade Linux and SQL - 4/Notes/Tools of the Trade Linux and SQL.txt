@@ -2036,3 +2036,2860 @@ Standard input		Data or information provided to the operating system through the
 Standard output		Information or results returned by the operating system to the terminal or shell.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+module 4
+Database - An organized collection of information or data.
+
+
+spreadsheets:
+Designed for a single user or a small team
+Store less data
+
+Databases:
+Accessed by multiple people simultaneously 
+Store massive amounts of data
+perform complex tasks while accessing data
+
+
+Relational database - A structured database containing tables that are related to each other.
+
+Primary key - A column where every row has a unique entry.
+Foreign key - A column in a table that is a primary in another table.
+
+
+A table can have one primary key but multiple foreign keys.
+
+
+
+
+SQL (Structured Query Language) - A programming language used to create, interact with, and request information from a database.
+
+
+Query - A request for data from a database table or a combination of tables.
+
+
+
+
+
+
+
+
+
+Accessing SQL and Comparing It with Linux Filtering
+Accessing SQL
+
+There are different ways to access SQL, depending on the database system being used. One common method is through the Linux command line.
+
+To open a SQL environment from Linux, you enter the command associated with the SQL version you want to use. For example, to access SQLite, you would type:
+
+sqlite3
+
+Once the SQL interface opens, the commands you enter are interpreted as SQL commands instead of Linux shell commands.
+
+Differences Between Linux and SQL Filtering
+
+Both Linux and SQL can filter and search data, but they are designed for different purposes and work in different ways.
+
+Purpose
+Linux
+
+Linux filtering is mainly used for working with files, directories, and system data. It helps users:
+
+Search for files
+View or modify file contents
+Manage permissions
+Monitor processes
+
+Common Linux filtering commands include:
+
+find
+grep
+sed
+cut
+SQL
+
+SQL filtering is designed for working with databases. It allows users to:
+
+Retrieve specific records
+Query tables
+Analyze structured data
+Manipulate database information
+
+Common SQL keywords include:
+
+SELECT
+WHERE
+JOIN
+Syntax
+Linux Syntax
+
+Linux uses different commands and options depending on the task being performed. Each command has its own syntax and behavior.
+
+Example:
+
+grep "error" logfile.txt
+SQL Syntax
+
+SQL uses a standardized query language with consistent keywords and clauses across most database systems.
+
+Example:
+
+SELECT * FROM employees
+WHERE department = 'IT';
+Structure of Data
+
+One major difference between Linux and SQL is how data is organized.
+
+Linux
+
+Linux often displays information as plain text lines. Data is less structured and may require additional commands to isolate specific details.
+
+SQL
+
+SQL stores information in organized tables with rows and columns, making it easier to:
+
+Read data
+Filter specific fields
+Sort information
+Analyze records efficiently
+
+For example, employee login records in SQL could be separated into columns such as:
+
+Employee ID	Username	Login Time	Status
+
+This structured format makes searching and analysis much faster compared to plain-text logs in Linux.
+
+Joining Tables
+
+SQL provides the ability to combine information from multiple tables using joins.
+
+Example:
+
+SELECT employees.name, logins.time
+FROM employees
+JOIN logins
+ON employees.id = logins.employee_id;
+
+This is extremely useful in cybersecurity when analysts need to connect related information from different datasets.
+
+Linux does not have built-in relational table joining like SQL databases do, which limits its ability to correlate structured data.
+
+Best Uses in Cybersecurity
+When to Use SQL
+
+SQL is best when:
+
+Data is stored in databases
+Information is highly structured
+Multiple tables need to be connected
+Large datasets require efficient searching and analysis
+
+Examples:
+
+Authentication logs in databases
+User activity records
+Security event management systems
+When to Use Linux Filtering
+
+Linux filtering is useful when:
+
+Data is stored in plain text files
+Logs are outside a database system
+Quick command-line analysis is needed
+Working directly with operating system files
+
+Examples:
+
+System logs
+Application log files
+Configuration files
+Summary
+Linux filtering is ideal for working with files and plain-text system data.
+SQL filtering is designed for structured database analysis.
+SQL provides better organization and supports joining tables.
+Linux remains important for analyzing text-based logs and system-level data.
+Cybersecurity professionals often use both tools depending on the format and location of the data.
+
+
+
+
+
+
+
+
+SQL queries:
+
+SELECT - Indicates which columns to return.
+FROM - Indicates which table to query.
+
+
+Syntax - The rules that determine what is correctly structured in a computing language.
+
+
+
+
+
+
+
+
+
+Basic SQL Query
+
+SQL queries are used to retrieve information from a database. The two most important keywords in almost every SQL query are:
+
+SELECT
+FROM
+
+These keywords tell SQL:
+
+What data to retrieve
+Which table to retrieve it from
+Example of a Basic SQL Query
+SELECT employee_id, device_id
+FROM employees;
+
+This query retrieves the employee_id and device_id columns from the employees table.
+
+The Chinook Database
+
+In many SQL exercises, a sample database called the Chinook database is used. It represents a digital media company and contains multiple tables such as:
+
+employees
+customers
+invoices
+
+These tables store structured information like:
+
+Names
+Addresses
+Customer details
+Billing information
+
+Example query:
+
+SELECT customerid, city, country
+FROM customers;
+
+This returns the customerid, city, and country columns from the customers table.
+
+Understanding SELECT
+
+The SELECT keyword specifies which columns should be displayed in the results.
+
+Selecting One Column
+SELECT customerid
+FROM customers;
+
+This retrieves only the customerid column.
+
+Selecting Multiple Columns
+
+Separate column names with commas:
+
+SELECT customerid, city
+FROM customers;
+
+This retrieves both customerid and city.
+
+Selecting All Columns
+
+Use an asterisk (*) to return every column in the table:
+
+SELECT *
+FROM customers;
+
+This displays all data from the customers table.
+
+Note: Using SELECT * on very large databases is usually not recommended because it can slow performance and make results difficult to read.
+
+Understanding FROM
+
+The FROM keyword identifies the table being queried.
+
+Example:
+
+SELECT *
+FROM customers;
+
+Here:
+
+SELECT * → return all columns
+FROM customers → retrieve data from the customers table
+Using Semicolons
+
+A semicolon (;) marks the end of a SQL query.
+
+Example:
+
+SELECT * FROM customers;
+Formatting SQL Queries
+
+SQL queries can be written on:
+
+Multiple lines for readability
+A single line for compactness
+
+Both formats work the same way.
+
+Example:
+
+SELECT *
+FROM customers;
+
+or
+
+SELECT * FROM customers;
+ORDER BY
+
+The ORDER BY keyword is used to sort query results.
+
+It organizes records based on one or more columns.
+
+Sorting in Ascending Order
+
+By default, ORDER BY sorts in ascending order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+
+This sorts the records alphabetically by city.
+
+Ascending Order Means:
+Numbers → smallest to largest
+Text → A to Z
+Sorting in Descending Order
+
+Use the DESC keyword to reverse the order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+
+This sorts cities from Z to A.
+
+Descending Order Means:
+Numbers → largest to smallest
+Text → Z to A
+Sorting by Multiple Columns
+
+You can sort using more than one column.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY country, city;
+
+This query:
+
+Sorts records by country
+Then sorts matching countries by city
+
+This helps organize large datasets more effectively.
+
+
+
+
+
+
+
+
+Filtering - Selecting data that match a certain condition.
+
+operator - A symbol or keyword that represents an operation
+
+WHERE - Indicates the condition for a filter.
+
+filter for 'East%' - this will give all the records which starts with East
+when searching for patterns, we dont use operator, we use LIKE.
+
+
+LIKE - Used with WHERE to search for a pattern in a column.
+
+WHERE office LIKE 'EAST%'
+
+
+
+
+
+
+
+example - WHERE
+
+SELECT firstname, lastname, title, email
+FROM employees
+WHERE title = 'IT Staff';
+
+
+
+
+
+
+
+Wildcards
+A wildcard is a special character that can be substituted with any other character. Two of the most useful wildcards are the percentage sign (%) and the underscore (_):
+
+The percentage sign substitutes for any number of other characters. 
+
+The underscore symbol only substitutes for one other character.
+
+These wildcards can be placed after a string, before a string, or in both locations depending on the pattern you’re filtering for.
+
+The following table includes these wildcards applied to the string 'a' and examples of what each pattern would return.
+
+Pattern
+
+Results that could be returned
+
+'a%'
+
+apple123, art, a
+
+'a_'
+
+as, an, a7
+
+'a__' 
+
+ant, add, a1c
+
+'%a'
+
+pizza, Z6ra, a
+
+'_a'
+
+ma, 1a, Ha
+
+'%a%'
+
+Again, back, a
+
+'_a_'
+
+Car, ban, ea7
+
+
+
+
+
+
+
+
+
+LIKE - SELECT lastname, firstname, title, email
+	FROM employees
+	WHERE title LIKE 'IT%';
+
+SELECT firstname,lastname, state, country
+FROM customers
+WHERE state LIKE 'N_';
+
+
+
+
+
+
+
+
+
+
+
+more SQL filters
+
+
+common data types:
+String 
+Numeric 
+Date and Time
+
+
+String data - Data consisting of an ordered sequence of characters
+
+Numeric data - Data consisting of numbers
+
+Date and Time data - Data representing a date and/or time.
+
+
+Operators - '=', '>', '<', '<>', '>=', '<=' .
+
+BETWEEN - An operator that filters for numbers or dates within a range.
+
+
+
+
+
+
+
+Comparison operators
+In SQL, filtering numeric and date and time data often involves operators. You can use the following operators in your filters to make sure you return only the rows you need:
+
+operator
+
+use
+
+<
+
+less than
+
+>
+
+greater than
+
+=
+
+equal to
+
+<=
+
+less than or equal to
+
+>=
+
+greater than or equal to
+
+<>
+
+not equal to
+
+Note: You can also use != as an alternative operator for not equal to.
+
+
+
+
+
+
+
+Numbers, Dates, and Times in Cybersecurity
+
+Security analysts work with many different types of data, not just text or string data. In cybersecurity, numeric, date, and time data are extremely important for monitoring systems, identifying suspicious activity, and analyzing security events.
+
+Numeric Data in Cybersecurity
+
+Numeric data refers to information represented by numbers. Security analysts regularly analyze numeric values to measure activity, detect anomalies, and track system behavior.
+
+Examples of numeric data include:
+
+Number of login attempts
+Count of specific log events
+Amount of data transferred from a source
+Amount of data received by a destination
+Number of failed authentication attempts
+Network traffic volume
+File sizes and storage usage
+
+Numeric data helps analysts identify unusual patterns, such as:
+
+Sudden spikes in traffic
+Excessive failed logins
+Unexpected increases in data transfer
+
+These patterns may indicate security threats like brute-force attacks, malware activity, or data exfiltration.
+
+Date and Time Data in Cybersecurity
+
+Date and time data records when events occur. This information is essential for tracking incidents and understanding the sequence of activities in a system.
+
+Common examples include:
+
+Login dates
+Login times
+Patch installation dates
+Connection durations
+Event timestamps in logs
+File creation or modification times
+
+Most security logs automatically attach timestamps to records, allowing analysts to:
+
+Trace attacks chronologically
+Investigate suspicious activity
+Identify when an incident started
+Correlate events across systems
+Importance of Date and Time Information
+
+Date and time data helps security analysts:
+
+Detect unauthorized access at unusual hours
+Monitor system changes over time
+Track how long a connection remained active
+Verify whether systems were patched on schedule
+Investigate incident timelines accurately
+
+For example:
+
+Multiple failed login attempts late at night may indicate an attack attempt.
+A long connection duration from an unknown IP address could suggest suspicious activity.
+Missing patch dates may reveal vulnerable systems.
+Role in Security Analysis
+
+Together, numeric data and date/time data help analysts:
+
+Monitor system performance
+Detect threats
+Analyze logs efficiently
+Investigate incidents
+Identify abnormal behavior patterns
+
+These data types are critical for effective cybersecurity monitoring and incident response.
+
+
+
+
+
+
+
+
+
+Incorporating operators into filters
+These comparison operators are used in the WHERE clause at the end of a query. The following query uses the > operator to filter the birthdate column. You can run this query to explore its output:
+
+
+SELECT firstname, lastname, birthdate
+FROM employees
+WHERE birthdate > '1970-01-01';
+
++-----------+----------+---------------------+
+| FirstName | LastName | BirthDate           |
++-----------+----------+---------------------+
+| Jane      | Peacock  | 1973-08-29 00:00:00 |
+| Michael   | Mitchell | 1973-07-01 00:00:00 |
+| Robert    | King     | 1970-05-29 00:00:00 |
++-----------+----------+---------------------+
+This query returns the first and last names of employees born after, but not on, '1970-01-01' (or January 1, 1970). If you were to use the >= operator instead, the results would also include results on exactly '1970-01-01'.
+
+In other words, the > operator is exclusive and the >= operator is inclusive.  An exclusive operator is an operator that does not include the value of comparison. An inclusive operator is an operator that includes the value of comparison. 
+
+
+
+
+
+
+
+
+
+
+
+BETWEEN
+Another operator used for numeric data as well as date and time data is the BETWEEN operator. BETWEEN filters for numbers or dates within a range. For example, if you want to find the first and last names of all employees hired between January 1, 2002 and January 1, 2003, you can use the BETWEEN operator as follows:
+
+
+SELECT firstname, lastname, hiredate
+FROM employees
+WHERE hiredate BETWEEN '2002-01-01' AND '2003-01-01';
+
++-----------+----------+---------------------+
+| FirstName | LastName | HireDate            |
++-----------+----------+---------------------+
+| Andrew    | Adams    | 2002-08-14 00:00:00 |
+| Nancy     | Edwards  | 2002-05-01 00:00:00 |
+| Jane      | Peacock  | 2002-04-01 00:00:00 |
++-----------+----------+---------------------+
+
+Note: The BETWEEN operator is inclusive. This means records with a hiredate of January 1, 2002 or January 1, 2003 are included in the results of the previous query.
+
+
+
+
+
+
+
+
+
+
+
+
+AND - specifies that both conditions must be met simultaneously.
+OR - specifies that either condition can be met.
+NOT - Negates a condition.
+
+
+
+
+
+
+
+
+
+
+
+Accessing SQL
+There are many interfaces for accessing SQL and many different versions of SQL. One way to access SQL is through the Linux command line.
+
+To access SQL from Linux, you need to type in a command for the version of SQL that you want to use. For example, if you want to access SQLite, you can enter the command sqlite3 in the command line.
+
+After this, any commands typed in the command line will be directed to SQL instead of Linux commands.
+
+Differences between Linux and SQL filtering 
+Although both Linux and SQL allow you to filter through data, there are some differences that affect which one you should choose.
+
+Purpose
+Linux filters data in the context of files and directories on a computer system. It’s used for tasks like searching for specific files, manipulating file permissions, or managing processes. 
+
+SQL is used to filter data within a database management system. It’s used for querying and manipulating data stored in tables and retrieving specific information based on defined criteria. 
+
+Syntax
+Linux uses various commands and command-line options specific to each filtering tool. Syntax varies depending on the tool and purpose. Some examples of Linux commands are find, sed, cut, e grep
+
+SQL uses the Structured Query Language (SQL), a standardized language with specific keywords and clauses for filtering data across different SQL databases. Some examples of SQL keywords and clauses are WHERE, SELECT, JOIN
+
+Structure
+SQL offers a lot more structure than Linux, which is more free-form and not as tidy.
+
+For example, if you wanted to access a log of employee log-in attempts, SQL would have each record separated into columns. Linux would print the data as a line of text without this organization. As a result, selecting a specific column to analyze would be easier and more efficient in SQL.
+
+In terms of structure, SQL provides results that are more easily readable and that can be adjusted more quickly than when using Linux.
+
+Joining tables
+Some security-related decisions require information from different tables. SQL allows the analyst to join multiple tables together when returning data. Linux doesn’t have that same functionality; it doesn’t allow data to be connected to other information on your computer. This is more restrictive for an analyst going through security logs.
+
+Best uses
+As a security analyst, it’s important to understand when you can use which tool. Although SQL has a more organized structure and allows you to join tables, this doesn’t mean that there aren’t situations that would require you to filter data in Linux.
+
+A lot of data used in cybersecurity will be stored in a database format that works with SQL. However, other logs might be in a format that is not compatible with SQL. For instance, if the data is stored in a text file, you cannot search through it with SQL. In those cases, it is useful to know how to filter in Linux. 
+
+reframe
+Accessing SQL and Comparing It with Linux Filtering
+Accessing SQL
+
+There are different ways to access SQL, depending on the database system being used. One common method is through the Linux command line.
+
+To open a SQL environment from Linux, you enter the command associated with the SQL version you want to use. For example, to access SQLite, you would type:
+
+sqlite3
+
+Once the SQL interface opens, the commands you enter are interpreted as SQL commands instead of Linux shell commands.
+
+Differences Between Linux and SQL Filtering
+
+Both Linux and SQL can filter and search data, but they are designed for different purposes and work in different ways.
+
+Purpose
+Linux
+
+Linux filtering is mainly used for working with files, directories, and system data. It helps users:
+
+Search for files
+View or modify file contents
+Manage permissions
+Monitor processes
+
+Common Linux filtering commands include:
+
+find
+grep
+sed
+cut
+SQL
+
+SQL filtering is designed for working with databases. It allows users to:
+
+Retrieve specific records
+Query tables
+Analyze structured data
+Manipulate database information
+
+Common SQL keywords include:
+
+SELECT
+WHERE
+JOIN
+Syntax
+Linux Syntax
+
+Linux uses different commands and options depending on the task being performed. Each command has its own syntax and behavior.
+
+Example:
+
+grep "error" logfile.txt
+SQL Syntax
+
+SQL uses a standardized query language with consistent keywords and clauses across most database systems.
+
+Example:
+
+SELECT * FROM employees
+WHERE department = 'IT';
+Structure of Data
+
+One major difference between Linux and SQL is how data is organized.
+
+Linux
+
+Linux often displays information as plain text lines. Data is less structured and may require additional commands to isolate specific details.
+
+SQL
+
+SQL stores information in organized tables with rows and columns, making it easier to:
+
+Read data
+Filter specific fields
+Sort information
+Analyze records efficiently
+
+For example, employee login records in SQL could be separated into columns such as:
+
+Employee ID	Username	Login Time	Status
+
+This structured format makes searching and analysis much faster compared to plain-text logs in Linux.
+
+Joining Tables
+
+SQL provides the ability to combine information from multiple tables using joins.
+
+Example:
+
+SELECT employees.name, logins.time
+FROM employees
+JOIN logins
+ON employees.id = logins.employee_id;
+
+This is extremely useful in cybersecurity when analysts need to connect related information from different datasets.
+
+Linux does not have built-in relational table joining like SQL databases do, which limits its ability to correlate structured data.
+
+Best Uses in Cybersecurity
+When to Use SQL
+
+SQL is best when:
+
+Data is stored in databases
+Information is highly structured
+Multiple tables need to be connected
+Large datasets require efficient searching and analysis
+
+Examples:
+
+Authentication logs in databases
+User activity records
+Security event management systems
+When to Use Linux Filtering
+
+Linux filtering is useful when:
+
+Data is stored in plain text files
+Logs are outside a database system
+Quick command-line analysis is needed
+Working directly with operating system files
+
+Examples:
+
+System logs
+Application log files
+Configuration files
+Summary
+Linux filtering is ideal for working with files and plain-text system data.
+SQL filtering is designed for structured database analysis.
+SQL provides better organization and supports joining tables.
+Linux remains important for analyzing text-based logs and system-level data.
+Cybersecurity professionals often use both tools depending on the format and location of the data.
+Basic SQL query
+There are two essential keywords in any SQL query: SELECT and FROM. You will use these keywords every time you want to query a SQL database. Using them together helps SQL identify what data you need from a database and the table you are returning it from.
+
+The video demonstrated this SQL query:
+
+SELECT employee_id, device_id
+
+FROM employees;
+
+In readings and quizzes, this course uses a sample database called the Chinook database to run queries. The Chinook database includes data that might be created at a digital media company. A security analyst employed by this company might need to query this data.  For example, the database contains eleven tables, including an employees table, a customers table, and an invoices table. These tables include data such as names and addresses.  
+
+As an example, you can run this query to return data from the customers table of the Chinook database:
+
+ 
+SELECT customerid, city, country
+FROM customers;
+ 
+SELECT
+The SELECT keyword indicates which columns to return. For example, you can return the customerid column from the Chinook database with
+
+SELECT customerid
+
+You can also select multiple columns by separating them with a comma. For example, if you want to return both the customerid and city columns, you should write SELECT customerid, city.
+
+If you want to return all columns in a table, you can follow the SELECT keyword with an asterisk (*). The first line in the query will be SELECT *.
+
+Note: Although the tables you're querying in this course are relatively small, using SELECT * may not be advisable when working with large databases and tables; in those cases, the final output may be difficult to understand and might be slow to run. 
+
+FROM
+The SELECT keyword always comes with the FROM keyword. FROM indicates which table to query. To use the FROM keyword, you should write it after the SELECT keyword, often on a new line, and follow it with the name of the table you’re querying. If you want to return all columns from the customers table, you can write:
+
+SELECT *
+
+FROM customers;
+
+When you want to end the query here, you put a semicolon (;) at the end to tell SQL that this is the entire query.
+
+Note: Line breaks are not necessary in SQL queries, but are often used to make the query easier to understand. If you prefer, you can also write the previous query on one line as
+
+SELECT * FROM customers;
+
+ORDER BY
+Database tables are often very complicated, and this is where other SQL keywords come in handy. ORDER BY is an important keyword for organizing the data you extract from a table.
+
+ORDER BY sequences the records returned by a query based on a specified column or columns. This can be in either ascending or descending order.
+
+Sorting in ascending order
+To use the ORDER BY keyword, write it at the end of the query and specify a column to base the sort on. In this example, SQL will return the customerid, city, and country columns from the customers table, and the records will be sequenced by the city column:
+
+ 
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+ 
+The ORDER BY keyword sorts the records based on the column specified after this keyword. By default, as shown in this example, the sequence will be in ascending order. This means
+
+if you choose a column containing numeric data, it sorts the output from the smallest to largest. For example, if sorting on customerid, the ID numbers are sorted from smallest to largest.
+
+if the column contains alphabetic characters, such as in the example with the city column, it orders the records from the beginning of the alphabet to the end. 
+
+Sorting in descending order
+You can also use the ORDER BY with the DESC keyword to sort in descending order. The DESC keyword is short for "descending" and tells SQL to sort numbers from largest to smallest, or alphabetically from Z to A. This can be done by following ORDER BY with the DESC keyword. For example, you can run this query to examine how the results differ when DESC is applied: 
+
+ 
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+ 
+Now, cities at the end of the alphabet are listed first.
+
+Sorting based on multiple columns
+You can also choose multiple columns to order by. For example, you might first choose the country and then the city column. SQL then sorts the output by country, and for rows with the same country, it sorts them based on city. You can run this to explore how SQL displays this:
+
+reframe
+Basic SQL Query
+
+SQL queries are used to retrieve information from a database. The two most important keywords in almost every SQL query are:
+
+SELECT
+FROM
+
+These keywords tell SQL:
+
+What data to retrieve
+Which table to retrieve it from
+Example of a Basic SQL Query
+SELECT employee_id, device_id
+FROM employees;
+
+This query retrieves the employee_id and device_id columns from the employees table.
+
+The Chinook Database
+
+In many SQL exercises, a sample database called the Chinook database is used. It represents a digital media company and contains multiple tables such as:
+
+employees
+customers
+invoices
+
+These tables store structured information like:
+
+Names
+Addresses
+Customer details
+Billing information
+
+Example query:
+
+SELECT customerid, city, country
+FROM customers;
+
+This returns the customerid, city, and country columns from the customers table.
+
+Understanding SELECT
+
+The SELECT keyword specifies which columns should be displayed in the results.
+
+Selecting One Column
+SELECT customerid
+FROM customers;
+
+This retrieves only the customerid column.
+
+Selecting Multiple Columns
+
+Separate column names with commas:
+
+SELECT customerid, city
+FROM customers;
+
+This retrieves both customerid and city.
+
+Selecting All Columns
+
+Use an asterisk (*) to return every column in the table:
+
+SELECT *
+FROM customers;
+
+This displays all data from the customers table.
+
+Note: Using SELECT * on very large databases is usually not recommended because it can slow performance and make results difficult to read.
+
+Understanding FROM
+
+The FROM keyword identifies the table being queried.
+
+Example:
+
+SELECT *
+FROM customers;
+
+Here:
+
+SELECT * → return all columns
+FROM customers → retrieve data from the customers table
+Using Semicolons
+
+A semicolon (;) marks the end of a SQL query.
+
+Example:
+
+SELECT * FROM customers;
+Formatting SQL Queries
+
+SQL queries can be written on:
+
+Multiple lines for readability
+A single line for compactness
+
+Both formats work the same way.
+
+Example:
+
+SELECT *
+FROM customers;
+
+or
+
+SELECT * FROM customers;
+ORDER BY
+
+The ORDER BY keyword is used to sort query results.
+
+It organizes records based on one or more columns.
+
+Sorting in Ascending Order
+
+By default, ORDER BY sorts in ascending order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+
+This sorts the records alphabetically by city.
+
+Ascending Order Means:
+Numbers → smallest to largest
+Text → A to Z
+Sorting in Descending Order
+
+Use the DESC keyword to reverse the order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+
+This sorts cities from Z to A.
+
+Descending Order Means:
+Numbers → largest to smallest
+Text → Z to A
+Sorting by Multiple Columns
+
+You can sort using more than one column.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY country, city;
+
+This query:
+
+Sorts records by country
+Then sorts matching countries by city
+
+This helps organize large datasets more effectively.
+
+Summary
+Important SQL Keywords
+Keyword	Purpose
+SELECT	Chooses columns to display
+FROM	Specifies the table
+ORDER BY	Sorts query results
+DESC	Sorts in descending order
+Key Points
+SELECT and FROM are the foundation of SQL queries.
+Multiple columns can be selected using commas.
+SELECT * returns all columns.
+ORDER BY helps organize output data.
+Sorting can be ascending or descending.
+Multiple columns can be used for advanced sorting.
+Numbers, dates, and times in cybersecurity
+Security analysts work with more than just string data, or data consisting of an ordered sequence of characters. 
+
+They also frequently work with numeric data, or data consisting of numbers. A few examples of numeric data that you might encounter in your work as a security analyst include:
+
+the number of login attempts
+
+the count of a specific type of log entry
+
+the volume of data being sent from a source
+
+the volume of data being sent to a destination
+
+You'll also encounter date and time data, or data representing a date and/or time. As a first example, logs will generally timestamp every record. Other time and date data might include:
+
+login dates
+
+login times
+
+dates for patches 
+
+the duration of a connection
+
+reframe
+Numbers, Dates, and Times in Cybersecurity
+
+Security analysts work with many different types of data, not just text or string data. In cybersecurity, numeric, date, and time data are extremely important for monitoring systems, identifying suspicious activity, and analyzing security events.
+
+Numeric Data in Cybersecurity
+
+Numeric data refers to information represented by numbers. Security analysts regularly analyze numeric values to measure activity, detect anomalies, and track system behavior.
+
+Examples of numeric data include:
+
+Number of login attempts
+Count of specific log events
+Amount of data transferred from a source
+Amount of data received by a destination
+Number of failed authentication attempts
+Network traffic volume
+File sizes and storage usage
+
+Numeric data helps analysts identify unusual patterns, such as:
+
+Sudden spikes in traffic
+Excessive failed logins
+Unexpected increases in data transfer
+
+These patterns may indicate security threats like brute-force attacks, malware activity, or data exfiltration.
+
+Date and Time Data in Cybersecurity
+
+Date and time data records when events occur. This information is essential for tracking incidents and understanding the sequence of activities in a system.
+
+Common examples include:
+
+Login dates
+Login times
+Patch installation dates
+Connection durations
+Event timestamps in logs
+File creation or modification times
+
+Most security logs automatically attach timestamps to records, allowing analysts to:
+
+Trace attacks chronologically
+Investigate suspicious activity
+Identify when an incident started
+Correlate events across systems
+Importance of Date and Time Information
+
+Date and time data helps security analysts:
+
+Detect unauthorized access at unusual hours
+Monitor system changes over time
+Track how long a connection remained active
+Verify whether systems were patched on schedule
+Investigate incident timelines accurately
+
+For example:
+
+Multiple failed login attempts late at night may indicate an attack attempt.
+A long connection duration from an unknown IP address could suggest suspicious activity.
+Missing patch dates may reveal vulnerable systems.
+Role in Security Analysis
+
+Together, numeric data and date/time data help analysts:
+
+Monitor system performance
+Detect threats
+Analyze logs efficiently
+Investigate incidents
+Identify abnormal behavior patterns
+
+These data types are critical for effective cybersecurity monitoring and incident response.
+
+Summary
+Data Type	Description	Examples
+String Data	Text-based information	Usernames, IP addresses
+Numeric Data	Information represented by numbers	Login counts, traffic volume
+Date and Time Data	Information showing when events occur	Timestamps, login times
+Key Takeaways
+Cybersecurity analysis involves more than just text data.
+Numeric data helps measure and monitor activity.
+Date and time data helps track when events occur.
+Logs commonly contain timestamps for every event.
+These data types are essential for detecting and investigating security incidents.
+Logical operators
+AND, OR, and NOT allow you to filter your queries to return the specific information that will help you in your work as a security analyst. They are all considered logical operators.
+
+AND 
+First, AND is used to filter on two conditions. AND specifies that both conditions must be met simultaneously. 
+
+As an example, a cybersecurity concern might affect only those customer accounts that meet both the condition of being handled by a support representative with an ID of 5 and the condition of being located in the USA. To find the names and emails of those specific customers, you should place the two conditions on either side of the AND operator in the WHERE clause:
+
+
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+
+Running this query returns four rows of information about the customers. You can use this information to contact them about the security concern.
+
+OR 
+The OR operator also connects two conditions, but OR specifies that either condition can be met. It returns results where the first condition, the second condition, or both are met.
+
+For example, if you are responsible for finding all customers who are either in the USA or Canada so that you can communicate information about a security update, you can use an OR operator to find all the needed records. As the following query demonstrates, you should place the two conditions on either side of the OR operator in the WHERE clause:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+
+The query returns all customers in either the US or Canada.
+
+Note: Even if both conditions are based on the same column, you need to write out both full conditions. For instance, the query in the previous example contains the filter WHERE country = 'Canada' OR country = 'USA'. 
+
+NOT 
+Unlike the previous two operators, the NOT operator only works on a single condition, and not on multiple ones. The NOT operator negates a condition. This means that SQL returns all records that don’t match the condition specified in the query. 
+
+For example, if a cybersecurity issue doesn't affect customers in the USA but might affect those in other countries, you can return all customers who are not in the USA. This would be more efficient than creating individual conditions for all of the other countries. To use the NOT operator for this task, write the following query and place NOT directly after WHERE:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+
+SQL returns every entry where the customers are not from the USA.
+
+Pro tip: Another way of finding values that are not equal to a certain value is by using the <> operator or the != operator. For example, WHERE country <> 'USA' and WHERE country != 'USA' are the same filters as WHERE NOT country = 'USA'. 
+
+Combining logical operators
+Logical operators can be combined in filters. For example, if you know that both the USA and Canada are not affected by a cybersecurity issue, you can combine operators to return customers in all countries besides these two. In the following query, NOT is placed before the first condition, it's joined to a second condition with AND, and then NOT is also placed before that second condition. You can run it to explore what it returns:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+
+reframe
+Logical Operators in SQL
+
+Logical operators are used in SQL to filter data based on specific conditions. They help security analysts retrieve only the records relevant to an investigation or security task.
+
+The three main logical operators are:
+
+AND
+OR
+NOT
+
+These operators are commonly used with the WHERE clause.
+
+AND Operator
+
+The AND operator combines two conditions and returns results only when both conditions are true.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE condition1 AND condition2;
+Example
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+What This Query Does
+
+This query returns customers who:
+
+Have a support representative ID of 5
+AND are located in the USA
+
+Both conditions must be satisfied for a record to appear in the results.
+
+OR Operator
+
+The OR operator returns records when at least one condition is true.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE condition1 OR condition2;
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+What This Query Does
+
+This query returns customers who are:
+
+In Canada
+OR in the USA
+OR in both conditions if applicable
+
+The result includes all matching records from either country.
+
+Important Note
+
+Even if the same column is used multiple times, each condition must be written completely.
+
+Correct:
+
+WHERE country = 'Canada' OR country = 'USA'
+
+Incorrect:
+
+WHERE country = 'Canada' OR 'USA'
+NOT Operator
+
+The NOT operator reverses a condition. It returns records that do not match the specified condition.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE NOT condition;
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+What This Query Does
+
+This query returns all customers who are not located in the USA.
+
+Alternative “Not Equal To” Operators
+
+Instead of using NOT, SQL also allows:
+
+<>
+!=
+
+These operators mean “not equal to.”
+
+Example:
+
+WHERE country <> 'USA'
+
+or
+
+WHERE country != 'USA'
+
+Both produce the same result as:
+
+WHERE NOT country = 'USA'
+Combining Logical Operators
+
+Logical operators can be combined to create more advanced filters.
+
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+What This Query Does
+
+This query returns customers who are:
+
+Not in Canada
+AND not in the USA
+
+Only customers from other countries are included in the results.
+
+Why Logical Operators Matter in Cybersecurity
+
+Security analysts use logical operators to:
+
+Identify affected users
+Filter suspicious login attempts
+Investigate unusual activity
+Narrow down security logs
+Search for specific events efficiently
+
+Examples include:
+
+Finding failed logins from a specific country
+Identifying users with multiple suspicious conditions
+Excluding trusted systems from results
+Summary
+Operator	Purpose
+AND	Both conditions must be true
+OR	At least one condition must be true
+NOT	Excludes records matching a condition
+
+
+
+
+
+
+
+
+
+
+
+INNER JOIN - Returns rows matching on a specified column that exists in more than one table.
+
+
+Example of an INNER JOIN - 
+
+SELECT username, office, operating_system FROM employees INNER JOIN machines ON employees.employee_id = machines.employee_id;
+
+
+
+
+
+LEFT JOIN - Returns all of the records of the first table, but only returns rows of the second table that match on a specified column.
+
+
+RIGHT JOIN - Returns all of the records of the second table, but only returns rows from the first table that match on a specified column.
+
+
+FULL OUTER JOIN - Returns all records from both tables.
+
+
+
+
+
+
+
+
+
+
+
+Accessing SQL
+There are many interfaces for accessing SQL and many different versions of SQL. One way to access SQL is through the Linux command line.
+
+To access SQL from Linux, you need to type in a command for the version of SQL that you want to use. For example, if you want to access SQLite, you can enter the command sqlite3 in the command line.
+
+After this, any commands typed in the command line will be directed to SQL instead of Linux commands.
+
+Differences between Linux and SQL filtering 
+Although both Linux and SQL allow you to filter through data, there are some differences that affect which one you should choose.
+
+Purpose
+Linux filters data in the context of files and directories on a computer system. It’s used for tasks like searching for specific files, manipulating file permissions, or managing processes. 
+
+SQL is used to filter data within a database management system. It’s used for querying and manipulating data stored in tables and retrieving specific information based on defined criteria. 
+
+Syntax
+Linux uses various commands and command-line options specific to each filtering tool. Syntax varies depending on the tool and purpose. Some examples of Linux commands are find, sed, cut, e grep
+
+SQL uses the Structured Query Language (SQL), a standardized language with specific keywords and clauses for filtering data across different SQL databases. Some examples of SQL keywords and clauses are WHERE, SELECT, JOIN
+
+Structure
+SQL offers a lot more structure than Linux, which is more free-form and not as tidy.
+
+For example, if you wanted to access a log of employee log-in attempts, SQL would have each record separated into columns. Linux would print the data as a line of text without this organization. As a result, selecting a specific column to analyze would be easier and more efficient in SQL.
+
+In terms of structure, SQL provides results that are more easily readable and that can be adjusted more quickly than when using Linux.
+
+Joining tables
+Some security-related decisions require information from different tables. SQL allows the analyst to join multiple tables together when returning data. Linux doesn’t have that same functionality; it doesn’t allow data to be connected to other information on your computer. This is more restrictive for an analyst going through security logs.
+
+Best uses
+As a security analyst, it’s important to understand when you can use which tool. Although SQL has a more organized structure and allows you to join tables, this doesn’t mean that there aren’t situations that would require you to filter data in Linux.
+
+A lot of data used in cybersecurity will be stored in a database format that works with SQL. However, other logs might be in a format that is not compatible with SQL. For instance, if the data is stored in a text file, you cannot search through it with SQL. In those cases, it is useful to know how to filter in Linux. 
+
+reframe
+Accessing SQL and Comparing It with Linux Filtering
+Accessing SQL
+
+There are different ways to access SQL, depending on the database system being used. One common method is through the Linux command line.
+
+To open a SQL environment from Linux, you enter the command associated with the SQL version you want to use. For example, to access SQLite, you would type:
+
+sqlite3
+
+Once the SQL interface opens, the commands you enter are interpreted as SQL commands instead of Linux shell commands.
+
+Differences Between Linux and SQL Filtering
+
+Both Linux and SQL can filter and search data, but they are designed for different purposes and work in different ways.
+
+Purpose
+Linux
+
+Linux filtering is mainly used for working with files, directories, and system data. It helps users:
+
+Search for files
+View or modify file contents
+Manage permissions
+Monitor processes
+
+Common Linux filtering commands include:
+
+find
+grep
+sed
+cut
+SQL
+
+SQL filtering is designed for working with databases. It allows users to:
+
+Retrieve specific records
+Query tables
+Analyze structured data
+Manipulate database information
+
+Common SQL keywords include:
+
+SELECT
+WHERE
+JOIN
+Syntax
+Linux Syntax
+
+Linux uses different commands and options depending on the task being performed. Each command has its own syntax and behavior.
+
+Example:
+
+grep "error" logfile.txt
+SQL Syntax
+
+SQL uses a standardized query language with consistent keywords and clauses across most database systems.
+
+Example:
+
+SELECT * FROM employees
+WHERE department = 'IT';
+Structure of Data
+
+One major difference between Linux and SQL is how data is organized.
+
+Linux
+
+Linux often displays information as plain text lines. Data is less structured and may require additional commands to isolate specific details.
+
+SQL
+
+SQL stores information in organized tables with rows and columns, making it easier to:
+
+Read data
+Filter specific fields
+Sort information
+Analyze records efficiently
+
+For example, employee login records in SQL could be separated into columns such as:
+
+Employee ID	Username	Login Time	Status
+
+This structured format makes searching and analysis much faster compared to plain-text logs in Linux.
+
+Joining Tables
+
+SQL provides the ability to combine information from multiple tables using joins.
+
+Example:
+
+SELECT employees.name, logins.time
+FROM employees
+JOIN logins
+ON employees.id = logins.employee_id;
+
+This is extremely useful in cybersecurity when analysts need to connect related information from different datasets.
+
+Linux does not have built-in relational table joining like SQL databases do, which limits its ability to correlate structured data.
+
+Best Uses in Cybersecurity
+When to Use SQL
+
+SQL is best when:
+
+Data is stored in databases
+Information is highly structured
+Multiple tables need to be connected
+Large datasets require efficient searching and analysis
+
+Examples:
+
+Authentication logs in databases
+User activity records
+Security event management systems
+When to Use Linux Filtering
+
+Linux filtering is useful when:
+
+Data is stored in plain text files
+Logs are outside a database system
+Quick command-line analysis is needed
+Working directly with operating system files
+
+Examples:
+
+System logs
+Application log files
+Configuration files
+Summary
+Linux filtering is ideal for working with files and plain-text system data.
+SQL filtering is designed for structured database analysis.
+SQL provides better organization and supports joining tables.
+Linux remains important for analyzing text-based logs and system-level data.
+Cybersecurity professionals often use both tools depending on the format and location of the data.
+Basic SQL query
+There are two essential keywords in any SQL query: SELECT and FROM. You will use these keywords every time you want to query a SQL database. Using them together helps SQL identify what data you need from a database and the table you are returning it from.
+
+The video demonstrated this SQL query:
+
+SELECT employee_id, device_id
+
+FROM employees;
+
+In readings and quizzes, this course uses a sample database called the Chinook database to run queries. The Chinook database includes data that might be created at a digital media company. A security analyst employed by this company might need to query this data.  For example, the database contains eleven tables, including an employees table, a customers table, and an invoices table. These tables include data such as names and addresses.  
+
+As an example, you can run this query to return data from the customers table of the Chinook database:
+
+ 
+SELECT customerid, city, country
+FROM customers;
+ 
+SELECT
+The SELECT keyword indicates which columns to return. For example, you can return the customerid column from the Chinook database with
+
+SELECT customerid
+
+You can also select multiple columns by separating them with a comma. For example, if you want to return both the customerid and city columns, you should write SELECT customerid, city.
+
+If you want to return all columns in a table, you can follow the SELECT keyword with an asterisk (*). The first line in the query will be SELECT *.
+
+Note: Although the tables you're querying in this course are relatively small, using SELECT * may not be advisable when working with large databases and tables; in those cases, the final output may be difficult to understand and might be slow to run. 
+
+FROM
+The SELECT keyword always comes with the FROM keyword. FROM indicates which table to query. To use the FROM keyword, you should write it after the SELECT keyword, often on a new line, and follow it with the name of the table you’re querying. If you want to return all columns from the customers table, you can write:
+
+SELECT *
+
+FROM customers;
+
+When you want to end the query here, you put a semicolon (;) at the end to tell SQL that this is the entire query.
+
+Note: Line breaks are not necessary in SQL queries, but are often used to make the query easier to understand. If you prefer, you can also write the previous query on one line as
+
+SELECT * FROM customers;
+
+ORDER BY
+Database tables are often very complicated, and this is where other SQL keywords come in handy. ORDER BY is an important keyword for organizing the data you extract from a table.
+
+ORDER BY sequences the records returned by a query based on a specified column or columns. This can be in either ascending or descending order.
+
+Sorting in ascending order
+To use the ORDER BY keyword, write it at the end of the query and specify a column to base the sort on. In this example, SQL will return the customerid, city, and country columns from the customers table, and the records will be sequenced by the city column:
+
+ 
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+ 
+The ORDER BY keyword sorts the records based on the column specified after this keyword. By default, as shown in this example, the sequence will be in ascending order. This means
+
+if you choose a column containing numeric data, it sorts the output from the smallest to largest. For example, if sorting on customerid, the ID numbers are sorted from smallest to largest.
+
+if the column contains alphabetic characters, such as in the example with the city column, it orders the records from the beginning of the alphabet to the end. 
+
+Sorting in descending order
+You can also use the ORDER BY with the DESC keyword to sort in descending order. The DESC keyword is short for "descending" and tells SQL to sort numbers from largest to smallest, or alphabetically from Z to A. This can be done by following ORDER BY with the DESC keyword. For example, you can run this query to examine how the results differ when DESC is applied: 
+
+ 
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+ 
+Now, cities at the end of the alphabet are listed first.
+
+Sorting based on multiple columns
+You can also choose multiple columns to order by. For example, you might first choose the country and then the city column. SQL then sorts the output by country, and for rows with the same country, it sorts them based on city. You can run this to explore how SQL displays this:
+
+reframe
+Basic SQL Query
+
+SQL queries are used to retrieve information from a database. The two most important keywords in almost every SQL query are:
+
+SELECT
+FROM
+
+These keywords tell SQL:
+
+What data to retrieve
+Which table to retrieve it from
+Example of a Basic SQL Query
+SELECT employee_id, device_id
+FROM employees;
+
+This query retrieves the employee_id and device_id columns from the employees table.
+
+The Chinook Database
+
+In many SQL exercises, a sample database called the Chinook database is used. It represents a digital media company and contains multiple tables such as:
+
+employees
+customers
+invoices
+
+These tables store structured information like:
+
+Names
+Addresses
+Customer details
+Billing information
+
+Example query:
+
+SELECT customerid, city, country
+FROM customers;
+
+This returns the customerid, city, and country columns from the customers table.
+
+Understanding SELECT
+
+The SELECT keyword specifies which columns should be displayed in the results.
+
+Selecting One Column
+SELECT customerid
+FROM customers;
+
+This retrieves only the customerid column.
+
+Selecting Multiple Columns
+
+Separate column names with commas:
+
+SELECT customerid, city
+FROM customers;
+
+This retrieves both customerid and city.
+
+Selecting All Columns
+
+Use an asterisk (*) to return every column in the table:
+
+SELECT *
+FROM customers;
+
+This displays all data from the customers table.
+
+Note: Using SELECT * on very large databases is usually not recommended because it can slow performance and make results difficult to read.
+
+Understanding FROM
+
+The FROM keyword identifies the table being queried.
+
+Example:
+
+SELECT *
+FROM customers;
+
+Here:
+
+SELECT * → return all columns
+FROM customers → retrieve data from the customers table
+Using Semicolons
+
+A semicolon (;) marks the end of a SQL query.
+
+Example:
+
+SELECT * FROM customers;
+Formatting SQL Queries
+
+SQL queries can be written on:
+
+Multiple lines for readability
+A single line for compactness
+
+Both formats work the same way.
+
+Example:
+
+SELECT *
+FROM customers;
+
+or
+
+SELECT * FROM customers;
+ORDER BY
+
+The ORDER BY keyword is used to sort query results.
+
+It organizes records based on one or more columns.
+
+Sorting in Ascending Order
+
+By default, ORDER BY sorts in ascending order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city;
+
+This sorts the records alphabetically by city.
+
+Ascending Order Means:
+Numbers → smallest to largest
+Text → A to Z
+Sorting in Descending Order
+
+Use the DESC keyword to reverse the order.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY city DESC;
+
+This sorts cities from Z to A.
+
+Descending Order Means:
+Numbers → largest to smallest
+Text → Z to A
+Sorting by Multiple Columns
+
+You can sort using more than one column.
+
+Example:
+
+SELECT customerid, city, country
+FROM customers
+ORDER BY country, city;
+
+This query:
+
+Sorts records by country
+Then sorts matching countries by city
+
+This helps organize large datasets more effectively.
+
+Summary
+Important SQL Keywords
+Keyword	Purpose
+SELECT	Chooses columns to display
+FROM	Specifies the table
+ORDER BY	Sorts query results
+DESC	Sorts in descending order
+Key Points
+SELECT and FROM are the foundation of SQL queries.
+Multiple columns can be selected using commas.
+SELECT * returns all columns.
+ORDER BY helps organize output data.
+Sorting can be ascending or descending.
+Multiple columns can be used for advanced sorting.
+Numbers, dates, and times in cybersecurity
+Security analysts work with more than just string data, or data consisting of an ordered sequence of characters. 
+
+They also frequently work with numeric data, or data consisting of numbers. A few examples of numeric data that you might encounter in your work as a security analyst include:
+
+the number of login attempts
+
+the count of a specific type of log entry
+
+the volume of data being sent from a source
+
+the volume of data being sent to a destination
+
+You'll also encounter date and time data, or data representing a date and/or time. As a first example, logs will generally timestamp every record. Other time and date data might include:
+
+login dates
+
+login times
+
+dates for patches 
+
+the duration of a connection
+
+reframe
+Numbers, Dates, and Times in Cybersecurity
+
+Security analysts work with many different types of data, not just text or string data. In cybersecurity, numeric, date, and time data are extremely important for monitoring systems, identifying suspicious activity, and analyzing security events.
+
+Numeric Data in Cybersecurity
+
+Numeric data refers to information represented by numbers. Security analysts regularly analyze numeric values to measure activity, detect anomalies, and track system behavior.
+
+Examples of numeric data include:
+
+Number of login attempts
+Count of specific log events
+Amount of data transferred from a source
+Amount of data received by a destination
+Number of failed authentication attempts
+Network traffic volume
+File sizes and storage usage
+
+Numeric data helps analysts identify unusual patterns, such as:
+
+Sudden spikes in traffic
+Excessive failed logins
+Unexpected increases in data transfer
+
+These patterns may indicate security threats like brute-force attacks, malware activity, or data exfiltration.
+
+Date and Time Data in Cybersecurity
+
+Date and time data records when events occur. This information is essential for tracking incidents and understanding the sequence of activities in a system.
+
+Common examples include:
+
+Login dates
+Login times
+Patch installation dates
+Connection durations
+Event timestamps in logs
+File creation or modification times
+
+Most security logs automatically attach timestamps to records, allowing analysts to:
+
+Trace attacks chronologically
+Investigate suspicious activity
+Identify when an incident started
+Correlate events across systems
+Importance of Date and Time Information
+
+Date and time data helps security analysts:
+
+Detect unauthorized access at unusual hours
+Monitor system changes over time
+Track how long a connection remained active
+Verify whether systems were patched on schedule
+Investigate incident timelines accurately
+
+For example:
+
+Multiple failed login attempts late at night may indicate an attack attempt.
+A long connection duration from an unknown IP address could suggest suspicious activity.
+Missing patch dates may reveal vulnerable systems.
+Role in Security Analysis
+
+Together, numeric data and date/time data help analysts:
+
+Monitor system performance
+Detect threats
+Analyze logs efficiently
+Investigate incidents
+Identify abnormal behavior patterns
+
+These data types are critical for effective cybersecurity monitoring and incident response.
+
+Summary
+Data Type	Description	Examples
+String Data	Text-based information	Usernames, IP addresses
+Numeric Data	Information represented by numbers	Login counts, traffic volume
+Date and Time Data	Information showing when events occur	Timestamps, login times
+Key Takeaways
+Cybersecurity analysis involves more than just text data.
+Numeric data helps measure and monitor activity.
+Date and time data helps track when events occur.
+Logs commonly contain timestamps for every event.
+These data types are essential for detecting and investigating security incidents.
+Logical operators
+AND, OR, and NOT allow you to filter your queries to return the specific information that will help you in your work as a security analyst. They are all considered logical operators.
+
+AND 
+First, AND is used to filter on two conditions. AND specifies that both conditions must be met simultaneously. 
+
+As an example, a cybersecurity concern might affect only those customer accounts that meet both the condition of being handled by a support representative with an ID of 5 and the condition of being located in the USA. To find the names and emails of those specific customers, you should place the two conditions on either side of the AND operator in the WHERE clause:
+
+
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+
+Running this query returns four rows of information about the customers. You can use this information to contact them about the security concern.
+
+OR 
+The OR operator also connects two conditions, but OR specifies that either condition can be met. It returns results where the first condition, the second condition, or both are met.
+
+For example, if you are responsible for finding all customers who are either in the USA or Canada so that you can communicate information about a security update, you can use an OR operator to find all the needed records. As the following query demonstrates, you should place the two conditions on either side of the OR operator in the WHERE clause:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+
+The query returns all customers in either the US or Canada.
+
+Note: Even if both conditions are based on the same column, you need to write out both full conditions. For instance, the query in the previous example contains the filter WHERE country = 'Canada' OR country = 'USA'. 
+
+NOT 
+Unlike the previous two operators, the NOT operator only works on a single condition, and not on multiple ones. The NOT operator negates a condition. This means that SQL returns all records that don’t match the condition specified in the query. 
+
+For example, if a cybersecurity issue doesn't affect customers in the USA but might affect those in other countries, you can return all customers who are not in the USA. This would be more efficient than creating individual conditions for all of the other countries. To use the NOT operator for this task, write the following query and place NOT directly after WHERE:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+
+SQL returns every entry where the customers are not from the USA.
+
+Pro tip: Another way of finding values that are not equal to a certain value is by using the <> operator or the != operator. For example, WHERE country <> 'USA' and WHERE country != 'USA' are the same filters as WHERE NOT country = 'USA'. 
+
+Combining logical operators
+Logical operators can be combined in filters. For example, if you know that both the USA and Canada are not affected by a cybersecurity issue, you can combine operators to return customers in all countries besides these two. In the following query, NOT is placed before the first condition, it's joined to a second condition with AND, and then NOT is also placed before that second condition. You can run it to explore what it returns:
+
+
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+
+reframe
+Logical Operators in SQL
+
+Logical operators are used in SQL to filter data based on specific conditions. They help security analysts retrieve only the records relevant to an investigation or security task.
+
+The three main logical operators are:
+
+AND
+OR
+NOT
+
+These operators are commonly used with the WHERE clause.
+
+AND Operator
+
+The AND operator combines two conditions and returns results only when both conditions are true.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE condition1 AND condition2;
+Example
+SELECT firstname, lastname, email, country, supportrepid
+FROM customers
+WHERE supportrepid = 5 AND country = 'USA';
+What This Query Does
+
+This query returns customers who:
+
+Have a support representative ID of 5
+AND are located in the USA
+
+Both conditions must be satisfied for a record to appear in the results.
+
+OR Operator
+
+The OR operator returns records when at least one condition is true.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE condition1 OR condition2;
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE country = 'Canada' OR country = 'USA';
+What This Query Does
+
+This query returns customers who are:
+
+In Canada
+OR in the USA
+OR in both conditions if applicable
+
+The result includes all matching records from either country.
+
+Important Note
+
+Even if the same column is used multiple times, each condition must be written completely.
+
+Correct:
+
+WHERE country = 'Canada' OR country = 'USA'
+
+Incorrect:
+
+WHERE country = 'Canada' OR 'USA'
+NOT Operator
+
+The NOT operator reverses a condition. It returns records that do not match the specified condition.
+
+Syntax
+SELECT column_names
+FROM table_name
+WHERE NOT condition;
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'USA';
+What This Query Does
+
+This query returns all customers who are not located in the USA.
+
+Alternative “Not Equal To” Operators
+
+Instead of using NOT, SQL also allows:
+
+<>
+!=
+
+These operators mean “not equal to.”
+
+Example:
+
+WHERE country <> 'USA'
+
+or
+
+WHERE country != 'USA'
+
+Both produce the same result as:
+
+WHERE NOT country = 'USA'
+Combining Logical Operators
+
+Logical operators can be combined to create more advanced filters.
+
+Example
+SELECT firstname, lastname, email, country
+FROM customers
+WHERE NOT country = 'Canada' AND NOT country = 'USA';
+What This Query Does
+
+This query returns customers who are:
+
+Not in Canada
+AND not in the USA
+
+Only customers from other countries are included in the results.
+
+Why Logical Operators Matter in Cybersecurity
+
+Security analysts use logical operators to:
+
+Identify affected users
+Filter suspicious login attempts
+Investigate unusual activity
+Narrow down security logs
+Search for specific events efficiently
+
+Examples include:
+
+Finding failed logins from a specific country
+Identifying users with multiple suspicious conditions
+Excluding trusted systems from results
+Summary
+Operator	Purpose
+AND	Both conditions must be true
+OR	At least one condition must be true
+NOT	Excludes records matching a condition
+Key Takeaways
+Logical operators are used with the WHERE clause.
+AND narrows results by requiring multiple conditions.
+OR broadens results by accepting either condition.
+NOT excludes matching records.
+Operators can be combined for advanced filtering.
+Logical filtering is essential for cybersecurity investigations and log analysis.
+Project description
+My organization is working to make their system more secure. It is my job to ensure the system
+is safe, investigate all potential security issues, and update employee computers as needed.
+The following steps provide examples of how I used SQL with filters to perform security-related
+tasks.
+Retrieve after hours failed login attempts
+There was a potential security incident that occurred after business hours (after 18:00). All after
+hours login attempts that failed need to be investigated.
+The following code demonstrates how I created a SQL query to filter for failed login attempts
+that occurred after business hours.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. This
+query filters for failed login attempts that occurred after 18:00. First, I started by selecting all
+data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to
+filter my results to output only login attempts that occurred after 18:00 and were unsuccessful.
+The first condition is login_time > '18:00', which filters for the login attempts that
+occurred after 18:00. The second condition is success = FALSE, which filters for the failed
+login attempts.
+Retrieve login attempts on specific dates
+A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09
+or on the day before needs to be investigated.
+
+The following code demonstrates how I created a SQL query to filter for login attempts that
+occurred on specific dates.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. This
+query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by
+selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR
+operator to filter my results to output only login attempts that occurred on either 2022-05-09
+or 2022-05-08. The first condition is login_date = '2022-05-09', which filters for logins
+on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for
+logins on 2022-05-08.
+Retrieve login attempts outside of Mexico
+After investigating the organization’s data on login attempts, I believe there is an issue with the
+login attempts that occurred outside of Mexico. These login attempts should be investigated.
+The following code demonstrates how I created a SQL query to filter for login attempts that
+occurred outside of Mexico.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. This
+query returns all login attempts that occurred in countries other than Mexico. First, I started by
+selecting all data from the log_in_attempts table. Then, I used a WHERE clause with NOT to
+filter for countries other than Mexico. I used LIKE with MEX% as the pattern to match because
+the dataset represents Mexico as MEX and MEXICO. The percentage sign (%) represents any
+number of unspecified characters when used with LIKE.
+
+Retrieve employees in Marketing
+My team wants to update the computers for certain employees in the Marketing department.
+To do this, I have to get information on which employee machines to update.
+The following code demonstrates how I created a SQL query to filter for employee machines
+from employees in the Marketing department in the East building.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. This
+query returns all employees in the Marketing department in the East building. First, I started by
+selecting all data from the employees table. Then, I used a WHERE clause with AND to filter for
+employees who work in the Marketing department and in the East building. I used LIKE with
+East% as the pattern to match because the data in the office column represents the East
+building with the specific office number. The first condition is the department =
+'Marketing' portion, which filters for employees in the Marketing department. The second
+condition is the office LIKE 'East%' portion, which filters for employees in the East
+building.
+Retrieve employees in Finance or Sales
+The machines for employees in the Finance and Sales departments also need to be updated.
+Since a different security update is needed, I have to get information on employees only from
+these two departments.
+The following code demonstrates how I created a SQL query to filter for employee machines
+from employees in the Finance or Sales departments.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. This
+query returns all employees in the Finance and Sales departments. First, I started by selecting
+all data from the employees table. Then, I used a WHERE clause with OR to filter for employees
+who are in the Finance and Sales departments. I used the OR operator instead of AND because I
+want all employees who are in either department. The first condition is department =
+'Finance', which filters for employees from the Finance department. The second condition is
+department = 'Sales', which filters for employees from the Sales department.
+Retrieve all employees not in IT
+My team needs to make one more security update on employees who are not in the
+Information Technology department. To make the update, I first have to get information on
+these employees.
+The following demonstrates how I created a SQL query to filter for employee machines from
+employees not in the Information Technology department.
+
+The first part of the screenshot is my query, and the second part is a portion of the output. The
+query returns all employees not in the Information Technology department. First, I started by
+selecting all data from the employees table. Then, I used a WHERE clause with NOT to filter for
+employees not in this department.
+
+Summary
+I applied filters to SQL queries to get specific information on login attempts and employee
+machines. I used two different tables, log_in_attempts and employees. I used the AND,
+OR, and NOT operators to filter for the specific information needed for each task. I also used
+LIKE and the percentage sign (%) wildcard to filter for patterns.
+
+reframe with headings given
+Project Description
+
+My organization is focused on improving system security. As a security analyst, my responsibilities include monitoring potential security threats, investigating suspicious activity, and updating employee systems when necessary.
+
+To complete these tasks, I used SQL queries with filters to retrieve specific information related to login attempts and employee machines.
+
+Retrieve After Hours Failed Login Attempts
+
+A potential security incident occurred after business hours, specifically after 18:00. All failed login attempts during this period needed investigation.
+
+To identify these events, I created a SQL query that filtered for:
+
+Login attempts occurring after 18:00
+Unsuccessful login attempts
+SQL Query
+SELECT *
+FROM log_in_attempts
+WHERE login_time > '18:00' AND success = FALSE;
+Explanation
+SELECT * retrieves all columns from the log_in_attempts table.
+login_time > '18:00' filters attempts made after business hours.
+success = FALSE filters only failed login attempts.
+The AND operator ensures both conditions must be true.
+
+This query helped identify suspicious failed access attempts occurring outside normal working hours.
+
+Retrieve Login Attempts on Specific Dates
+
+A suspicious event was detected on 2022-05-09. Login attempts on that date and the previous day required investigation.
+
+SQL Query
+SELECT *
+FROM log_in_attempts
+WHERE login_date = '2022-05-09'
+OR login_date = '2022-05-08';
+Explanation
+The query retrieves all records from the log_in_attempts table.
+login_date = '2022-05-09' filters attempts on the suspicious date.
+login_date = '2022-05-08' filters attempts from the day before.
+The OR operator returns records matching either condition.
+
+This allowed investigation of all login activity surrounding the suspicious event.
+
+Retrieve Login Attempts Outside of Mexico
+
+After reviewing login records, I identified suspicious login attempts originating outside of Mexico.
+
+SQL Query
+SELECT *
+FROM log_in_attempts
+WHERE NOT country LIKE 'MEX%';
+Explanation
+NOT excludes records matching the condition.
+LIKE 'MEX%' matches values beginning with MEX, including:
+MEX
+MEXICO
+% is a wildcard representing any number of characters.
+
+This query returned all login attempts from countries other than Mexico.
+
+Retrieve Employees in Marketing
+
+Employees in the Marketing department located in the East building required system updates.
+
+SQL Query
+SELECT *
+FROM employees
+WHERE department = 'Marketing'
+AND office LIKE 'East%';
+Explanation
+department = 'Marketing' filters Marketing employees.
+office LIKE 'East%' filters offices located in the East building.
+The % wildcard allows matching office numbers such as:
+East-101
+East-205
+
+The AND operator ensures employees meet both conditions.
+
+Retrieve Employees in Finance or Sales
+
+Employees in the Finance and Sales departments required a separate security update.
+
+SQL Query
+SELECT *
+FROM employees
+WHERE department = 'Finance'
+OR department = 'Sales';
+Explanation
+department = 'Finance' filters Finance employees.
+department = 'Sales' filters Sales employees.
+The OR operator returns employees from either department.
+
+This query helped identify all systems requiring the additional update.
+
+Retrieve All Employees Not in IT
+
+Another update needed to be applied to employees outside the Information Technology department.
+
+SQL Query
+SELECT *
+FROM employees
+WHERE NOT department = 'Information Technology';
+Explanation
+NOT excludes employees belonging to the Information Technology department.
+All remaining employee records are returned.
+
+This allowed the team to identify systems needing the final security update.
+
+Summary
+
+In this project, I used SQL filtering techniques to retrieve specific cybersecurity-related information from the log_in_attempts and employees tables.
+
+The queries involved:
+
+Investigating suspicious login activity
+Identifying failed login attempts
+Filtering login events by date and country
+Retrieving employee systems requiring security updates
+SQL Concepts Used
+SQL Feature	Purpose
+WHERE	Filters records
+AND	Requires multiple conditions
+OR	Accepts either condition
+NOT	Excludes matching records
+LIKE	Matches patterns
+% Wildcard	Represents unknown characters
+
+These filtering techniques are essential for security monitoring, investigations, and system management in cybersecurity environments.
+
+Inner joins
+The first type of join that you might perform is an inner join. INNER JOIN returns rows matching on a specified column that exists in more than one table.
+
+Venn diagram with two circles labeled "left table" and "right table". The intersection is highlighted.
+It only returns the rows where there is a match, but like other types of joins, it returns all specified columns from all joined tables. For example, if the query joins two tables with SELECT *, all columns in both of the tables are returned.
+
+Note: If a column exists in both of the tables, it is returned twice when SELECT * is used.
+
+The syntax of an inner join
+To write a query using INNER JOIN, you can use the following syntax:
+
+SELECT *
+
+FROM employees
+
+INNER JOIN machines ON employees.device_id = machines.device_id;
+
+You must specify the two tables to join by including the first or left table after FROM and the second or right table after INNER JOIN.
+
+After the name of the right table, use the ON keyword and the = operator to indicate the column you are joining the tables on. It's important that you specify both the table and column names in this portion of the join by placing a period (.) between the table and the column.  
+
+In addition to selecting all columns, you can select only certain columns.  For example, if you only want the join to return the username, operating_system and device_id columns, you can write this query:
+
+SELECT username, operating_system, employees.device_id
+
+FROM  employees
+
+INNER JOIN machines ON employees.device_id = machines.device_id;
+
+Note: In the example query, username and operating_system only appear in one of the two tables, so they are written with just the column name. On the other hand, because device_id appears in both tables, it's necessary to indicate which one to return by specifying both the table and column name (employees.device_id).
+
+Outer joins
+Outer joins expand what is returned from a join. Each type of outer join returns all rows from either one table or both tables.
+
+Left joins
+When joining two tables, LEFT JOIN returns all the records of the first table, but only returns rows of the second table that match on a specified column. 
+
+Venn diagram with two circles labeled "left table" and "right table". The left circle and the intersection are highlighted.
+The syntax for using LEFT JOIN is demonstrated in the following query:
+
+SELECT *
+
+FROM employees
+
+LEFT JOIN machines ON employees.device_id = machines.device_id;
+
+As with all joins, you should specify the first or left table as the table that comes after FROM and the second or right table as the table that comes after LEFT JOIN. In the example query, because employees is the left table, all of its records are returned. Only records that match on the device_id column are returned from the right table, machines. 
+
+Right joins
+When joining two tables, RIGHT JOIN returns all of the records of the second table, but only returns rows from the first table that match on a specified column. 
+
+Venn diagram with two circles labeled "left table" and "right table". The right circle and the intersection are highlighted.
+The following query demonstrates the syntax for RIGHT JOIN:
+
+SELECT *
+
+FROM employees
+
+RIGHT JOIN machines ON employees.device_id = machines.device_id;
+
+RIGHT JOIN has the same syntax as LEFT JOIN, with the only difference being the keyword RIGHT JOIN instructs SQL to produce different output. The query returns all records from machines, which is the second or right table. Only matching records are returned from employees, which is the first or left table.
+
+Note:  You can use LEFT JOIN and RIGHT JOIN and return the exact same results if you use the tables in reverse order. The following RIGHT JOIN query returns the exact same result as the LEFT JOIN query demonstrated in the previous section:
+
+SELECT *
+
+FROM machines
+
+RIGHT JOIN employees ON employees.device_id = machines.device_id;
+
+All that you have to do is switch the order of the tables that appear before and after the keyword used for the join, and you will have swapped the left and right tables.
+
+Full outer joins 
+FULL OUTER JOIN returns all records from both tables. You can think of it as a way of completely merging two tables.
+
+Venn diagram with two circles labeled "left table" and "right table". Both circles are highlighted
+You can review the syntax for using FULL OUTER JOIN in the following query:
+
+SELECT *
+
+FROM employees
+
+FULL OUTER JOIN machines ON employees.device_id = machines.device_id;
+
+The results of a FULL OUTER JOIN query include all records from both tables. Similar to INNER JOIN, the order of tables does not change the results of the query.
+
+
+reframe
+SQL Joins (Inner and Outer Joins)
+
+Joins in SQL are used to combine rows from two or more tables based on a related column. This is especially useful in cybersecurity and data analysis when information is spread across multiple datasets.
+
+Inner Join
+
+An INNER JOIN returns only the rows where there is a match in both tables based on a specified column.
+
+It only includes matching records.
+Non-matching rows are excluded.
+All selected columns from both tables are returned.
+Syntax
+SELECT *
+FROM employees
+INNER JOIN machines
+ON employees.device_id = machines.device_id;
+Explanation
+employees is the left table.
+machines is the right table.
+The join is performed using the common column device_id.
+Only rows where device_id exists in both tables are included.
+Important Note
+
+If SELECT * is used, and both tables contain a column with the same name, that column will appear twice in the result.
+
+Selecting Specific Columns
+
+You can choose only the columns you need:
+
+SELECT username, operating_system, employees.device_id
+FROM employees
+INNER JOIN machines
+ON employees.device_id = machines.device_id;
+Explanation
+username and operating_system exist in only one table, so no table name is needed.
+device_id exists in both tables, so it must be specified as employees.device_id.
+Outer Joins
+
+Outer joins return more data than inner joins by including unmatched rows from one or both tables.
+
+Left Join
+
+A LEFT JOIN returns:
+
+All rows from the left (first) table
+Matching rows from the right (second) table
+NULL values where no match exists
+Syntax
+SELECT *
+FROM employees
+LEFT JOIN machines
+ON employees.device_id = machines.device_id;
+Explanation
+All records from employees are included.
+Only matching records from machines are returned.
+If no match exists, machine-related fields show NULL.
+Right Join
+
+A RIGHT JOIN returns:
+
+All rows from the right (second) table
+Matching rows from the left (first) table
+Syntax
+SELECT *
+FROM employees
+RIGHT JOIN machines
+ON employees.device_id = machines.device_id;
+Explanation
+All records from machines are included.
+Only matching records from employees are included.
+Non-matching employee data appears as NULL.
+Important Note
+
+A LEFT JOIN and RIGHT JOIN can produce the same result if the order of tables is reversed.
+
+Example equivalent query:
+
+SELECT *
+FROM machines
+RIGHT JOIN employees
+ON employees.device_id = machines.device_id;
+Full Outer Join
+
+A FULL OUTER JOIN returns:
+
+All rows from both tables
+Matched and unmatched records combined
+Syntax
+SELECT *
+FROM employees
+FULL OUTER JOIN machines
+ON employees.device_id = machines.device_id;
+Explanation
+Includes every record from both tables.
+Matched rows are combined.
+Unmatched rows appear with NULL values in missing fields.
+Summary of Joins
+Join Type	What It Returns
+INNER JOIN	Only matching rows from both tables
+LEFT JOIN	All rows from left table + matches from right
+RIGHT JOIN	All rows from right table + matches from left
+FULL OUTER JOIN	All rows from both tables
+
+
+
+
+
+
+
+
+
+
+
+
+Aggregate Functions in SQL
+
+Aggregate functions in SQL are used to perform calculations on multiple rows of data and return a single summarized result.
+
+Instead of displaying all individual records, aggregate functions provide useful statistical or numerical summaries of the data.
+
+Common Aggregate Functions
+
+SQL provides several aggregate functions for analyzing data.
+
+Function	Purpose
+COUNT()	Counts the number of rows
+AVG()	Calculates the average value
+SUM()	Calculates the total sum
+COUNT Function
+
+The COUNT() function returns the number of records in a query result.
+
+Syntax
+SELECT COUNT(column_name)
+FROM table_name;
+Example: Count Total Customers
+SELECT COUNT(firstname)
+FROM customers;
+Explanation
+COUNT(firstname) counts the number of non-NULL values in the firstname column.
+The query returns a single number representing the total number of customers.
+
+The output contains:
+
+One column: COUNT(firstname)
+One row: the total count
+COUNT with a Filter
+
+Aggregate functions can also be combined with the WHERE clause to analyze specific subsets of data.
+
+Example: Count Customers from the USA
+SELECT COUNT(firstname)
+FROM customers
+WHERE country = 'USA';
+Explanation
+The WHERE clause filters records to customers located in the USA.
+COUNT(firstname) counts only those filtered records.
+
+The result is smaller because only USA customers are included.
+
+AVG Function
+
+The AVG() function calculates the average value of a numeric column.
+
+Syntax
+SELECT AVG(column_name)
+FROM table_name;
+Example
+SELECT AVG(salary)
+FROM employees;
+Explanation
+
+This query returns the average salary of all employees.
+
+SUM Function
+
+The SUM() function calculates the total of all numeric values in a column.
+
+Syntax
+SELECT SUM(column_name)
+FROM table_name;
+Example
+SELECT SUM(quantity)
+FROM orders;
+Explanation
+
+This query returns the total quantity of all orders combined.
+
+Aggregate Function Syntax
+
+All aggregate functions follow a similar structure:
+
+SELECT FUNCTION(column_name)
+FROM table_name;
+
+Optional filtering can be added using WHERE.
+
+Example:
+
+SELECT AVG(score)
+FROM students
+WHERE grade = 'A';
+Why Aggregate Functions Matter in Cybersecurity
+
+Security analysts frequently use aggregate functions to summarize large amounts of security data.
+
+Examples include:
+
+Counting failed login attempts
+Calculating average connection duration
+Summing network traffic volume
+Measuring total security events
+Tracking alert frequency
+
+These functions help analysts quickly identify trends, anomalies, and suspicious behavior.
+
+Continuing to Learn SQL
+
+SQL contains many more functions and advanced features beyond basic queries and filtering.
+
+To improve SQL skills:
+
+Practice writing queries regularly
+Explore different databases
+Learn additional SQL functions
+Experiment with real-world datasets
+Search for SQL tutorials and exercises online
+
+Hands-on practice is one of the best ways to build confidence with SQL and apply it effectively in cybersecurity work.
+
+
+
+
+
+
+
+
+
+
+
+SQL and Database Terminology
+Database
+
+An organized collection of data or information that is stored electronically and can be easily accessed, managed, and updated.
+
+Date and Time Data
+
+Data that represents specific dates, times, or both. This type of data is commonly used in logs, timestamps, and event tracking.
+
+Exclusive Operator
+
+An operator that does not include the comparison value in the result.
+
+Example:
+
+>
+<
+Filtering
+
+The process of retrieving only the data that matches a specific condition or criteria.
+
+Example:
+
+WHERE country = 'USA'
+Foreign Key
+
+A column in one table that references the primary key of another table, creating a relationship between the two tables.
+
+Inclusive Operator
+
+An operator that includes the comparison value in the result.
+
+Example:
+
+>=
+<=
+Log
+
+A record of events or activities that occur within a system, application, or network.
+
+Examples include:
+
+Login attempts
+System errors
+File access events
+Numeric Data
+
+Data made up of numbers and used for calculations or measurements.
+
+Examples:
+
+Login counts
+Network traffic volume
+File sizes
+Operator
+
+A symbol or keyword used to perform an operation in SQL.
+
+Examples:
+
+AND
+OR
+NOT
+=
+>
+<
+Primary Key
+
+A column in a table where every row contains a unique value. It uniquely identifies each record in the table.
+
+Example:
+
+customer_id
+employee_id
+Query
+
+A request made to a database to retrieve, filter, modify, or analyze data.
+
+Example:
+
+SELECT * FROM employees;
+Relational Database
+
+A structured database that organizes data into related tables connected through keys.
+
+Examples:
+
+MySQL
+PostgreSQL
+SQLite
+String Data
+
+Data consisting of text or characters arranged in a sequence.
+
+Examples:
+
+Usernames
+Email addresses
+Country names
+SQL (Structured Query Language)
+
+A programming language used to create, manage, and retrieve information from databases.
+
+SQL is commonly used for:
+
+Querying data
+Filtering records
+Updating tables
+Managing databases
+Syntax
+
+The set of rules that defines the correct structure and format of commands in a programming or query language.
+
+Example:
+
+SELECT firstname FROM customers;
+Wildcard
+
+A special character used to represent one or more unknown characters in a search pattern.
+
+Example:
+
+%
+_
+
+Used with:
+
+LIKE
+
+Example query:
+
+WHERE country LIKE 'MEX%'
+
+This matches:
+
+MEX
+MEXICO
+Any value beginning with “MEX”
