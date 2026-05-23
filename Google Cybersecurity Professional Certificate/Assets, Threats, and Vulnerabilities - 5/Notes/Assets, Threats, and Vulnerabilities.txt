@@ -1,0 +1,571 @@
+Assets, Threats, and Vulnerabilities
+
+
+
+
+
+module 1
+
+Risk - Anything that can impact the confidentiality, integrity, or availability of an asset.
+
+Elements of Security risk planning - Assets, Threats, and vulnerabilities.
+
+
+
+Asset - An item perceived as having value to an organization.
+
+Threat - Any circumstance or event that can negatively impact assets.
+
+vulnerabilities - A weakness that can be exploited by a threat.
+
+
+
+
+
+
+
+
+
+Understanding Risk, Threats, and Vulnerabilities in Cybersecurity
+
+When a security incident happens, cybersecurity teams must communicate clearly and work together quickly to reduce damage and restore systems. To do that effectively, professionals rely on three important concepts: risk, threats, and vulnerabilities. Although these terms are often used casually in daily conversation, they have specific meanings in cybersecurity.
+
+What is Security Risk?
+
+A risk refers to anything that could affect the confidentiality, integrity, or availability of an organization’s assets. Different organizations view risk differently because each business values different assets and faces different challenges.
+
+Risk is commonly evaluated using the following idea:
+
+Risk=Likelihood×Impact
+
+This means that risk depends on:
+
+How likely an event is to happen
+How severe the consequences would be if it occurs
+
+For example, imagine commuting to work by car. Getting a flat tire increases the chance of arriving late. If being late has serious consequences, such as disciplinary action or job loss, the overall risk becomes more significant.
+
+In cybersecurity, risk assessment helps organizations:
+
+Avoid expensive disruptions
+Improve security processes and systems
+Decide which risks are acceptable
+Focus protection efforts on the most valuable assets
+
+Security professionals often concentrate on reducing the likelihood of incidents by identifying and controlling factors that contribute to risk.
+
+Main Factors That Contribute to Risk
+
+Two major elements strongly influence cybersecurity risk:
+
+Threats
+Vulnerabilities
+
+Risk becomes more serious when a threat is able to take advantage of a vulnerability.
+
+Using the flat tire example again:
+
+The sharp nail on the road represents the threat
+The tire’s ability to be punctured is the vulnerability
+
+Reducing exposure to nails by choosing safer roads lowers the overall risk.
+
+Types of Threats
+
+A threat is any event or condition that could harm systems, data, or operations. Threats are usually divided into two categories:
+
+1. Intentional Threats
+
+These are deliberate attacks or harmful actions carried out by individuals or groups.
+
+Example:
+
+A hacker exploiting a poorly configured application to steal sensitive information
+2. Unintentional Threats
+
+These occur accidentally and are not meant to cause harm.
+
+Example:
+
+An employee unknowingly allowing an unauthorized person into a restricted area
+
+Both intentional and accidental threats can create serious security incidents.
+
+Types of Vulnerabilities
+
+A vulnerability is a weakness that can be exploited by a threat. Vulnerabilities generally fall into two categories:
+
+1. Technical Vulnerabilities
+
+These involve weaknesses in systems, software, or hardware.
+
+Example:
+
+Incorrectly configured software that exposes sensitive data
+2. Human Vulnerabilities
+
+These involve mistakes or unsafe actions by people.
+
+Example:
+
+An employee misplacing an access badge in a public area
+
+Both technical and human weaknesses can increase the chances of a security breach.
+
+Relationship Between Risk, Threats, and Vulnerabilities
+
+These three concepts are closely connected:
+
+A threat is something that can cause harm
+A vulnerability is a weakness that allows harm to happen
+Risk is the possibility and impact of that harm occurring
+
+Cybersecurity teams work to reduce risk by:
+
+Identifying threats
+Fixing vulnerabilities
+Improving security controls and awareness
+
+Understanding these concepts is essential for protecting organizational assets and responding effectively to security events.
+
+
+
+
+
+
+
+
+
+Asset management - The process of tracking assets and the risks that affect them.
+
+Asset inventory - A catalog of assets that need to be protected.
+
+Asset classification - The practice of labeling assets based on sensitivity and importance to an organization.
+
+
+
+level of asset classification:
+public
+Internal-only
+Confidential
+Restricted
+
+
+
+
+
+
+
+
+
+Data - Information that is translated, processed, or stored by a computer.
+
+
+States of data:
+In use
+In transit
+At rest
+
+
+Data in use - Data being accessed by one or more users.
+
+Data in transit - data traveling from one point to another.
+
+Data at rest - Data not currently being accessed.
+
+
+
+
+Information Security (InfoSec):
+The practice of keeping data in all states away from unauthorized users.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction to Cloud Computing and Cloud Security
+
+Launching and running an online business was once expensive and technically difficult. Organizations previously needed to purchase, manage, and maintain their own infrastructure to support online operations. Today, cloud computing has made digital services far more accessible and affordable for businesses of all sizes.
+
+Cloud technologies allow organizations to scale operations quickly, reduce infrastructure costs, and improve flexibility. However, moving services and data to the cloud has also introduced new cybersecurity risks and security management challenges.
+
+What are Cloud-Based Services?
+
+Cloud-based services are internet-delivered solutions that provide computing resources and applications on demand. Organizations can choose services based on their operational needs and budget requirements.
+
+Cloud services may include:
+
+Website hosting
+Application development platforms
+Data storage
+Networking resources
+Complete IT infrastructure
+
+The three primary cloud service models are:
+
+Software as a Service (SaaS)
+Platform as a Service (PaaS)
+Infrastructure as a Service (IaaS)
+Software as a Service (SaaS)
+
+SaaS provides users with ready-to-use applications that are accessed through a web browser. The cloud provider manages the servers, databases, and supporting infrastructure behind the application.
+
+Users simply connect to the service online without worrying about maintenance or hardware management.
+
+Common examples include:
+
+Gmail
+Slack
+Zoom
+
+SaaS is popular because it is convenient, easy to deploy, and requires minimal technical management from customers.
+
+Platform as a Service (PaaS)
+
+PaaS offers online environments and tools that developers use to build, test, and deploy applications. The cloud provider maintains the underlying infrastructure, while developers focus mainly on creating software.
+
+With PaaS, organizations avoid the complexity of managing servers and operating systems themselves.
+
+Examples include:
+
+Google App Engine
+Heroku
+VMware Cloud Foundry
+
+This model is commonly used for software development and application hosting.
+
+Infrastructure as a Service (IaaS)
+
+IaaS provides customers with remote access to computing infrastructure such as:
+
+Virtual servers
+Storage systems
+Networking components
+Processing power
+
+Instead of purchasing physical hardware, organizations rent resources from cloud providers as needed. This makes IaaS a flexible and cost-efficient alternative to maintaining on-premises infrastructure.
+
+Customers typically have greater control over systems in IaaS environments compared to SaaS or PaaS.
+
+Major Cloud Service Providers
+
+Some of the world’s largest technology companies offer cloud computing services, including:
+
+Google Cloud Platform
+Microsoft Azure
+
+These providers support businesses ranging from small startups to large enterprises.
+
+What is Cloud Security?
+
+Cloud security is a specialized area of cybersecurity focused on protecting:
+
+Cloud-based applications
+Data stored in the cloud
+Cloud infrastructure and services
+
+Traditional IT systems were usually maintained entirely within an organization’s physical environment. In those setups, internal security teams handled all security responsibilities directly.
+
+Cloud computing changes this model because infrastructure and services are shared between customers and cloud providers. As a result, security responsibilities are divided between both parties.
+
+Shared Responsibility Model
+
+Cloud security commonly follows the shared responsibility model. This means both the cloud provider and the customer play important roles in securing systems and data.
+
+Typically, customers are responsible for:
+
+Identity and access management
+Configuring security settings
+Protecting and managing their data
+
+Meanwhile, cloud providers are generally responsible for:
+
+Maintaining physical infrastructure
+Securing servers and networking hardware
+Ensuring platform availability
+
+The level of responsibility depends on the type of service being used:
+
+SaaS gives customers the least control and responsibility
+IaaS gives customers the most control and responsibility
+Common Cloud Security Challenges
+
+Although cloud providers invest heavily in security, organizations still face several risks when using cloud environments.
+
+1. Misconfiguration
+
+Incorrect security settings are one of the leading causes of cloud security incidents. Many organizations rely on default configurations that may not properly protect sensitive information.
+
+Example:
+
+Publicly exposed storage systems
+Weak access permissions
+2. Cloud-Native Breaches
+
+Improperly configured cloud services increase the likelihood of unauthorized access and data breaches.
+
+3. Difficulty Monitoring Access
+
+Tracking user activity and monitoring access across cloud systems can become complicated, especially in large or multi-cloud environments.
+
+4. Regulatory Compliance
+
+Organizations in regulated industries must ensure their cloud environments comply with standards such as:
+
+HIPAA
+PCI DSS
+GDPR
+
+Meeting these legal and regulatory requirements can be challenging when data is stored across multiple cloud systems or geographic regions.
+
+Growing Demand for Cloud Security
+
+As more organizations move operations to the cloud, the demand for cloud security professionals continues to increase. Businesses need experts who can identify risks, configure secure environments, and protect sensitive cloud-based resources.
+
+Cloud security has become one of the most valuable and in-demand areas within modern cybersecurity because of the rapid growth of cloud adoption worldwide.
+
+
+
+
+
+
+
+
+
+
+Types of risk categories:
+Damage
+Disclosure 
+Loss of Information
+
+
+
+Elements of a security plan:
+Policies
+Standards
+Procedures
+
+
+
+Policy - A set of rules that reduce risk and protects information.
+
+Standards - References that inform how to set policies.
+
+Procedures - Step-by-step instructions to perform a specific security task.
+
+
+Compliance - The process of adhering to internal standards and external regulations.
+
+Regulations - Rules set by a government or other authority to control the way something is done.
+
+
+NIST cybersecurity Framework (CSF) - A voluntary framework that consists of standards, guidelines, and best practices to manage cybersecurity risk.
+
+
+
+NIST CSF components:
+Core
+Tiers
+Profiles
+
+
+Five functions of the NIST CSF core:
+Identify
+Protect
+Detect
+Respond 
+Recover
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding the NIST Cybersecurity Framework (CSF)
+
+Organizations face many cybersecurity risks, making it difficult to create a complete security strategy from scratch. To help businesses manage these challenges more effectively, cybersecurity frameworks provide structured guidance and best practices.
+
+One of the most widely used frameworks is the NIST Cybersecurity Framework (CSF). It is flexible, adaptable, and designed to support organizations of different sizes and industries.
+
+Background of the NIST CSF
+
+The National Institute of Standards and Technology (NIST) introduced the Cybersecurity Framework in 2014 to strengthen the protection of critical infrastructure in the United States.
+
+NIST was chosen to create the framework because it is considered a reliable and neutral source of scientific research, standards, and cybersecurity guidance.
+
+Although the framework was initially developed for critical infrastructure sectors, it was later expanded so that both public and private organizations could use it. The goal was to create a practical and flexible approach that even smaller organizations could adopt without needing extensive resources.
+
+Main Components of the CSF
+
+The NIST CSF consists of three major components:
+
+Core
+Tiers
+Profiles
+
+Each component helps organizations improve and manage their cybersecurity programs.
+
+1. CSF Core
+
+The CSF Core outlines desired cybersecurity outcomes and activities that organizations can use to strengthen security operations.
+
+The core currently includes six primary functions:
+
+Identify
+Protect
+Detect
+Respond
+Recover
+Govern
+
+These functions help organizations:
+
+Recognize important assets
+Apply appropriate protections
+Detect cybersecurity incidents
+Respond to attacks
+Restore operations after incidents
+Manage cybersecurity through leadership and governance
+
+The Govern function was added in 2024 to highlight the importance of executive leadership, policy-making, and risk management in cybersecurity programs.
+
+The CSF Core serves as a reference structure that organizations can customize according to their needs.
+
+2. CSF Tiers
+
+The CSF Tiers measure the maturity and sophistication of an organization’s cybersecurity practices.
+
+The tiers range from:
+
+Tier 1 – Limited or basic cybersecurity practices
+Tier 4 – Advanced and highly adaptive cybersecurity operations
+
+Organizations use tiers to:
+
+Evaluate their current security posture
+Understand how mature their cybersecurity processes are
+Identify areas that require improvement
+
+Higher tiers generally indicate stronger risk management and more developed security programs.
+
+3. CSF Profiles
+
+CSF Profiles are customized templates based on the framework. They are designed by cybersecurity and industry experts to address the needs of specific sectors or organizations.
+
+Profiles help organizations:
+
+Build a starting point for cybersecurity planning
+Compare their current security posture against industry expectations
+Align security efforts with business goals and regulatory requirements
+
+Different industries may use different profiles depending on the risks they commonly face.
+
+Compliance and the CSF
+
+Compliance refers to following required standards, policies, laws, or regulations related to security and data protection.
+
+It is important to understand the difference between:
+
+Regulations – mandatory rules organizations must follow
+Frameworks – optional guidelines and best practices organizations may choose to adopt
+
+The NIST CSF is voluntary, but many organizations use it to support compliance with legal and industry requirements.
+
+Using the CSF can help businesses:
+
+Improve cybersecurity operations
+Demonstrate responsible risk management
+Align with recognized security standards
+Challenges of Implementing the CSF
+
+Although the framework is highly beneficial, implementing it can sometimes be difficult because of its complexity and level of detail.
+
+Organizations may face challenges such as:
+
+Understanding where the framework fits into existing security programs
+Determining how to begin implementation
+Adapting the framework to their operational needs
+
+Some organizations already have established security practices, while others may be building security programs from the beginning. The framework can support both situations, but implementation often requires planning and assessment.
+
+Recommended Steps for Implementing the CSF
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA) provides guidance for organizations adopting the framework. Common implementation steps include:
+
+1. Develop a Current Profile
+
+Review existing cybersecurity operations and identify business requirements.
+
+2. Perform a Risk Assessment
+
+Evaluate risks, vulnerabilities, and how well current controls meet business and regulatory needs.
+
+3. Identify and Prioritize Gaps
+
+Determine weaknesses or missing controls that expose assets to risk.
+
+4. Create and Implement an Action Plan
+
+Develop security improvements that align with organizational objectives and risk management goals.
+
+Organizations should also continuously monitor evolving threats, vulnerabilities, and cybersecurity trends while using the framework.
+
+Benefits of the NIST CSF
+
+The NIST CSF has become widely adopted because it:
+
+Works across many industries
+Supports organizations of different sizes
+Aligns with established cybersecurity best practices
+Helps improve regulatory compliance
+Encourages better communication about cybersecurity risks
+
+Its flexibility and broad acceptance make it one of the most valuable cybersecurity frameworks used today.
+
+
+
+
+
+
+
+
+
+
+Asset: Any resource, system, or information that holds value for an organization.
+Asset classification: The process of categorizing assets according to their sensitivity, importance, or business value.
+Asset inventory: A documented list of assets that an organization owns and needs to secure.
+Asset management: The practice of monitoring and maintaining assets while identifying risks associated with them.
+Compliance: Following organizational policies, industry standards, and legal or regulatory requirements.
+Data: Digital information that is created, processed, stored, or transmitted by computer systems.
+Data at rest: Information stored on a device or system that is not currently being used or transferred.
+Data in transit: Information actively moving between devices, systems, or networks.
+Data in use: Information currently being viewed, processed, or modified by users or applications.
+Information security (InfoSec): The discipline focused on protecting information from unauthorized access, disclosure, alteration, or destruction.
+National Institute of Standards and Technology (NIST) Cybersecurity Framework (CSF): A flexible cybersecurity framework containing standards, recommendations, and best practices used to manage and reduce cybersecurity risks.
+Policy: A formal set of rules or guidelines created to support security and reduce organizational risk.
+Procedures: Detailed instructions outlining how to complete specific security-related tasks or activities.
+Regulations: Official rules or legal requirements established by governments or regulatory bodies.
+Risk: The possibility that an event could negatively affect the confidentiality, integrity, or availability of assets.
+Standards: Established references or benchmarks that guide organizations in creating policies and security practices.
+Threat: Any event, action, or condition that could potentially cause harm to systems, data, or assets.
+Vulnerability: A weakness or flaw that can be exploited by a threat to compromise security.
+
+

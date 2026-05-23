@@ -110,8 +110,8 @@ This course helped me understand two critical tools used in cybersecurity: Linux
 
 ## Status
 
-**Learning Progress:** In Progress  
-**Certificate Progress:** In Progress  
+**Learning Progress:** Completed 
+**Certificate Progress:** Completed
 
 ---
 
