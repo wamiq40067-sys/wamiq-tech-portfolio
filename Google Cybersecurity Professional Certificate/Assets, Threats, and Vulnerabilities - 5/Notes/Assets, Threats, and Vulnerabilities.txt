@@ -569,3 +569,927 @@ Threat: Any event, action, or condition that could potentially cause harm to sys
 Vulnerability: A weakness or flaw that can be exploited by a threat to compromise security.
 
 
+
+
+
+
+
+
+
+
+
+
+
+Module 2
+
+Security controls - Safeguards designed to reduce specific security risks.
+
+
+Types of security controls:
+Technical
+operational
+Managerial
+
+
+
+Information privacy - The protection of unauthorized access and distribution of data.
+
+
+Principle of least privilege - The concept of granting only the minimal access and authorization required to complete a task or function.
+
+
+Data owner - The person that decides who can access, edit, use, or destroy their information.
+
+Data custodian - Anyone or anything that's responsible for the safe handling, transport, and storage of information.
+
+
+
+
+
+
+
+
+
+
+
+
+Principle of Least Privilege (PoLP)
+
+Security controls help protect sensitive information and systems from misuse or attacks. One of the most important security controls is the Principle of Least Privilege (PoLP), also known simply as least privilege. This principle means that users are given only the minimum level of access and permissions needed to perform their specific tasks.
+
+Least privilege is a core cybersecurity concept that supports the Confidentiality, Integrity, and Availability (CIA) triad by reducing unnecessary access to systems and data. Organizations use this principle to lower security risks, manage users more effectively, and maintain better control over resources.
+
+Why Least Privilege Matters
+
+Applying least privilege helps organizations reduce the chances of security incidents such as data breaches, misuse, or accidental damage. It improves security by:
+
+Restricting access to sensitive information
+Preventing accidental modification, deletion, or misuse of data
+Improving system monitoring and administrative control
+
+By limiting what users can access and what actions they can perform, organizations reduce the likelihood of successful cyberattacks. Least privilege works best when users and resources are clearly defined and access permissions are carefully managed.
+
+Least privilege is also connected to another important concept called separation of duties, where responsibilities are divided among different individuals so that no single person has complete control over critical operations.
+
+Determining User Access and Authorization
+
+Before implementing least privilege, organizations must answer two important questions:
+
+Who is the user?
+What level of access does the user need?
+
+A user can be a person, device, or software application connected to the network. Each user should generally have an individual account managed through the organization’s directory service.
+
+Common Types of User Accounts
+Guest accounts: Temporary accounts for external users such as customers, contractors, or business partners
+User accounts: Standard accounts assigned to employees based on their job responsibilities
+Service accounts: Accounts used by applications or software to communicate with other systems
+Privileged accounts: Accounts with elevated or administrative permissions
+
+Organizations usually establish a baseline access level for each account type. However, access needs may change depending on the situation. For example, a support agent may only require temporary access to a customer’s information while actively assisting them.
+
+Least privilege is only effective when user permissions are regularly reviewed and monitored. Strong password practices are also essential because weak passwords can compromise even properly configured accounts.
+
+Auditing User Accounts and Privileges
+
+Regular audits are necessary to ensure that user accounts and permissions remain secure and appropriate over time. Organizations commonly perform three types of audits:
+
+Usage Audits
+
+Usage audits review which resources users access and how they use them. These audits help verify that users are following company security policies and identify permissions that are no longer necessary.
+
+Privilege Audits
+
+Over time, users may accumulate unnecessary permissions, a problem known as privilege creep. This often happens when employees change roles or receive promotions. Privilege audits compare a user’s current responsibilities with their assigned permissions to ensure access remains appropriate.
+
+Account Change Audits
+
+Directory services maintain logs of account-related activities and changes. Account change audits review these records to identify suspicious behavior, such as repeated password change attempts or unauthorized modifications to accounts.
+
+Many directory services can also generate alerts for suspicious account activity, helping administrators respond quickly to potential threats.
+
+
+
+
+
+
+
+
+
+
+
+
+
+The Data Lifecycle and Data Protection
+
+Organizations handle large amounts of sensitive information every day, making data privacy and security extremely important. Data can be vulnerable at different stages, whether it is stored, actively being used, or transferred between systems. To maintain the Confidentiality, Integrity, and Availability (CIA) triad, organizations must apply proper security controls throughout the entire lifespan of data.
+
+The Data Lifecycle
+
+Security professionals often use the data lifecycle model to understand how data moves through an organization and how it should be protected at each stage. The lifecycle helps businesses create policies and implement technologies that keep information secure and accessible.
+
+The data lifecycle generally includes five stages:
+
+Collect – Data is gathered from users, systems, or external sources.
+Store – Information is saved in databases, servers, or cloud systems.
+Use – Data is accessed, processed, or shared for business operations.
+Archive – Older data is retained for legal, regulatory, or business purposes.
+Destroy – Data that is no longer needed is securely deleted or destroyed.
+
+Protecting data at every stage ensures that information remains available, recoverable, and secure if an incident occurs.
+
+Data Governance
+
+Because organizations constantly collect and manage new information, they require a structured approach to handling data securely. This process is known as data governance.
+
+Data governance refers to the policies, procedures, and processes that define how an organization manages and protects its information throughout the data lifecycle. These policies focus on maintaining data privacy, accuracy, availability, and security.
+
+Key Roles in Data Governance
+
+Organizations commonly assign specific responsibilities to different individuals or groups:
+
+Data Owner: The individual responsible for deciding who can access, use, edit, or delete data.
+Data Custodian: The person, department, or system responsible for storing, transporting, and protecting data securely.
+Data Steward: The person or team responsible for implementing and maintaining data governance policies.
+
+Security professionals often work as data custodians, ensuring that information is not stolen, damaged, or misused.
+
+Protecting Data Throughout Its Lifecycle
+
+Most organizations create a data governance policy to define how data should be handled across the company. These policies establish security procedures, define access restrictions, and explain how employees should manage sensitive information.
+
+Effective data protection requires limiting access to authorized users only and ensuring that data remains secure at every stage of its lifecycle.
+
+Legally Protected Information
+
+Data often contains personal and sensitive details about individuals. Since this information can reveal someone’s identity, health status, financial details, or personal decisions, organizations must protect it carefully and respect users’ privacy choices.
+
+Governments and regulatory agencies have established laws and standards that require organizations to secure specific types of sensitive data.
+
+Types of Protected Information
+Personally Identifiable Information (PII)
+
+PII refers to any information that can identify or locate an individual. Examples include:
+
+Full name
+Phone number
+Email address
+Home address
+Protected Health Information (PHI)
+
+PHI includes medical and health-related information connected to an individual. In the United States, PHI is regulated by the Health Insurance Portability and Accountability Act (HIPAA). In the European Union, similar protections are enforced through the General Data Protection Regulation (GDPR).
+
+Examples of PHI include:
+
+Medical records
+Health conditions
+Treatment history
+Insurance information
+Sensitive Personally Identifiable Information (SPII)
+
+SPII is a more sensitive category of PII that requires stricter protection and limited access on a need-to-know basis.
+
+Examples include:
+
+Bank account numbers
+Credit card details
+Login credentials
+Social Security numbers
+
+Because this information can cause serious harm if exposed, organizations must apply stronger security controls to protect it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Information Security and Privacy
+
+Security and privacy are closely connected concepts, but they are not the same. Organizations must both protect sensitive information and respect individuals’ rights to control how their personal data is collected and used. Security professionals play an important role in maintaining both privacy and security within an organization.
+
+Information Privacy vs. Information Security
+
+Although the terms are often used interchangeably, they have different meanings:
+
+Information Privacy focuses on protecting personal data from unauthorized collection, use, or sharing.
+Information Security (InfoSec) focuses on protecting data in all states—at rest, in use, and in transit—from unauthorized access and threats.
+Key Difference
+
+Privacy is about giving individuals control over their personal information and how it is shared.
+Security is about protecting that information and enforcing the user’s privacy choices.
+
+For example, a retail company may collect customer information such as age, gender, or location for marketing purposes. Before collecting this information, the company should explain how the data will be used and provide customers with the option to decline sharing their information.
+
+Once consent is given, the organization must implement security controls to protect that data from unauthorized access, misuse, or disclosure. Security measures should also ensure that the privacy choices of users who opt out are respected.
+
+Maintaining both privacy and security is essential for building customer trust and protecting an organization’s reputation.
+
+Why Privacy Matters in Security
+
+Privacy became a major concern in the late 1990s as businesses began collecting, storing, and analyzing large amounts of user data for commercial purposes. Organizations started tracking activities such as online searches, shopping behavior, and browsing history to provide personalized services and advertisements.
+
+As data collection increased, concerns also grew about:
+
+Unauthorized sharing of personal information
+Data misuse and abuse
+Data theft and security breaches
+
+The more data organizations collect and store, the more attractive they become to cybercriminals. This led to greater public awareness and pressure for stronger privacy protections and security measures.
+
+Over time, companies became more transparent about their data practices and introduced additional security controls. However, without clear legal standards, privacy protections varied widely between organizations.
+
+Important Privacy Regulations
+
+Governments and industry groups created privacy and security regulations to protect individuals’ data and establish standards for organizations. These regulations define how personal information should be collected, stored, processed, and protected.
+
+General Data Protection Regulation (GDPR)
+
+The GDPR is a privacy regulation developed by the European Union (EU). It gives individuals greater control over their personal data, including:
+
+Names
+Addresses
+Phone numbers
+Financial information
+Medical records
+
+The GDPR applies to any organization that handles the data of EU citizens or residents, even if the business operates outside Europe.
+
+Payment Card Industry Data Security Standard (PCI DSS)
+
+PCI DSS is a set of security standards created by major financial organizations to protect payment card information.
+
+Its primary goal is to secure credit and debit card transactions and reduce risks related to:
+
+Data theft
+Fraud
+Unauthorized access to payment information
+Health Insurance Portability and Accountability Act (HIPAA)
+
+HIPAA is a United States law that protects sensitive patient health information.
+
+HIPAA requires organizations to safeguard medical data and prohibits the disclosure of health information without the patient’s knowledge and consent.
+
+Although these regulations originated in specific regions or industries, they influence security and privacy practices worldwide.
+
+Security Audits and Assessments
+
+Organizations use audits and assessments to ensure compliance with regulations and evaluate the effectiveness of their security controls.
+
+Security Audit
+
+A security audit is a formal review of an organization’s:
+
+Security controls
+Policies
+Procedures
+
+Audits compare existing practices against regulatory or organizational requirements to determine compliance.
+
+Security Assessment
+
+A security assessment evaluates how effective current security measures are at defending against threats and vulnerabilities.
+
+For example:
+
+An audit may verify whether multi-factor authentication (MFA) is enabled for administrator accounts.
+A security assessment may reveal that users still rely on weak passwords, leading the organization to strengthen authentication requirements further.
+Differences Between Audits and Assessments
+Security Audit	Security Assessment
+Focuses on compliance	Focuses on security effectiveness
+Usually performed annually	Performed more frequently
+May involve external reviewers	Usually conducted internally
+Checks if rules are followed	Evaluates resilience against threats
+
+Both audits and assessments are essential for maintaining strong security practices and protecting user privacy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Personally identifiable information (PII) - Any information that can be used to infer an individual's identity.
+
+
+
+Cryptography - The process of transforming information into a form that unintended readers can't understand.
+
+
+Algorithm - A set of rules used that solve a problem.
+
+Cryptographic key - A mechanism that decrypts ciphertext.
+
+Brute force attack - A trial and error process of discovering private information.
+
+
+
+Public key Infrastructure (PKI) - An encryption framework that secures the exchange of information online.
+
+Public key infrastructure process (2 step process) :-
+
+1. Exchange of encrypted information (symmetric, asymmetric, or both)
+2. Establish trust using a system of digital certificates.
+
+Asymmetric encryption - The use of public and private key pair for encryption and decryption of data.
+
+Symmetric encryption - The use of a single secret key to exchange information.
+
+
+Digital certificate - A file that verifies the identity of a public key holder.
+
+
+
+
+
+
+
+
+
+
+
+
+Encryption and Cryptography
+
+Protecting digital information is a critical part of cybersecurity. Encryption helps keep data private and secure by converting readable information into an encoded format that unauthorized users cannot understand.
+
+Key Terms
+Encryption: The process of converting readable data into encoded data.
+Public Key Infrastructure (PKI): A framework that secures online communication using encryption and digital certificates.
+Cipher: A mathematical algorithm used to encrypt and decrypt information.
+
+Encryption is widely used to secure data during storage, transmission, and processing.
+
+Types of Encryption
+
+There are two primary types of encryption used in cybersecurity:
+
+Symmetric Encryption
+
+Symmetric encryption uses a single secret key for both encryption and decryption. The sender and receiver must both possess the same key to securely exchange information.
+
+Characteristics:
+Faster processing speed
+Efficient for large amounts of data
+Requires secure key sharing
+Asymmetric Encryption
+
+Asymmetric encryption uses two separate keys:
+
+A public key to encrypt data
+A private key to decrypt data
+
+The private key is only available to authorized users, making this method highly secure.
+
+Characteristics:
+More secure for communication over networks
+Slower than symmetric encryption
+Commonly used for authentication and secure key exchange
+Importance of Key Length
+
+Encryption algorithms rely on cryptographic keys. The length of a key directly affects security strength.
+
+Longer keys:
+
+Increase the number of possible combinations
+Make brute force attacks significantly harder
+Provide stronger protection
+
+However, longer keys also require more processing power and can slow down system performance. Security professionals must balance security and efficiency when selecting encryption methods.
+
+Common Encryption Algorithms
+
+Organizations use both symmetric and asymmetric algorithms to protect sensitive data.
+
+Symmetric Algorithms
+Triple DES (3DES)
+
+Triple DES evolved from the older Data Encryption Standard (DES). DES originally used a 56-bit encryption key. Triple DES improves security by applying the DES algorithm three times with three separate keys, creating an effective key length of 168 bits.
+
+Although more secure than DES, Triple DES is becoming outdated because of performance limitations and restrictions on how much data can be encrypted safely. Some organizations still use it for compatibility with older systems.
+
+Advanced Encryption Standard (AES)
+
+AES is one of the most trusted and widely used encryption standards today. It supports key lengths of:
+
+128-bit
+192-bit
+256-bit
+
+AES is considered extremely secure and resistant to brute force attacks. Modern systems commonly use AES to protect sensitive information.
+
+Asymmetric Algorithms
+Rivest Shamir Adleman (RSA)
+
+RSA is one of the earliest and most widely used asymmetric encryption algorithms. It generates both public and private keys and supports key lengths such as:
+
+1,024-bit
+2,048-bit
+4,096-bit
+
+RSA is commonly used to secure highly sensitive data and establish secure online communication.
+
+Digital Signature Algorithm (DSA)
+
+DSA is a NIST-developed asymmetric algorithm introduced in the 1990s. It commonly uses 2,048-bit keys and is often used alongside RSA in public key infrastructure systems to verify digital signatures and authentication.
+
+Generating Cryptographic Keys
+
+Organizations use tools to generate encryption keys and certificates. One popular tool is OpenSSL, an open-source command-line utility commonly used to create public and private keys and verify digital certificates.
+
+In 2014, OpenSSL experienced a major vulnerability known as the Heartbleed bug, which exposed sensitive data from system memory. The issue was later patched, highlighting the importance of regularly updating software to maintain security.
+
+Kerckhoff’s Principle
+
+According to Kerckhoff’s principle, a cryptographic system should remain secure even if the encryption algorithm is publicly known. The only secret element should be the private key.
+
+This means security should never depend on hiding how an encryption method works. Strong algorithms like AES remain secure despite their designs being publicly available.
+
+Custom or secret encryption methods are often less secure because they have not been thoroughly tested by the cybersecurity community.
+
+Encryption in Everyday Use
+
+Modern systems frequently combine symmetric and asymmetric encryption to balance security and performance.
+
+For example:
+
+Websites often use asymmetric encryption to protect login credentials and establish secure connections.
+Once the connection is established, symmetric encryption is used for the rest of the session because it processes data more quickly.
+
+Encryption is also required by many regulations and standards, including:
+
+FIPS 140-3
+GDPR
+
+These regulations help ensure organizations handle customer data responsibly and securely.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hash function - An algorithm that produces a code that can't be decrypted.
+
+non-repudiation - The concept that the authenticity of information can't be denied.
+
+
+
+
+
+
+
+
+
+
+
+
+Hash Functions and Data Integrity
+
+Hash functions are an essential part of modern cybersecurity and are widely used for authentication and non-repudiation. Non-repudiation means that the authenticity of data or actions cannot later be denied.
+
+A hash function is a mathematical algorithm that converts data into a fixed-size value known as a hash or digest. Unlike encryption, hash values are designed to be one-way, meaning they cannot be decrypted back into the original information. Hashing is commonly used to verify data integrity and detect unauthorized changes.
+
+Origins of Hashing
+
+Hash functions were originally developed to improve the speed and efficiency of searching for information in computer systems. Instead of storing and comparing large amounts of data directly, computers could reference smaller fixed-size values using a structure called a hash table.
+
+One of the earliest and most well-known hashing algorithms was Message Digest 5 (MD5), created by Ronald Rivest at MIT in the early 1990s. MD5 was designed to verify file integrity by generating a unique hash value for data.
+
+MD5 converts any input into a 128-bit hash value, typically displayed as a 32-character string. Even the smallest change to the original data creates a completely different hash value.
+
+In general, longer hash values provide stronger security because they reduce the likelihood of duplicate outputs.
+
+Hash Collisions
+
+A major weakness of MD5 is its vulnerability to hash collisions.
+
+A hash collision occurs when two different inputs generate the same hash value. Since hash functions convert unlimited possible inputs into a limited number of outputs, collisions are theoretically unavoidable.
+
+Because MD5 produces relatively short 128-bit hashes, attackers can intentionally create collisions and use them in attacks. This can allow malicious data to appear authentic by matching the same hash value as legitimate data.
+
+Due to these weaknesses, MD5 is no longer considered secure for many modern security applications.
+
+Secure Hash Algorithms (SHA)
+
+To address the weaknesses of MD5, stronger hashing algorithms known as the Secure Hash Algorithms (SHA) family were developed and approved by NIST.
+
+SHA algorithms generate larger hash values, making collisions significantly more difficult.
+
+The SHA family includes:
+
+SHA-1
+SHA-224
+SHA-256
+SHA-384
+SHA-512
+
+The number in each name refers to the size of the hash value in bits.
+
+Although SHA-1 produces a 160-bit digest, it is no longer considered secure against collision attacks. More advanced algorithms such as SHA-256 and SHA-512 are commonly used today because they are much more resistant to attacks.
+
+Secure Password Storage
+
+Organizations often store usernames and passwords in databases for authentication purposes. Storing passwords in plaintext creates a major security risk because attackers who gain access to the database can immediately view all credentials.
+
+Hashing improves password security because hash values cannot easily be reversed back into the original password.
+
+When a user logs in:
+
+The entered password is hashed.
+The system compares the generated hash with the stored hash value.
+Access is granted only if the hashes match.
+
+This approach protects passwords even if the database is compromised.
+
+Rainbow Tables
+
+A rainbow table is a database containing pre-generated hash values and their corresponding plaintext passwords.
+
+Attackers use rainbow tables to quickly compare stolen password hashes against known values in order to recover weak passwords.
+
+Weak or commonly used passwords are especially vulnerable to rainbow table attacks.
+
+Salting Passwords
+
+To strengthen password security, organizations often use salting.
+
+A salt is a random string of characters added to data before hashing. The salt creates a more unique hash value, even when multiple users have the same password.
+
+For example:
+
+Without salting, two users with the password "password" would produce identical hashes.
+With salting, each password generates a completely different hash value.
+
+Salting makes rainbow table attacks far less effective because attackers cannot rely on pre-generated hash databases.
+
+Longer and more complex salts provide stronger protection and are now commonly used in secure password storage systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Access controls - Security controls that manage access, authorization, and accountability of information.
+
+
+
+AAA framework:
+Authentication
+Authorization
+Accounting
+
+
+
+Factors of authentication:
+1. Knowledge: something the user knows.
+2. ownership: something the user possesses.
+3. Characteristic: something the user is.
+
+
+
+Single sign-on (SSO)
+A technology that combines several different logins into one.
+
+Multi-factor authentication (MFA) - A security measure which requires a user to verify their identity in 2 or more ways to access a system or network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Single Sign-On (SSO) and Multi-Factor Authentication (MFA)
+
+Organizations rely heavily on authentication systems to protect sensitive information and control user access. Usernames and passwords are commonly used to verify identities, but they are not always enough to secure systems effectively. To strengthen authentication and improve security, many organizations use technologies such as Single Sign-On (SSO) and Multi-Factor Authentication (MFA).
+
+A Better Approach to Authentication
+Single Sign-On (SSO)
+
+Single Sign-On (SSO) is an authentication technology that allows users to access multiple applications or services using one set of login credentials.
+
+Many organizations use SSO because it provides several important benefits:
+
+Improves the user experience by reducing the number of usernames and passwords users must remember
+Simplifies account and service management for organizations
+Reduces the number of login points attackers can target
+
+SSO was introduced in the 1990s to address password fatigue, which occurs when users become overwhelmed by managing many passwords. Password fatigue often causes people to reuse passwords across different services, increasing security risks.
+
+SSO helps solve this issue by centralizing authentication and reducing the burden on users.
+
+How SSO Works
+
+SSO works by establishing trust between users and service providers through trusted identity systems.
+
+Instead of each application directly verifying the user, an identity provider confirms the user's identity and sends an encrypted access token to the service provider. This token allows the user to access multiple services without logging in repeatedly.
+
+Common SSO Protocols
+
+SSO systems commonly use these authentication protocols:
+
+LDAP (Lightweight Directory Access Protocol): Primarily used for on-premises authentication and directory services
+SAML (Security Assertion Markup Language): Commonly used for cloud-based and off-premises authentication
+
+LDAP and SAML are often used together in enterprise environments.
+
+Through SSO, one authenticated login session can provide secure access to multiple connected applications and systems.
+
+Limitations of SSO
+
+Although SSO improves convenience and security, it still depends heavily on a single set of credentials.
+
+If an attacker steals or compromises a user’s password, they may gain access to multiple systems connected through SSO. Because of this risk, organizations often combine SSO with stronger authentication methods.
+
+Multi-Factor Authentication (MFA)
+What is MFA?
+
+Multi-Factor Authentication (MFA) is a security process that requires users to verify their identity using two or more authentication factors before gaining access to a system.
+
+A common example is using an ATM:
+
+A debit card acts as one authentication factor.
+A PIN number acts as the second factor.
+
+Only after both factors are verified can the user access their account.
+
+Authentication Factors
+
+MFA strengthens security by requiring multiple forms of identification. These factors generally fall into three categories:
+
+Something the User Knows
+Password
+PIN
+Security question
+Something the User Has
+Smartphone
+Security token
+One-time passcode (OTP)
+Something the User Is
+Fingerprint
+Facial recognition
+Retina scan
+
+Organizations may implement:
+
+2FA (Two-Factor Authentication): Uses two factors
+3FA (Three-Factor Authentication): Uses three factors
+Why MFA is Important
+
+MFA significantly improves security because attackers are less likely to possess multiple authentication factors at the same time.
+
+This is especially important in cloud environments, where users often access systems remotely. Even if a password is stolen, attackers may still be unable to bypass additional authentication steps such as OTPs or biometric verification.
+
+By combining SSO and MFA, organizations can improve both usability and security while reducing the risk of unauthorized access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Separation of duties - The principle that users should not be given levels of authorization that would allow them to misuse a system.
+
+
+Basic auth - The technology used to establish a user's request to access a server.
+
+OAuth - An open-standard authorization protocol that shares designated access between applications.
+
+API token - A small block of encrypted code that contains information about a user.
+
+
+Session - A sequence of network HTTP basic auth requests and responses associated with the same user.
+
+Session ID - A unique token that identifies a user and their device while accessing the system.
+
+Session cookie - A token that websites use to validate a session and determine how long that session should last.
+
+Session hijacking - An event when attackers obtain a legitimate user's session ID.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Identity and Access Management (IAM)
+
+Security is not only about using security tools and technologies. It also involves creating a secure environment where users can safely access the resources they need while reducing the risk of misuse or unauthorized access. Two important security principles that help organizations manage access are:
+
+Principle of Least Privilege (PoLP): Users are given only the minimum access and permissions necessary to perform their tasks.
+Separation of Duties (SoD): Responsibilities and permissions are divided among multiple individuals so that no single person has excessive control over critical systems or processes.
+
+These principles often work together. For example, an employee responsible for approving IT purchases should not also have permission to create or process those purchases. Least privilege limits user access, while separation of duties distributes responsibilities to reduce the risk of fraud, abuse, or mistakes.
+
+Identity and Access Management (IAM)
+
+As organizations rely more heavily on digital systems, they must demonstrate that they are protecting sensitive information and controlling access properly. Identity and Access Management (IAM) is a collection of processes and technologies used to manage digital identities and control access to organizational resources.
+
+IAM and the Authentication, Authorization, and Accounting (AAA) framework share similar goals:
+
+Verify user identities
+Control user permissions
+Track user activities within systems
+
+IAM systems help ensure that:
+
+The right user
+Has access to the right resource
+At the right time
+For the right reason
+
+In IAM, a user can refer to a person, device, or software application.
+
+Authenticating Users
+
+Authentication is the process of verifying that a user is who they claim to be. Organizations commonly use three authentication factors:
+
+Knowledge
+
+Something the user knows, such as:
+
+Passwords
+PINs
+Security questions
+Ownership
+
+Something the user possesses, such as:
+
+Smartphones
+Security tokens
+One-time passcodes (OTPs)
+Characteristic
+
+Something the user is, such as:
+
+Fingerprints
+Facial recognition
+Retina scans
+
+Organizations often strengthen authentication using technologies such as:
+
+Single Sign-On (SSO): Allows users to access multiple services with one login
+Multi-Factor Authentication (MFA): Requires users to verify identity using two or more authentication methods
+
+These methods improve both security and user convenience.
+
+User Provisioning and Deprovisioning
+
+Before authentication systems can function correctly, users must be properly provisioned.
+
+User Provisioning
+
+User provisioning is the process of creating and managing a user’s digital identity and access rights.
+
+For example:
+
+A university may create an instructor account that provides access only to teaching-related systems and resources.
+
+Security analysts are often responsible for configuring user accounts and assigning appropriate permissions.
+
+User Deprovisioning
+
+Deprovisioning removes a user’s access rights when they no longer require access, such as when:
+
+An employee leaves the organization
+A contractor’s project ends
+A user changes roles
+
+Proper deprovisioning is essential for preventing unauthorized access.
+
+Authorization Frameworks
+
+After a user is authenticated, authorization determines which resources they can access. Organizations commonly use three authorization models:
+
+Mandatory Access Control (MAC)
+
+MAC is the strictest access control model. Access permissions are centrally controlled by administrators and granted only on a need-to-know basis.
+
+Commonly used in:
+
+Military organizations
+Government agencies
+Law enforcement environments
+
+Users cannot decide access permissions themselves.
+
+Discretionary Access Control (DAC)
+
+In DAC, the data owner decides who can access resources.
+
+Example:
+
+A user sharing a cloud storage folder with view or edit permissions
+
+DAC offers flexibility but can introduce security risks if permissions are shared improperly.
+
+Role-Based Access Control (RBAC)
+
+RBAC assigns permissions based on a user’s role within the organization.
+
+Examples:
+
+Marketing employees may access analytics systems
+IT administrators may access network management tools
+
+RBAC simplifies permission management and supports least privilege practices.
+
+Access Control Technologies
+
+Authentication and authorization are often combined into a seamless user experience through integrated access control technologies.
+
+A typical IAM or AAA solution may include:
+
+User directories
+Identity management tools
+Authorization systems
+Auditing and monitoring systems
+
+Some organizations build custom access control systems, while others use third-party IAM solutions that provide ready-made security tools and automation features.
+
+These technologies help:
+
+Reduce administrative workload
+Improve accuracy
+Lower security risks
+Monitor and update permissions efficiently
+
+However, effective security depends not only on using these tools, but also on configuring and managing them properly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
