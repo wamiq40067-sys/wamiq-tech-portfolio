@@ -1491,5 +1491,1935 @@ However, effective security depends not only on using these tools, but also on c
 
 
 
+Module 3
+
+Vulnerability - A weakness that can be exploited by a threat.
+
+Exploit - A way of taking advantage of a vulnerability.
+
+Vulnerability management - The process of finding and patching vulnerabilities.
+
+
+Vulnerability management (4 step process):
+1. Identify vulnerabilities.
+2. Consider potential exploits.
+3. prepare defenses against threats.
+4. Evaluate those defenses.
+
+
+
+
+Zero-Day - An exploit that was previously unknown.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Protect Your Software Pipeline: CI/CD Security (Reframed)
+Introduction
+
+Building on the concept of vulnerability management, this topic focuses on a crucial area of modern software development: CI/CD pipelines.
+
+Just as organizations regularly assess systems for weaknesses, CI/CD pipelines—which automate the software release process—must also undergo continuous and rigorous vulnerability management.
+
+This section explains:
+
+Common vulnerabilities in CI/CD pipelines
+Why securing them is essential
+How to apply vulnerability management principles to strengthen the software delivery process
+
+CI/CD pipelines (Continuous Integration, Continuous Delivery, and Continuous Deployment) are fundamental to modern software development. They allow teams to deliver software faster, more reliably, and more efficiently. However, like any powerful automation system, they introduce significant security risks if not properly secured.
+
+By understanding these risks and applying security best practices, CI/CD pipelines can become a strong pillar of an organization’s cybersecurity strategy.
+
+What is CI/CD and Why Does It Matter?
+
+CI/CD automates the entire software release lifecycle—from code creation to deployment. This automation enables agility, speed, and continuous improvement in development workflows.
+
+Continuous Integration (CI): Building a Solid Foundation
+
+Continuous Integration focuses on frequently merging code changes from multiple developers into a shared central repository.
+
+Each integration triggers automated processes such as:
+
+Building the application
+Running automated tests
+Key purpose:
+
+CI ensures that every code change is validated immediately.
+
+How it works:
+Every time code is integrated, automated systems build and test it
+Issues are detected early in the development cycle
+Integration problems are identified immediately
+Benefit:
+Improves code quality
+Reduces integration errors
+Provides fast feedback to developers
+
+CI acts as the foundation of the CI/CD pipeline.
+
+Continuous Delivery (CD): Ready to Release
+
+Continuous Delivery ensures that code is always in a deployable state.
+
+Process:
+Code passes automated tests
+Automatically deployed to a staging (testing) environment
+Prepared for production release
+Key feature:
+A manual approval step is typically required before production deployment
+Benefit:
+Ensures software is always release-ready
+Reduces deployment risk
+Continuous Deployment (CD): Fully Automated Releases
+
+Continuous Deployment takes automation further.
+
+Process:
+All changes that pass automated testing are deployed directly to production
+No manual approval is required
+Key focus:
+Maximum speed and efficiency
+Fully automated release cycle
+Security Benefits of Continuous Delivery and Deployment
+
+Although CI/CD introduces risks, it also significantly improves security when properly implemented.
+
+Security can be integrated directly into deployment pipelines, ensuring only validated software is released.
+
+Automated Security Checks in CI/CD include:
+1. Dynamic Application Security Testing (DAST)
+Tests running applications in realistic environments
+Identifies runtime vulnerabilities
+2. Security Compliance Checks
+Ensures software follows organizational security policies
+Validates compliance requirements
+3. Infrastructure Security Validations
+Ensures hosting environments are secure
+Checks configuration and system security
+Why a Secure CI/CD Pipeline is Non-Negotiable
+
+Understanding CI/CD is important—but securing it is critical.
+
+1. Secure Automation
+
+CI/CD automates repetitive tasks like building, testing, and deployment.
+
+If secure:
+Reduces human error
+Speeds up workflows
+Improves consistency
+If insecure:
+Automates vulnerabilities at scale
+Spreads security flaws rapidly
+2. Improved Code Quality via Security Checks
+
+Automated testing improves software quality.
+
+Key point:
+
+Security testing must be properly integrated into CI/CD pipelines.
+
+Result:
+Fewer bugs
+Fewer vulnerabilities
+More secure software releases
+3. Faster Time to Market for Security Updates
+
+CI/CD enables rapid deployment of:
+
+Security patches
+Bug fixes
+Feature updates
+Security benefit:
+Faster response to threats
+Reduced exposure time to vulnerabilities
+4. Enhanced Collaboration and Feedback
+
+CI/CD promotes collaboration between:
+
+Development
+Security
+Testing
+Operations
+Benefit:
+Faster identification of vulnerabilities
+Early resolution of issues
+Security built into the development process
+5. Reduced Risk Through Smaller Releases
+
+CI/CD encourages frequent, smaller deployments.
+
+Benefits:
+Easier troubleshooting
+Reduced impact of failures
+Lower risk compared to large, infrequent releases
+Security advantage:
+Vulnerabilities are isolated more easily
+Damage from security flaws is minimized
+Common CI/CD Pipeline Vulnerabilities
+
+Despite its benefits, CI/CD pipelines can introduce several security weaknesses.
+
+1. Insecure Dependencies (Third-Party Risks)
+
+CI/CD pipelines often rely on external libraries and components.
+
+Risk:
+These dependencies may contain known vulnerabilities (CVEs)
+Vulnerabilities may be introduced during the build process
+Action Step:
+Regularly scan dependencies
+Keep all third-party components updated
+Use secure versions only
+2. Misconfigured Permissions (Access Control Issues)
+
+Weak access controls in:
+
+CI/CD tools
+Repositories
+Pipeline systems
+Risk:
+Unauthorized users may modify code or pipelines
+Attackers may inject malicious changes
+Action Step:
+Implement Role-Based Access Control (RBAC)
+Apply least privilege access policies
+3. Lack of Automated Security Testing
+
+Failure to include security testing is a major vulnerability.
+
+Missing tools include:
+SAST (Static Application Security Testing)
+DAST (Dynamic Application Security Testing)
+Risk:
+Vulnerabilities reach production unnoticed
+High cost and effort required for fixes later
+Action Step:
+Integrate SAST and DAST into the CI/CD pipeline
+4. Exposed Secrets (Sensitive Data Leakage)
+Risk:
+Hardcoded API keys
+Passwords
+Tokens
+
+If exposed, attackers can gain unauthorized access.
+
+Action Step:
+Never hardcode secrets
+Use secure secrets management systems
+Enforce secure storage and rotation
+5. Unsecured Build Environments
+
+The CI/CD infrastructure itself can be targeted.
+
+Risk:
+Attackers can alter builds
+Inject malicious code
+Steal sensitive data
+Action Step:
+Harden build servers
+Use secure containers or virtual machines
+Protect pipeline infrastructure
+Building a Secure CI/CD Pipeline (Defense in Depth)
+
+A layered security strategy is essential for CI/CD protection.
+
+1. Integrate Security from the Start (DevSecOps)
+Security must be part of every stage of development
+From planning → coding → deployment
+2. Implement Strong Access Controls
+Apply least privilege access
+Use Role-Based Access Control (RBAC)
+Enforce Multi-Factor Authentication (MFA)
+3. Automate Security Testing Everywhere
+
+Security testing must be continuous and automated.
+
+Key tools:
+SAST
+DAST
+Software Composition Analysis (SCA)
+4. Keep Dependencies Updated
+Maintain inventory of all third-party libraries
+Regularly patch vulnerabilities (CVEs)
+Automation tools:
+Dependabot
+Snyk
+5. Secure Secrets Management
+Never store secrets in code or pipelines
+Use dedicated tools like:
+HashiCorp Vault
+AWS Secrets Manager
+Best practices:
+Secure storage
+Controlled access
+Regular rotation of credentials.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Defense in Depth - A layered approach to vulnerability management that reduces risk.
+
+
+
+Defense in depth strategy :
+1. Perimeter layer
+2. Network layer
+3. Endpoint layer
+4. Application layer
+5. Data layer
+
+
+
+
+Exposure - A mistake that can be exploited by a threat.
+
+
+Common Vulnerabilities and Exposure list (CVE list) - An openly accessible dictionary of known vulnerabilities and exposures.
+
+
+
+MITRE - A collection of non-profit research and development centers.
+
+CVE Numbering Authority (CNA) - An organization that volunteers to analyze and distribute information on eligible CVEs
+
+
+CVE list criteria:
+1. Independent of other issues.
+2. Recognized as a potential security risk.
+3. Submitted with supporting evidence.
+4. Only affect one codebase.
+
+
+
+
+Common Vulnerabilities Scoring System (CVSS) - A measurement system that scores the severity of a vulnerability.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+What is OWASP?
+
+OWASP (Open Worldwide Application Security Project) is a nonprofit organization focused on improving software security across the internet.
+
+It functions as an open community platform where cybersecurity professionals from around the world:
+
+Share knowledge and research
+Develop security tools and frameworks
+Participate in security-focused events
+Work together to improve web application security
+OWASP Top 10
+
+One of OWASP’s most well-known contributions is the OWASP Top 10 list.
+
+Overview:
+First published in 2003
+Serves as a global awareness guide for the most critical web application security risks
+Frequently referenced in software development and security audits
+Primarily focused on vulnerabilities found in web applications and custom-built software
+Important Notes:
+The list is updated periodically as technology and attack patterns evolve
+Rankings are based on:
+Frequency of vulnerabilities in real systems
+Severity and impact of the risks
+It is also commonly used during security compliance and auditing processes
+OWASP Top 10 vs CVE
+OWASP Top 10: Helps developers prevent vulnerabilities during software design and development
+CVE list: Helps security teams identify and track known vulnerabilities in existing software
+Common OWASP Top 10 Vulnerabilities
+1. Broken Access Control
+
+Access control defines what users are allowed to do in an application.
+
+Risk:
+Unauthorized access to data or features
+Modification or deletion of restricted content
+Privilege escalation across systems
+Example:
+
+A normal user gaining access to admin-only functions.
+
+2. Cryptographic Failures
+
+Occurs when sensitive information is not properly protected using encryption or secure hashing.
+
+Risk:
+Exposure of sensitive data such as personal information (PII)
+Weak or outdated encryption methods increase breach risk
+Example:
+
+Using weak hashing algorithms like MD5 for password storage.
+
+3. Injection Attacks
+
+Injection happens when untrusted input is treated as executable code.
+
+Risk:
+Execution of malicious commands
+Unauthorized database or system access
+Data theft or manipulation
+Example:
+
+Attackers inserting malicious SQL commands into login forms.
+
+4. Insecure Design
+
+Refers to weaknesses in the architecture or design stage of an application.
+
+Risk:
+Missing security controls from the beginning
+Systems inherently vulnerable even before deployment
+Key idea:
+
+Security must be included in design, not added afterward.
+
+5. Security Misconfiguration
+
+Occurs when systems or applications are incorrectly configured.
+
+Risk:
+Default settings left unchanged
+Unnecessary services enabled
+Weak or inconsistent security settings
+Example:
+
+Using default admin credentials on servers or applications.
+
+6. Vulnerable and Outdated Components
+
+Modern applications rely on external libraries and open-source tools.
+
+Risk:
+Using outdated or unpatched components
+Known vulnerabilities remain exploitable
+Impact:
+Attackers exploit weaknesses in third-party code
+7. Identification and Authentication Failures
+
+Happens when systems cannot properly verify user identity or session validity.
+
+Risk:
+Weak login systems
+Poor session management
+Unauthorized access to accounts
+Example:
+
+A system that allows attackers to bypass authentication controls.
+
+8. Software and Data Integrity Failures
+
+Occurs when software updates or data changes are not properly verified.
+
+Risk:
+Malicious or tampered updates introduced into systems
+Supply chain attacks affecting multiple users or organizations
+Example:
+
+Compromised software updates being distributed to customers.
+
+Notable Case:
+SolarWinds Attack (2020):
+Attackers inserted malicious code into legitimate software updates, affecting thousands of organizations.
+9. Security Logging and Monitoring Failures
+
+Refers to inadequate tracking of system activity and security events.
+
+Risk:
+Attacks go undetected
+Lack of forensic evidence after breaches
+Delayed incident response
+Key idea:
+
+Proper logging and monitoring are essential for detecting and investigating attacks.
+
+10. Server-Side Request Forgery (SSRF)
+
+SSRF occurs when an attacker manipulates a server into making unauthorized requests.
+
+Risk:
+Access to internal systems or restricted data
+Exploitation of server-side trust relationships
+How it works:
+A vulnerable server is tricked into sending requests on behalf of the attacker
+This can expose internal resources not directly accessible from outside
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Open-Source Intelligence (OSINT) in Cybersecurity
+
+Cyberattacks can often be prevented or reduced when organizations understand where their systems are vulnerable. Earlier concepts like the CVE list and vulnerability scanning tools help identify weaknesses in systems. However, there are additional methods used to discover threats and vulnerabilities.
+
+One important method is Open-Source Intelligence (OSINT).
+
+What is OSINT?
+
+Open-Source Intelligence (OSINT) refers to the process of collecting and analyzing publicly available information to produce useful security insights.
+
+In cybersecurity, OSINT is widely used to:
+
+Detect potential threats
+Identify system vulnerabilities
+Support security decision-making
+Strengthen overall defense strategies
+Information vs Intelligence
+
+Although often used interchangeably, information and intelligence are not the same.
+
+Information
+
+Information refers to:
+
+Raw data
+Facts
+Unprocessed observations
+
+Example:
+
+A report about a newly released operating system update
+Intelligence
+
+Intelligence is:
+
+Processed and analyzed information
+Contextual understanding
+Actionable insights used for decision-making
+
+Example:
+
+Research shows that a recent OS update is linked to new security vulnerabilities
+This analysis becomes intelligence used to decide whether to delay or apply updates
+Key difference:
+Information = raw data
+Intelligence = analyzed, meaningful insight
+Why OSINT Matters in Cybersecurity
+
+OSINT helps security teams make informed decisions by analyzing publicly available data to identify risks and threats.
+
+It is commonly used in Information Security (InfoSec), which focuses on protecting data from unauthorized access or misuse.
+
+Example Use Case
+
+A security team may monitor:
+
+Online forums
+Security blogs
+Hacker discussions
+
+If they discover a post revealing a new vulnerability in widely used software, they can:
+
+Assess the potential risk
+Prioritize patching
+Strengthen defenses before exploitation occurs
+How OSINT is Used in Security
+
+OSINT supports cybersecurity operations in several ways:
+
+Identifying possible cyberattacks
+Detecting data leaks or exposure
+Evaluating the strength of current defenses
+Discovering unknown or emerging vulnerabilities
+
+It is also an important part of vulnerability management, helping teams make data-driven security decisions.
+
+OSINT Tools and Resources
+
+Because the internet contains massive amounts of public data, specialized tools are used to collect and analyze relevant information.
+
+Common OSINT tools include:
+VirusTotal
+
+A platform that analyzes:
+
+Files
+URLs
+Domains
+IP addresses
+
+It helps detect malicious or suspicious activity.
+
+MITRE ATT&CK®
+
+A structured knowledge base that documents:
+
+Real-world attacker behaviors
+Tactics and techniques used in cyberattacks
+
+It helps security teams understand how attacks happen.
+
+OSINT Framework
+
+A structured directory of OSINT tools and resources for:
+
+Different platforms
+Various types of intelligence gathering
+
+It helps users find appropriate tools quickly.
+
+Have I Been Pwned
+
+A service that allows users to check:
+
+Whether email addresses have appeared in data breaches
+
+It is widely used to detect compromised accounts.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Vulnerability assessment - The internal review process of an organization's security systems.
+
+
+
+Vulnerability assessment process:
+1. Identification. 
+2. Vulnerability analysis.
+3. Risk assessment.
+4. Remediation.
+
+
+
+
+
+
+
+
+
+
+
+Vulnerability Scanners and Vulnerability Scanning
+
+Previously, you learned that a vulnerability assessment is an internal process used by organizations to review the security of their systems. The purpose of these assessments is to identify weaknesses before attackers can exploit them.
+
+One of the most important tools used during this process is a vulnerability scanner. These tools help security teams detect weaknesses, simulate potential threats, and support remediation efforts before a real attack occurs.
+
+What is a Vulnerability Scanner?
+
+A vulnerability scanner is a software tool that automatically checks systems and technologies for known vulnerabilities and exposures.
+
+These scanners compare systems against databases containing:
+
+Known vulnerabilities
+Security weaknesses
+Misconfigurations
+Programming flaws
+
+Their main goal is to identify weaknesses that could be exploited by attackers.
+
+Attack Surfaces Scanned by Vulnerability Tools
+
+Vulnerability scanners can analyze different layers of an organization’s attack surface as part of a defense-in-depth strategy.
+
+1. Perimeter Layer
+
+This includes systems that control external access, such as:
+
+Authentication systems
+Access gateways
+
+Scanners evaluate whether unauthorized access could occur.
+
+2. Network Layer
+
+This layer includes networking technologies such as:
+
+Firewalls
+Routers
+Network security devices
+
+Scanning tools check for exposed ports, weak configurations, and other network vulnerabilities.
+
+3. Endpoint Layer
+
+Endpoints are devices connected to the network, including:
+
+Laptops
+Desktop computers
+Servers
+
+Scanners analyze these devices for outdated software, missing patches, and configuration weaknesses.
+
+4. Application Layer
+
+This layer includes software and applications users interact with directly.
+
+Scanners look for:
+
+Coding flaws
+Input validation weaknesses
+Security vulnerabilities within applications
+5. Data Layer
+
+The data layer includes information:
+
+At rest (stored data)
+In transit (moving across networks)
+In use (actively processed data)
+
+Scanners help identify risks related to data exposure and insecure handling practices.
+
+How Vulnerability Scanners Work
+
+When a scan begins, the scanner:
+
+Examines systems and services
+Compares findings against vulnerability databases
+Identifies known weaknesses
+Flags detected vulnerabilities
+
+The findings are then added to the scanner’s reference database, improving future detection and analysis accuracy.
+
+Important Note:
+
+The vulnerability databases used by scanning tools are regularly updated by vendors to include newly discovered threats and vulnerabilities.
+
+Performing Vulnerability Scans
+
+Vulnerability scanners are designed to be non-intrusive.
+
+This means:
+
+They identify weaknesses without exploiting them
+They simulate potential attack paths safely
+They do not intentionally damage systems like real attackers would
+Important Note:
+
+Although scanners are generally safe, scans can occasionally cause unintended problems, such as slowing down or crashing unstable systems.
+
+Types of Vulnerability Scans
+
+Different scan types simulate different attacker behaviors and access levels.
+
+External vs Internal Scans
+External Scans
+
+External scans simulate attacks originating outside the organization’s network.
+
+Focus:
+Public-facing systems
+Websites
+Firewalls
+Internet-accessible services
+Goal:
+
+Identify weaknesses visible to external attackers, such as:
+
+Open ports
+Vulnerable servers
+Weak perimeter defenses
+Internal Scans
+
+Internal scans examine systems from inside the organization’s network.
+
+Focus:
+Internal applications
+Internal systems
+Employee-accessible resources
+Goal:
+
+Detect vulnerabilities that could be exploited by insiders or attackers who already gained network access.
+
+Example:
+
+Weak input handling in internal applications
+Authenticated vs Unauthenticated Scans
+Authenticated Scans
+
+Authenticated scans use valid login credentials during testing.
+
+Access levels may include:
+Standard user accounts
+Administrative accounts
+Purpose:
+Identify vulnerabilities only visible after login
+Detect broken access controls
+Assess user permissions and privilege issues
+Unauthenticated Scans
+
+Unauthenticated scans simulate attackers with no legitimate access.
+
+Purpose:
+Test public exposure
+Verify unauthorized users cannot access restricted resources
+
+Example:
+A scan checks whether sensitive internal files can be accessed without authorization.
+
+Expected Result:
+
+Unauthorized users should receive an “access denied” response.
+
+If access is granted, the scanner identifies a vulnerability.
+
+Limited vs Comprehensive Scans
+Limited Scans
+
+Limited scans focus on specific devices or systems.
+
+Example:
+Scanning a firewall for configuration issues
+Benefit:
+Faster and more targeted analysis
+Comprehensive Scans
+
+Comprehensive scans analyze the entire network environment.
+
+Coverage may include:
+Operating systems
+Databases
+Applications
+Connected devices
+User systems
+Benefit:
+Provides a broad view of organizational security posture
+Discovery Scanning
+
+Before performing detailed scans, organizations often conduct discovery scans.
+
+Purpose:
+
+Identify:
+
+Devices connected to the network
+Active systems
+Open ports
+Network services
+
+Discovery scans help security teams understand the environment before running limited or comprehensive assessments.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Software Updates and Patch Management in Cybersecurity
+
+You may have noticed that computers, smartphones, and applications frequently require updates. While updates often improve performance, add features, or fix bugs, they are also extremely important for cybersecurity.
+
+From a security perspective, updates help organizations fix vulnerabilities that could expose users, systems, and networks to cyber threats.
+
+Updates are an important part of every organization’s remediation strategy, which is the process of addressing weaknesses identified during vulnerability assessments.
+
+Why Security Updates Matter
+
+Outdated systems are similar to buildings with unlocked doors. Attackers look for weaknesses in old software the same way intruders look for unsecured entry points.
+
+Software updates help close these security gaps before they can be exploited.
+
+What is a Patch Update?
+
+A patch update is a software or operating system update designed to fix:
+
+Security vulnerabilities
+Software bugs
+Stability problems
+
+Patches are mainly released to address known weaknesses and common vulnerabilities that attackers may exploit.
+
+Zero-Day Vulnerabilities
+
+Sometimes patches are released in response to a zero-day vulnerability.
+
+A zero-day vulnerability is:
+
+A previously unknown security flaw
+Exploited by attackers before developers are aware of it or before a fix exists
+
+In such cases, developers work quickly to release emergency security patches.
+
+Common Update Strategies
+
+Organizations and users generally install updates using two main approaches:
+
+Manual updates
+Automatic updates
+
+Each method has advantages and disadvantages.
+
+Manual Updates
+
+With a manual update strategy, users or IT teams are responsible for:
+
+Finding updates
+Downloading them
+Installing them manually
+
+In enterprise environments, configuration management tools are often used to deploy updates to selected systems or groups of users.
+
+Advantages of Manual Updates
+Greater Control
+
+Organizations can:
+
+Test updates before deployment
+Avoid unstable or problematic patches
+Decide when and where updates are installed
+
+This is useful if vendors release poorly tested updates.
+
+Disadvantages of Manual Updates
+Risk of Missing Critical Updates
+
+Manual processes can lead to:
+
+Forgotten updates
+Delayed patching
+Systems remaining vulnerable for long periods
+Automatic Updates
+
+Automatic updates allow systems or applications to:
+
+Detect available updates
+Download patches automatically
+Install updates without manual intervention
+
+The Cybersecurity and Infrastructure Security Agency (CISA) recommends enabling automatic updates whenever possible.
+
+Advantages of Automatic Updates
+Faster Protection
+
+Automatic updates:
+
+Keep systems current
+Reduce exposure to vulnerabilities
+Simplify patch deployment
+
+Critical security patches can be applied quickly across systems.
+
+Disadvantages of Automatic Updates
+Potential Stability Issues
+
+If vendors release poorly tested patches, automatic deployment can cause:
+
+System instability
+Performance issues
+Compatibility problems
+
+This may negatively affect user experience or business operations.
+
+End-of-Life (EOL) Software
+
+All software products have a lifecycle.
+
+Eventually, vendors stop supporting older versions when newer versions are released. This unsupported software is called End-of-Life (EOL) software.
+
+Risks of EOL Software
+
+Although the software may still function, vendors no longer provide:
+
+Security updates
+Bug fixes
+Technical support
+
+This creates serious security risks because newly discovered vulnerabilities remain permanently unpatched.
+
+CISA Recommendation
+
+CISA recommends organizations discontinue the use of EOL software whenever possible because it creates long-term, unfixable security exposure.
+
+However, many businesses continue using outdated systems due to:
+
+High replacement costs
+Operational dependencies
+Compatibility requirements
+Difference Between Patches and Upgrades
+Patch
+Small update that fixes vulnerabilities or bugs
+Keeps the same software version
+Upgrade
+A completely new version of hardware or software
+Often includes major changes or new features
+IoT and Growing Security Risks
+
+The risks associated with unpatched and outdated systems continue to increase as more devices become internet-connected.
+
+Examples include Internet of Things (IoT) devices such as:
+
+Smart bulbs
+Security cameras
+Smart thermostats
+Connected appliances
+Why This is Dangerous
+
+Even one vulnerable device can become an entry point for attackers.
+
+In organizational environments, a single unpatched IoT device may allow attackers to:
+
+Gain access to internal networks
+Move laterally through systems
+Launch larger attacks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Penetration Testing in Cybersecurity
+
+A strong cybersecurity strategy depends on regularly testing systems to identify weaknesses before attackers can exploit them. Earlier, you learned that organizations perform vulnerability assessments to review the security of their systems and identify weaknesses.
+
+Another important security practice is penetration testing, which helps organizations evaluate how effective their defenses are against real-world attacks.
+
+What is Penetration Testing?
+
+A penetration test, commonly called a pen test, is a simulated cyberattack performed to identify and exploit vulnerabilities in:
+
+Systems
+Networks
+Applications
+Websites
+Security processes
+
+The goal is to imitate the methods and techniques used by real attackers in order to understand how a system would respond during an actual attack.
+
+Because these tests are officially authorized, penetration testing is considered a form of ethical hacking.
+
+Difference Between Vulnerability Assessments and Penetration Testing
+Vulnerability Assessment
+Identifies weaknesses in systems
+Focuses on detecting vulnerabilities
+Penetration Testing
+Actively exploits vulnerabilities
+Determines the potential impact of a successful attack
+
+In simple terms:
+
+Vulnerability assessments find weaknesses
+Penetration tests show what attackers could do with those weaknesses
+Example of Penetration Testing
+
+A financial institution might perform a penetration test on its online banking application to determine whether attackers could:
+
+Access customer information
+Transfer funds illegally
+Exploit misconfigured security settings
+
+If weaknesses are discovered, the organization can correct them and strengthen the application’s security.
+
+Compliance and Penetration Testing
+
+Many organizations are legally or contractually required to conduct regular penetration testing to meet compliance standards.
+
+Examples include:
+
+PCI DSS
+HIPAA
+GDPR
+
+Regular testing helps organizations maintain regulatory compliance and improve security readiness.
+
+Types of Penetration Testing Teams
+
+Organizations use different penetration testing approaches depending on their security objectives.
+
+Red Team
+
+Red teams simulate realistic attacks against systems, applications, or networks.
+
+Goal:
+Identify vulnerabilities
+Test how well defenses can resist attacks
+
+Red teams act like real attackers.
+
+Blue Team
+
+Blue teams focus on defense and incident response.
+
+Responsibilities:
+Detect attacks
+Respond to threats
+Defend systems and networks
+
+Blue teams evaluate the effectiveness of existing security controls.
+
+Purple Team
+
+Purple teams combine the efforts of red and blue teams.
+
+Goal:
+Improve collaboration
+Strengthen the organization’s overall security posture
+
+Purple team exercises help both attackers and defenders learn from each other.
+
+Who Performs Penetration Tests?
+
+Penetration tests are usually conducted by skilled professionals with expertise in:
+
+Networking
+Programming
+System architecture
+Cybersecurity tools and techniques
+
+Organizations may:
+
+Hire independent ethical hackers
+Use internal penetration testing teams
+
+Before testing begins, pen testers decide how much system access and information they will receive.
+
+Penetration Testing Strategies
+
+There are three common penetration testing methods based on the level of information provided to the tester.
+
+1. Open-Box Testing (White-Box Testing)
+
+In open-box testing, the tester is given extensive access and knowledge about the system.
+
+Information may include:
+Network diagrams
+System architecture
+Source code
+Data flow details
+Other names:
+White-box testing
+Clear-box testing
+Full-knowledge testing
+Benefit:
+
+Allows deep analysis of internal security weaknesses.
+
+2. Closed-Box Testing (Black-Box Testing)
+
+In closed-box testing, the tester receives little or no internal information.
+
+Goal:
+
+Simulate a real external attacker.
+
+Other names:
+Black-box testing
+Zero-knowledge testing
+External testing
+Benefit:
+
+Provides realistic attack simulations.
+
+3. Partial-Knowledge Testing (Gray-Box Testing)
+
+In gray-box testing, the tester receives limited information and access.
+
+Example:
+
+Testing from the perspective of a regular employee or customer service representative.
+
+Other names:
+Gray-box testing
+Benefit:
+
+Simulates insider threats or limited-access attackers.
+
+Why Different Testing Approaches Matter
+
+Each testing strategy provides unique insights:
+
+Open-box testing reveals deep internal flaws
+Closed-box testing simulates realistic external attacks
+Gray-box testing evaluates risks from limited-access users
+
+Together, they help organizations better understand potential attack paths.
+
+Skills Needed for Penetration Testing
+
+Penetration testers require strong technical and analytical skills.
+
+Important areas include:
+
+Network security
+Application security
+Linux and operating systems
+Vulnerability analysis
+Threat modeling
+Detection and response tools
+Communication skills
+
+Programming knowledge is especially valuable because many tests involve software systems and automation.
+
+Commonly used languages include:
+
+Python
+Bash
+Becoming a Penetration Tester
+
+Penetration testing is a rapidly growing cybersecurity career field.
+
+Even entry-level cybersecurity professionals can gradually build the skills needed through:
+
+Practice
+Hands-on labs
+Security research
+Ethical hacking exercises
+Bug Bounty Programs
+
+Many organizations run bug bounty programs that reward ethical hackers for finding and responsibly reporting vulnerabilities.
+
+These programs provide:
+
+Real-world experience
+Opportunities to improve technical skills
+Financial rewards for valid findings
+HackerOne
+
+HackerOne is a popular platform where ethical hackers can participate in bug bounty programs and security testing activities.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attack surface - All the potential vulnerabilities that a threat actor could exploit.
+
+Security hardening - The process of strengthening a system to reduce its vulnerabilities and attack surface.
+
+
+
+
+
+
+
+
+
+
+Applying an Attacker Mindset in Cybersecurity
+
+Cybersecurity is constantly evolving. New threats, attack methods, and technologies can quickly change the security landscape, making adaptability an essential skill for security professionals. Because of this fast-paced environment, organizations must prepare for potential risks before they become real attacks.
+
+One of the first steps in staying prepared is identifying vulnerabilities. Earlier, you learned that a vulnerability assessment is an internal review process used to discover weaknesses in an organization’s security systems. However, simply identifying vulnerabilities is not enough. Security professionals must also analyze those weaknesses from the perspective of an attacker to understand how they could be exploited.
+
+Preparing for Potential Threats
+
+Having a response plan is important, but organizations must first determine what threats they should prepare for. To accomplish this, security teams often perform simulations as part of their vulnerability management process.
+
+These simulations involve adopting an attacker mindset, which means thinking like a threat actor in order to understand how systems could be targeted or compromised.
+
+Applying an attacker mindset is similar to conducting a controlled experiment:
+
+Security teams intentionally test weaknesses
+They observe how defenses respond
+They analyze the results to improve security strategies
+
+This perspective helps organizations better understand risks and develop stronger protection measures.
+
+Simulating Cyber Threats
+
+A common way to apply an attacker mindset is through attack simulations. These simulations are generally performed using two approaches:
+
+Proactive simulations
+Reactive simulations
+
+Both approaches aim to strengthen security systems, but they focus on different objectives.
+
+Proactive Simulations (Red Team Exercises)
+
+Proactive simulations imitate the behavior of attackers by attempting to exploit vulnerabilities and bypass defenses.
+
+These activities are commonly known as red team exercises.
+
+Purpose:
+Identify weaknesses before real attackers do
+Test how effective security defenses are
+Simulate realistic attack scenarios
+
+Red teams often spend significant time planning attacks before executing them.
+
+Example:
+
+A team might send fake phishing emails to employees to evaluate whether staff members reveal login credentials or sensitive information.
+
+Reactive Simulations (Blue Team Exercises)
+
+Reactive simulations focus on defense and incident response.
+
+These are often referred to as blue team exercises.
+
+Purpose:
+Detect attacks
+Respond to threats
+Investigate vulnerabilities
+Improve defensive capabilities
+
+Blue teams usually gather information about systems and assets using security tools such as vulnerability scanners.
+
+Vulnerability Scanning in Simulations
+
+A vulnerability scanner is software that automatically compares systems against known vulnerabilities and exposures.
+
+Security teams use scanners to:
+
+Detect weaknesses in networks and systems
+Identify outdated software
+Find security misconfigurations
+
+Reactive simulations frequently rely on scan results to evaluate risks and determine appropriate remediation steps.
+
+Example of a Reactive Security Simulation
+
+A security team performing an external vulnerability scan may follow several steps:
+
+1. Identification
+
+A vulnerable system is discovered.
+
+Example:
+
+A server is identified as running an outdated operating system.
+
+2. Vulnerability Analysis
+
+The team researches:
+
+Known vulnerabilities associated with the outdated system
+Possible exploitation methods
+Available security patches or fixes
+3. Risk Assessment
+
+The organization evaluates:
+
+Severity of the vulnerability
+Potential business impact
+Likelihood of exploitation
+
+This helps prioritize remediation efforts.
+
+4. Remediation
+
+Security teams apply corrective actions, such as:
+
+Installing updates
+Changing configurations
+Strengthening security controls
+
+The goal is to eliminate or reduce the identified risk.
+
+Reporting and Communication
+
+After simulations and assessments are completed, security teams often create detailed reports describing:
+
+Identified vulnerabilities
+Risk levels
+Recommended remediation steps
+Testing outcomes
+
+These reports may be shared with:
+
+Management
+IT teams
+Service providers
+
+Clear communication is an important skill in cybersecurity because decision-makers rely on accurate reports to improve security strategies.
+
+The Importance of Innovative Security Thinking
+
+Many modern security controls were created in response to real-world attacks. Since cybercriminals continuously develop new ways to bypass defenses, security professionals must constantly adapt and stay informed.
+
+Effectively applying an attacker mindset requires:
+
+Awareness of emerging threats
+Knowledge of current vulnerabilities
+Understanding of evolving attack techniques
+Staying Current with Security Trends
+
+Cybersecurity professionals regularly use trusted resources to stay informed about vulnerabilities and threats.
+
+One important resource is the:
+
+NIST National Vulnerability Database (NVD)
+
+The NVD provides information about:
+
+Common vulnerabilities
+Security weaknesses
+Threat severity
+Vulnerability scoring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Threat Actors and the Attack Surface (Reframed)
+
+Anticipating cyberattacks is a key skill for any security professional. Developing this ability requires a flexible mindset and awareness of where attacks can originate. Earlier, you learned about the attack surface, which includes all possible points where a system can be targeted or exploited.
+
+Common attack surfaces include:
+
+Networks
+Servers
+Devices
+Employees and staff
+
+As organizations become more digitally connected, these attack surfaces continue to grow. A fundamental security principle is to reduce exposure and limit access wherever possible.
+
+What are Threat Actors?
+
+A threat actor is any individual or group that can pose a risk to an organization’s security. This includes both intentional attackers and individuals who may accidentally create security risks.
+
+Threat actors can exist both:
+
+Inside an organization
+Outside an organization
+Categories of Threat Actors (Based on Motivation)
+1. Competitors
+
+These are rival organizations that may attempt to gain an advantage by stealing sensitive or confidential information.
+
+2. State Actors
+
+These are government-backed groups or intelligence agencies that conduct cyber operations for national interests.
+
+3. Criminal Syndicates
+
+These are organized groups involved in cybercrime, often motivated by financial gain.
+
+4. Insider Threats
+
+Insider threats include anyone who has or previously had authorized access to systems.
+
+This category includes:
+
+Employees who accidentally cause security issues
+Individuals who intentionally misuse access for personal benefit
+5. Shadow IT
+
+Shadow IT refers to the use of unauthorized tools or systems without official IT approval.
+
+Example:
+
+Employees using personal email accounts for work communication
+Hackers and Their Roles
+
+A hacker is any individual who uses technical skills to gain access to computer systems, networks, or data. However, this term is broad and can describe different intentions.
+
+Types of Hackers
+1. Unauthorized (Malicious) Hackers
+
+These individuals use their skills for illegal or harmful purposes.
+
+Also known as unethical or black-hat hackers
+Skill levels vary widely
+Some rely on pre-built tools or scripts (often called script kiddies)
+2. Authorized (Ethical) Hackers
+
+These hackers use their skills to improve security.
+
+They include:
+
+Internal security teams
+External security consultants
+Bug bounty participants who report vulnerabilities responsibly
+
+Their goal is to identify weaknesses before attackers do.
+
+3. Semi-Authorized Hackers
+
+These individuals operate in a gray area.
+
+Examples include:
+
+Hacktivists who use hacking for political or social causes
+
+They may expose vulnerabilities to raise awareness rather than cause direct harm.
+
+Advanced Persistent Threats (APTs)
+
+Most attackers attempt quick intrusions and then exit systems. However, some attackers remain hidden within systems for long periods.
+
+These are known as Advanced Persistent Threats (APTs).
+
+What is an APT?
+
+An APT is a long-term cyberattack in which a threat actor:
+
+Gains unauthorized access
+Remains undetected for an extended period
+Continuously collects information
+Characteristics of APTs
+Often linked to nation-state or highly organized groups
+Focused on surveillance and intelligence gathering
+Target critical sectors such as:
+Government
+Defense
+Finance
+Telecommunications
+
+Even private companies may be targeted first as stepping stones toward larger objectives.
+
+Common Attack Vectors (Access Points)
+
+Threat actors use different methods to gain access to systems. These entry points are known as attack vectors.
+
+Common attack vectors include:
+Direct physical access to systems
+Removable media such as USB devices
+Social media platforms
+Email (personal or corporate)
+Wireless networks within physical locations
+Cloud services hosted by third-party providers
+Supply chain systems and vendor access points
+Why Understanding Threat Actors Matters
+
+Different threat actors use different strategies depending on their goals and access methods.
+
+For example:
+
+Remote workers are more likely to be targeted through email-based attacks
+Physical access attacks are more likely in unsecured environments
+
+Understanding motivations and access methods helps security teams:
+
+Predict attack patterns
+Strengthen defenses
+Reduce exposure across the attack surface
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Attack vectors - The pathways attackers use to penetrate security defenses.
+
+
+Practicing an attacker mindset:
+1. Identify a target.
+2. Determine how the target can be accessed.
+3. Evaluate attack vectors that can be exploited.
+4. Find the tools and methods of attack.
+
+
+
+
+Defending attack vectors:
+1. Educating users.
+2. Applying the principle of least privilege.
+3. Using the right security controls and tools.
+4. Building a diverse security team.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+Brute Force Attacks and Password Security
+
+Usernames and passwords remain some of the most widely used security controls today. They act as digital locks that protect access to systems, networks, applications, and sensitive information. However, relying only on login credentials can create security risks because attackers frequently attempt to steal, guess, or crack passwords.
+
+One common attack method used against login systems is the brute force attack, which relies on repeated trial-and-error attempts to discover private information such as usernames, passwords, or encryption keys.
+
+Understanding Brute Force Attacks
+
+A brute force attack is similar to trying every possible key combination to open a locked door. Threat actors repeatedly test different credential combinations until they successfully gain access to a system.
+
+These attacks can target:
+
+User accounts
+Applications
+Networks
+Encrypted data
+
+Because login systems are commonly exposed to the internet, they are frequent targets for brute force attempts.
+
+Common Types of Brute Force Attacks
+
+Threat actors use several methods when attempting to crack credentials or bypass authentication systems.
+
+Simple Brute Force Attacks
+
+In a simple brute force attack, attackers repeatedly guess usernames and passwords until they find valid credentials.
+
+Examples include:
+
+Trying common passwords
+Testing random combinations
+Guessing weak passwords manually or automatically
+
+This method relies entirely on repeated guessing attempts.
+
+Dictionary Attacks
+
+A dictionary attack uses a precompiled list of commonly used passwords and usernames instead of randomly generating combinations.
+
+Attackers may use:
+
+Common passwords
+Frequently leaked credentials
+Predictable word combinations
+
+This approach is faster than basic brute force guessing because it focuses on passwords users commonly create.
+
+Reverse Brute Force Attacks
+
+A reverse brute force attack begins with one known password or credential and tests it across multiple accounts or systems.
+
+For example:
+
+Attackers may use one stolen password against thousands of usernames
+
+This method is effective when users reuse passwords across multiple services.
+
+Credential Stuffing
+
+Credential stuffing occurs when attackers use usernames and passwords stolen from previous data breaches to access accounts on other systems.
+
+Since many users reuse credentials across websites, attackers often succeed if password reuse exists.
+
+Pass-the-Hash Attacks
+
+A specialized form of credential stuffing is called a pass-the-hash attack.
+
+Instead of using plaintext passwords, attackers use stolen hashed credentials to trick authentication systems into granting access without cracking the original password.
+
+Exhaustive Key Search
+
+Brute force methods can also target encrypted information using a technique known as exhaustive key search.
+
+In this attack:
+
+Attackers systematically try every possible encryption key until the correct one is found
+
+This process can require enormous computing power and time depending on encryption strength.
+
+Brute Force Tools
+
+Manually attempting every possible credential combination would take an extremely long time. Because of this, attackers commonly use automated software tools to speed up brute force attacks.
+
+Common brute force tools include:
+
+Aircrack-ng
+Hashcat
+John the Ripper
+Ophcrack
+THC Hydra
+
+These tools automate password guessing, credential testing, and hash cracking.
+
+Ethical Use of Brute Force Tools
+
+Security professionals may also use these tools for legitimate security testing.
+
+For example:
+
+Testing password strength
+Auditing authentication systems
+Evaluating Wi-Fi security
+
+A tool like Aircrack-ng may be used to assess whether a wireless network is vulnerable to password cracking attacks.
+
+Preventing Brute Force Attacks
+
+Organizations reduce the risk of brute force attacks by combining technical and administrative security controls.
+
+Common prevention methods include:
+
+Hashing and salting
+Multi-factor authentication (MFA)
+CAPTCHA systems
+Strong password policies
+Hashing and Salting
+Hashing
+
+Hashing converts data, such as passwords, into a fixed unique value called a hash.
+
+This process helps:
+
+Protect stored passwords
+Verify data integrity
+Salting
+
+Salting strengthens hashing by adding random characters to passwords before hashing them.
+
+Benefits include:
+
+Increased complexity
+Protection against dictionary attacks
+Greater resistance to brute force attempts
+
+Salting makes identical passwords produce different hash values.
+
+Multi-Factor Authentication (MFA)
+
+Multi-factor authentication requires users to verify their identity using two or more authentication methods.
+
+Examples include:
+
+Passwords
+Mobile verification codes
+Fingerprints
+Security tokens
+
+MFA improves security because attackers would need multiple forms of authentication even if a password becomes compromised.
+
+CAPTCHA Systems
+
+CAPTCHA stands for:
+
+Completely Automated Public Turing test to tell Computers and Humans Apart
+
+CAPTCHA systems help distinguish human users from automated attack tools.
+
+Common CAPTCHA Types
+Text-Based CAPTCHA
+
+Users must identify distorted letters or numbers and enter them correctly.
+
+Image-Based CAPTCHA
+
+Users must select images matching a requested object or phrase.
+
+Examples:
+
+Traffic lights
+Bicycles
+Crosswalks
+
+CAPTCHA systems help slow down or block automated brute force attempts.
+
+Password Policies
+
+Organizations use password policies to enforce secure password practices across users and systems.
+
+Common password policy requirements include:
+
+Minimum password length
+Combination of letters, numbers, and symbols
+Password expiration schedules
+Unique password requirements
+Account lockout rules after failed login attempts
+Account Lockout Policies
+
+Many systems temporarily suspend accounts after multiple failed login attempts.
+
+This helps:
+
+Prevent unlimited guessing attempts
+Slow brute force attacks
+Alert administrators to suspicious activity
+Why Strong Password Policies Matter
+
+Strong password policies increase:
+
+Password complexity
+Number of possible combinations
+Time required for attackers to crack credentials
+
+The more possible combinations that exist, the harder brute force attacks become.
+
+NIST Password Guidance
+
+Organizations often reference password security recommendations from the:
+
+NIST Special Publication 800-63B
+
+This publication provides guidance on:
+
+Password management
+Authentication security
+Identity verification best practices
+Final Summary
+
+Brute force attacks rely on repeated attempts to guess passwords, credentials, or encryption keys. Threat actors use methods such as:
+
+Dictionary attacks
+Credential stuffing
+Reverse brute force attacks
+Pass-the-hash attacks
+
+To defend against these threats, organizations implement layered security measures including:
+
+Hashing and salting
+MFA
+CAPTCHA systems
+Strong password policies
+
+Together, these controls help protect systems, accounts, and sensitive data from unauthorized access.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Advanced Persistent Threat (APT): A situation where an attacker gains unauthorized access to a system and remains undetected for a long period of time.
+Attack Surface: The complete set of possible entry points or weaknesses that attackers could target within a system or network.
+Attack Tree: A visual diagram used to outline possible threats and the methods attackers might use against assets.
+Attack Vector: The method or path a threat actor uses to bypass security controls and gain access to a system.
+Bug Bounty: A program that rewards independent security researchers for discovering and responsibly reporting vulnerabilities.
+Common Vulnerabilities and Exposures (CVE®) List: A publicly available catalog of identified cybersecurity vulnerabilities and exposures.
+Common Vulnerability Scoring System (CVSS): A standardized framework used to measure and rate the severity of security vulnerabilities.
+CVE Numbering Authority (CNA): An authorized organization responsible for reviewing and assigning CVE identifiers to eligible vulnerabilities.
+Defense in Depth: A cybersecurity strategy that uses multiple layers of security controls to reduce overall risk.
+Exploit: A technique or method attackers use to take advantage of a vulnerability.
+Exposure: A security weakness or mistake that could potentially be used by a threat actor.
+Hacker: An individual who uses computer skills to access systems, networks, or data, either legally or illegally.
+MITRE: A nonprofit organization that operates research and development centers focused on cybersecurity and other technologies.
+Security Hardening: The process of improving system security by reducing vulnerabilities and minimizing the attack surface.
+Threat Actor: Any person, group, or organization capable of causing a cybersecurity threat.
+Vulnerability: A flaw or weakness in a system that can be exploited to compromise security.
+Vulnerability Assessment: The process of examining an organization’s systems to identify and evaluate security weaknesses.
+Vulnerability Management: The ongoing practice of identifying, assessing, prioritizing, and fixing vulnerabilities.
+Vulnerability Scanner: A tool that automatically checks systems and networks for known vulnerabilities and exposures.
+Zero-Day: A newly discovered vulnerability or exploit that is unknown to vendors or defenders and may not yet have a patch available.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
