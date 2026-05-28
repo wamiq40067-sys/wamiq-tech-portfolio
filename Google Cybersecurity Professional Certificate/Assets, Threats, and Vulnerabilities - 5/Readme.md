@@ -151,8 +151,8 @@ This course helped build a strong foundation in cybersecurity by explaining how 
 
 ## Status
 
-**Learning Progress:** In Progress  
-**Certificate Progress:** In Progress  
+**Learning Progress:** Completed
+**Certificate Progress:** Completed
 
 ---
 
