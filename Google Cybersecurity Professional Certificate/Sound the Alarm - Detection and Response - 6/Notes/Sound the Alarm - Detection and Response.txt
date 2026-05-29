@@ -1,0 +1,599 @@
+Sound the Alarm - Detection and Response
+
+
+
+
+
+
+
+module 1
+
+
+
+Incident - An occurrence that actually or imminently jeopardizes, without lawful authority, the confidentiality, integrity, or availability of information or an information system; or constitutes a violation or imminent threat of violation of law, security policies, security procedures, or acceptable use policies.
+
+
+Events - An observable occurrence on a network, system, or device
+
+
+
+The 5 W's of an incident:
+Who triggered the incident
+What happened
+When the incident took place
+where the incident tool place 
+why the incident occurred
+
+
+
+
+Incident handler's journal - A form of documentation used to incident response.
+
+
+
+
+
+
+Computer security incident response teams (CSIRT) - A specialized group of security professionals that are trained in incident management and response.
+
+
+
+Roles in CSIRT:
+Security analyst
+Technical lead
+Incident coordinator
+
+
+
+
+
+
+
+
+
+
+
+# Incident Response Teams and Security Operations Centers
+
+The National Institute of Standards and Technology (NIST) created an Incident Response Lifecycle framework that helps organizations handle cybersecurity incidents effectively. The framework contains four major stages:
+
+* Preparation
+* Detection and Analysis
+* Containment, Eradication, and Recovery
+* Post-Incident Activity
+
+Security teams work together to monitor systems, identify threats, and respond quickly to incidents. Two important groups involved in this process are the Computer Security Incident Response Team (CSIRT) and the Security Operations Center (SOC).
+
+## Command, Control, and Communication
+
+A Computer Security Incident Response Team (CSIRT) is a group of cybersecurity professionals responsible for managing and responding to security incidents. Effective incident response depends on three important elements:
+
+* **Command:** Leadership and direction during an incident
+* **Control:** Managing technical operations, resources, and task assignments
+* **Communication:** Keeping all stakeholders informed throughout the incident
+
+Having clearly defined responsibilities allows teams to respond more efficiently and reduce confusion during critical situations.
+
+## Common Roles in a CSIRT
+
+The structure of a CSIRT differs between organizations. Some companies maintain a dedicated response team, while others create temporary task forces when incidents occur. CSIRTs often include both security and nonsecurity personnel such as legal teams, human resources, IT staff, management, and public relations.
+
+### Security Analyst
+
+Security analysts continuously watch systems and networks for suspicious activity. Their duties often include:
+
+* Monitoring and analyzing security alerts
+* Investigating the root cause of incidents
+* Escalating serious threats to senior team members
+* Resolving lower-level alerts when possible
+
+### Technical Lead
+
+Technical leads manage the technical side of incident response. Their responsibilities include:
+
+* Identifying the source of the incident
+* Developing strategies for containment and recovery
+* Applying patches, updates, or fixes
+* Coordinating with other departments to reduce operational disruption
+
+### Incident Coordinator
+
+Incident coordinators help maintain communication between departments during a security incident. Their responsibilities include:
+
+* Coordinating with internal and external teams
+* Sharing incident updates with stakeholders
+* Ensuring communication remains organized and clear
+
+Depending on the organization, this role may also be called an incident manager or incident commander.
+
+### Additional CSIRT Roles
+
+Some organizations also include specialized positions such as:
+
+* Communications lead
+* Legal advisor
+* Planning coordinator
+
+## Security Operations Center (SOC)
+
+A Security Operations Center (SOC) is a dedicated team responsible for monitoring systems, networks, and devices for cyber threats. SOC teams are commonly associated with blue team operations, which focus on defending an organization against attacks.
+
+## SOC Structure and Responsibilities
+
+SOC teams are typically organized into different levels based on experience and responsibilities.
+
+### Tier 1 SOC Analyst (L1)
+
+Entry-level analysts handle the initial review of security alerts. Their responsibilities include:
+
+* Monitoring and prioritizing alerts
+* Creating and managing tickets in ticketing systems
+* Escalating complex incidents to higher tiers
+
+### Tier 2 SOC Analyst (L2)
+
+L2 analysts have more experience and perform deeper investigations. Their responsibilities include:
+
+* Investigating escalated alerts
+* Tuning and configuring security tools
+* Assisting with incident response activities
+* Reporting findings to SOC leadership
+
+### Tier 3 SOC Lead (L3)
+
+SOC leads are senior analysts who oversee technical operations. Their responsibilities include:
+
+* Supervising SOC teams
+* Conducting advanced threat detection and analysis
+* Performing malware and forensic investigations
+* Reporting major findings to management
+
+### SOC Manager
+
+The SOC manager oversees the entire SOC operation. Their responsibilities include:
+
+* Hiring and training team members
+* Measuring team performance
+* Preparing compliance and incident reports
+* Communicating security updates to executives and stakeholders
+
+## Specialized SOC Roles
+
+### Forensic Investigators
+
+These professionals gather and analyze digital evidence to understand how incidents occurred and determine their impact.
+
+### Threat Hunters
+
+Threat hunters proactively search for advanced or hidden threats using threat intelligence and advanced detection methods.
+
+
+
+
+
+
+
+
+
+
+
+
+Incident response plan - A document that outlines the procedures to take in each step of incident response.
+
+
+Elements of an incident plan:
+Incident response procedures
+System information
+Other documents
+
+
+
+
+
+
+Tool types:
+Detection and management tools
+Documentation tools
+Investigative tools
+
+
+
+
+
+
+Documentation - Any form of recorded content that is used for a specific purpose.
+
+
+Types of documentation:
+Playbooks
+Incident handler's journals
+Policies
+Plans
+Final reports
+
+
+
+Playbooks - A manual that provides details about any operational action.
+
+
+Intrusions detection system (IDS) - An application that monitors system and network activity and produces alerts on possible intrusions.
+
+
+Intrusions prevention system (IPS) - An application that monitors system activity for intrusions and take action to stop the activity.
+
+
+
+IDS and IPS tools:
+snort
+Seek
+kismet
+Sagan
+Suricata
+
+
+
+
+
+
+
+
+
+# Detection Tools in Cybersecurity
+
+## Importance of Detection Tools
+
+Detection tools in cybersecurity serve a purpose similar to alarm systems used in homes. Just as home security systems watch for unauthorized entry, cybersecurity detection tools monitor computer systems and networks for suspicious or malicious activity. Organizations rely on these tools to identify potential threats early and reduce the risk of security breaches.
+
+These tools continuously observe network traffic, user behavior, and system events. When unusual activity is identified, they generate alerts so security teams can investigate and respond quickly before major damage occurs.
+
+## Types of Detection Tools
+
+Security analysts commonly work with three major categories of detection technologies:
+
+* Intrusion Detection Systems (IDS)
+* Intrusion Prevention Systems (IPS)
+* Endpoint Detection and Response (EDR)
+
+Each tool provides different capabilities.
+
+| Capability                     | IDS | IPS | EDR |
+| ------------------------------ | --- | --- | --- |
+| Detects suspicious activity    | ✓   | ✓   | ✓   |
+| Prevents attacks automatically | ✗   | ✓   | ✓   |
+| Records system activity        | ✓   | ✓   | ✓   |
+| Sends security alerts          | ✓   | ✓   | ✓   |
+| Uses behavioral analysis       | ✗   | ✗   | ✓   |
+
+---
+
+# Intrusion Detection System (IDS)
+
+An Intrusion Detection System (IDS) monitors systems and network activity for signs of possible attacks or unauthorized behavior. Its primary purpose is to detect suspicious events and notify security personnel.
+
+An IDS only identifies and reports threats; it does not block or stop them. Security analysts must review the alerts and take action if necessary.
+
+For example, if a login attempt occurs from an unfamiliar IP address or at an unusual time, the IDS may generate an alert to warn the security team.
+
+Common IDS tools include:
+
+* Zeek
+* Suricata
+* Snort
+* Sagan
+
+## Detection Outcomes
+
+Security analysts must understand four common alert outcomes generated by detection systems:
+
+### True Positive
+
+A legitimate attack is detected correctly.
+
+### True Negative
+
+No malicious activity exists, and no alert is triggered.
+
+### False Positive
+
+Normal activity is incorrectly flagged as malicious. These alerts waste time because analysts investigate threats that are not real.
+
+### False Negative
+
+Malicious activity occurs, but the system fails to detect it. This is especially dangerous because attacks may continue unnoticed.
+
+---
+
+# Intrusion Prevention System (IPS)
+
+An Intrusion Prevention System (IPS) works similarly to an IDS but includes the ability to actively stop threats.
+
+In addition to detecting suspicious behavior and generating alerts, an IPS can automatically take defensive actions, such as:
+
+* Blocking malicious traffic
+* Updating firewall or router rules
+* Preventing unauthorized access
+
+For instance, an IPS might detect harmful traffic targeting a server and immediately block the source IP address.
+
+Some tools, such as Suricata, Snort, and Sagan, can function as both IDS and IPS solutions.
+
+---
+
+# Endpoint Detection and Response (EDR)
+
+Endpoint Detection and Response (EDR) tools focus on monitoring endpoint devices connected to a network. Endpoints include devices such as:
+
+* Desktop computers
+* Laptops
+* Smartphones
+* Tablets
+
+EDR solutions collect and analyze activity data directly from these devices to identify suspicious behavior.
+
+Unlike traditional IDS or IPS tools, EDR platforms use behavioral analysis, machine learning, and artificial intelligence to recognize unusual patterns and advanced threats.
+
+EDR systems can also respond automatically to threats without requiring manual action from security teams.
+
+For example, if an unfamiliar or suspicious process begins running on a workstation, the EDR tool may automatically stop the process to prevent damage.
+
+Examples of EDR tools include:
+
+* Open EDR
+* Bitdefender Endpoint Detection and Response
+* FortiEDR
+
+## Additional Note
+
+Security Information and Event Management (SIEM) platforms also include detection and alerting features. These tools help security teams collect, analyze, and manage security events from multiple sources across an organization.
+
+
+
+
+
+
+
+
+
+
+
+
+SIEM process:
+1. Collect and aggregate data
+2. Normalize data
+3. Analyze data
+
+
+
+
+Security Orchestration, automation and response (SOAR) - A collection of applications, tools, and workflows that uses automation to respond to security events.
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Advantages and Process of SIEM Tools
+
+## Benefits of SIEM Tools
+
+Security Information and Event Management (SIEM) tools help organizations collect, manage, and analyze security-related information from multiple systems and devices. These tools improve visibility across networks and support security teams during investigations and incident response.
+
+Some major advantages of SIEM solutions include:
+
+### Access to Security Event Data
+
+SIEM platforms gather data from many devices and systems connected to a network. This includes both historical and real-time event information. Since organizations may operate hundreds of devices, SIEM tools centralize this information so analysts can easily access it from one location.
+
+### Continuous Monitoring and Alerting
+
+SIEM systems constantly monitor network and system activity. They use predefined rules and detection logic to identify suspicious behavior. When activity matches a security rule, the system generates alerts that notify security teams for further investigation.
+
+### Log Retention and Storage
+
+SIEM platforms also serve as centralized storage solutions for logs and event records. Organizations can retain data for different periods depending on compliance, legal, or operational requirements. This stored data can later support investigations, audits, or forensic analysis.
+
+---
+
+# The SIEM Workflow
+
+The operation of a SIEM platform generally follows three important stages:
+
+1. Collecting and aggregating data
+2. Normalizing data
+3. Analyzing data
+
+These steps allow organizations to gather information from multiple sources, organize it into a usable format, and identify potential threats efficiently.
+
+---
+
+# Step 1: Collecting and Aggregating Data
+
+SIEM tools rely heavily on data collection. During this phase, event logs are gathered from various sources such as:
+
+* Firewalls
+* Servers
+* Routers
+* Endpoints
+* Applications
+
+Logs contain useful details including:
+
+* Timestamps
+* IP addresses
+* User activity
+* Device information
+
+Once collected, the logs are combined into a centralized system. This process is known as aggregation. Aggregation removes the need for analysts to manually review logs across multiple systems because all information becomes accessible through the SIEM platform.
+
+## Parsing Data
+
+During collection, SIEM tools may also perform parsing. Parsing extracts important information from raw log data and organizes it into readable fields.
+
+### Example of a Raw Log
+
+```text
+April 3 11:01:21 server sshd[1088]: Failed password for user nuhara from 218.124.14.105 port 5023
+```
+
+### Example of Parsed Data
+
+```text
+host = server
+process = sshd
+source_user = nuhara
+source_ip = 218.124.14.105
+source_port = 5023
+```
+
+Parsing makes log information easier for analysts and SIEM systems to interpret.
+
+---
+
+# Step 2: Normalizing Data
+
+Because logs come from different devices and software, they often use different formats. For example, firewall logs may look completely different from web server logs.
+
+Normalization converts this data into a standardized structure that the SIEM can process efficiently. Standardized data improves:
+
+* Searching
+* Filtering
+* Correlation
+* Analysis
+
+This step ensures that all event information follows a consistent format regardless of its source.
+
+---
+
+# Step 3: Analyzing Data
+
+After logs are collected and normalized, the SIEM analyzes the information to detect suspicious activity. SIEM platforms use detection rules, conditions, and logic to identify patterns associated with threats or attacks.
+
+If activity matches a detection rule, the system generates an alert for the security team.
+
+## Correlation in SIEM
+
+An important part of SIEM analysis is correlation. Correlation compares multiple log events from different systems to identify relationships or patterns that may indicate malicious activity.
+
+For example, several failed login attempts followed by a successful login from the same IP address could indicate a brute-force attack.
+
+---
+
+# Common SIEM Platforms
+
+Several SIEM solutions are widely used in the cybersecurity industry, including:
+
+* AlienVault OSSIM
+* Chronicle
+* Elastic
+* Exabeam
+* IBM QRadar Security Intelligence Platform
+* LogRhythm
+* Splunk
+
+These tools help organizations improve threat detection, incident response, and overall security monitoring.
+
+
+
+
+
+
+
+
+
+
+
+# Cybersecurity Terms and Definitions
+
+## Computer Security Incident Response Team (CSIRT)
+
+A dedicated team of cybersecurity professionals responsible for handling and responding to security incidents within an organization.
+
+## Documentation
+
+Recorded information or written material created and maintained for reference, operational, or investigative purposes.
+
+## Endpoint Detection and Response (EDR)
+
+A security solution that monitors endpoint devices for suspicious or malicious behavior and helps respond to threats.
+
+## Event
+
+Any detectable activity or occurrence taking place on a network, system, or device.
+
+## False Negative
+
+A situation where a real threat or malicious activity exists but is not identified by the security system.
+
+## False Positive
+
+An alert generated incorrectly when legitimate activity is mistakenly identified as malicious.
+
+## Incident
+
+An event that threatens the confidentiality, integrity, or availability of systems or data, or violates security policies and procedures.
+
+## Incident Handler’s Journal
+
+A record used during incident response to document actions taken, observations, findings, and timelines.
+
+## Incident Response Plan
+
+A structured document that explains the steps and procedures to follow when responding to security incidents.
+
+## Intrusion Detection System (IDS)
+
+A monitoring tool that identifies suspicious or malicious activity and sends alerts when potential intrusions are detected.
+
+## Intrusion Prevention System (IPS)
+
+A security application that detects intrusive activity and automatically takes action to stop or block it.
+
+## NIST Incident Response Lifecycle
+
+A framework developed by the National Institute of Standards and Technology that organizes incident response into four phases:
+
+* Preparation
+* Detection and Analysis
+* Containment, Eradication, and Recovery
+* Post-Incident Activity
+
+## Playbook
+
+A detailed guide containing step-by-step instructions for handling operational or security-related tasks.
+
+## Security Information and Event Management (SIEM)
+
+A platform that gathers, stores, and analyzes log data to monitor and investigate security events across an organization.
+
+## Security Operations Center (SOC)
+
+A centralized team or department responsible for continuously monitoring and defending systems, networks, and devices against cyber threats.
+
+## Security Orchestration, Automation, and Response (SOAR)
+
+A collection of integrated tools and automated workflows designed to improve and speed up incident response processes.
+
+## True Negative
+
+A condition where no malicious activity exists and the security system correctly produces no alert.
+
+## True Positive
+
+A correct alert generated when an actual attack or malicious activity is successfully detected.
+
+
+
+
+
+
+
+
+
+
