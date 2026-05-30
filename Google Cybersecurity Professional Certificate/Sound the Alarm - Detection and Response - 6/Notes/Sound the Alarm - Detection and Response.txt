@@ -597,3 +597,704 @@ A correct alert generated when an actual attack or malicious activity is success
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module 2
+
+Network traffic - The amount of data that moves across a network.
+
+Network data - The data that's transmitted between devices on a network.
+
+Indicators of compromise (IOC) - Observable evidence that suggests signs of a potential security incident.
+
+Data exfiltration - Unauthorized transmission of data from a system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Network communication can often be noisy and complex. Everyday activities such as sending emails, streaming videos, or browsing websites all generate network activity in the form of traffic and transmitted data. Network traffic refers to the total volume of data moving across a network, and it may also describe the type of data being transferred, such as HTTP or other protocols. Network data, on the other hand, refers to the actual information that is exchanged between devices connected to a network.
+
+Network monitoring plays a crucial role in maintaining awareness of what is happening across a network at any given time. By gathering and analyzing network traffic, organizations can identify unusual or suspicious behavior that may indicate a security issue. However, effective monitoring requires a clear understanding of what should be observed in the first place. In this section, you will explore why network monitoring is important, the methods used to monitor networks, and the tools that support this process.
+
+Understanding your network
+
+As previously learned, networks enable devices to connect and communicate by exchanging data through defined network protocols. These communications include useful details such as source and destination IP addresses, the amount of data being transferred, timestamps, and additional metadata. Security professionals use this information to build a baseline that represents normal or expected behavior within the network.
+
+A baseline is a reference standard used for comparison purposes. You may already be familiar with similar concepts in daily life. For example, a monthly grocery budget can act as a baseline to track spending patterns and identify unexpected increases. In cybersecurity, baselines are used to define normal behavior for systems, devices, and networks. Once this normal pattern is established, it becomes much easier to recognize deviations that may indicate abnormal or suspicious activity.
+
+Monitoring network activity
+
+After establishing a baseline, the next step is to continuously monitor the network to detect any deviations from expected behavior. Monitoring involves examining different network components to identify unusual patterns, such as unexpectedly large data transfers or irregular communication behavior. Several key areas of a network can be observed for potential malicious activity:
+
+Flow analysis
+
+Flow refers to the movement of data across a network and includes details such as packets, ports, and communication protocols. Packets are transmitted to specific ports, which act as endpoints for sending and receiving data. These ports are usually linked to standard protocols. For instance, port 443 is typically associated with HTTPS, which is used to secure web traffic through encryption.
+
+However, attackers may intentionally use unusual combinations of protocols and ports to avoid detection and maintain hidden communication channels between a compromised system and an external machine. This type of activity is commonly associated with command-and-control (C2) techniques, where attackers remotely manage infected systems. For example, using HTTPS traffic over an uncommon port such as 8088 instead of the standard 443 can be a sign of suspicious behavior. Organizations must therefore understand which ports and protocols are authorized and watch for any inconsistencies or mismatches.
+
+Packet payload analysis
+
+Network packets contain multiple components related to how data is transmitted, including source and destination IP addresses, as well as the payload. The payload represents the actual content being sent across the network. In many cases, this information is encrypted and must be decrypted before it can be fully analyzed. By examining packet payloads, organizations may detect abnormal activity, such as unauthorized transmission of sensitive information outside the network, which could indicate a data exfiltration attempt.
+
+Temporal pattern analysis
+
+Packets also carry time-related information, which helps in analyzing traffic patterns over specific periods. For example, an organization based in North America may typically observe heavy network activity between 9 a.m. and 5 p.m., which forms part of its normal baseline. If unusually large traffic volumes occur outside of these expected working hours, this deviation from the baseline may signal suspicious activity that requires investigation.
+
+By continuously monitoring these patterns, organizations can quickly identify potential intrusions and take action to secure their systems and network infrastructure.
+
+Protecting the network
+
+Throughout this program, you have learned about Security Operations Centers (SOC), which are responsible for detecting, analyzing, and responding to cybersecurity threats. In addition to SOCs, organizations may also operate a Network Operations Center (NOC), which focuses on monitoring network performance and handling issues such as outages or service disruptions. While a SOC is primarily concerned with security monitoring and threat response, a NOC is responsible for ensuring network stability, performance, and availability.
+
+Security analysts observe system and network activity across multiple monitoring screens to identify indicators of compromise (IoCs), which may suggest that a system has been breached or is under attack. To do this effectively, they must understand how normal network communication behaves so they can recognize deviations that may signal malicious activity.
+
+Network monitoring tools
+
+Network monitoring can be performed either manually or through automated systems, depending on the environment and requirements. Several commonly used tools include:
+
+Intrusion Detection Systems (IDS)
+
+Intrusion Detection Systems are designed to continuously monitor system and network activity and generate alerts when they detect behavior that matches known threat patterns or configured rules. IDS solutions often analyze packet contents, including payload data, to identify signatures associated with threats such as malware, phishing attempts, or other malicious activity.
+
+Network protocol analyzers (packet sniffers)
+
+Network protocol analyzers, also known as packet sniffers, are tools used to capture and inspect network traffic in detail. They allow security professionals to observe communications at a granular level and analyze how data flows across the network. Common examples include tools like tcpdump and Wireshark, which are used to capture packet data for further investigation. These packet captures can then be carefully examined to detect unusual behavior or evidence of potential security incidents.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Defensive measures:
+1. Prevent attacker access
+2. Monitor network activity
+3. protect assets
+4. Detect and stop the exfiltration 
+
+
+
+
+
+
+Components of packet:
+1. Header
+2. Payload
+3. Footer
+
+
+
+
+Network protocol analyzer (packet sniffer) - A tool designed to capture and analyze data traffic within a network.
+
+
+
+Packet capture (P-cap) - A file containing data packets intercepted from an interface or network.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security analysts are responsible for observing and analyzing how data moves across a network. A common method for doing this is by creating packet captures and studying the collected traffic to spot unusual or suspicious behavior.
+
+Earlier in the program, you built a foundation in networking concepts. In this section, that knowledge is used to better understand how network traffic flows. The focus here is on three key areas of network analysis: data packets, network protocol analyzers, and packet captures.
+
+Packets
+
+A data packet is the smallest unit of information that is transmitted between devices in a network. Identifying network intrusions often starts at this level because packets are the building blocks of all communication across networks.
+
+Whenever you perform an online activity—such as opening a website or uploading a file—data is broken into multiple packets. These packets travel independently across the network and are then reassembled at the destination device to reconstruct the original data.
+
+In cybersecurity investigations, packets provide essential details that help analysts understand what happened during an event. By studying packet behavior, analysts can detect irregularities and improve their ability to defend systems against attacks.
+
+A packet is generally made up of three main parts: the header, the payload, and the footer.
+
+Header
+
+The header is the first section of a packet and contains critical routing information. Depending on the protocols in use, a packet may include multiple headers such as Ethernet, IP, or TCP headers.
+
+These headers contain details like source and destination IP addresses, packet size, protocol type, and identification numbers. This information helps ensure the packet reaches the correct destination.
+
+Payload
+
+The payload is the section of the packet that carries the actual data being transmitted. For example, if an image is uploaded online, the image data itself is stored in the payload.
+
+Footer
+
+The footer (also called the trailer) appears at the end of certain packets, particularly Ethernet packets. It is mainly used for error detection and helps verify whether the data has been corrupted during transmission. However, many protocols, including IP, do not use a footer.
+
+Network protocol analyzers
+
+Network protocol analyzers, also known as packet sniffers, are tools used to capture and examine network traffic. Common examples include Wireshark, tcpdump, and TShark.
+
+These tools are widely used in cybersecurity to investigate suspicious activity and monitor network behavior. They can also assist in performance analysis, such as measuring bandwidth usage or diagnosing slow network connections.
+
+However, they can also be misused by attackers to intercept sensitive information, including login credentials or confidential data.
+
+The diagram of a typical setup shows data moving between two systems, while a protocol analyzer captures packets as they travel through the network path.
+
+How protocol analyzers function
+
+Protocol analyzers rely on both software and hardware components to collect and display network traffic.
+
+The process begins with the Network Interface Card (NIC), which allows a device to connect to a network. Normally, a NIC only processes traffic addressed to its own device. To capture all visible network traffic, it must be switched into a special mode.
+
+In wired systems, this is often called promiscuous mode, while in wireless networks it is known as monitoring mode. This allows the NIC to observe more network traffic, though not necessarily the entire network. To capture full traffic, the analyzer must be placed at a strategic point in the network.
+
+Once captured, packets are initially stored in binary form (0s and 1s), which is not human-readable. The protocol analyzer converts this data into a readable format so analysts can review and interpret it effectively.
+
+Note that enabling promiscuous mode can introduce security risks, as it may expose sensitive information if misused. Therefore, it should always be used responsibly.
+
+Packet captures
+
+Packet sniffing refers to the process of capturing network traffic for analysis. A packet capture (often called a p-cap) is a file that stores recorded packets from a network interface.
+
+These files can be opened and analyzed using tools like Wireshark or tcpdump. Analysts can filter packet data to focus on specific details, such as traffic from a particular IP address or unusual communication patterns.
+
+It is important to note that capturing network traffic without authorization may be illegal in many regions.
+
+Packet capture files can exist in different formats depending on the system or tool used:
+
+Libpcap is commonly used on Unix-based systems such as Linux and macOS, and is supported by tools like tcpdump.
+WinPcap is an older packet capture format used mainly on Windows systems.
+Npcap is a modern Windows-compatible capture library developed for tools like Nmap.
+PCAPng is an updated format that supports advanced features and can store additional metadata along with packet data.
+
+
+
+
+
+
+
+Different protocols use different headers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Internet Protocol (IP) *** Important
+
+Packets are the core unit of communication in any network, meaning that network investigation and detection often begin at the packet level. The Internet Protocol (IP) is a set of rules and standards responsible for addressing and routing these packets as they travel from one device to another across networks. IP serves as the fundamental layer that enables communication over the internet.
+
+The primary role of IP is to ensure that packets successfully reach their intended destination. Today, two versions of IP are commonly used: IPv4 and IPv6. Each version uses a different header structure to organize packet information.
+
+IPv4
+
+IPv4 is the most widely used version of the Internet Protocol. Its header consists of 13 different fields, each serving a specific purpose in packet delivery and routing:
+
+Version: Indicates the IP version being used (IPv4 in this case).
+Internet Header Length (IHL): Specifies the size of the IPv4 header, including any optional fields.
+Type of Service (ToS): Defines the priority level of the packet for delivery handling.
+Total Length: Indicates the full size of the IP packet, including both header and data.
+Identification: Assigns a unique value to packets that are fragmented so they can be correctly reassembled at the destination.
+Flags: Provides information about fragmentation status, including whether fragmentation has occurred and if more fragments are expected.
+Fragment Offset: Determines the correct order of fragmented packet pieces.
+Time to Live (TTL): Limits the lifespan of a packet in the network to prevent it from circulating indefinitely.
+Protocol: Identifies the protocol used in the data portion of the packet.
+Header Checksum: Used for error detection in the header data.
+Source Address: Specifies the IP address of the sender.
+Destination Address: Specifies the IP address of the receiver.
+Options: An optional field that can include additional settings, such as security-related configurations.
+
+An IPv4 header contains these 13 structured fields that help ensure proper delivery and handling of packets.
+
+IPv6
+
+IPv6 is a newer version of the Internet Protocol and is increasingly being adopted due to its significantly larger address space. Unlike IPv4, its header is simpler and contains 8 fields:
+
+Version: Identifies the protocol version (IPv6).
+Traffic Class: Similar to IPv4’s Type of Service field, it defines the priority level of the packet.
+Flow Label: Identifies packets belonging to the same communication flow, where a flow represents a sequence of packets from a single source.
+Payload Length: Indicates the size of the data portion of the packet.
+Next Header: Specifies the type of header that follows the IPv6 header, such as TCP.
+Hop Limit: Functions similarly to TTL in IPv4, limiting how long a packet can remain in the network before being discarded.
+Source Address: Contains the sender’s IP address.
+Destination Address: Contains the receiver’s IP address.
+
+An IPv6 header is more streamlined but still carries all essential routing and delivery information.
+
+Header fields in both IPv4 and IPv6 are extremely valuable during investigations, and tools like Wireshark convert this raw data into a readable format for analysis.
+
+Wireshark
+
+Wireshark is an open-source network protocol analyzer that uses a graphical user interface (GUI). This makes it easier for security analysts to visually inspect and interpret network traffic. While Wireshark includes many advanced features, this section focuses on basic filtering techniques used to isolate relevant packets within large packet capture files.
+
+Wireshark interface provides a structured view of captured network data, making it easier to investigate communication patterns.
+
+Display filters in Wireshark
+
+Wireshark display filters allow you to narrow down large packet capture files to only show the data relevant to your investigation. These filters can be applied based on protocols, IP addresses, ports, and many other packet attributes.
+
+Comparison operators
+
+Wireshark supports comparison operators that can be written either as symbols or abbreviations. For example:
+
+Equal: == or eq
+Not equal: != or ne
+Greater than: > or gt
+Less than: < or lt
+Greater than or equal to: >= or ge
+Less than or equal to: <= or le
+
+For instance, the filter ip.src == 8.8.8.8 is equivalent to ip.src eq 8.8.8.8.
+
+You can also combine these operators using Boolean logic such as and, or, and use parentheses to group conditions for more complex filtering.
+
+Contains operator
+
+The contains operator is used to find packets that include a specific string of text. For example, it can be used to display HTTP traffic that includes the word “moved” within the communication stream.
+
+Matches operator
+
+The matches operator allows filtering using regular expressions (regex). This enables pattern-based searching rather than exact matches. Regular expressions are sequences of characters used to define search patterns, and they are commonly used in advanced filtering scenarios.
+
+Filter toolbar
+
+Wireshark provides a filter toolbar where users can directly enter filter expressions. For example, typing dns will display only DNS-related packets, simplifying analysis of specific protocol traffic.
+
+Wireshark also uses color coding to differentiate protocol types, and users can customize both filters and colors based on preference.
+
+Filtering by protocol
+
+One of the simplest filtering methods is by protocol name. By entering the protocol directly, Wireshark displays only relevant traffic. Common examples include:
+
+dns
+http
+ftp
+ssh
+arp
+telnet
+icmp
+Filtering by IP address
+
+Wireshark allows filtering based on IP addresses in several ways:
+
+ip.addr == 172.21.224.2 → filters traffic involving that IP address
+ip.src == 10.10.10.10 → filters traffic originating from a specific source
+ip.dst == 4.4.4.4 → filters traffic sent to a specific destination
+Filtering by MAC address
+
+You can also filter traffic using MAC (Media Access Control) addresses, which uniquely identify network devices. For example:
+
+eth.addr == 00:70:f4:23:18:c4
+Filtering by ports
+
+Port-based filtering helps isolate traffic associated with specific services:
+
+udp.port == 53 → filters UDP traffic on port 53 (commonly DNS)
+tcp.port == 25 → filters TCP traffic on port 25 (commonly email services)
+Following streams
+
+Wireshark includes a “Follow Stream” feature that reconstructs full conversations between two devices. A stream represents a complete exchange of data using a specific protocol.
+
+This feature allows analysts to view the full context of communication, such as HTTP request and response messages, in a readable format rather than individual packets. It is especially useful for understanding how a communication session unfolded from start to finish.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Tcpdump (IMPORTANT)
+
+As a security analyst, one of your responsibilities is to monitor network traffic and analyze communications moving across a network. Network protocol analyzers are important tools that help identify potential intrusions and investigate suspicious activity. Earlier, you learned the following concepts:
+
+A network protocol analyzer (also called a packet sniffer) is a tool used to capture and inspect network traffic.
+Packet sniffing is the process of collecting and examining data packets as they travel through a network.
+
+In this section, you'll take a closer look at tcpdump, a popular network protocol analyzer that allows analysts to capture, inspect, and analyze network communications.
+
+What is tcpdump?
+
+Tcpdump is a command-line network protocol analyzer. A command-line interface (CLI) is a text-based environment where users interact with a system by entering commands instead of using graphical elements.
+
+Tcpdump is primarily used to capture network traffic and analyze the packets being transmitted across a network. Captured traffic can be stored in a packet capture (p-cap) file, which contains intercepted packet data from a network interface. These files can be reviewed immediately, shared with others, or saved for future analysis.
+
+Security professionals use tcpdump for many purposes, including troubleshooting network problems, monitoring traffic patterns, and investigating potentially malicious activity. Tcpdump is included by default in many Linux distributions and can also be installed on other Unix-like operating systems, including macOS.
+
+Note: Much of today's network traffic is encrypted, meaning its contents are encoded and unreadable without proper decryption. Analyzing encrypted packets may require access to the corresponding private keys.
+
+Capturing packets with tcpdump
+
+As discussed previously, Linux systems have a root user (superuser) with elevated permissions. The sudo command temporarily grants these elevated privileges to authorized users.
+
+Because packet capturing requires access to low-level network resources, tcpdump generally must be run with administrator privileges. This means you must either log in as the root user or execute commands using sudo.
+
+The general syntax for capturing packets with tcpdump is:
+
+sudo tcpdump [-i interface] [option(s)] [expression(s)]
+Command components
+
+sudo tcpdump
+
+Starts tcpdump with elevated privileges required for packet capturing.
+
+-i interface
+
+Specifies the network interface that tcpdump should monitor. Packet capture cannot begin until an interface is selected.
+
+For example:
+
+sudo tcpdump -i any
+
+The value any instructs tcpdump to listen on all available network interfaces.
+
+option(s)
+
+Options (or flags) modify the behavior of tcpdump and control how packet data is captured or displayed.
+
+expression(s)
+
+Expressions act as filters that help isolate specific traffic of interest. These filters allow analysts to focus on relevant packets during investigations.
+
+Note: Before capturing traffic, it is important to identify available network interfaces. The -D option can be used to display all interfaces on the system.
+
+Tcpdump options
+
+Tcpdump supports numerous options (also called flags) that customize packet capturing and analysis. Short options use a single dash followed by a character, while long options use two dashes followed by the full option name.
+
+Examples:
+
+-i
+
+or
+
+--interface
+
+Tcpdump provides more than fifty available options. The following are among the most commonly used.
+
+The -w option
+
+The -w flag writes captured traffic directly to a packet capture file instead of displaying it on screen.
+
+Example:
+
+sudo tcpdump -i any -w packetcapture.pcap
+
+This command captures traffic from all interfaces and stores it in a file named packetcapture.pcap.
+
+Saving captures is useful because the data can be analyzed later using tcpdump, Wireshark, or other packet analysis tools.
+
+The -r option
+
+The -r flag reads an existing packet capture file.
+
+Example:
+
+sudo tcpdump -r packetcapture.pcap
+
+This command opens and displays packet information from the specified capture file.
+
+The -v option
+
+Packets contain a large amount of information. By default, tcpdump displays only a limited summary.
+
+The verbose option (-v) increases the amount of detail shown.
+
+Tcpdump supports three verbosity levels:
+
+-v
+-vv
+-vvv
+
+Each additional v increases the level of detail displayed.
+
+Example:
+
+sudo tcpdump -r packetcapture.pcap -v
+
+This command reads the capture file and displays more detailed packet information, including additional header details.
+
+The -c option
+
+The -c flag stands for count and controls how many packets tcpdump captures before stopping.
+
+Examples:
+
+-c 1
+
+Captures one packet.
+
+-c 10
+
+Captures ten packets.
+
+Example command:
+
+sudo tcpdump -i any -c 3
+
+This tells tcpdump to capture only the first three packets observed on all interfaces.
+
+The -n option
+
+By default, tcpdump performs name resolution, converting IP addresses and port numbers into hostnames and service names.
+
+For example:
+
+An IP address may be translated into a domain name.
+Port 80 may automatically be displayed as HTTP.
+
+Although convenient, this behavior can sometimes produce misleading results because a port is not always associated with its typical service.
+
+Additionally, name resolution requires reverse DNS lookups. A reverse DNS lookup attempts to identify the hostname associated with an IP address. In some investigations, this could alert an attacker that their infrastructure is being examined.
+
+Using the -n option disables hostname resolution.
+
+Example:
+
+sudo tcpdump -r packetcapture.pcap -v -n
+
+This command reads the capture file, displays verbose information, and prevents hostname lookups.
+
+Using:
+
+-nn
+
+disables both hostname resolution and service-name resolution for ports.
+
+Many analysts consider -n or -nn a best practice during packet analysis.
+
+Pro Tip
+
+Multiple options can often be combined.
+
+For example:
+
+-vn
+
+is equivalent to:
+
+-v -n
+
+However, options that require their own values (such as -c 5 or -r file.pcap) generally cannot be merged with other flags.
+
+Filter expressions
+
+Filter expressions are optional but extremely useful when analyzing large amounts of traffic.
+
+Instead of viewing every packet, expressions allow analysts to focus on specific protocols, IP addresses, ports, or communication types.
+
+For example, to display only IPv6 traffic:
+
+ip6
+
+Tcpdump also supports Boolean operators such as:
+
+and
+or
+not
+
+These operators can be combined to create more precise filters.
+
+Example:
+
+sudo tcpdump -r packetcapture.pcap -n 'ip and port 80'
+
+This command displays only IPv4 traffic that uses port 80.
+
+Pro Tip
+
+Filter expressions can be enclosed in single or double quotation marks.
+
+Parentheses can also be used to group conditions and define precedence.
+
+Example:
+
+ip and (port 80 or port 443)
+
+This filter first evaluates traffic using ports 80 or 443 and then limits results to IPv4 packets.
+
+Grouping conditions becomes especially valuable when building more complex search criteria.
+
+Understanding tcpdump output
+
+When tcpdump captures packets, it displays one line of output for each packet observed. Every line begins with a timestamp followed by information about the communication.
+
+Consider the following command:
+
+sudo tcpdump -i any -v -c 1
+
+This command:
+
+Captures traffic from all interfaces (-i any)
+Displays detailed packet information (-v)
+Stops after capturing one packet (-c 1)
+
+The output typically contains the following components:
+
+Timestamp
+
+Each packet begins with a timestamp showing:
+
+Hours
+Minutes
+Seconds
+Fractions of a second
+
+This indicates exactly when the packet was captured.
+
+Source IP Address
+
+The source IP identifies the system that sent the packet.
+
+Source Port
+
+The source port indicates the application or service from which the packet originated.
+
+Destination IP Address
+
+The destination IP identifies the system receiving the packet.
+
+Destination Port
+
+The destination port identifies the service or application to which the packet is being sent.
+
+Additional Packet Details
+
+The remaining output may include:
+
+TCP flags
+Sequence numbers
+Acknowledgment values
+Window sizes
+Header information
+Other protocol-specific details
+
+When the -v option is used, tcpdump provides even more information about packet headers and communication characteristics, helping analysts better understand network activity and investigate potential security events.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Command and Control (C2): Methods and communication channels used by attackers to remotely manage and maintain access to compromised systems.
+Command-Line Interface (CLI): A text-based environment where users interact with a computer by entering commands instead of using graphical elements.
+Data Exfiltration: The unauthorized extraction, transfer, or removal of sensitive information from a system or network.
+Data Packet: The smallest unit of data transmitted across a network between devices.
+Indicators of Compromise (IoC): Detectable signs or evidence that may indicate a system has been compromised or is experiencing a security incident.
+Internet Protocol (IP): A communication protocol that provides addressing and routing mechanisms to deliver packets across networks.
+Intrusion Detection System (IDS): A security tool that continuously monitors network or system activity and generates alerts when suspicious behavior is detected.
+Media Access Control (MAC) Address: A unique hardware identifier assigned to a network-enabled device for communication within a local network.
+NIST Incident Response Lifecycle: A structured incident response framework developed by the National Institute of Standards and Technology, consisting of four stages: Preparation, Detection and Analysis, Containment/Eradication/Recovery, and Post-Incident Activities.
+Network Data: The actual information exchanged between devices over a network connection.
+Network Protocol Analyzer (Packet Sniffer): A tool that captures, examines, and analyzes network traffic for monitoring, troubleshooting, and security purposes.
+Network Traffic: The flow and volume of data transmitted across a network during communication between devices.
+Network Interface Card (NIC): A hardware component that enables a device to connect and communicate over a network.
+Packet Capture (P-CAP): A file containing recorded network packets collected from a network interface for later analysis.
+Packet Sniffing: The process of intercepting, collecting, and examining network packets traveling across a network.
+Playbook: A documented set of procedures and instructions that guides operational or incident response activities.
+Root User (Superuser): A privileged account with unrestricted access and authority to make system-wide changes.
+Sudo: A Linux command that allows authorized users to temporarily execute commands with elevated administrative privileges.
+tcpdump: A command-line utility used to capture, inspect, and analyze network packets and traffic.
+Wireshark: A graphical, open-source network protocol analyzer used to capture and investigate network communications in detail.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module 3
+
+
+
+
+
+
