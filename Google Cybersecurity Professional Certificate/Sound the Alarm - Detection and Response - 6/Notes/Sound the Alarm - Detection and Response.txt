@@ -1295,6 +1295,1274 @@ module 3
 
 
 
+Detection - The prompt discovery of security events
+
+
+Analysis - The investigation and validation of alerts
+
+
+
+Challenges in the detection and analysis phase:
+Impossible to detect everything
+High volumes of alerts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Security analysts rely on detection technologies to uncover potential threats, but there are also other approaches that support identifying malicious activity.
+
+Earlier, you learned how security tools can recognize attacks such as data exfiltration. In this reading, you’ll explore additional detection approaches organizations can use to identify security threats.
+
+Methods of detection
+
+During the Detection and Analysis stage of the incident response lifecycle, security teams receive alerts about possible security incidents and then investigate them by gathering and examining relevant data. In simple terms, detection is about quickly identifying security events, while analysis focuses on confirming and understanding those alerts.
+
+As discussed earlier, an intrusion detection system (IDS) can spot suspicious behavior and generate alerts for analysts to review. Similarly, security information and event management (SIEM) systems help collect, correlate, and analyze security logs to support detection efforts.
+
+However, detection is not perfect. Even strong security teams can miss real attacks for several reasons. Detection tools only work based on what they are configured to monitor, so incorrect or incomplete configuration can allow malicious activity to go unnoticed. Because of this, organizations often combine multiple detection approaches to improve accuracy and coverage.
+
+Threat hunting
+
+Modern attackers constantly change their techniques, making it difficult for automated systems to keep up. Human-led approaches such as threat hunting help bridge this gap by combining analyst expertise with security tools to uncover hidden threats.
+
+Threat hunting is a proactive process where security professionals actively search for malicious activity within a network instead of waiting for alerts. It is also used to investigate suspicious behavior in more depth and identify threats before they cause serious harm. For example, fileless malware is especially hard to detect because it operates in system memory instead of relying on files, helping it evade traditional signature-based detection. Threat hunting helps uncover such stealthy threats through manual investigation supported by tools.
+
+Note: Individuals who perform threat hunting are called threat hunters. They study emerging attack methods and evaluate how likely an organization is to be targeted. Their work often uses threat intelligence, indicators of compromise (IOCs), indicators of attack (IOAs), and machine learning techniques to locate hidden threats.
+
+Threat intelligence
+
+Organizations can strengthen detection by staying informed about current and emerging threats and understanding how attackers may target their systems. This is done using threat intelligence, which refers to analyzed, evidence-based information about potential or active threats.
+
+Threat intelligence is gathered from several sources, including:
+
+Industry research reports: These describe attacker behavior, including tactics, techniques, and procedures (TTPs).
+Government alerts: These also provide insights into attacker methods and TTPs.
+Threat feeds: These continuously deliver data such as suspicious IP addresses, domains, and file hashes, which may be linked to advanced persistent threats (APTs), where attackers maintain long-term unauthorized access to systems.
+
+Managing large amounts of this information can be difficult, so organizations often use a threat intelligence platform (TIP). A TIP collects, organizes, and analyzes threat data from multiple sources, helping security teams prioritize risks and improve defenses.
+
+Note: Threat feeds should support detection by adding context, not be used as the sole basis for creating detection rules.
+
+Cyber deception
+
+Cyber deception techniques are designed to intentionally mislead attackers in order to detect them and strengthen defensive capabilities.
+
+One common example is a honeypot, which is a deliberately exposed decoy system meant to attract attackers. For instance, a fake file named Client Credit Card Information - 2022 can be used to lure malicious users. When an attacker interacts with it, security teams receive alerts, allowing them to observe behavior and respond accordingly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ongoing CI/CD Monitoring: Automated Threat Detection
+
+In the previous discussion on incident detection techniques, you explored methods used to identify cybersecurity threats, including tools such as intrusion detection systems (IDS) and security information and event management (SIEM) platforms. This section focuses on continuous monitoring within Continuous Integration and Continuous Delivery/Deployment (CI/CD) environments. Monitoring CI/CD pipelines plays an important role in securing the software supply chain by automatically identifying suspicious activity and highlighting potential Indicators of Compromise (IoCs).
+
+Automated Threat Detection in CI/CD
+
+CI/CD pipelines enable faster software development and deployment, but they can also become targets for attackers. If a pipeline is compromised, malicious actors may inject harmful code, access sensitive information, or disrupt software delivery processes.
+
+Continuous monitoring is therefore essential. Modern monitoring solutions do more than gather logs; they automatically analyze build activities, source code changes, and deployment operations to identify unusual behavior that may indicate security threats. Once suspicious activity is detected, security teams can investigate and respond quickly, reducing potential damage. Automated threat detection is a key component of effective CI/CD security.
+
+Common Indicators of Compromise (IoCs) in CI/CD Pipelines
+
+Recognizing common IoCs helps organizations identify and respond to security incidents more effectively.
+
+Unauthorized Code Modifications
+Code commits performed by unauthorized users.
+Source code changes originating from unusual locations or occurring at unexpected times.
+Suspicious code patterns, such as heavily obfuscated code, large unexplained deletions, or code that violates established development standards.
+Abnormal Deployment Activity
+Deployments targeting unauthorized or unexpected environments.
+Releases occurring outside approved deployment windows.
+Production deployments initiated by unauthorized users or service accounts.
+Compromised Dependencies
+Detection of known vulnerabilities (CVEs) during automated dependency scanning.
+Sudden introduction of unfamiliar dependencies into build configurations.
+Attempts to retrieve packages from unofficial or untrusted repositories.
+Irregular Pipeline Behavior
+Previously stable pipeline stages unexpectedly failing.
+Significant increases in build or deployment execution times.
+Unauthorized modifications to pipeline workflows or execution sequences.
+Attempts to Access Secrets
+Evidence of unauthorized access attempts to credentials, API keys, or other secrets.
+Discovery of hardcoded secrets within source code commits.
+Strengthening Security Through IoC Monitoring
+
+Continuous monitoring focused on anomaly detection and IoC identification allows organizations to take a proactive security approach. By continuously analyzing pipeline activities before attackers can cause significant harm, organizations can:
+
+Accelerate Incident Response
+
+Early detection enables security teams to investigate and contain threats before attackers achieve their objectives.
+
+Reduce Potential Impact
+
+Rapid identification and remediation limit the time attackers can remain active within the pipeline, reducing overall damage.
+
+Improve Threat Intelligence
+
+Analyzing IoCs provides insights into attacker techniques and behaviors, helping organizations strengthen future security measures and threat-hunting efforts.
+
+Techniques for Automated Anomaly and IoC Detection
+Comprehensive Logging and Auditing
+
+Detailed logging forms the foundation of effective monitoring. Logs provide the data required for identifying anomalies and potential IoCs.
+
+Pipeline Execution Logs
+
+Monitoring tools establish a baseline of normal pipeline behavior by analyzing successful pipeline runs. This baseline includes:
+
+Expected execution times for each stage.
+Normal success and failure rates.
+Standard workflow sequences.
+
+Any deviations, such as unusually long execution times, unexpected failures, or changes in stage order, may indicate suspicious activity and should be investigated.
+
+Code Commit Logs
+
+Tracking source code changes helps identify unusual behavior, including:
+
+Commits from unauthorized contributors.
+Changes made during unusual hours.
+Suspicious modifications involving obfuscation or extensive deletions.
+Access Logs
+
+Monitoring access patterns can reveal:
+
+Logins from unfamiliar geographic locations.
+Multiple failed authentication attempts followed by a successful login.
+Attempts to modify critical CI/CD configurations.
+
+These events may indicate account compromise or unauthorized access.
+
+Deployment Logs
+
+Deployment monitoring helps establish normal release patterns. Potential IoCs include:
+
+Deployments occurring at unexpected times.
+Releases to unauthorized environments.
+Unusual deployment frequencies.
+SIEM Integration for CI/CD Monitoring
+
+Integrating CI/CD logs with a SIEM platform enhances large-scale threat detection capabilities.
+
+SIEM solutions can:
+
+Automatically Detect Anomalies
+
+Using analytics and machine learning, SIEMs identify unusual patterns across pipeline activities that may indicate compromise.
+
+Generate Alerts for Known IoCs
+
+Custom detection rules can trigger alerts when:
+
+Known malicious file hashes are detected in build artifacts.
+CI/CD infrastructure communicates with known command-and-control (C2) servers.
+Unauthorized attempts are made to access sensitive credentials or secrets.
+Real-Time Alerting and Notifications
+
+Automated notifications ensure that security teams are informed immediately when suspicious activity occurs.
+
+Alerts should be configured for:
+
+Repeated Build Failures
+
+Unexpected failures occurring after seemingly harmless code changes may indicate malicious activity.
+
+Suspicious Code Changes
+
+Code analysis tools can identify unusual commits based on factors such as size, author behavior, or suspicious coding techniques.
+
+Secret Access Attempts
+
+Security controls should generate alerts whenever unauthorized attempts are made to retrieve sensitive credentials or tokens.
+
+Unusual Network Activity
+
+Unexpected outbound traffic from CI/CD systems, particularly communications with unknown or suspicious destinations, should be investigated.
+
+Performance Monitoring and Indicators of Attack (IoAs)
+
+Although performance monitoring primarily focuses on system reliability, it can also assist in identifying Indicators of Attack (IoAs).
+
+Examples include:
+
+Sudden performance degradation.
+Unusual resource consumption.
+Unexpected increases in CPU, memory, or network utilization.
+
+These warning signs may warrant further investigation and can ultimately lead to the discovery of IoCs.
+
+Continuous Vulnerability Scanning
+
+Regular vulnerability assessments help identify weaknesses before attackers can exploit them.
+
+Scanning should include:
+
+CI/CD platforms and services.
+Plugins and extensions.
+Containers and container images.
+Supporting infrastructure components.
+
+Identifying Common Vulnerabilities and Exposures (CVEs) allows organizations to prioritize remediation efforts and reduce the risk of pipeline compromise.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding the Pyramid of Pain and Indicators of Compromise
+
+This reading introduces the concept of the Pyramid of Pain, a framework that helps security teams understand the effectiveness of different indicators used to detect malicious activity. By understanding how attackers react when these indicators are blocked, organizations can strengthen their defenses and reduce the impact of security incidents.
+
+Indicators of Compromise (IoCs)
+
+Indicators of Compromise (IoCs) are pieces of observable evidence that suggest a security breach or malicious activity may have occurred. They provide clues that an attack has taken place and help investigators identify what happened.
+
+Examples of IoCs include:
+
+A malicious file name
+A suspicious IP address
+A known malware hash value
+An unauthorized domain connection
+
+An IoC can be compared to discovering signs of a completed crime, such as noticing that valuables have been stolen from a vehicle. The evidence points to an event that has already happened.
+
+Indicators of Attack (IoAs)
+
+Indicators of Attack (IoAs) focus on identifying attacker behavior while an attack is occurring. Rather than highlighting evidence left behind, IoAs reveal suspicious actions and patterns that indicate malicious intent.
+
+IoAs help security teams understand:
+
+How an attack is being carried out
+Why the attacker is performing certain actions
+What techniques are being used
+
+For example:
+
+A process establishing an unexpected network connection is an IoA.
+The process name and destination IP address associated with that connection are IoCs.
+
+In simple terms:
+
+Indicators of Compromise (IoCs)	Indicators of Attack (IoAs)
+Show evidence of a completed or existing compromise	Show attacker behavior during an attack
+Focus on "who" and "what"	Focus on "how" and "why"
+Often discovered after an event	Often detected during an event
+
+Note: An IoC alone does not always confirm a security incident. Similar indicators may result from user mistakes, software errors, or system issues unrelated to malicious activity.
+
+The Pyramid of Pain
+
+Not all indicators provide the same level of value to defenders. Some indicators are easy for attackers to change, while others require significant effort to modify.
+
+To illustrate this concept, security researcher David J. Bianco developed the Pyramid of Pain.
+
+The Pyramid of Pain demonstrates how difficult it becomes for attackers to continue their operations when different types of indicators are detected and blocked. As defenders move higher up the pyramid, attackers experience greater disruption and must invest more effort to evade detection.
+
+The lower levels cause minimal inconvenience, while the upper levels can significantly impact an attacker's ability to operate.
+
+Levels of the Pyramid of Pain
+1. Hash Values (Least Painful)
+
+Hash values are unique identifiers generated from files.
+
+Examples:
+
+Malware file hashes
+Hashes of malicious documents
+Hashes linked to compromised files
+
+Security teams often use hash values to identify known malicious files quickly.
+
+Attacker Difficulty: Low
+
+Attackers can simply modify a file slightly to generate a completely different hash value.
+
+2. IP Addresses
+
+An IP address identifies a device on a network.
+
+Example:
+
+192.168.1.1
+
+Blocking malicious IP addresses can prevent communication with known attacker infrastructure.
+
+Attacker Difficulty: Low
+
+Attackers can easily switch to different IP addresses, cloud resources, or proxy services.
+
+3. Domain Names
+
+Domain names are human-readable web addresses.
+
+Examples:
+
+example.com
+malicious-domain.net
+
+Security teams often block domains associated with phishing campaigns or malware distribution.
+
+Attacker Difficulty: Moderate
+
+Registering a new domain is relatively inexpensive and straightforward for attackers.
+
+4. Network Artifacts
+
+Network artifacts are traces of malicious activity that appear within network traffic.
+
+Examples include:
+
+Suspicious User-Agent strings
+Unusual HTTP headers
+Abnormal protocol behavior
+Distinct communication patterns
+
+These artifacts often reveal attacker techniques rather than specific infrastructure.
+
+Attacker Difficulty: Moderate to High
+
+Changing network behavior usually requires modifications to malware or attack tools.
+
+5. Host Artifacts
+
+Host artifacts are traces left behind on systems targeted by attackers.
+
+Examples:
+
+Malware-created files
+Registry modifications
+Scheduled tasks
+Persistence mechanisms
+
+These indicators often reveal how malware operates on a compromised device.
+
+Attacker Difficulty: High
+
+Attackers must redesign portions of their malware or attack process to avoid detection.
+
+6. Tools
+
+Tools are the software applications or utilities attackers use to achieve their objectives.
+
+Examples:
+
+Password-cracking programs
+Remote access tools
+Malware frameworks
+Exploitation utilities
+
+A common example is the password-cracking tool John the Ripper.
+
+Attacker Difficulty: Very High
+
+Replacing or modifying tools requires time, expertise, and additional resources.
+
+7. Tactics, Techniques, and Procedures (TTPs) (Most Painful)
+
+At the top of the pyramid are Tactics, Techniques, and Procedures (TTPs).
+
+Tactics describe an attacker's overall objective.
+Techniques explain how the objective is achieved.
+Procedures provide the detailed steps used during execution.
+
+Examples:
+
+Credential dumping
+Lateral movement
+Privilege escalation
+Phishing campaigns
+Persistence techniques
+
+TTPs represent attacker behavior rather than specific artifacts.
+
+Attacker Difficulty: Extremely High
+
+When defenders detect and block TTPs, attackers may need to redesign significant portions of their operations, making it much harder to continue their attacks successfully.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Investigative Tools and Adding Context to Security Incidents
+
+In previous lessons, you explored various detection methods used to identify security incidents. This reading focuses on how investigative tools help security analysts examine suspicious Indicators of Compromise (IoCs) and gather additional context around alerts. Remember, an IoC is any observable piece of evidence that may indicate a potential security incident.
+
+Why Context Matters in Investigations
+
+The Pyramid of Pain demonstrates that different IoCs provide different levels of value during threat detection. While IoCs help identify suspicious activity, relying on a single indicator often provides only a limited view of an attack.
+
+For example, blocking a malicious IP address may stop one aspect of an attack, but it does not reveal the attacker's overall objectives, methods, or related activities. Attackers can often switch to a different IP address and continue their operations.
+
+Focusing on a single IoC is similar to examining only one small section of a large picture—you may miss important details needed to understand the entire situation.
+
+To gain a more complete understanding, security analysts use threat intelligence, which is evidence-based information about current or emerging threats. Threat intelligence provides additional context around IoCs and helps analysts connect related artifacts, activities, and behaviors.
+
+For instance, a suspicious IP address may be linked to:
+
+Unusual network communications
+Malicious domains
+Suspicious files
+Abnormal system processes
+
+By connecting these indicators, security teams can build a clearer picture of the incident, understand its scope, and make better-informed response decisions.
+
+The Role of Crowdsourcing in Threat Intelligence
+
+Crowdsourcing is the process of collecting information through contributions from a large group of people or organizations.
+
+In cybersecurity, crowdsourcing allows organizations to share threat intelligence with the broader security community. Traditionally, security incidents were investigated in isolation, with each organization handling attacks independently. As a result, attackers could reuse the same techniques against multiple targets.
+
+Today, organizations benefit from shared knowledge contributed by:
+
+Security researchers
+Technology vendors
+Government agencies
+Cloud service providers
+Security operations teams
+
+This collaborative approach helps improve detection methods and defensive technologies across the industry.
+
+Information Sharing Organizations
+
+Several organizations exist specifically to facilitate threat intelligence sharing.
+
+Information Sharing and Analysis Centers (ISACs)
+
+Information Sharing and Analysis Centers (ISACs) collect and distribute industry-specific threat intelligence.
+
+Examples include sectors such as:
+
+Healthcare
+Energy
+Finance
+Transportation
+
+Organizations within the same industry can use this intelligence to better defend against sector-specific threats.
+
+Open-Source Intelligence (OSINT)
+
+Open-Source Intelligence (OSINT) involves collecting and analyzing information from publicly available sources.
+
+OSINT can be used to gather intelligence about:
+
+Threat actors
+Attack campaigns
+Vulnerabilities
+Infrastructure used by attackers
+
+Security teams frequently use OSINT to enrich investigations and improve situational awareness.
+
+How Shared Threat Intelligence Improves Security
+
+Threat intelligence collected through crowdsourcing helps strengthen security products and detection systems.
+
+Attackers often reuse the same infrastructure, malware, domains, and techniques across multiple organizations. Once one organization identifies and reports malicious activity, that information can help others defend against the same threat.
+
+For example, when a malicious file, IP address, or URL is discovered, it can be shared with the security community. Detection tools and antivirus products can then use this information to identify and block the threat before it impacts additional organizations.
+
+This collaborative model significantly improves collective defense capabilities.
+
+VirusTotal
+
+One of the most widely used threat intelligence platforms is VirusTotal.
+
+VirusTotal is a free service that allows users to analyze suspicious:
+
+Files
+URLs
+Domains
+IP addresses
+
+The platform aggregates results from numerous security vendors and provides detailed information about submitted artifacts.
+
+Users can submit an IoC and receive a report showing:
+
+Whether the artifact is considered malicious
+Related indicators and infrastructure
+Behavioral analysis results
+Community feedback
+Understanding VirusTotal Reports
+Detection
+
+The Detection section displays verdicts from multiple security vendors.
+
+Possible classifications include:
+
+Malicious
+Suspicious
+Unsafe
+Clean
+
+This allows analysts to quickly determine how widely an artifact is recognized as a threat.
+
+Details
+
+The Details section contains technical information gathered through static analysis.
+
+Examples include:
+
+File hashes
+File type
+File size
+Metadata
+Creation timestamps
+Submission history
+
+This information helps analysts better understand the artifact.
+
+Relations
+
+The Relations section shows connections between the analyzed artifact and other IoCs.
+
+Examples include:
+
+Related domains
+Connected IP addresses
+Contacted URLs
+Dropped files
+
+These relationships help investigators identify additional indicators associated with an attack.
+
+Behavior
+
+The Behavior section contains results from executing the artifact in a controlled sandbox environment.
+
+This information may include:
+
+Network communications
+File system activity
+Registry changes
+Process creation
+Detected attacker techniques
+
+Behavioral analysis provides valuable insight into how an artifact operates.
+
+Community
+
+The Community section contains comments and observations from security professionals and researchers.
+
+Community contributions often provide useful context, threat intelligence, and investigative findings.
+
+Vendor Ratio and Community Score
+
+At the top of a VirusTotal report, two important metrics are displayed:
+
+Vendor Ratio: The number of security vendors that classify the artifact as malicious.
+Community Score: A reputation score generated from community feedback.
+
+Generally, a higher vendor ratio and community score increase confidence that the artifact is malicious.
+
+Important: Files uploaded to VirusTotal become accessible to the wider VirusTotal community. Sensitive, confidential, or personal information should never be uploaded.
+
+Additional Investigation Tools
+
+Several other platforms can help analysts investigate suspicious artifacts and gather threat intelligence.
+
+Jotti's Malware Scan
+
+Jotti's Malware Scan is a free service that scans suspicious files using multiple antivirus engines.
+
+Features:
+
+Multi-engine malware scanning
+Simple file submission process
+Limited submission capacity
+urlscan.io
+
+urlscan.io analyzes URLs and websites, providing detailed information about their behavior and content.
+
+Capabilities include:
+
+Website analysis
+Domain information
+Network requests
+Security observations
+
+It is particularly useful for investigating phishing websites and suspicious URLs.
+
+MalwareBazaar
+
+MalwareBazaar is a public repository that stores malware samples for research and analysis purposes.
+
+Security professionals use it to:
+
+Study malware behavior
+Collect threat intelligence
+Support incident investigations
+Improve detection capabilities
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Benefits of documentation:
+Transparency
+Standardization
+Clarity
+
+
+
+
+Chain of custody - The process of documenting evidence possession and control during an incident lifecycle
+
+
+Broken chain of custody - Inconsistencies in the collection and logging of evidence in the chain of custody.
+
+
+
+
+Chain of custody establishes:
+Integrity
+Reliability
+Accuracy
+
+
+
+
+The Role of Documentation in Cybersecurity
+
+Documentation refers to any recorded information created for a specific purpose, and it plays a vital role in cybersecurity operations. Security teams rely on documentation to support investigations, guide daily tasks, and communicate findings clearly across the organization.
+
+This section explores the key benefits of documentation and outlines best practices for creating effective and reliable security documentation.
+
+Benefits of Documentation
+
+Effective security documentation provides three main advantages:
+
+Transparency
+
+Transparency is essential in cybersecurity, especially for compliance, audits, insurance requirements, and legal processes. Proper documentation ensures that every action taken during an incident can be traced and verified.
+
+A key example is the chain of custody, which is the process of recording the handling, transfer, and control of evidence throughout an incident investigation. This creates a clear audit trail and ensures accountability at every stage.
+
+Standardization
+
+Standardization refers to the use of consistent procedures and structured processes across security operations. It helps organizations improve efficiency, support knowledge sharing, and simplify onboarding for new team members.
+
+Organizations often rely on security frameworks such as those developed by NIST to guide best practices.
+
+A common example of standardized documentation is an incident response plan. This document outlines predefined steps for handling security incidents, ensuring that teams follow consistent procedures during investigations and response efforts. Standardization ensures that responses are repeatable, organized, and aligned with organizational goals.
+
+Clarity
+
+Clear documentation ensures that information is easy to understand and actionable for its intended audience. In cybersecurity, analysts must clearly explain the reasoning behind decisions such as escalating or closing alerts.
+
+Well-structured documentation allows team members to quickly access relevant information and take appropriate action without confusion or delay.
+
+Best Practices for Effective Security Documentation
+
+To create strong and useful documentation in cybersecurity, professionals should follow these key practices:
+
+1. Understand Your Audience
+
+Before writing any document, it is important to identify who will read it and what level of detail they require.
+
+For example:
+
+A SOC analyst or security manager expects technical details and structured analysis.
+A CEO or executive audience requires high-level summaries without technical jargon.
+
+Tailoring documentation to the audience ensures better understanding and usability.
+
+2. Keep It Concise
+
+Documentation should be clear and focused. Overly long or complex documents may discourage people from reading or using them effectively.
+
+The purpose of the document should be stated early, often in an executive summary. This helps readers quickly understand the key points and relevance of the information.
+
+Concise writing improves accessibility and ensures important details are not overlooked.
+
+3. Maintain Regular Updates
+
+Cybersecurity environments change rapidly due to new vulnerabilities, threats, and attack techniques. As a result, documentation must be continuously reviewed and updated.
+
+After an incident is resolved, teams should conduct post-incident reviews to identify gaps in processes or improvements needed in procedures. Updating documentation ensures that security practices remain effective and aligned with current threats.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Playbooks:
+Non-automated
+automated
+semi-automated
+
+
+
+
+
+Triage - The prioritizing of incidents according to their level of importance or urgency.
+
+
+
+Triage process:
+1. Receive and assess
+2. Assign priority
+3. Collect and analyze
+
+
+
+Questions to ask:
+Is there anything out of the ordinary?
+Are there multiple failed login attempts?
+Did the login happen outside of normal working hours?
+Did the login happen outside of the network?
+
+
+
+
+
+
+
+
+
+
+
+
+
+Understanding the Security Triage Process
+
+Previously, you learned that triage is used in cybersecurity to evaluate alerts and assign them a level of priority. In this section, you will explore how the triage process works and why it is important for security operations. As a security analyst, triaging alerts efficiently helps ensure that critical threats are handled quickly and effectively.
+
+What is Triage?
+
+Triage is the process of categorizing security incidents based on their urgency and importance. Since organizations may receive large volumes of alerts, triage helps security teams decide which issues need immediate attention and which can be handled later.
+
+This ensures that limited time and resources are focused on the most serious threats first.
+
+Steps in the Triage Process
+
+The triage process typically includes three main stages:
+
+1. Receive and Assess
+
+In this step, a security analyst receives an alert from a monitoring system such as an intrusion detection system (IDS), which tracks network or system activity and generates alerts for suspicious behavior.
+
+The analyst then evaluates the alert to understand its context and determine whether it represents a real security concern.
+
+Key evaluation questions include:
+
+Is this a false positive, or a legitimate threat?
+Has this alert occurred before, and how was it handled previously?
+Is the alert linked to a known vulnerability or exploit?
+How severe is the alert in terms of potential impact?
+
+This stage is focused on gathering initial information and confirming whether the alert requires further investigation.
+
+2. Assign Priority
+
+Once an alert is confirmed as valid, it must be prioritized based on its potential impact. Not all incidents affect systems or organizations equally, so prioritization helps ensure that the most critical issues are addressed first.
+
+Key factors used to determine priority include:
+
+Functional Impact
+
+This refers to how the incident affects the operation of systems and services. For example, a ransomware attack may disrupt access to systems by encrypting or deleting data, severely affecting availability and functionality.
+
+Information Impact
+
+This focuses on how the incident affects data confidentiality, integrity, and availability. For instance, data theft can expose sensitive personal or organizational information and impact third parties as well.
+
+Recoverability
+
+This considers how easily an organization can recover from the incident. Some incidents may be reversible, while others—such as leaked proprietary data—may be impossible to fully recover from. The effort and resources required for recovery also influence priority decisions.
+
+Many security alerts already include a severity rating, which helps guide prioritization.
+
+3. Collect and Analyze
+
+In this final stage, the analyst gathers detailed evidence from multiple sources and performs in-depth analysis to better understand the incident.
+
+This may involve:
+
+Reviewing system and network logs
+Conducting external threat research
+Correlating related alerts and events
+Documenting findings and actions taken
+
+The goal is to build enough context to make an informed decision about the incident. Depending on its severity, the alert may be escalated to a more experienced analyst or a security manager for further handling.
+
+Benefits of the Triage Process
+
+Effective triage provides several important advantages for security teams:
+
+Efficient Resource Allocation
+
+Triage ensures that analysts focus their time and effort on high-priority threats instead of spending excessive time on low-risk alerts. This improves response efficiency and reduces delays in handling critical incidents.
+
+Consistent and Standardized Response
+
+Triage follows structured procedures, often supported by documentation such as incident response playbooks. This ensures that alerts are handled consistently, validated properly, and escalated only when necessary.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Containment - The act of limiting and preventing additional damage caused by an incident.
+
+Eradication - The complete removal of the incident elements from all affected systems.
+
+Recovery - The process of returning affected systems back to normal operations.
+
+
+
+
+
+
+
+Business Continuity Planning (BCP)
+
+Security teams must be ready to reduce the impact that security incidents can have on normal business operations. When disruptions occur, organizations may face serious interruptions to their systems and services. If these disruptions last for long periods, they can lead to financial loss, legal issues, and damage to reputation.
+
+To handle this, organizations use business continuity planning to ensure they can continue operating even during major incidents.
+
+What is a Business Continuity Plan?
+
+A Business Continuity Plan (BCP) is a documented strategy that defines how an organization will maintain essential operations during and after a significant disruption.
+
+Its main purpose is to ensure that critical business functions can either continue without interruption or be restored quickly after an incident.
+
+While entry-level security analysts are usually not responsible for creating or testing BCPs, understanding them is important because they play a key role in incident response and recovery.
+
+BCP vs Disaster Recovery Plan
+
+A Business Continuity Plan (BCP) is not the same as a disaster recovery plan.
+
+BCP: Focuses on keeping business operations running during and after a disruption.
+Disaster Recovery Plan (DRP): Focuses specifically on restoring IT systems and data after a major failure or disaster (such as hardware failure or natural events like floods).
+
+Both work together but serve different purposes.
+
+Impact of Security Incidents on Business Continuity
+
+Security incidents such as ransomware attacks can severely disrupt business operations. In critical sectors like healthcare, the impact can be especially serious.
+
+For example, ransomware may encrypt important systems and block access to medical records. This can prevent healthcare providers from delivering timely treatment and disrupt essential services.
+
+At a larger scale, attacks on critical infrastructure can affect:
+
+Public safety
+National security
+Economic stability
+Essential services
+
+Because of these risks, business continuity planning is essential to ensure that important services remain available even during attacks.
+
+Recovery Strategies in Business Continuity
+
+To restore operations after a disruption, organizations use recovery strategies defined in their BCP. These strategies help systems return to normal functioning as quickly as possible.
+
+One important area of recovery is site resilience, which focuses on ensuring that infrastructure such as data centers and networks remain available during failures or attacks.
+
+Site Resilience and Recovery Sites
+
+Site resilience refers to an organization’s ability to prepare for, respond to, and recover from disruptions while continuing operations.
+
+To support this, organizations use different types of backup sites:
+
+Hot Sites
+
+A hot site is a fully operational backup environment that mirrors the primary system.
+
+Ready for immediate use
+Fully synchronized with primary infrastructure
+Activated instantly during a failure
+Warm Sites
+
+A warm site is partially prepared and contains updated systems and configurations.
+
+Not fully operational at all times
+Requires some setup before use
+Can be activated relatively quickly
+Cold Sites
+
+A cold site provides only basic infrastructure.
+
+Not immediately operational
+Requires significant setup after a disruption
+Least expensive option, but slowest recovery time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Post-Incident Activity phase - The process of reviewing an incident to identify areas for improvement during incident handling.
+
+
+Final report - Documentation that provides a comprehensive review of an incident.
+
+
+
+
+Questions to ask:
+What happened?
+What time did it happen?
+Who discovered it?
+How did it get contained?
+What were the actions taken for recovery?
+What could have been done differently?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Post-Incident Activity in the Incident Response Lifecycle
+
+Earlier, you learned about the Containment, Eradication, and Recovery phase of the incident response process. This section focuses on the final stage of the NIST Incident Response Lifecycle: Post-Incident Activity.
+
+This phase is dedicated to reviewing the incident, identifying lessons learned, and improving future incident response efforts. Every security incident provides valuable insights that can help strengthen an organization's security posture and response capabilities.
+
+What is Post-Incident Activity?
+
+The Post-Incident Activity phase occurs after an incident has been successfully contained, eliminated, and resolved. During this stage, organizations evaluate the entire incident handling process to determine what worked well and what could be improved.
+
+Rather than simply closing the case, security teams use this opportunity to enhance procedures, technologies, and response strategies for future incidents.
+
+Lessons Learned Meetings
+
+One of the most important activities during this phase is conducting a lessons learned meeting, often referred to as a post-mortem review.
+
+These meetings bring together everyone involved in responding to the incident. Their purpose is to review the incident from start to finish, assess response efforts, and identify opportunities for improvement.
+
+The focus of these discussions is improvement and learning—not assigning blame.
+
+Organizations typically conduct these meetings within two weeks after the incident has been fully resolved.
+
+When Are Lessons Learned Meetings Needed?
+
+Not every security incident requires a dedicated review meeting.
+
+The decision often depends on:
+
+Incident severity
+Scope of impact
+Business disruption
+Regulatory requirements
+
+Major incidents, such as ransomware attacks or significant data breaches, generally warrant a formal lessons learned session.
+
+Common Questions Discussed
+
+During a lessons learned meeting, teams often examine questions such as:
+
+What occurred during the incident?
+When did the incident begin?
+How was it detected?
+Who identified the issue?
+How was the threat contained?
+What recovery actions were performed?
+What challenges were encountered?
+What could have been done more effectively?
+
+Answering these questions helps organizations understand both strengths and weaknesses in their response process.
+
+Preparing for a Lessons Learned Meeting
+
+Effective meetings require preparation.
+
+Common best practices include:
+
+Distributing an agenda before the meeting
+Sharing relevant documentation beforehand
+Assigning a moderator to guide discussions
+Designating a scribe to record notes and action items
+Ensuring all participants come prepared with relevant information
+
+This structure helps maximize the value of the review process.
+
+Developing Recommendations
+
+A key outcome of a lessons learned meeting is the creation of actionable recommendations.
+
+During the review, teams may discover:
+
+Gaps in response procedures
+Communication issues
+Insufficient security controls
+Delays in detection or escalation
+Missing documentation
+Ineffective tools or technologies
+
+These findings are converted into prioritized recommendations that help strengthen future incident response efforts.
+
+Examples of improvements include:
+
+Updating incident response playbooks
+Enhancing monitoring and alerting systems
+Improving analyst training
+Implementing additional security tools
+Revising communication procedures
+
+The goal is to reduce the likelihood of experiencing similar incidents in the future.
+
+Final Incident Report
+
+Another critical activity in the post-incident phase is creating a final incident report.
+
+Throughout an investigation, security teams document evidence, actions taken, findings, and decisions. This information is compiled into a comprehensive report once the incident is closed.
+
+The final report serves as the official record of the incident and provides valuable information for management, auditors, compliance teams, and future investigations.
+
+Key Components of a Final Report
+
+Although report formats vary between organizations, most final reports contain several common sections.
+
+Executive Summary
+
+A concise overview of the incident that highlights:
+
+Major findings
+Impact on the organization
+Key response actions
+Overall outcome
+
+This section is often intended for executives and decision-makers.
+
+Incident Timeline
+
+A chronological record of important events, including:
+
+Initial detection
+Escalation activities
+Investigation milestones
+Containment actions
+Recovery efforts
+Incident closure
+
+Accurate timestamps help reconstruct the sequence of events.
+
+Investigation Details
+
+This section documents the technical investigation and analysis performed during the incident.
+
+Examples include:
+
+Log analysis
+Network traffic investigations
+Malware analysis
+Evidence collection
+Threat intelligence findings
+
+It explains how analysts determined the nature and scope of the incident.
+
+Recommendations
+
+The report concludes with recommended actions designed to improve future security operations.
+
+These recommendations often originate from lessons learned discussions and focus on preventing similar incidents from occurring again.
+
+The Importance of Audience Awareness
+
+When preparing a final report, it is important to consider who will read it.
+
+Different audiences require different levels of detail:
+
+Security analysts may need technical findings and evidence.
+Managers may need operational summaries.
+Executives often prefer business-focused overviews with minimal technical jargon.
+
+Tailoring the report to its audience improves communication and ensures that key information is understood by all stakeholders.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Analysis: The process of examining and confirming security alerts to determine whether they represent a genuine threat.
+
+Broken Chain of Custody: A situation where evidence handling records contain gaps, errors, or inconsistencies, potentially affecting the integrity of an investigation.
+
+Business Continuity Plan (BCP): A formal document that describes how an organization will maintain or restore essential operations during and after a major disruption.
+
+Chain of Custody: A documented record that tracks the possession, handling, and transfer of evidence throughout an incident investigation.
+
+Containment: Actions taken to isolate an incident and prevent it from causing further harm to systems, networks, or data.
+
+Crowdsourcing: The collection and sharing of information through collaboration with a large community of individuals or organizations.
+
+Detection: The identification and recognition of security-related events as quickly as possible.
+
+Documentation: Recorded information created and maintained to support a specific operational, investigative, or business purpose.
+
+Eradication: The process of completely removing the root cause and artifacts of a security incident from affected environments.
+
+Final Report: A comprehensive document that summarizes an incident, investigation findings, response actions, and recommendations.
+
+Honeypot: A deliberately vulnerable decoy system designed to attract attackers and gather information about their activities.
+
+Incident Response Plan: A structured document that defines the procedures and responsibilities for handling security incidents.
+
+Indicators of Attack (IoA): Observable attacker behaviors or sequences of events that suggest an attack is currently taking place.
+
+Indicators of Compromise (IoC): Evidence that may indicate a system has been targeted, compromised, or involved in malicious activity.
+
+Intrusion Detection System (IDS): A security tool that monitors systems or networks for suspicious activity and generates alerts when potential threats are detected.
+
+Lessons Learned Meeting: A post-incident review session where participants evaluate the incident and identify opportunities for improvement.
+
+Open-Source Intelligence (OSINT): Information gathered and analyzed from publicly available sources to support investigations and threat analysis.
+
+Playbook: A detailed guide that provides step-by-step instructions for performing specific security or operational tasks.
+
+Post-Incident Activity: The final phase of incident response focused on reviewing the incident, documenting findings, and improving future response efforts.
+
+Recovery: The process of restoring affected systems, services, and operations to their normal functioning state after an incident.
+
+Resilience: The capability of an organization to prepare for, withstand, respond to, and recover from disruptions.
+
+Standards: Established guidelines or reference frameworks that help organizations develop policies and consistent practices.
+
+Threat Hunting: A proactive cybersecurity activity that involves searching for hidden threats that may have evaded automated detection systems.
+
+Threat Intelligence: Verified and analyzed information about current or emerging threats that helps organizations understand and respond to risks.
+
+Triage: The process of evaluating and ranking incidents based on their urgency, severity, and potential impact.
+
+VirusTotal: A threat analysis platform that allows users to examine files, URLs, domains, and IP addresses for signs of malicious activity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
