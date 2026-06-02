@@ -2804,3 +2804,726 @@ Python Standard Library: A built-in collection of modules that comes with Python
 Return statement: A statement used inside a function to send a result back to where the function was called.
 Style guide: A set of rules that define how code or documents should be written and formatted for consistency and readability.
 User-defined function: A function created by a programmer to perform a specific task tailored to their needs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module 3
+
+
+String data - Data consisting of an ordered sequence of characters
+
+
+str() - Converts the input object into a string
+len() - Returns the number of elements in an object
+
+String concatenation - The process of joining 2 strings together
+
+
+Method - A function that belongs to a specific data type
+
+.upper() - Returns a copy of the string in all uppercase letters
+.lower() - Returns a copy of the string in all lowercase letters
+
+
+Index - A number assigned to every element in a sequence that indicates its position 
+
+.index() - Finds the first occurrence of the input in a string and returns its location
+
+
+
+Immutable - Cannot be changed after it is created and assigned a value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Working with string data in a security context
+
+In cybersecurity work, one of the most frequently used data types in Python is the **string**. A string is a sequence of characters arranged in order. It is used whenever data is not meant for mathematical operations like addition or subtraction. Examples in security environments include usernames, IP addresses, URLs, device IDs, and employee identifiers.
+
+Analysts often need to inspect, extract, or validate parts of these strings. For instance, you may want to pull a segment from an IP address or check whether a username follows a required naming rule.
+
+---
+
+## Working with string positions (indices)
+
+### What is an index?
+
+An **index** is a numerical position assigned to each character in a string. It helps you locate specific characters.
+
+Python starts counting from **0**. For example, consider the string `"h32rb17"`:
+
+* h → 0
+* 3 → 1
+* 2 → 2
+* r → 3
+* b → 4
+* 1 → 5
+* 7 → 6
+
+You can also use **negative indexing**, which counts from the end of the string:
+
+* 7 → -1
+* 1 → -2
+* b → -3
+* r → -4
+* 2 → -5
+* 3 → -6
+* h → -7
+
+---
+
+## Extracting data using bracket notation
+
+Bracket notation uses square brackets to access parts of a string based on index positions. It is commonly used in log analysis and data parsing.
+
+For example:
+
+```python
+"h32rb17"[0]
+```
+
+This returns `"h"`.
+
+If the string is stored in a variable:
+
+```python
+device_id = "h32rb17"
+device_id[0]
+```
+
+Both expressions return the first character.
+
+---
+
+## Slicing strings
+
+You can extract multiple characters using slicing. This is useful when only a portion of a value is needed, such as part of an IP address or URL segment.
+
+Example:
+
+```python
+print("h32rb17"[0:3])
+```
+
+This returns `"h32"`.
+
+Important detail: the start index is included, but the end index is excluded. So the slice stops just before the ending position.
+
+---
+
+## Useful string functions and methods
+
+### Converting and measuring strings
+
+* **str()** converts values into string format.
+  Example:
+
+  ```python
+  string_id = str(19329302)
+  ```
+
+* **len()** returns the total number of characters in a string.
+  Example use case: verifying a device ID format.
+
+```python
+if len("h32rb17") == 7:
+    print("Valid device ID length")
+```
+
+---
+
+### Changing letter case
+
+* **.upper()** converts all characters to uppercase:
+
+  ```python
+  "Information Technology".upper()
+  ```
+
+  Output: `"INFORMATION TECHNOLOGY"`
+
+* **.lower()** converts all characters to lowercase:
+
+  ```python
+  "Information Technology".lower()
+  ```
+
+  Output: `"information technology"`
+
+---
+
+### Finding positions with .index()
+
+The **.index()** method returns the position of the first match of a character or substring.
+
+Example:
+
+```python
+print("h32rb17".index("r"))
+```
+
+Output: `3`
+
+If the character is not present, Python returns an error.
+
+When duplicates exist, only the first occurrence is returned:
+
+```python
+print("r45rt46".index("r"))
+```
+
+Output: `0`
+
+---
+
+## Searching for substrings
+
+A **substring** is a smaller sequence inside a larger string. For example, `"llo"` is part of `"hello"`.
+
+The `.index()` method can also locate substrings:
+
+```python
+"tsnow, tshah, bmoreno - updated".index("tshah")
+```
+
+This returns `7`, which is the starting position of the substring.
+
+Be careful when searching for partial matches. Searching for a short pattern like `"ts"` may return an earlier match that appears in a different word, rather than the intended one.
+
+---
+
+In cybersecurity analysis, these string operations are essential for extracting meaningful patterns from logs, validating identifiers, and locating relevant security data efficiently.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+List concatenation - Combining 2 lists into one by placing the elements of the second list directly after the elements of the first list
+
+
+.insert() - Adds an element in a specific position inside a list
+
+.remove() - Removes the first occurrence of a specific element in a list
+
+
+
+Algorithm - A set of rules that solve a problem
+
+.append() - Adds input to the end of a list
+
+
+
+
+
+
+
+
+
+
+
+
+### Working with list data in a security context
+
+In cybersecurity, **lists** are one of the most commonly used Python data structures. A list is an ordered collection of items stored in a single variable. Unlike some other data types, a list can hold multiple values at once and can even contain different types of data.
+
+In security operations, lists are often used to store items such as usernames, IP addresses, URLs, device identifiers, or log entries.
+
+Because lists can hold multiple values, analysts frequently process them in bulk—for example, looping through a list of device IDs or filtering user accounts based on specific conditions.
+
+---
+
+## Understanding list indices
+
+### What is an index?
+
+Like strings, lists use **indexing** to identify the position of each element. Indexing always starts at **0**.
+
+For example, in the list:
+
+```python
+["elarson", "fgarcia", "tshah", "sgilmore"]
+```
+
+The indices are:
+
+* "elarson" → 0
+* "fgarcia" → 1
+* "tshah" → 2
+* "sgilmore" → 3
+
+---
+
+## Accessing list elements with bracket notation
+
+You can retrieve elements from a list using **square brackets** and an index.
+
+Example:
+
+```python
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+print(username_list[2])
+```
+
+This returns:
+
+```
+tshah
+```
+
+You can also access elements directly without storing the list in a variable:
+
+```python
+print(["elarson", "fgarcia", "tshah", "sgilmore"][2])
+```
+
+---
+
+## Slicing lists (subsets of data)
+
+Lists also support **slicing**, which allows you to extract multiple elements at once. The result of a slice is a new list, often called a **sublist**.
+
+Example:
+
+```python
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+print(username_list[0:2])
+```
+
+Output:
+
+```
+["elarson", "fgarcia"]
+```
+
+Important rule: the starting index is included, but the ending index is not.
+
+---
+
+## Modifying elements in a list
+
+Unlike strings, lists are **mutable**, meaning their contents can be changed after creation.
+
+Example:
+
+```python
+username_list = ["elarson", "fgarcia", "tshah", "sgilmore"]
+username_list[1] = "bmoreno"
+```
+
+Now the list becomes:
+
+```
+["elarson", "bmoreno", "tshah", "sgilmore"]
+```
+
+This makes lists very useful in cybersecurity workflows where data often needs updating.
+
+---
+
+## Common list methods
+
+### 1. `.insert()`
+
+Adds an element at a specific position.
+
+```python
+username_list.insert(2, "wjaffrey")
+```
+
+This places `"wjaffrey"` at index 2 and shifts the remaining elements to the right.
+
+---
+
+### 2. `.remove()`
+
+Deletes the first matching element in a list.
+
+```python
+username_list.remove("elarson")
+```
+
+Only the first occurrence is removed if duplicates exist, and the rest of the list shifts left.
+
+---
+
+### 3. `.append()`
+
+Adds an element to the end of a list.
+
+```python
+username_list.append("btang")
+```
+
+This is often used with loops to build lists dynamically. For example:
+
+```python
+numbers_list = []
+for i in range(10):
+    numbers_list.append(i)
+```
+
+After execution, the list contains numbers from 0 to 9.
+
+---
+
+### 4. `.index()`
+
+Finds the position of the first occurrence of a value.
+
+```python
+username_list.index("tshah")
+```
+
+This returns `2` if `"tshah"` is found at that position.
+
+If the same value appears multiple times, only the first match is returned.
+
+---
+
+## Summary
+
+Lists are essential in cybersecurity programming because they allow analysts to store, update, and process large sets of data efficiently. By combining indexing, slicing, and list methods, security professionals can quickly analyze logs, filter results, and manage structured data in Python.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Regular expressions (regex) - A sequence of characters that forms a pattern
+
++ => Represents one or more occurrences of a specific character
+
+"a+" matches:
+"a"
+"aaa"
+"aaaaa"
+
+
+\w => Matches with any alphanumeric character but it doesn't match symbols
+Note: The \w symbol also matches with the underscore ( _ ).
+
+"\w" matches:
+"1"
+"k"
+"i"
+
+
+
+
+Algorithm: A set of rules that solve a problem
+
+Bracket notation: The indices placed in square brackets 
+
+Debugging: The practice of identifying and fixing errors in code
+
+Immutable: An object that cannot be changed after it is created and assigned a value
+
+Index: A number assigned to every element in a sequence that indicates its position
+
+List concatenation: The concept of combining two lists into one by placing the elements of the second list directly after the elements of the first list
+
+List data: Data structure that consists of a collection of data in sequential form
+
+Method: A function that belongs to a specific data type
+
+Regular expression (regex): A sequence of characters that forms a pattern
+
+String concatenation: The process of joining two strings together
+
+String data: Data consisting of an ordered sequence of characters
+
+Substring: A continuous sequence of characters within a string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"\w+" matches:
+"192"
+"abc123"
+"security"
+
+
+
+
+
+re.findall() - Returns a list of matches to a regular expression
+
+
+
+
+
+
+
+
+
+
+
+### Basics of Regular Expressions (Regex)
+
+A **regular expression (regex)** is a sequence of characters used to define a search pattern. In Python, regex is commonly used to locate structured patterns inside text, such as IP addresses, email addresses, usernames, or device identifiers.
+
+To use regular expressions in Python, you first need to import the **re module**:
+
+```python
+import re
+```
+
+Regex patterns are written as strings and then passed into functions from the `re` module to search within other strings.
+
+One of the most commonly used functions is **`re.findall()`**, which returns a list of all matches for a given pattern. It takes two arguments:
+
+1. The regex pattern
+2. The string to search in
+
+Example:
+
+```python id="r1a9kx"
+import re
+re.findall("ts", "tsnow, tshah, bmoreno")
+```
+
+Output:
+
+```
+['ts', 'ts']
+```
+
+This shows that both occurrences of `"ts"` were found in the text.
+
+---
+
+## Special symbols in regular expressions
+
+Regex becomes more powerful when you use **special character symbols** instead of only literal text.
+
+### Character class symbols
+
+These symbols match specific types of characters:
+
+* `\w` → Matches any alphanumeric character (A–Z, a–z, 0–9) and underscore `_`
+* `\d` → Matches any digit (0–9)
+* `\s` → Matches whitespace (spaces, tabs, new lines)
+* `.` → Matches any character except newline
+* `\.` → Matches a literal period (`.`), since `.` alone is a special wildcard
+
+Example using `\w`:
+
+```python id="q9k2lm"
+import re
+re.findall("\w", "h32rb17")
+```
+
+Output:
+
+```
+['h', '3', '2', 'r', 'b', '1', '7']
+```
+
+Example using `\d`:
+
+```python id="x8p1va"
+import re
+re.findall("\d", "h32rb17")
+```
+
+Output:
+
+```
+['3', '2', '1', '7']
+```
+
+---
+
+## Quantifiers (controlling repetition)
+
+Quantifiers define **how many times a pattern should appear**.
+
+### Common quantifiers:
+
+* `+` → One or more occurrences
+* `*` → Zero or more occurrences
+* `{n}` → Exactly n occurrences
+* `{n,m}` → Between n and m occurrences
+
+---
+
+### Using `+` (one or more matches)
+
+```python id="m2n8dp"
+import re
+re.findall("\d+", "h32rb17")
+```
+
+Output:
+
+```
+['32', '17']
+```
+
+This groups consecutive digits together instead of returning them one by one.
+
+---
+
+### Using `*` (zero or more matches)
+
+```python id="t7q4xz"
+import re
+re.findall("\d*", "h32rb17")
+```
+
+This returns many matches, including empty strings, because it also matches positions where no digits exist.
+
+---
+
+### Using `{n}` (exact repetitions)
+
+```python id="c5w8hf"
+import re
+re.findall("\d{2}", "h32rb17 k825t0m c2994eh")
+```
+
+This finds only sequences of exactly two digits.
+
+Important behavior: if a longer sequence exists (like `123`), the pattern matches step-by-step (e.g., `12`, then `23` depending on scanning).
+
+---
+
+### Using `{n,m}` (range of repetitions)
+
+```python id="p9d3ka"
+import re
+re.findall("\d{1,3}", "h32rb17 k825t0m c2994eh")
+```
+
+This returns numbers with 1 to 3 digits, such as `3`, `32`, `825`, etc.
+
+---
+
+## Building a regex pattern
+
+Creating regex patterns involves breaking a task into small parts and combining symbols.
+
+Example scenario: extracting usernames and login attempts from a log string.
+
+```python
+employee_logins_string = "1001 bmoreno: 12 Marketing 1002 tshah: 7 Human Resources 1003 sgilmore: 5 Finance"
+```
+
+We want:
+
+* Username
+* Number of login attempts
+  But not the employee ID or department.
+
+### Pattern breakdown:
+
+* `\w+` → username (word characters)
+* `:` → literal colon
+* `\s` → space
+* `\d+` → number of logins
+
+Final regex:
+
+```python id="v3k9rt"
+import re
+
+pattern = "\w+:\s\d+"
+employee_logins_string = "1001 bmoreno: 12 Marketing 1002 tshah: 7 Human Resources 1003 sgilmore: 5 Finance"
+
+print(re.findall(pattern, employee_logins_string))
+```
+
+This extracts:
+
+```
+['bmoreno: 12', 'tshah: 7', 'sgilmore: 5']
+```
+
+---
+
+## Important note
+
+Regex is extremely powerful but must be used carefully. Poorly designed patterns may:
+
+* Return extra unwanted matches
+* Miss important data
+* Produce misleading results
+
+Testing and refining patterns is essential in cybersecurity work, especially when analyzing logs or detecting patterns in large datasets.
+
+
+
+
+
+
+
+
+
+
+
+
