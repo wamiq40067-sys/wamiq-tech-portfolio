@@ -1,0 +1,2806 @@
+Automate Cybersecurity Tasks with python
+
+
+
+
+Module 1
+Programming - Used to create a specific set of instructions for a computer to execute tasks.
+
+
+Automation - The use of technology to reduce human and manual effort to perform common and repetitive tasks.
+
+
+
+Advantages of python:
+Resembles human language
+less code
+easy to read
+Standard guidelines
+Online support 
+Built-in code
+
+
+
+
+
+
+
+There are multiple programming languages used to create computer programs. Python is one of these. Programming languages are converted to binary numbers, which are a series of 0s and 1s that represent the operations that the computer's central processing unit (CPU) should perform. Each instruction corresponds to a specific operation, such as adding two numbers or loading a value from memory. 
+
+It would be very time-consuming for humans to communicate this way. Programming languages like Python make it easier to write code because you can use less syntax when instructing computers to perform complex processes.
+
+Using Python to program
+Python is a general purpose programming language that can be used to solve a variety of problems. For example, it can be used to build websites, perform data analysis, and automate tasks. 
+
+Python code must be converted through an interpreter before the computer can process it. An interpreter is a computer program that translates Python code into runnable instructions line by line. 
+
+Python versions
+There are multiple versions of Python. In this course, you are using Python 3. While using Python, it's important to keep track of the version you're using. There are differences in the syntax of each version. Syntax refers to the rules that determine what is correctly structured in a computing language.
+
+Python in cybersecurity
+In cybersecurity, Python is used especially for automation. Automation is the use of technology to reduce human and manual effort to perform common and repetitive tasks. These are some specific areas of cybersecurity in which Python might be used to automate specific tasks:
+
+Log analysis
+
+Malware analysis
+
+Access control list management
+
+Intrusion detection
+
+Compliance checks
+
+Network scanning
+
+
+
+
+
+
+
+
+
+
+
+
+
+Python Development Environments
+
+Python programs can be written and executed using different types of development environments. Each environment offers unique features that support coding, testing, and documentation.
+
+Notebooks
+
+A notebook is an interactive workspace where users can write, execute, and organize code. It also allows explanatory text to be included alongside the code, making it useful for learning, analysis, and documentation. Notebook content is generally divided into code cells and markdown cells.
+
+Code Cells
+
+Code cells are used to enter and run programming instructions. After execution, the results are displayed directly beneath the cell, making it easy to test and review code.
+
+Markdown Cells
+
+Markdown cells are designed for text-based content. They allow users to add notes, explanations, headings, lists, and other formatted text using Markdown syntax, improving the readability and organization of the notebook.
+
+Popular Notebook Platforms
+
+Some widely used notebook environments include:
+
+Jupyter Notebook – An open-source platform for interactive programming and data analysis.
+Google Colab – A cloud-based notebook service that supports Python programming and collaborative work.
+
+Both platforms support Python and several other programming languages.
+
+Integrated Development Environments (IDEs)
+
+An Integrated Development Environment (IDE) is a software application that provides tools to assist with software development. IDEs typically include features such as code editing, syntax highlighting, debugging tools, and error detection. Most IDEs also offer a graphical interface that helps developers manage and build projects more efficiently.
+
+Command-Line Environment
+
+Python programs can also be created and executed through the command line. A command-line interface (CLI) allows users to interact with the operating system by entering text commands. Through the CLI, users can navigate files and folders, run Python scripts, and create or edit source code files using command-line editors. This approach is often preferred for automation, scripting, and system administration tasks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data type - Category for a particular type of data item
+
+String data - Data consisting of an ordered sequence of characters
+
+Float data - Data consisting of a number with a decimal point
+
+Integer data - Data consisting of a number that does not include a decimal point
+
+Boolean data - Data that can only be one of two values:
+either True or False
+
+List data - Data structure that consists of a collection of data in sequential form
+
+
+
+
+
+
+
+
+String
+In Python, string data is data consisting of an ordered sequence of characters. Characters in a string may include letters, numbers, symbols, and spaces. These characters must be placed within quotation marks. These are all valid strings:
+
+"updates needed"
+
+"20%"
+
+"5.0"
+
+"35"
+
+"**/**/**" 
+
+""
+
+You can place strings in either double quotation marks ("") or single quotation marks ('').
+
+
+
+List
+In Python, list data is a data structure that consists of a collection of data in sequential form. Lists elements can be of any data type, such as strings, integers, Booleans, or even other lists. The elements of a list are placed within square brackets, and each element is separated by a comma. The following lists contains elements of various data types:
+
+[12, 36, 54, 1, 7]
+
+["eraab", "arusso", "drosas"]
+
+[True, False, True, True]
+
+[15, "approved", True, 45.5, False]
+
+[]
+
+Note: The last item [], which doesn't contain anything within the brackets, is called an empty list.
+
+
+
+print([12, 36, 54, 1, 7])
+
+
+
+
+
+
+
+
+Integer
+In Python, integer data is data consisting of a number that does not include a decimal point. These are all examples of integer data:
+
+-100 
+
+-12
+
+-1
+
+0
+
+1
+
+20
+
+500 
+
+
+print(5 + 2)
+
+
+
+Float
+Float data is data consisting of a number with a decimal point. All of the following are examples of float data: 
+
+-2.2
+
+-1.34
+
+0.0
+
+0.34 
+
+Just like integer data, float data is not placed in quotation marks. In addition, you can also use the print() function to display float data or to perform mathematical calculations with float data. 
+
+print(1.2 + 2.8)
+
+
+
+
+
+print(1/4)
+print(1.0/4.0)
+0.25
+0.25
+
+
+
+print(1//4)
+print(1.0//4.0)
+0
+0.0
+
+
+
+
+
+Boolean 
+Boolean data is data that can only be one of two values: either True or False.
+
+print(9 > 10)
+False
+
+
+
+
+
+
+
+
+Tuple
+Tuple data is a data structure that consists of a collection of data that cannot be changed. Like lists, tuples can contain elements of varying data types. 
+
+A difference between tuple data and list data is that it is possible to change the elements in a list, but it is not possible to change the elements in a tuple. This could be useful in a cybersecurity context. For example, if software identifiers are stored in a tuple to ensure that they will not be altered, this can provide assurance that an access control list will only block the intended software.
+
+The syntax of a tuple is also different from the syntax of a list. A tuple is placed in parentheses rather than brackets. These are all examples of the tuple data type:
+
+("wjaffrey", "arutley", "dkot")
+
+(46, 2, 13, 2, 8, 0, 0)
+
+(True, False, True, True)
+
+("wjaffrey", 13, True)
+
+Pro tip: Tuples are more memory efficient than lists, so they are useful when you are working with a large quantity of data.
+
+Dictionary
+Dictionary data is data that consists of one or more key-value pairs. Each key is mapped to a value. A colon (:) is placed between the key and value. Commas separate key-value pairs from other key-value pairs, and the dictionary is placed within curly brackets ({}). 
+
+Dictionaries are useful when you want to store and retrieve data in a predictable way. For example, the following dictionary maps a building name to a number. The building name is the value, and the number is the key. A colon is placed after the key.
+
+{ 1: "East",
+
+  2: "West",
+
+  3: "North",
+
+  4: "South" }
+
+Set
+In Python, set data is data that consists of an unordered collection of unique values. This means no two values in a set can be the same. 
+
+Elements in a set are always placed within curly brackets and are separated by a comma. These elements can be of any data type. This example of a set contains strings of usernames:
+
+{"jlanksy", "drosas", "nmason"}
+
+
+
+
+
+
+
+
+
+
+
+
+Variable - A container that stores data
+
+
+type() - Returns the data type of its input
+
+type error - An error that results from using the wrong data type
+
+
+
+
+
+
+
+
+
+
+
+
+
+### Understanding Variables in Python
+
+A **variable** is a named location in memory used to store information. It acts like a container that holds a value, which can be accessed and modified throughout a program. Variables can store different kinds of data, such as numbers, text, or logical values.
+
+A useful way to think about a variable is as a labeled box. The label (variable name) stays the same, but the item inside the box (value) can be replaced whenever needed.
+
+In cybersecurity and programming tasks, variables may be used to store information such as user IDs, login attempt counts, IP addresses, or access control lists.
+
+---
+
+## Creating and Updating Variables
+
+### Assigning a Value
+
+To create a variable, place the variable name on the left side of the equals sign (`=`) and the value on the right side.
+
+```python
+username = "nzhao"
+```
+
+Here, the variable `username` stores the text value `"nzhao"`.
+
+### Reassigning a Value
+
+The value stored in a variable can be changed by assigning a new value to the same variable name.
+
+```python
+username = "zhao2"
+```
+
+Although the stored value changes, the variable name `username` remains unchanged.
+
+**Note:** Text values must be enclosed in quotation marks because they are treated as strings. Python automatically determines the data type of a variable based on the assigned value.
+
+---
+
+## Assigning One Variable to Another
+
+A variable can also receive the value stored in another variable.
+
+```python
+username = "nzhao"
+old_username = username
+```
+
+After execution, both `username` and `old_username` contain the value `"nzhao"`.
+
+---
+
+## Example: Tracking Username Changes
+
+The following example saves the original username before updating it:
+
+```python
+username = "nzhao"
+old_username = username
+
+username = "zhao2"
+
+print("Previous username:", old_username)
+print("Current username:", username)
+```
+
+**Output:**
+
+```python
+Previous username: nzhao
+Current username: zhao2
+```
+
+This approach is useful when you need to preserve previous information before making updates.
+
+---
+
+## Variable Naming Guidelines
+
+To avoid syntax errors and improve readability, follow these rules when naming variables:
+
+### Valid Naming Rules
+
+* Use letters, numbers, and underscores only.
+* Names cannot begin with a number.
+* Python treats uppercase and lowercase letters differently.
+* Avoid using Python keywords or reserved words.
+
+**Examples:**
+
+```python
+username
+date_3
+interval2
+```
+
+### Case Sensitivity
+
+These are considered different variables:
+
+```python
+time
+Time
+TIME
+timE
+```
+
+---
+
+## Recommended Naming Practices
+
+### Use Underscores Between Words
+
+```python
+login_attempts
+invalid_user
+status_update
+```
+
+### Choose Clear and Descriptive Names
+
+```python
+num_login_attempts
+device_id
+invalid_usernames
+```
+
+### Avoid Confusingly Similar Names
+
+Less clear:
+
+```python
+start_time
+starting_time
+time_starting
+```
+
+### Avoid Excessively Long Names
+
+Less readable:
+
+```python
+variable_that_equals_3
+```
+
+Better:
+
+```python
+user_count
+```
+
+---
+
+## Alternative Naming Style
+
+Another common convention is **camelCase**, where the first word starts with a lowercase letter and each following word begins with a capital letter.
+
+Example:
+
+```python
+loginAttempt
+userName
+deviceId
+```
+
+However, in Python, the preferred style is generally **snake_case**, which uses underscores between words.
+
+```python
+login_attempt
+user_name
+device_id
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conditional statement - A statement that evaluates code to determine if it meets a specified set of instructions
+
+
+
+operators - >, <, >=, <=, ==, != 
+
+
+
+
+
+
+
+
+
+
+
+
+# Conditional Statements in Python
+
+## What Are Conditional Statements?
+
+A **conditional statement** allows a program to make decisions based on whether a specified condition is true or false. The condition is evaluated, and the program executes different actions depending on the result.
+
+* If the condition evaluates to **True**, the associated code runs.
+* If the condition evaluates to **False**, the associated code is skipped or an alternative action is performed.
+
+Conditions are commonly created by comparing values using comparison operators.
+
+---
+
+## Comparison Operators
+
+| Operator | Meaning                  |
+| -------- | ------------------------ |
+| `>`      | Greater than             |
+| `<`      | Less than                |
+| `>=`     | Greater than or equal to |
+| `<=`     | Less than or equal to    |
+| `==`     | Equal to                 |
+| `!=`     | Not equal to             |
+
+These operators can be used with numbers and, in many cases, strings.
+
+### Example
+
+```python
+status == 200
+```
+
+This expression checks whether `status` has a value of `200`.
+
+---
+
+# The `if` Statement
+
+The `if` statement is the foundation of decision-making in Python. It evaluates a condition and executes code only when the condition is true.
+
+### Syntax
+
+```python
+if status == 200:
+    print("OK")
+```
+
+In this example:
+
+* `if status == 200:` is the header.
+* `print("OK")` is the body.
+
+If `status` equals `200`, the message `"OK"` is displayed.
+
+---
+
+## Components of an `if` Statement
+
+### 1. Header
+
+The header contains:
+
+* The keyword `if`
+* A condition
+* A colon (`:`) at the end
+
+```python
+if status == 200:
+```
+
+Parentheses around the condition are optional:
+
+```python
+if (status == 200):
+```
+
+Both versions work the same way.
+
+### 2. Body
+
+The body contains the instructions that run when the condition is true.
+
+```python
+if status == 200:
+    print("OK")
+```
+
+Python uses **indentation** to identify code that belongs to the body.
+
+---
+
+# The `else` Statement
+
+The `else` block provides an alternative action when the `if` condition evaluates to false.
+
+### Example
+
+```python
+if status == 200:
+    print("OK")
+else:
+    print("Check other status")
+```
+
+### How It Works
+
+* If `status` is `200`, Python prints `"OK"`.
+* Otherwise, it prints `"Check other status"`.
+
+---
+
+# The `elif` Statement
+
+When multiple conditions need to be checked, use `elif` (short for "else if").
+
+### Example
+
+```python
+if status == 200:
+    print("OK")
+
+elif status == 400:
+    print("Bad Request")
+
+elif status == 500:
+    print("Internal Server Error")
+```
+
+### Execution Flow
+
+Python checks conditions from top to bottom:
+
+1. Is `status` equal to `200`?
+2. If not, is it `400`?
+3. If not, is it `500`?
+
+As soon as a condition evaluates to **True**, Python executes that block and skips the remaining `elif` statements.
+
+---
+
+## Combining `elif` with `else`
+
+An `else` block can be added to handle all remaining cases.
+
+```python
+if status == 200:
+    print("OK")
+
+elif status == 400:
+    print("Bad Request")
+
+elif status == 500:
+    print("Internal Server Error")
+
+else:
+    print("Check other status")
+```
+
+This ensures that a message is displayed regardless of the status code.
+
+---
+
+# Logical Operators
+
+Logical operators allow multiple conditions to be combined into a single expression.
+
+---
+
+## `and` Operator
+
+The `and` operator requires **all conditions** to be true.
+
+### Example
+
+```python
+if status >= 200 and status <= 226:
+    print("Successful response")
+```
+
+### Explanation
+
+The message is printed only when:
+
+* `status` is greater than or equal to `200`
+* **AND**
+* `status` is less than or equal to `226`
+
+Both conditions must be true.
+
+---
+
+## `or` Operator
+
+The `or` operator requires **at least one condition** to be true.
+
+### Example
+
+```python
+if status == 100 or status == 102:
+    print("Informational response")
+```
+
+### Explanation
+
+The message appears when:
+
+* `status` is `100`
+* **OR**
+* `status` is `102`
+
+Only one condition needs to be satisfied.
+
+---
+
+## `not` Operator
+
+The `not` operator reverses a condition's result.
+
+* True becomes False
+* False becomes True
+
+### Example
+
+```python
+if not(status >= 200 and status <= 226):
+    print("Check status")
+```
+
+### Explanation
+
+Python first evaluates:
+
+```python
+status >= 200 and status <= 226
+```
+
+Then `not` reverses the result.
+
+The message is printed when the status code falls **outside** the range `200–226`.
+
+---
+
+## Why Parentheses Matter with `not`
+
+Parentheses ensure Python evaluates the entire expression before applying `not`.
+
+```python
+if not(status >= 200 and status <= 226):
+```
+
+Without parentheses, Python may interpret the condition differently, leading to unexpected results.
+
+---
+
+# Key Points to Remember
+
+* Conditional statements help programs make decisions.
+* `if` executes code when a condition is true.
+* `else` provides an alternative when all previous conditions are false.
+* `elif` allows multiple conditions to be checked sequentially.
+* Comparison operators are used to create conditions.
+* `and` requires all conditions to be true.
+* `or` requires at least one condition to be true.
+* `not` reverses the outcome of a condition.
+* Colons (`:`) and proper indentation are essential for correct Python syntax.
+* Once an `elif` condition evaluates to true, the remaining `elif` conditions are skipped.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Iterative statement - Code that repeatedly executes a set of instructions
+
+
+
+range(): Generates a sequence of numbers
+
+
+
+
+
+
+
+
+# Iterative Statements and Loops in Python
+
+## Introduction to Loops
+
+An **iterative statement**, commonly called a **loop**, allows a program to execute the same block of code repeatedly. Depending on the condition or sequence being processed, a loop may run multiple times or not run at all.
+
+Python provides two primary loop types:
+
+* **for loops** – used when iterating through a sequence.
+* **while loops** – used when repetition depends on a condition.
+
+Additionally, Python offers the **break** and **continue** statements to control loop behavior.
+
+---
+
+# For Loops
+
+A **for loop** is used when you want to process each item in a sequence such as a list, tuple, string, or range of numbers.
+
+### Basic Example
+
+```python
+for user in ["elarson", "bmoreno", "tshah", "sgilmore"]:
+    print(user)
+```
+
+### How It Works
+
+The loop consists of two parts:
+
+#### Loop Header
+
+```python
+for user in ["elarson", "bmoreno", "tshah", "sgilmore"]:
+```
+
+* `for` begins the loop.
+* `user` is the loop variable.
+* `in` indicates the sequence being processed.
+* The header ends with a colon (`:`).
+
+#### Loop Body
+
+```python
+print(user)
+```
+
+The indented code executes once for each item in the sequence.
+
+---
+
+# Iterating Through Lists
+
+Lists are commonly used with for loops.
+
+### Example
+
+```python
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+
+for asset in computer_assets:
+    print(asset)
+```
+
+### Output
+
+```text
+laptop1
+desktop20
+smartphone03
+```
+
+During each iteration, `asset` stores one item from the list.
+
+---
+
+# Iterating Through Strings
+
+A string can also be treated as a sequence.
+
+### Example
+
+```python
+word = "security"
+
+for character in word:
+    print(character)
+```
+
+### Output
+
+```text
+s
+e
+c
+u
+r
+i
+t
+y
+```
+
+Each loop iteration processes one character.
+
+---
+
+# Using `range()`
+
+The `range()` function generates a sequence of numbers that can be used in a for loop.
+
+### Syntax
+
+```python
+range(start, stop, step)
+```
+
+Parameters:
+
+* **start** – first number included
+* **stop** – ending value (not included)
+* **step** – amount to increase each iteration
+
+### Example
+
+```python
+for i in range(0, 5, 1):
+    print(i)
+```
+
+### Output
+
+```text
+0
+1
+2
+3
+4
+```
+
+Notice that `5` is excluded.
+
+---
+
+## Simplified Range
+
+If:
+
+* Start = 0
+* Step = 1
+
+they can be omitted.
+
+```python
+for i in range(5):
+    print(i)
+```
+
+Produces the same result:
+
+```text
+0
+1
+2
+3
+4
+```
+
+---
+
+# While Loops
+
+A **while loop** continues running as long as its condition remains true.
+
+### Example
+
+```python
+i = 1
+
+while i < 5:
+    print(i)
+    i = i + 1
+```
+
+### Output
+
+```text
+1
+2
+3
+4
+```
+
+### How It Works
+
+1. `i` starts at 1.
+2. Python checks if `i < 5`.
+3. If true, the loop executes.
+4. `i` increases by 1.
+5. The process repeats until the condition becomes false.
+
+---
+
+# Using Integers in While Conditions
+
+A common use case is tracking counts.
+
+### Example: Login Attempts
+
+```python
+login_attempts = 0
+
+while login_attempts < 5:
+    print("Login attempts:", login_attempts)
+    login_attempts += 1
+```
+
+### Output
+
+```text
+Login attempts: 0
+Login attempts: 1
+Login attempts: 2
+Login attempts: 3
+Login attempts: 4
+```
+
+The loop stops when `login_attempts` reaches 5.
+
+---
+
+# Using Boolean Conditions
+
+While loops can also depend on Boolean values.
+
+### Example
+
+```python
+count = 0
+login_status = True
+
+while login_status:
+    print("Try again.")
+    count += 1
+
+    if count == 4:
+        login_status = False
+```
+
+### Output
+
+```text
+Try again.
+Try again.
+Try again.
+Try again.
+```
+
+The loop ends once `login_status` becomes `False`.
+
+---
+
+# Controlling Loops
+
+Python provides two special statements for managing loop execution:
+
+* `break`
+* `continue`
+
+---
+
+# The `break` Statement
+
+The `break` statement immediately terminates a loop.
+
+### Example
+
+```python
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+
+for asset in computer_assets:
+    if asset == "desktop20":
+        break
+
+    print(asset)
+```
+
+### Output
+
+```text
+laptop1
+```
+
+### Explanation
+
+* First iteration: prints `"laptop1"`.
+* Second iteration: encounters `"desktop20"`.
+* `break` stops the loop immediately.
+* Remaining items are never processed.
+
+---
+
+# The `continue` Statement
+
+The `continue` statement skips the current iteration and moves to the next one.
+
+### Example
+
+```python
+computer_assets = ["laptop1", "desktop20", "smartphone03"]
+
+for asset in computer_assets:
+    if asset == "desktop20":
+        continue
+
+    print(asset)
+```
+
+### Output
+
+```text
+laptop1
+smartphone03
+```
+
+### Explanation
+
+* `"desktop20"` is skipped.
+* The loop continues processing the remaining items.
+
+---
+
+# `break` vs `continue`
+
+| Statement  | Effect                                            |
+| ---------- | ------------------------------------------------- |
+| `break`    | Stops the loop completely                         |
+| `continue` | Skips the current iteration and continues looping |
+
+### Example
+
+```python
+for number in range(5):
+
+    if number == 2:
+        break
+
+    print(number)
+```
+
+Output:
+
+```text
+0
+1
+```
+
+---
+
+```python
+for number in range(5):
+
+    if number == 2:
+        continue
+
+    print(number)
+```
+
+Output:
+
+```text
+0
+1
+3
+4
+```
+
+---
+
+# Infinite Loops
+
+An **infinite loop** occurs when a loop never reaches a stopping condition.
+
+### Example
+
+```python
+while True:
+    print("Running...")
+```
+
+Since the condition is always true, the loop continues indefinitely.
+
+Infinite loops may be intentional for long-running services, but they are often caused by programming mistakes, such as forgetting to update a loop variable.
+
+To stop an infinite loop manually:
+
+* **Windows:** `Ctrl + C`
+* **Linux/macOS:** `Ctrl + C`
+* Some environments may also support `Ctrl + Z`
+
+---
+
+# Key Takeaways
+
+* Loops execute code repeatedly.
+* Use **for loops** when working through sequences.
+* Use **while loops** when repetition depends on a condition.
+* The `range()` function generates numerical sequences.
+* Lists and strings can both be iterated through using for loops.
+* `break` exits a loop immediately.
+* `continue` skips the current iteration and proceeds to the next.
+* Loop bodies must be properly indented.
+* Infinite loops occur when the termination condition is never reached.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+module 2 
+
+
+Function - A section of code that can be reused in a program
+
+
+
+Built-in functions - Functions that exist within Python and can be called directly
+
+
+
+User-defined functions - Functions that programmers design for their specific needs
+
+
+python syntax:
+def - Placed before a function name to define a function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Functions in Cybersecurity (Reframed Notes)
+
+## What is a Function?
+
+A **function** is a reusable block of code that performs a specific task. Functions help automate repetitive activities and make programs easier to read, maintain, and update.
+
+In cybersecurity, analysts often repeat the same tasks, such as:
+
+* Analyzing security logs
+* Detecting failed login attempts
+* Searching for suspicious activity
+* Generating security alerts
+
+Instead of writing the same code multiple times, a function can be created once and reused whenever needed.
+
+---
+
+## Types of Functions in Python
+
+### 1. Built-in Functions
+
+Functions that already exist in Python and can be used directly.
+
+**Example:**
+
+```python
+print("Hello")
+```
+
+Here, `print()` is a built-in function.
+
+### 2. User-Defined Functions
+
+Functions created by programmers to perform specific tasks.
+
+**Example:**
+
+```python
+def display_investigation_message():
+    print("investigate activity")
+```
+
+---
+
+## Defining a Function
+
+A function definition consists of:
+
+### Function Header
+
+The header tells Python that a function is being created.
+
+**Syntax:**
+
+```python
+def function_name():
+```
+
+**Example:**
+
+```python
+def display_investigation_message():
+```
+
+Components:
+
+* `def` → Keyword used to define a function
+* `display_investigation_message` → Function name
+* `()` → Parentheses required by syntax
+* `:` → Marks the start of the function body
+
+---
+
+## Function Body
+
+The function body contains the instructions that execute when the function is called.
+
+**Example:**
+
+```python
+def display_investigation_message():
+    print("investigate activity")
+```
+
+Important:
+
+* The body must be **indented**
+* Indentation separates the function's code from the rest of the program
+
+---
+
+## Calling a Function
+
+After a function is defined, it can be executed by calling it.
+
+**Syntax:**
+
+```python
+function_name()
+```
+
+**Example:**
+
+```python
+display_investigation_message()
+```
+
+**Output:**
+
+```text
+investigate activity
+```
+
+---
+
+## Example in Cybersecurity
+
+```python
+def display_investigation_message():
+    print("investigate activity")
+
+application_status = "potential concern"
+email_status = "okay"
+
+if application_status == "potential concern":
+    print("application_log:")
+    display_investigation_message()
+
+if email_status == "potential concern":
+    print("email_log:")
+    display_investigation_message()
+```
+
+### Output
+
+```text
+application_log:
+investigate activity
+```
+
+### Explanation
+
+* The function is defined once.
+* It is called whenever suspicious activity is detected.
+* `application_status` meets the condition, so the function runs.
+* `email_status` does not meet the condition, so the function is not called.
+
+---
+
+## Advantages of Functions
+
+* Reduce code duplication
+* Improve readability
+* Simplify maintenance
+* Enable code reuse
+* Help automate repetitive cybersecurity tasks
+
+---
+
+## Infinite Loops in Functions
+
+Be careful when a function calls itself without a stopping condition.
+
+**Example:**
+
+```python
+def func1():
+    func1()
+```
+
+### What Happens?
+
+1. `func1()` is called.
+2. Inside the function, `func1()` calls itself again.
+3. This continues indefinitely.
+4. The program eventually crashes with a recursion error.
+
+This is known as **infinite recursion**.
+
+To avoid this, recursive functions must include a condition that stops further function calls.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Parameter (Python) - An object that is included in a function definition for use in that function
+
+
+Argument (Python) - The data brought into a function when it is called.
+
+
+Return statement - A python statement that executes inside a function and sends information back to function call.
+
+
+
+
+
+
+
+
+
+
+
+# Working with Variables in Functions (Rewritten Notes)
+
+## Introduction
+
+Functions often need data to perform tasks. In Python, this data is passed into functions using **parameters** and **arguments**. Functions can also send data back to the program using **return statements**.
+
+Understanding these concepts is important when writing reusable and efficient code, especially in cybersecurity tasks such as log analysis, user authentication, and security monitoring.
+
+---
+
+# Parameters
+
+A **parameter** is a variable declared in a function definition. It acts as a placeholder that receives data when the function is executed.
+
+### Example
+
+```python
+def calculate_remaining_attempts(max_attempts, used_attempts):
+    print(max_attempts - used_attempts)
+```
+
+In this example:
+
+* `max_attempts` is a parameter
+* `used_attempts` is a parameter
+
+These variables are available only within the function and are used to perform calculations.
+
+---
+
+# Arguments
+
+An **argument** is the actual value supplied to a function when it is called.
+
+### Example
+
+```python
+calculate_remaining_attempts(5, 2)
+```
+
+Here:
+
+* `5` is passed to `max_attempts`
+* `2` is passed to `used_attempts`
+
+Python matches arguments to parameters based on their position unless specified otherwise.
+
+### Visualization
+
+```text
+Function Definition:
+max_attempts      used_attempts
+      ↑                 ↑
+
+Function Call:
+      5                 2
+```
+
+---
+
+# Return Statements
+
+Functions can send information back to the code that called them using the `return` keyword.
+
+### Example
+
+```python
+def calculate_remaining_attempts(max_attempts, used_attempts):
+    return max_attempts - used_attempts
+```
+
+Instead of displaying the result, this function returns it.
+
+### Important Points
+
+* `return` ends the function immediately.
+* Any code after a `return` statement will not execute.
+* Returned values can be stored in variables and reused elsewhere.
+
+---
+
+# Using Returned Values
+
+```python
+def calculate_remaining_attempts(max_attempts, used_attempts):
+    return max_attempts - used_attempts
+
+remaining = calculate_remaining_attempts(3, 3)
+
+if remaining <= 0:
+    print("Account locked")
+```
+
+### Output
+
+```text
+Account locked
+```
+
+### Explanation
+
+1. The function calculates `3 - 3`.
+2. The result `0` is returned.
+3. The returned value is stored in `remaining`.
+4. Since `remaining` is not greater than zero, the account is considered locked.
+
+---
+
+# Global Variables
+
+A **global variable** is declared outside any function and can be accessed from most parts of a program.
+
+### Example
+
+```python
+device_id = "ABC12345"
+```
+
+This variable can be used in functions, loops, conditionals, and other sections of the program.
+
+### Example of Accessing a Global Variable
+
+```python
+username = "jsmith"
+
+def show_user():
+    print(username)
+
+show_user()
+```
+
+### Output
+
+```text
+jsmith
+```
+
+The function can access the global variable even though it was not created inside the function.
+
+---
+
+# Local Variables
+
+A **local variable** exists only inside the function where it is created.
+
+### Example
+
+```python
+def welcome_user(name):
+    greeting = "Welcome " + name
+    return greeting
+```
+
+Local variables in this function:
+
+* `name` (parameter)
+* `greeting`
+
+These variables are available only while the function runs.
+
+---
+
+# Scope of Local Variables
+
+```python
+def welcome_user(name):
+    greeting = "Welcome " + name
+    return greeting
+
+welcome_user("Alex")
+
+print(greeting)
+```
+
+### Result
+
+```text
+NameError
+```
+
+The error occurs because `greeting` only exists inside the function.
+
+Once the function finishes execution, Python removes its local variables from memory.
+
+---
+
+# Global vs Local Variables
+
+Consider the following example:
+
+```python
+user = "alice"
+
+print("Before:", user)
+
+def change_user():
+    user = "bob"
+    print("Inside:", user)
+
+change_user()
+
+print("After:", user)
+```
+
+### Output
+
+```text
+Before: alice
+Inside: bob
+After: alice
+```
+
+### Explanation
+
+* The variable inside the function is local.
+* It does not change the global variable.
+* Python treats them as two separate variables even though they share the same name.
+
+---
+
+# Best Practices
+
+### ✔ Use Parameters Instead of Global Variables
+
+Rather than relying on global values:
+
+```python
+username = "alice"
+
+def display_user():
+    print(username)
+```
+
+Prefer:
+
+```python
+def display_user(username):
+    print(username)
+```
+
+This makes functions more reusable and easier to test.
+
+### ✔ Use Meaningful Variable Names
+
+Choose names that clearly describe their purpose:
+
+```python
+failed_attempts
+security_log
+user_id
+```
+
+### ✔ Avoid Reusing Variable Names
+
+Using the same name for global and local variables can cause confusion and make debugging harder.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+Built-in functions - Functions that exist within Python and can be called directly
+
+
+
+max() - Returns the largest numeric input passed into it
+
+
+sorted() - Sorts the components of a list
+
+
+
+
+
+
+
+
+
+
+# Python Built-in Functions: `max()`, `min()`, and `sorted()` (Rewritten Notes)
+
+## Introduction
+
+Python provides several built-in functions that simplify data analysis and manipulation. Three commonly used functions are:
+
+* `max()` → Finds the largest value
+* `min()` → Finds the smallest value
+* `sorted()` → Arranges data in a specified order
+
+These functions are especially useful in cybersecurity when analyzing logs, login durations, network activity, response times, or other numerical data.
+
+---
+
+# `max()` Function
+
+The `max()` function returns the highest value from a collection of items.
+
+### Example
+
+```python
+session_times = [12, 2, 32, 19, 57, 22, 14]
+
+print(max(session_times))
+```
+
+### Output
+
+```text
+57
+```
+
+### Explanation
+
+The function examines all values in the list and returns the largest one.
+
+### Cybersecurity Example
+
+A security analyst might use `max()` to determine:
+
+* Longest user session
+* Highest number of failed login attempts
+* Largest file transfer
+* Maximum network latency
+
+---
+
+# `min()` Function
+
+The `min()` function returns the smallest value from a collection of items.
+
+### Example
+
+```python
+session_times = [12, 2, 32, 19, 57, 22, 14]
+
+print(min(session_times))
+```
+
+### Output
+
+```text
+2
+```
+
+### Explanation
+
+The function searches through the data and returns the lowest value.
+
+### Cybersecurity Example
+
+A security analyst might use `min()` to identify:
+
+* Shortest login session
+* Lowest response time
+* Smallest data transfer
+* Minimum number of login attempts
+
+---
+
+# Using `max()` and `min()` Together
+
+```python
+session_times = [12, 2, 32, 19, 57, 22, 14]
+
+print("Shortest session:", min(session_times))
+print("Longest session:", max(session_times))
+```
+
+### Output
+
+```text
+Shortest session: 2
+Longest session: 57
+```
+
+This quickly provides both extremes of the dataset.
+
+---
+
+# `sorted()` Function
+
+The `sorted()` function arranges elements in a specific order and returns a new sorted list.
+
+### Example
+
+```python
+session_times = [12, 2, 32, 19, 57, 22, 14]
+
+print(sorted(session_times))
+```
+
+### Output
+
+```text
+[2, 12, 14, 19, 22, 32, 57]
+```
+
+### Explanation
+
+By default, numbers are sorted from smallest to largest.
+
+---
+
+# Sorting Does Not Modify the Original Data
+
+A common misconception is that `sorted()` changes the original list.
+
+### Example
+
+```python
+session_times = [12, 2, 32, 19, 57, 22, 14]
+
+print(sorted(session_times))
+print(session_times)
+```
+
+### Output
+
+```text
+[2, 12, 14, 19, 22, 32, 57]
+[12, 2, 32, 19, 57, 22, 14]
+```
+
+### Explanation
+
+* `sorted()` creates a new sorted list.
+* The original list remains unchanged.
+
+---
+
+# Sorting Strings
+
+`sorted()` can also organize text alphabetically.
+
+### Example
+
+```python
+users = ["charlie", "alice", "bob"]
+
+print(sorted(users))
+```
+
+### Output
+
+```text
+['alice', 'bob', 'charlie']
+```
+
+The strings are arranged in alphabetical order.
+
+---
+
+# Sorting a String
+
+Since strings are iterable, `sorted()` can sort their individual characters.
+
+### Example
+
+```python
+word = "security"
+
+print(sorted(word))
+```
+
+### Output
+
+```text
+['c', 'e', 'i', 'r', 's', 't', 'u', 'y']
+```
+
+Each character is sorted alphabetically and returned as a list.
+
+---
+
+# Data Type Limitation
+
+The `sorted()` function requires comparable data types.
+
+### Valid Example
+
+```python
+numbers = [5, 1, 9, 3]
+
+print(sorted(numbers))
+```
+
+### Invalid Example
+
+```python
+mixed_data = [1, 2, "hello"]
+
+print(sorted(mixed_data))
+```
+
+### Result
+
+```text
+TypeError
+```
+
+### Why?
+
+Python cannot determine how to compare numbers and strings for sorting.
+
+---
+
+# Cybersecurity Applications
+
+These functions are useful when working with:
+
+### `max()`
+
+* Highest number of failed logins
+* Longest active session
+* Largest network packet
+
+### `min()`
+
+* Shortest session duration
+* Lowest response time
+* Smallest data transfer
+
+### `sorted()`
+
+* Organizing login records by duration
+* Ranking IP addresses by activity count
+* Sorting alert severity levels
+* Arranging timestamps chronologically
+
+---
+
+# Key Takeaways
+
+* `max()` returns the largest value in an iterable.
+* `min()` returns the smallest value in an iterable.
+* Both functions work with numbers and other comparable data types.
+* `sorted()` returns a new sorted list without modifying the original data.
+* Numbers are sorted from smallest to largest by default.
+* Strings are sorted alphabetically.
+* Mixed data types (such as numbers and strings together) cannot be sorted.
+* These functions are commonly used for analyzing and organizing cybersecurity data such as logs, session durations, and network activity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Library - A collection of modules that provide code users can access in their programs
+
+
+Module - A Python file that contains additional functions, variables, classes, and any kind of runnable code
+
+
+Python Standard Library - An extensive collection of usable Python code that often comes packaged with Python
+
+
+
+Python Standard Library modules:
+re
+csv
+glob
+os
+time
+datetime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Python Standard Library (Rewritten Notes)
+
+## Introduction
+
+The **Python Standard Library** is a collection of built-in modules that come bundled with Python. These modules contain pre-written functions and tools that help developers perform common tasks without having to write everything from scratch.
+
+For cybersecurity professionals, the Standard Library provides modules for:
+
+* Log analysis
+* File handling
+* Pattern matching
+* Working with dates and times
+* Statistical calculations
+* System interaction
+
+Using these modules can significantly reduce development time and improve code efficiency.
+
+---
+
+# Common Python Standard Library Modules
+
+Several modules are frequently used in cybersecurity and data analysis.
+
+| Module       | Purpose                                                 |
+| ------------ | ------------------------------------------------------- |
+| `re`         | Searches and matches patterns using regular expressions |
+| `csv`        | Reads and writes CSV files                              |
+| `os`         | Interacts with the operating system                     |
+| `glob`       | Finds files matching specific patterns                  |
+| `time`       | Works with timestamps and delays                        |
+| `datetime`   | Handles dates and times                                 |
+| `statistics` | Performs statistical calculations                       |
+
+---
+
+# The `statistics` Module
+
+The `statistics` module provides functions for analyzing numerical data.
+
+Common functions include:
+
+* `mean()` → Calculates the average value
+* `median()` → Finds the middle value in a dataset
+
+These functions can help security analysts identify trends, unusual activity, or typical behavior patterns.
+
+---
+
+# Importing an Entire Module
+
+To use a module from the Standard Library, import it using the `import` keyword.
+
+### Syntax
+
+```python
+import module_name
+```
+
+### Example
+
+```python id="8j8s4h"
+import statistics
+
+failed_logins = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+
+average_failed_logins = statistics.mean(failed_logins)
+
+print("Average:", average_failed_logins)
+```
+
+### Output
+
+```text
+Average: 35.25
+```
+
+### Explanation
+
+The `mean()` function calculates the average number of failed login attempts.
+
+---
+
+# Calculating the Median
+
+The median identifies the middle value in a dataset.
+
+### Example
+
+```python id="5pk3e5"
+import statistics
+
+failed_logins = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+
+middle_value = statistics.median(failed_logins)
+
+print("Median:", middle_value)
+```
+
+### Output
+
+```text
+Median: 20.5
+```
+
+### Why Use the Median?
+
+The dataset contains an unusually large value (`178`).
+
+While the average is heavily influenced by this outlier, the median provides a better representation of the typical number of failed login attempts.
+
+---
+
+# Using Module Names with Functions
+
+When an entire module is imported, functions must be referenced using the module name followed by a period (`.`).
+
+### Example
+
+```python id="9gx4g2"
+import statistics
+
+statistics.mean(data)
+statistics.median(data)
+```
+
+This tells Python exactly which module contains the function being used.
+
+---
+
+# Importing Specific Functions
+
+Instead of importing an entire module, you can import only the functions you need.
+
+### Syntax
+
+```python
+from module_name import function_name
+```
+
+### Example
+
+```python id="4t0p2f"
+from statistics import median
+```
+
+Now `median()` can be used directly without writing `statistics.median()`.
+
+---
+
+# Importing Multiple Functions
+
+Multiple functions can be imported at once by separating them with commas.
+
+### Example
+
+```python id="j2vr1e"
+from statistics import mean, median
+```
+
+### Usage
+
+```python id="ycg9ca"
+from statistics import mean, median
+
+failed_logins = [20, 17, 178, 33, 15, 21, 19, 29, 32, 15, 25, 19]
+
+print("Average:", mean(failed_logins))
+print("Median:", median(failed_logins))
+```
+
+### Benefits
+
+* Less typing
+* Cleaner code
+* Easier readability
+
+---
+
+# Full Module Import vs Specific Function Import
+
+### Import Entire Module
+
+```python id="1l0v3k"
+import statistics
+
+statistics.mean(data)
+statistics.median(data)
+```
+
+### Import Specific Functions
+
+```python id="x3o7tl"
+from statistics import mean, median
+
+mean(data)
+median(data)
+```
+
+### Comparison
+
+| Method                        | Advantage                           |
+| ----------------------------- | ----------------------------------- |
+| `import module`               | Makes the source of functions clear |
+| `from module import function` | Shorter and cleaner syntax          |
+
+---
+
+# External Libraries
+
+The Standard Library is not the only source of Python functionality.
+
+Developers can install **external libraries** created by the Python community.
+
+Examples include:
+
+| Library                | Purpose                        |
+| ---------------------- | ------------------------------ |
+| `numpy`                | Numerical computing and arrays |
+| `bs4` (Beautiful Soup) | Parsing HTML and web scraping  |
+| `pandas`               | Data analysis and manipulation |
+| `matplotlib`           | Data visualization             |
+
+These libraries are not included with Python by default and must be installed separately.
+
+---
+
+# Installing External Libraries
+
+In Jupyter Notebook or Google Colab, libraries can be installed using:
+
+```python
+%pip install numpy
+```
+
+This command downloads and installs the package.
+
+---
+
+# Importing an Installed Library
+
+Once installed, the library can be imported like any Standard Library module.
+
+### Example
+
+```python id="y6bgra"
+import numpy
+```
+
+The library's functions and features are then available for use in your program.
+
+---
+
+# Cybersecurity Applications
+
+### `re`
+
+* Searching logs for suspicious patterns
+* Extracting IP addresses
+* Detecting attack signatures
+
+### `csv`
+
+* Reading exported security reports
+* Processing audit logs
+
+### `datetime`
+
+* Investigating timestamps
+* Building incident timelines
+
+### `statistics`
+
+* Analyzing login attempts
+* Identifying anomalies in user activity
+* Measuring average system behavior
+
+### `numpy`
+
+* Large-scale numerical analysis
+* Security data processing
+
+---
+
+# Key Takeaways
+
+* The **Python Standard Library** contains built-in modules that come with Python.
+* Modules provide reusable functions for common programming tasks.
+* The `statistics` module offers tools such as `mean()` and `median()`.
+* Entire modules can be imported using the `import` keyword.
+* Individual functions can be imported using the `from ... import ...` syntax.
+* Importing specific functions allows them to be called directly.
+* External libraries extend Python's capabilities beyond the Standard Library.
+* External libraries must usually be installed before use.
+* Standard Library modules are widely used in cybersecurity for log analysis, file processing, pattern matching, and statistical investigation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Style guide - A manual that informs the writing, formatting, and design of documents
+
+
+PEP 8 style guide - A resource that provides stylistic guidelines for programmers working in Python
+
+
+
+P - Python
+E - Enhancement
+P - Proposals
+
+
+
+
+Comment - A note programmers make about the intentions behind their code
+
+
+Indentation - Space added at the beginning of a line of code
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Python Comments, Indentation, and Syntax (Rewritten Notes)
+
+## Introduction
+
+Writing code is not only about making programs work—it is also about making them understandable. Good programming practices include:
+
+* Adding comments to explain code
+* Using proper indentation for readability
+* Following Python syntax rules
+* Writing clear and maintainable programs
+
+These practices become especially important in cybersecurity projects, where scripts may be reviewed, modified, or reused by multiple analysts.
+
+---
+
+# Comments in Python
+
+A **comment** is text added to a program to explain what the code does or why it was written a certain way.
+
+Comments are ignored when the program runs, meaning they are only for human readers.
+
+### Benefits of Comments
+
+* Improve code readability
+* Help others understand your logic
+* Make troubleshooting easier
+* Serve as documentation for future maintenance
+
+A good habit is to include a brief description at the beginning of a script and add comments before complex sections of code.
+
+---
+
+# Single-Line Comments
+
+Single-line comments begin with the `#` symbol.
+
+### Example
+
+```python
+# Display all company assets
+
+assets = ["laptop1", "desktop20", "smartphone03"]
+
+for asset in assets:
+    print(asset)
+```
+
+### Explanation
+
+The comment describes the purpose of the code that follows.
+
+### Best Practices
+
+* Keep comments concise and meaningful.
+* Avoid stating the obvious.
+* Try to keep comment lines reasonably short for readability.
+
+---
+
+# Multi-Line Comments
+
+When an explanation requires more detail, a multi-line comment can be used.
+
+### Method 1: Multiple `#` Symbols
+
+```python
+# This function accepts the maximum allowed login attempts.
+# It also receives the number of attempts already used.
+# The function returns the remaining attempts available.
+
+def remaining_attempts(max_attempts, used_attempts):
+    return max_attempts - used_attempts
+```
+
+This approach is commonly used because it is clear and easy to read.
+
+---
+
+# Using Docstrings
+
+Another method for documenting code is a **docstring**.
+
+Docstrings use triple quotation marks (`""" """`) and are often used to describe functions, classes, or modules.
+
+### Example
+
+```python
+"""
+Calculates the number of login attempts remaining.
+
+Parameters:
+    max_attempts (int)
+    used_attempts (int)
+
+Returns:
+    int
+"""
+```
+
+### Why Use Docstrings?
+
+* Provide structured documentation
+* Explain inputs and outputs
+* Helpful for large projects
+* Can be accessed by documentation tools
+
+---
+
+# Indentation in Python
+
+**Indentation** refers to spaces placed at the beginning of a line.
+
+Unlike many programming languages, Python uses indentation to determine code structure.
+
+### Example
+
+```python
+if login_status:
+    print("Access granted")
+```
+
+The indented line belongs to the `if` statement.
+
+---
+
+# Recommended Indentation Style
+
+Python's style guidelines recommend using **four spaces** for each indentation level.
+
+### Example
+
+```python
+count = 0
+login_status = True
+
+while login_status:
+
+    print("Try again")
+    count += 1
+
+    if count == 4:
+        login_status = False
+```
+
+### Indentation Levels
+
+| Code Block               | Indentation |
+| ------------------------ | ----------- |
+| `while` body             | 4 spaces    |
+| `if` body inside `while` | 8 spaces    |
+
+Proper indentation improves readability and prevents errors.
+
+---
+
+# Why Indentation Matters
+
+Incorrect indentation can cause Python to generate errors.
+
+### Incorrect Example
+
+```python
+if login_status:
+print("Access granted")
+```
+
+### Correct Example
+
+```python
+if login_status:
+    print("Access granted")
+```
+
+Python requires consistent indentation to determine which statements belong together.
+
+---
+
+# Understanding Syntax
+
+**Syntax** refers to the rules that define how Python code must be written.
+
+Violating these rules results in a **SyntaxError**.
+
+---
+
+# Common Data Type Syntax Rules
+
+## Strings
+
+Text values must be enclosed in quotation marks.
+
+### Correct
+
+```python
+username = "jdoe"
+```
+
+### Incorrect
+
+```python
+username = jdoe
+```
+
+---
+
+## Numbers
+
+Integers and floating-point numbers should not be enclosed in quotation marks unless they are intended to be treated as text.
+
+### Correct
+
+```python
+login_attempts = 5
+success_rate = 0.85
+```
+
+### Incorrect
+
+```python
+login_attempts = "5"
+```
+
+(Unless the value is intentionally stored as a string.)
+
+---
+
+## Boolean Values
+
+Boolean values represent either true or false.
+
+### Correct
+
+```python
+login_status = True
+```
+
+### Incorrect
+
+```python
+login_status = "True"
+```
+
+The second example stores text rather than a Boolean value.
+
+---
+
+## Lists
+
+Lists are enclosed in square brackets and elements are separated by commas.
+
+### Correct
+
+```python
+usernames = ["jdoe", "asmith"]
+```
+
+### Incorrect
+
+```python
+usernames = "jdoe", "asmith"
+```
+
+---
+
+# Colons in Python Headers
+
+Many Python structures require a colon (`:`) at the end of their header.
+
+These include:
+
+* Functions
+* Conditional statements
+* Loops
+* Classes
+
+---
+
+## Function Example
+
+```python
+def remaining_attempts(max_attempts, used_attempts):
+    return max_attempts - used_attempts
+```
+
+---
+
+## Conditional Example
+
+```python
+if login_attempts > 3:
+    print("Account locked")
+```
+
+---
+
+## Loop Example
+
+```python
+for user in users:
+    print(user)
+```
+
+Without the colon, Python will generate a syntax error.
+
+---
+
+# Common Syntax Mistakes
+
+| Mistake                       | Example                           |
+| ----------------------------- | --------------------------------- |
+| Missing quotes around strings | `username = admin`                |
+| Missing colon                 | `if count > 3`                    |
+| Incorrect indentation         | No spaces after an `if` statement |
+| Missing commas in lists       | `["user1" "user2"]`               |
+| Mismatched brackets           | `[1, 2, 3`                        |
+
+---
+
+# Cybersecurity Relevance
+
+Good coding practices are especially important when:
+
+* Writing log analysis scripts
+* Automating security tasks
+* Developing incident response tools
+* Processing authentication records
+* Creating vulnerability scanning utilities
+
+Well-documented and properly formatted code is easier to audit, troubleshoot, and maintain.
+
+---
+
+# Key Takeaways
+
+* Comments explain the purpose and logic of code.
+* Single-line comments begin with `#`.
+* Multi-line comments can be written using multiple `#` symbols or docstrings.
+* Indentation defines code blocks in Python.
+* The recommended indentation level is four spaces.
+* Python syntax rules vary depending on data type.
+* Strings require quotation marks; numbers and Booleans do not.
+* Lists use square brackets and commas.
+* Function, loop, and conditional headers must end with a colon (`:`).
+* Proper comments, indentation, and syntax improve readability, maintainability, and reliability of code.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Key Python and Programming Terms (Reframed)
+Argument (Python): The actual value passed into a function when it is called.
+Built-in function: A function that is already available in Python and can be used without importing anything.
+Comment: A note written in code to explain its purpose or logic; ignored when the program runs.
+Function: A reusable block of code designed to perform a specific task.
+Global variable: A variable defined outside functions and accessible throughout the entire program.
+Indentation: Spaces at the start of a line used to define code structure and blocks in Python.
+Library: A collection of modules that provide ready-made tools and functionality for programming tasks.
+Local variable: A variable created inside a function and only usable within that function.
+Module: A Python file containing reusable code such as functions, variables, and classes.
+Parameter (Python): A variable defined in a function header that receives input values when the function is called.
+PEP 8 style guide: Official Python guidelines that recommend best practices for writing clean and readable code.
+Python Standard Library: A built-in collection of modules that comes with Python and provides commonly used functionality.
+Return statement: A statement used inside a function to send a result back to where the function was called.
+Style guide: A set of rules that define how code or documents should be written and formatted for consistency and readability.
+User-defined function: A function created by a programmer to perform a specific task tailored to their needs.
