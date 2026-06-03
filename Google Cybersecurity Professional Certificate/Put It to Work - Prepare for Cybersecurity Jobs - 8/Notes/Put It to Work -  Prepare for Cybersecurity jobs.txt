@@ -781,5 +781,673 @@ Unauthorized access: An incident type that occurs when an individual gains digit
 
 
 
+Module 3
+
+
+
+Stakeholder - An individual or group that has an interest in the decisions or activities of an organization
+
+
+
+
+
+Stakeholders:
+Risk managers
+Chief Executive Officer (CEO)
+Chief Financial Officer (CFO)
+Chief Information Security Officer (CISO)
+Operation managers
+
+
+
+
+
+Risk manager responsibilities:
+Identify risks
+Manage the response to security incidents
+Notify the legal department
+Inform the organization's public relations team
+
+
+CEO responsibilities:
+Financial and managerial decisions
+Report to shareholders
+Manage operations
+
+
+CFO responsibilities:
+Manage financial operations 
+Costs of tools and strategies
+
+
+CISO responsibilities:
+Develop an organization's security architecture
+Conduct risk analysis and system audits
+Create security and business continuity plans
+
+
+Operations manager responsibilities:
+Oversee security professionals
+Work directly with analysts
+Responsibilities for daily maintenance of security operations
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Security Stakeholders and Communication
+
+Security analysts do more than monitor systems and investigate alerts. A key part of the role involves communicating security findings to the appropriate individuals within an organization. These individuals are known as **stakeholders**.
+
+---
+
+# What Are Stakeholders?
+
+A **stakeholder** is any individual or group that has an interest in an organization's decisions, activities, or outcomes. In cybersecurity, stakeholders rely on security teams to provide information about risks, incidents, and the effectiveness of security measures.
+
+As a security analyst, you will regularly communicate findings and security events to stakeholders who are responsible for making operational, financial, or strategic decisions.
+
+---
+
+# Key Security Stakeholders
+
+Organizations have multiple levels of stakeholders, each with different responsibilities and priorities.
+
+## 1. Cybersecurity Risk Manager
+
+A **Cybersecurity Risk Manager** is responsible for identifying, assessing, and reducing security risks across the organization.
+
+### Responsibilities
+
+* Evaluate security risks
+* Develop risk mitigation strategies
+* Monitor organizational risk exposure
+* Support compliance and governance efforts
+
+### Interaction with Analysts
+
+Entry-level analysts often communicate security findings and potential risks to risk managers.
+
+---
+
+## 2. Chief Executive Officer (CEO)
+
+A **Chief Executive Officer (CEO)** is the highest-ranking executive in an organization and is responsible for overall business strategy and decision-making.
+
+### Responsibilities
+
+* Set organizational goals and direction
+* Make major business decisions
+* Ensure organizational success
+
+### Interaction with Analysts
+
+Direct communication between entry-level analysts and CEOs is uncommon.
+
+---
+
+## 3. Chief Financial Officer (CFO)
+
+A **Chief Financial Officer (CFO)** oversees the organization's financial planning, budgeting, and financial risk management.
+
+### Responsibilities
+
+* Manage organizational finances
+* Assess financial impacts of security incidents
+* Allocate resources for security initiatives
+
+### Interaction with Analysts
+
+Analysts rarely communicate directly with CFOs, but security reports may influence financial decisions.
+
+---
+
+## 4. Chief Information Security Officer (CISO)
+
+A **Chief Information Security Officer (CISO)** is the highest-ranking cybersecurity leader within an organization.
+
+### Responsibilities
+
+* Develop cybersecurity strategy
+* Oversee security programs
+* Manage security risks and compliance
+* Report security status to executive leadership
+
+### Interaction with Analysts
+
+Although direct communication is uncommon, information collected by analysts often contributes to reports reviewed by the CISO.
+
+---
+
+## 5. Operations Manager
+
+An **Operations Manager** oversees daily security operations and coordinates incident response activities.
+
+### Responsibilities
+
+* Manage security teams
+* Coordinate responses to incidents
+* Implement security procedures
+* Ensure operational continuity
+
+### Interaction with Analysts
+
+Operations managers are among the stakeholders that entry-level analysts communicate with most frequently.
+
+---
+
+# Stakeholder Priorities
+
+Different stakeholders focus on different aspects of cybersecurity.
+
+| Stakeholder        | Primary Focus                                   |
+| ------------------ | ----------------------------------------------- |
+| Risk Manager       | Risk identification and mitigation              |
+| Operations Manager | Daily security operations and incident response |
+| CISO               | Overall cybersecurity strategy and governance   |
+| CFO                | Financial impact and budgeting                  |
+| CEO                | Organizational success and business objectives  |
+
+### Example
+
+* A **CFO** may be concerned about the financial cost of a data breach.
+* A **CISO** may focus on improving security controls to prevent future incidents.
+* An **Operations Manager** may prioritize restoring affected systems and maintaining daily operations.
+
+---
+
+# Communication for Entry-Level Security Analysts
+
+Entry-level analysts commonly communicate with:
+
+* Operations Managers
+* Cybersecurity Risk Managers
+* Senior Security Analysts
+* Incident Response Teams
+
+When reporting a security issue, analysts should clearly explain:
+
+* What happened
+* How it was detected
+* Potential causes
+* Possible business impact
+* Recommended next steps (if applicable)
+
+---
+
+# Example of Stakeholder Communication
+
+### Scenario
+
+An employee account experiences multiple failed login attempts.
+
+### Analyst Responsibilities
+
+1. Detect and investigate the activity.
+2. Gather relevant evidence.
+3. Report findings to the Operations Manager.
+
+### Operations Manager Responsibilities
+
+1. Determine whether the activity is legitimate or suspicious.
+2. Contact the employee or supervisor if necessary.
+3. Coordinate remediation actions.
+4. Assess any impact on business operations.
+
+### Possible Outcome
+
+The organization may implement additional security measures such as:
+
+* Password resets
+* Account monitoring
+* Multi-factor authentication (MFA)
+* User awareness training
+
+---
+
+# Information Flow Between Stakeholders
+
+Security information typically moves through multiple organizational levels.
+
+**Security Analyst → Operations Manager/Risk Manager → CISO/CFO → Executive Leadership**
+
+This process ensures that decision-makers at every level receive the information needed to protect the organization.
+
+Even though entry-level analysts rarely communicate directly with executives, the information they collect and report can ultimately influence high-level security and business decisions.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+Be mindful of:
+What you communicate
+Who you communicate to
+
+
+
+Communications should :
+Be precise
+Avoid unnecessary technical terms
+Have a clear purpose
+
+
+
+
+Security story details:
+What the security challenge is
+How it impacts the organization
+Possible solutions to the issue 
+
+
+
+Communicate the story:
+Email
+Document
+Visual representation
+Incident management or ticketing systems
+
+
+
+
+Visuals are used to convey key details in the form of graphs, charts, videos, or other visual effects.
+
+
+
+
+
+
+
+
+
+
+
+
+# Effective Communication with Security Stakeholders
+
+Clear and effective communication is a critical skill for cybersecurity professionals. Security stakeholders often make time-sensitive decisions that can affect business operations, security posture, and financial outcomes. As a security analyst, your ability to communicate information clearly and concisely helps stakeholders understand issues and take appropriate action.
+
+---
+
+# Get to the Point
+
+Security stakeholders are often busy and need information that is relevant, accurate, and actionable. When communicating a security issue, focus on the key details rather than overwhelming them with technical information.
+
+### Questions to Consider Before Communicating
+
+#### 1. What do I want this person to know?
+
+Identify the most important information you need to communicate.
+
+#### 2. Why is it important?
+
+Explain the significance of the issue and its potential impact.
+
+#### 3. When do they need to act?
+
+Clearly state any required actions and their urgency.
+
+#### 4. How can I explain it simply?
+
+Avoid unnecessary technical jargon and communicate in a way that matches the stakeholder’s level of technical knowledge.
+
+### Example
+
+Instead of saying:
+
+> "The SIEM detected multiple authentication anomalies originating from a suspicious IP address."
+
+You could say:
+
+> "Several unsuccessful login attempts were detected from an unfamiliar source, which may indicate an attempt to access an employee account without authorization."
+
+---
+
+# Follow Organizational Protocols
+
+Every organization has established procedures for communication and incident reporting. New security analysts should familiarize themselves with these protocols before communicating with stakeholders.
+
+### Areas to Understand
+
+* Approved communication tools
+* Escalation procedures
+* Incident reporting requirements
+* Documentation standards
+* Stakeholder communication channels
+
+### Common Communication Methods
+
+* In-person meetings
+* Video conferences
+* Email
+* Company messaging platforms
+* Incident management systems
+
+Following established procedures helps maintain consistency, accountability, and security throughout the organization.
+
+---
+
+# Communicate with Impact
+
+Different stakeholders have different priorities. Effective communication involves tailoring information to the audience receiving it.
+
+### Operations Managers
+
+Operations managers focus on daily security activities and incident response.
+
+**Relevant Information:**
+
+* Security alerts
+* Log anomalies
+* Ongoing incidents
+* Operational impacts
+* Required remediation actions
+
+### Risk Managers
+
+Risk managers are concerned with identifying and reducing organizational risks.
+
+**Relevant Information:**
+
+* Potential threats
+* Risk levels
+* Vulnerabilities
+* Possible business impacts
+
+### Senior Executives (CISO, CFO, CEO)
+
+Senior stakeholders focus on broader organizational concerns.
+
+**Relevant Information:**
+
+* Financial implications
+* Business risks
+* Regulatory concerns
+* Strategic security impacts
+
+### Key Principle
+
+Always provide information that is relevant to the stakeholder’s responsibilities rather than sharing unnecessary technical details.
+
+---
+
+# Choosing the Right Communication Method
+
+The communication channel should match the complexity, urgency, and purpose of the message.
+
+| Communication Method | Best Used For                                         |
+| -------------------- | ----------------------------------------------------- |
+| Instant Messaging    | Quick updates and simple questions                    |
+| Phone Calls          | Urgent issues requiring immediate attention           |
+| Email                | Detailed explanations and documentation               |
+| Video Calls          | Discussions requiring collaboration or clarification  |
+| Spreadsheets         | Sharing large amounts of structured data              |
+| Presentations        | Summarizing trends, metrics, or strategic information |
+
+---
+
+# Examples of Appropriate Communication Channels
+
+### Simple Issue
+
+A routine security update can be shared through:
+
+* Instant message
+* Phone call
+
+### Complex Incident
+
+A security incident requiring explanation and documentation may be best communicated through:
+
+* Email
+* Video meeting
+* Incident report
+
+### Data-Driven Reporting
+
+When presenting trends, metrics, or analysis:
+
+* Spreadsheets
+* Dashboards
+* Presentation slides
+* Graphs and charts
+
+---
+
+# Best Practices for Security Communication
+
+* Be clear and concise.
+* Focus on the most important information first.
+* Tailor communication to the audience.
+* Avoid unnecessary technical jargon.
+* Follow organizational communication policies.
+* Clearly explain urgency and required actions.
+* Use the most appropriate communication channel.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Using Visuals for Effective Security Communication
+
+In cybersecurity, clear communication is essential for helping stakeholders understand risks, make informed decisions, and respond to security incidents. Since many stakeholders have limited time and multiple responsibilities, presenting information visually can often be more effective than lengthy written explanations.
+
+---
+
+# Why Visual Communication Matters
+
+Cybersecurity teams regularly collect and analyze large amounts of data. Presenting this information through visual formats allows stakeholders to quickly identify trends, risks, and areas that require attention.
+
+### Benefits of Visual Communication
+
+* Simplifies complex information
+* Highlights important trends and patterns
+* Supports faster decision-making
+* Improves stakeholder understanding
+* Makes security findings easier to interpret
+* Encourages action by clearly showing risks
+
+Visual representations help transform raw security data into meaningful insights that stakeholders can use to make decisions.
+
+---
+
+# Visual Dashboards
+
+A **visual dashboard** is a centralized display that presents key information through charts, graphs, tables, and other visual elements.
+
+Dashboards allow security teams to communicate large amounts of information in a concise and easy-to-understand format.
+
+### Types of Dashboards
+
+#### Simple Dashboards
+
+Contain a small number of visual elements, such as:
+
+* A single chart
+* A summary table
+* One key performance indicator (KPI)
+
+#### Complex Dashboards
+
+Include multiple data visualizations, such as:
+
+* Charts
+* Graphs
+* Tables
+* Security metrics
+* Trend analyses
+
+The complexity of a dashboard should match the audience and the information being presented.
+
+---
+
+# Characteristics of Effective Dashboards
+
+An effective dashboard should be:
+
+### Accurate
+
+Data must correctly represent the security situation.
+
+### Clear
+
+Information should be easy to interpret without excessive explanation.
+
+### Relevant
+
+Only include information that supports the intended message.
+
+### Actionable
+
+The dashboard should help stakeholders identify risks and determine next steps.
+
+### Focused
+
+Avoid overwhelming users with unnecessary data or visual clutter.
+
+---
+
+# Tools for Creating Visual Dashboards
+
+Several tools can be used to create security dashboards and reports, including:
+
+* **Google Sheets**
+* **Apache OpenOffice**
+* Spreadsheet software
+* Business intelligence platforms
+* Security monitoring dashboards
+* Reporting tools integrated with security systems
+
+These tools can transform security data into meaningful visual presentations.
+
+---
+
+# When to Use Visual Communication
+
+Different situations require different communication methods. Visual communication is especially valuable when presenting data-heavy information.
+
+### Use Visuals When:
+
+* Presenting trends over time
+* Comparing multiple departments or teams
+* Showing security metrics
+* Reporting audit results
+* Demonstrating incident frequency
+* Highlighting risk levels
+* Tracking compliance performance
+
+---
+
+# Choosing the Right Communication Method
+
+| Situation                | Recommended Method               |
+| ------------------------ | -------------------------------- |
+| Quick update             | Instant message or phone call    |
+| Detailed explanation     | Email or report                  |
+| Team discussion          | Video call or meeting            |
+| Data analysis and trends | Dashboard, chart, or graph       |
+| Executive summary        | Visual presentation or dashboard |
+
+The communication method should always match the complexity and urgency of the information.
+
+---
+
+# Example: Reporting Phishing Audit Results
+
+### Scenario
+
+A supervisor requests the results of an internal audit involving five departments. The audit measured how many phishing emails employees clicked over a five-month period.
+
+### Less Effective Approach
+
+Sending a long email listing the number of clicks for each department.
+
+### More Effective Approach
+
+Creating:
+
+* A bar chart comparing departments
+* A line graph showing trends over time
+* A dashboard summarizing the results
+
+These visualizations allow stakeholders to quickly identify:
+
+* Which departments are most vulnerable
+* Whether phishing awareness is improving
+* Which areas may require additional training
+
+---
+
+# Visual Communication in Cybersecurity
+
+Security teams commonly use visuals to communicate:
+
+* Phishing campaign results
+* Security awareness metrics
+* Incident response statistics
+* Vulnerability trends
+* Threat intelligence data
+* Compliance audit findings
+* Network activity summaries
+* Risk assessments
+
+By converting data into visual formats, analysts can communicate security information more effectively and help stakeholders make informed decisions.
+
+---
+
+
+
+
+
+
+
+
+Stakeholder: An individual or a group that has an interest in any decision or activity of an organization
+
+Visual dashboard: A way of displaying various types of data quickly in one place
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
