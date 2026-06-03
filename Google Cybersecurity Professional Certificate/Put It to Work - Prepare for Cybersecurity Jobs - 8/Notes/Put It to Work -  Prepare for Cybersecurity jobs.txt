@@ -302,3 +302,484 @@ Protecting the data and assets of an organization is the primary goal of a secur
 
 
 
+
+
+
+
+
+
+
+
+module 2 
+
+Incident escalation - The process of identifying a potential security incident, triaging it, and handling it off to a more experienced team member
+
+
+
+Essential skills to escalate security incidents:
+Attention to detail
+Ability to follow an organization's escalation guidelines or processes
+
+
+
+
+From the Chief Information security officer, also known as CISO, to the engineering team, public relations team, and even the legal team, every member of the security team matters.
+
+
+
+
+
+
+
+
+
+
+# Incident Escalation and Security Breach Notification
+
+Security analysts play a critical role in identifying, investigating, and reporting potential security incidents. Not every security event is severe, but even minor issues must be reviewed to determine whether they require escalation. Organizations establish escalation procedures to ensure that security incidents are handled efficiently and by the appropriate personnel.
+
+---
+
+# Incident Escalation
+
+**Incident escalation** is the process of identifying a potential security issue and transferring it to a more experienced team member or department for further investigation and response.
+
+As a security analyst, one of your responsibilities is to recognize suspicious activities and ensure they are reported through the organization's established escalation procedures.
+
+### Examples of Situations That May Require Escalation
+
+* Excessive failed login attempts
+* Suspicious account activity
+* Malware detections
+* Unauthorized software installations
+* Unusual network behavior
+* Potential data breaches
+
+Organizations provide specific guidelines on:
+
+* When an incident should be escalated
+* Who should receive the escalation
+* How the escalation should be communicated
+
+---
+
+# Breach Notification Requirements
+
+Many countries have laws that require organizations to notify affected individuals when a data breach involves sensitive personal information.
+
+### What is a Breach Notification?
+
+A breach notification is a formal communication informing individuals that their personal data may have been exposed, accessed, or stolen during a security incident.
+
+### Personally Identifiable Information (PII)
+
+PII refers to information that can be used to identify an individual.
+
+**Examples include:**
+
+* Social Security numbers
+* Driver’s license numbers
+* Passport numbers
+* Home addresses
+* Medical records
+* Financial account information
+* Contact details
+
+### Importance for Security Analysts
+
+Security professionals must:
+
+* Understand applicable breach notification laws
+* Stay informed about regulatory updates
+* Ensure incidents involving PII are reported appropriately
+* Support compliance with legal requirements
+
+---
+
+# Low-Level Security Issues
+
+Low-level security issues are minor security events that typically do not involve the exposure of sensitive information such as PII. Although these events may appear harmless, they should still be investigated to determine whether they indicate a larger security threat.
+
+### Common Examples
+
+#### Failed Login Attempts
+
+* One or two failed login attempts are usually normal.
+* Multiple failed attempts within a short period may indicate a brute-force attack or account compromise attempt.
+
+#### Unauthorized Software Installation
+
+* Employees may install unapproved applications or games on company devices.
+* Such software may contain malware or introduce security vulnerabilities.
+
+### Why Investigation Matters
+
+Minor incidents can become major security problems if ignored.
+
+For example:
+
+* Repeated login failures could indicate an attacker attempting to gain account access.
+* Unauthorized software may introduce malware into the organization's network.
+* Small issues can serve as early warning signs of larger attacks.
+
+---
+
+# The Escalation Process
+
+Every organization has its own incident response and escalation procedures.
+
+### Escalation Policies Typically Define:
+
+### 1. Who Should Be Notified
+
+The policy identifies the appropriate personnel or teams responsible for handling specific security incidents.
+
+### 2. Backup Contacts
+
+Procedures specify alternative contacts if the primary responder is unavailable.
+
+### 3. Escalation Methods
+
+Organizations may require incidents to be escalated through:
+
+* IT help desk systems
+* Incident management platforms
+* Security ticketing systems
+* Direct communication with security personnel
+
+### 4. Response Priorities
+
+Policies often classify incidents according to severity levels, helping teams prioritize response efforts.
+
+---
+
+# Typical Incident Escalation Workflow
+
+1. **Detect** a suspicious activity or security alert.
+2. **Investigate** the event and gather relevant evidence.
+3. **Assess** the severity and potential impact.
+4. **Escalate** the incident to the appropriate team if necessary.
+5. **Respond** to contain and mitigate the threat.
+6. **Document** findings and actions taken.
+7. **Review** the incident and improve future processes.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+Malware infection - An incident type that occurs when a malicious software designed to disrupt a system infiltrates an organization's computers or networks
+
+
+
+Unauthorized access - An incident type that occurs when an individual gains digital or physical access to a system or application without permission
+
+
+
+
+Brute force attacks use trial and error to compromise passwords, login credentials, and encryption keys.
+
+
+
+Improper usage - An incident type that occurs when an employee of an organization violates the organization's acceptable use policies
+
+
+
+
+
+
+
+
+
+# Data Governance Roles and Responsibilities
+
+Organizations rely on several key roles to manage, protect, and oversee data throughout its lifecycle. Each role has specific responsibilities related to data access, security, compliance, and incident response. Understanding these roles helps security professionals determine the appropriate individuals to notify when data-related security events occur.
+
+---
+
+# 1. Data Owner
+
+A **Data Owner** is the individual responsible for deciding who can access, modify, use, or delete specific data and systems. They have administrative authority over information assets and are accountable for ensuring that data is properly classified, protected, and used.
+
+### Responsibilities
+
+* Determine data access permissions
+* Approve or deny requests for data usage
+* Classify data according to sensitivity
+* Ensure appropriate protection measures are in place
+* Oversee the overall use of organizational data
+
+### Example
+
+If an employee gains unauthorized access to software or information they do not require for their job, the incident would typically be escalated to the data owner responsible for that asset.
+
+---
+
+# 2. Data Controller
+
+A **Data Controller** determines why and how personal data is collected, processed, and used. This role focuses heavily on customer and employee information and ensures compliance with privacy and security regulations.
+
+### Responsibilities
+
+* Define the purpose of data collection
+* Determine how personal data is processed
+* Ensure compliance with privacy laws and regulations
+* Establish policies for data handling and protection
+* Monitor lawful use of personal information
+
+### Example
+
+If customer data is exposed or at risk of unauthorized access, the incident should be escalated to the data controller for further action and compliance review.
+
+---
+
+# 3. Data Processor
+
+A **Data Processor** handles and processes data on behalf of the data controller. This role is often performed by third-party vendors or service providers that manage organizational data.
+
+### Responsibilities
+
+* Process data according to the controller's instructions
+* Implement technical safeguards to protect data
+* Support data storage and management activities
+* Maintain security measures required by contracts or regulations
+
+### Example
+
+If a third-party vendor experiences a security issue affecting organizational data, the concern is generally escalated to the person responsible for managing that vendor relationship.
+
+---
+
+# 4. Data Custodian
+
+A **Data Custodian** is responsible for the day-to-day management and protection of data. Custodians implement security controls and ensure authorized users have appropriate access.
+
+### Responsibilities
+
+* Grant and revoke access permissions
+* Implement and maintain security controls
+* Monitor data usage and access activities
+* Develop procedures for secure storage and transmission
+* Identify and report threats affecting data
+
+### Example
+
+If access controls fail or require strengthening, data custodians are notified to review and improve security measures.
+
+---
+
+# 5. Data Protection Officer (DPO)
+
+A **Data Protection Officer (DPO)** oversees an organization's compliance with data protection laws, policies, and procedures. The DPO provides guidance on privacy requirements and evaluates the effectiveness of security controls.
+
+### Responsibilities
+
+* Monitor compliance with data protection regulations
+* Advise on privacy and security obligations
+* Conduct audits and assessments
+* Recommend improvements to data protection practices
+* Investigate compliance violations
+
+### Example
+
+If organizational policies or data protection standards are violated, the DPO is informed to assess compliance risks and recommend corrective actions.
+
+---
+
+# Comparison of Data Governance Roles
+
+| Role                              | Primary Responsibility                           | Example Escalation                              |
+| --------------------------------- | ------------------------------------------------ | ----------------------------------------------- |
+| **Data Owner**                    | Controls access, classification, and use of data | Unauthorized access to systems or data          |
+| **Data Controller**               | Determines why and how data is processed         | Exposure of customer information                |
+| **Data Processor**                | Processes data on behalf of the controller       | Third-party processing or vendor-related issues |
+| **Data Custodian**                | Implements and manages security controls         | Access control failures or security weaknesses  |
+| **Data Protection Officer (DPO)** | Ensures compliance with privacy regulations      | Violations of data protection policies          |
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+The impact of an attacker gaining unauthorized access to a manufacturing application or PII is far greater than a forgotten password.
+
+
+
+
+Escalation policy - A set of actions that outline who should be notified when an incident alert occurs and how that incident should be handled
+
+
+
+
+Attention to detail can make the difference between escalating an incident to the right or wrong person. It can also help you prioritize which incidents need to be escalated with more or less urgency.
+
+
+
+
+
+
+# Your Decisions Matter in Cybersecurity
+
+Cybersecurity is a fast-moving field where attackers constantly attempt to compromise systems and steal data. Because of this, security analysts must make quick, informed decisions every day to help protect an organization’s assets. One of the most important responsibilities for entry-level analysts is deciding when and how to escalate potential security incidents.
+
+---
+
+# Making Effective Escalation Decisions
+
+As a security analyst, your role often involves identifying suspicious activity and determining whether it should be escalated to a more experienced team member. These decisions are critical because early escalation can prevent small issues from becoming major security incidents.
+
+### Building Confidence in Decision-Making
+
+* Trust your judgment when reviewing security alerts
+* Learn and follow your organization’s escalation policies
+* Seek clarification when you are unsure
+* Understand that asking questions improves accuracy and learning
+
+Confidence, combined with knowledge of procedures, helps ensure that incidents are handled correctly and efficiently.
+
+---
+
+# Not All Security Events Are Equal
+
+Security events vary in severity, impact, and urgency. To prioritize correctly, analysts must understand which assets and systems are most important to the organization.
+
+### How to Prioritize Incidents
+
+You can determine priority by:
+
+* Reviewing onboarding and training materials
+* Consulting supervisors or senior analysts
+* Studying organizational security policies
+* Understanding critical business systems and assets
+
+---
+
+# Common Types of Security Incidents
+
+## 1. Malware Infections
+
+Malware is malicious software designed to disrupt, damage, or gain unauthorized access to systems.
+
+**Impact:**
+
+* Can affect system performance
+* May spread across networks
+* Can lead to data loss or theft
+
+---
+
+## 2. Unauthorized Access
+
+Unauthorized access occurs when an individual gains access to systems, applications, or data without permission.
+
+**Impact:**
+
+* High risk to sensitive data
+* Potential for data breaches
+* Can compromise critical business systems
+
+---
+
+## 3. Improper Usage
+
+Improper usage refers to employees violating an organization’s acceptable use policies.
+
+**Examples:**
+
+* Using unapproved software
+* Misusing company systems
+* Accessing restricted tools without authorization
+
+**Impact:**
+
+* May introduce security vulnerabilities
+* Can lead to policy violations or compliance issues
+
+---
+
+# Prioritizing Incident Response
+
+Not all incidents require the same level of urgency. Priority depends on how critical the affected asset is to business operations.
+
+### Example of Priority Levels
+
+* **High Priority:** Unauthorized access to a critical business application (e.g., manufacturing system)
+* **Lower Priority:** Malware affecting a legacy system that does not impact operations
+
+Even if multiple incidents occur, those affecting essential business systems must always be addressed first.
+
+---
+
+# Quick Escalation Guidelines
+
+To make effective escalation decisions, security analysts should follow these key practices:
+
+* Understand the organization’s escalation policy
+* Follow procedures consistently without deviation
+* Ask questions when unsure about severity or process
+* Escalate early if there is uncertainty about impact
+
+---
+
+
+
+
+
+
+
+
+
+
+Data controller: A person that determines the procedure and purpose for processing data
+
+Data processor: A person that is responsible for processing data on behalf of the data controller
+
+Data protection officer (DPO): An individual that is responsible for monitoring the compliance of an organization's data protection procedures
+
+Escalation policy: A set of actions that outlines who should be notified when an incident alert occurs and how that incident should be handled
+
+Improper usage: An incident type that occurs when an employee of an organization violates the organization’s acceptable use policies
+
+Incident escalation: The process of identifying a potential security incident, triaging it, and handing it off to a more experienced team member
+
+Malware infection: An incident type that occurs when malicious software designed to disrupt a system infiltrates an organization’s computers or network
+
+Unauthorized access: An incident type that occurs when an individual gains digital or physical access to a system or an application without permission 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
