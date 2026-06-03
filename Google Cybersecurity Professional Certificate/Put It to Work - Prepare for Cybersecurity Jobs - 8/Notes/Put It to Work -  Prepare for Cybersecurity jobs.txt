@@ -1,0 +1,304 @@
+Put It to Work: Prepare for Cybersecurity Jobs
+
+
+
+
+module 1
+
+
+
+Security mindset - The ability to evaluate risk and constantly seek out and identify the potential or actual breach of a system, application, or data
+
+
+
+
+
+
+
+
+
+### Classifying Data for Security
+
+Organizations handle many types of information, and not all data requires the same level of protection. Security professionals classify data according to its sensitivity and business value so that appropriate security controls can be applied. The four common data classifications are public, private, sensitive, and confidential data.
+
+---
+
+## 1. Public Data
+
+Public data is information that is intentionally available to everyone and poses minimal risk if accessed or shared. Although it is publicly accessible, organizations must still protect it from unauthorized modification or destruction.
+
+**Examples:**
+
+* Press releases
+* Job postings
+* Marketing materials
+* Public website content
+
+**Security Impact:**
+Low risk if disclosed, but integrity and availability should still be maintained.
+
+---
+
+## 2. Private Data
+
+Private data is information that is not intended for public access. Unauthorized disclosure may create operational, financial, or reputational risks for an organization.
+
+**Examples:**
+
+* Employee identification numbers
+* Company email addresses
+* Internal research data
+* Internal business communications
+
+**Security Impact:**
+Moderate risk if exposed to unauthorized individuals.
+
+---
+
+## 3. Sensitive Data
+
+Sensitive data requires strong protection because unauthorized access can cause significant harm to individuals and organizations. Access is restricted to authorized personnel only.
+
+**Examples:**
+
+* Personally Identifiable Information (PII)
+* Sensitive Personally Identifiable Information (SPII)
+* Protected Health Information (PHI)
+* Bank account numbers
+* Usernames and passwords
+* Passport numbers
+* Medical records
+
+**Security Impact:**
+High risk due to potential financial loss, legal consequences, and reputational damage.
+
+---
+
+## 4. Confidential Data
+
+Confidential data is highly valuable and critical to business operations. Access is limited to a small group of authorized individuals, often protected through legal agreements such as Non-Disclosure Agreements (NDAs).
+
+**Examples:**
+
+* Trade secrets
+* Proprietary business information
+* Financial records
+* Strategic business plans
+* Sensitive government information
+
+**Security Impact:**
+Very high risk if disclosed, potentially affecting competitiveness, trust, and organizational success.
+
+---
+
+## Asset Classification
+
+Asset classification is the process of categorizing organizational assets according to their sensitivity, importance, and potential impact if compromised.
+
+### Low-Level Assets
+
+Assets that are publicly available and would have little or no negative impact if exposed.
+
+**Example:**
+
+* Company website address
+
+### High-Level Assets
+
+Assets containing sensitive or confidential information that could seriously harm the organization if leaked.
+
+**Example:**
+
+* Internal emails discussing trade secrets
+* Confidential financial records
+* Proprietary research data
+
+### Benefits of Asset Classification
+
+* Improves data protection strategies
+* Helps determine appropriate access controls
+* Supports regulatory compliance
+* Reduces security risks
+* Prioritizes security resources based on asset value
+
+---
+
+
+
+
+
+
+
+
+
+
+
+The assets and data you protect affect multiple levels of your organization
+
+
+
+
+Customer data:
+Credit card numbers
+Social security numbers
+Emails
+Usernames
+Passwords
+
+
+When a security event results in a data breach, it is categorized as a security incident
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Business Continuity and Disaster Recovery Planning
+
+Security professionals are responsible for protecting an organization's data, systems, and assets from threats, risks, and vulnerabilities. Despite preventive measures, security incidents can still occur. Such incidents may result in financial losses, operational disruptions, and damage to an organization's reputation. To reduce these impacts, organizations develop **Business Continuity Plans (BCPs)** and **Disaster Recovery Plans (DRPs)**.
+
+---
+
+## The Security Planning Process
+
+Before creating continuity and recovery plans, organizations typically follow a four-step security process:
+
+### 1. Identify Critical Assets
+
+Determine which organizational assets, systems, and data are essential to business operations and require protection.
+
+### 2. Assess Potential Threats
+
+Identify threats that could negatively affect those assets, such as cyberattacks, hardware failures, natural disasters, or human errors.
+
+### 3. Implement Detection Measures
+
+Deploy security tools, monitoring systems, and processes to detect threats and suspicious activities as early as possible.
+
+### 4. Develop Continuity and Recovery Plans
+
+Create business continuity and disaster recovery plans to minimize operational disruption and ensure a rapid response when incidents occur.
+
+---
+
+# Business Continuity Plan (BCP)
+
+A **Business Continuity Plan (BCP)** is a documented strategy that outlines how an organization will continue operating during and after a major disruption. Its primary goal is to maintain critical business functions and minimize downtime.
+
+### Key Components of a Business Continuity Plan
+
+### 1. Conduct a Business Impact Analysis (BIA)
+
+Evaluate how disruptions could affect business operations, revenue, customers, and organizational objectives.
+
+### 2. Define Recovery Procedures
+
+Identify, document, and implement procedures for restoring critical business functions and processes.
+
+### 3. Establish a Business Continuity Team
+
+Create a cross-functional team responsible for executing the plan during emergencies. Team members often come from:
+
+* Cybersecurity
+* Information Technology (IT)
+* Human Resources (HR)
+* Communications
+* Operations
+
+### 4. Conduct Training and Exercises
+
+Regularly train team members and simulate various risk scenarios to ensure preparedness and improve response capabilities.
+
+### Benefits of a BCP
+
+* Maintains essential business operations
+* Reduces downtime and financial losses
+* Improves incident response readiness
+* Protects customer trust and organizational reputation
+
+---
+
+# Disaster Recovery Plan (DRP)
+
+A **Disaster Recovery Plan (DRP)** focuses on restoring technology, systems, and data after a security incident or disaster. It provides detailed procedures for recovering from events such as ransomware attacks, system failures, or data loss.
+
+### Key Components of a Disaster Recovery Plan
+
+### 1. Restore Software and Systems
+
+Develop recovery strategies to reinstall, repair, or restore affected software applications and operating systems.
+
+### 2. Restore Hardware Functionality
+
+Implement procedures to recover or replace damaged hardware and infrastructure components.
+
+### 3. Identify Impacted Data and Applications
+
+Determine which systems, applications, and data have been affected and prioritize their recovery based on business importance.
+
+### Benefits of a DRP
+
+* Speeds up system recovery
+* Minimizes operational disruption
+* Reduces data loss
+* Helps organizations return to normal operations quickly
+
+---
+
+# Business Continuity vs. Disaster Recovery
+
+| Business Continuity Plan (BCP)              | Disaster Recovery Plan (DRP)             |
+| ------------------------------------------- | ---------------------------------------- |
+| Focuses on maintaining business operations  | Focuses on restoring IT systems and data |
+| Activated during and after disruptions      | Activated after a disaster or incident   |
+| Addresses people, processes, and operations | Addresses technology and infrastructure  |
+| Goal: Keep the business running             | Goal: Recover systems and information    |
+
+---
+
+
+
+
+
+
+
+
+Business continuity plan (BCP): A document that outlines the procedures to sustain business operations during and after a significant disruption
+
+Confidential data: Data that often has limits on the number of people who have access to it
+
+Disaster recovery plan: A plan that allows an organization’s security team to outline the steps needed to minimize the impact of a security incident
+
+Private data: Information that should be kept from the public
+
+Public data: Data that is already accessible to the public and poses a minimal risk to the organization if viewed or shared by others
+
+Security mindset: The ability to evaluate risk and constantly seek out and identify the potential or actual breach of a system, application, or data
+
+Sensitive data: A type of data that includes personally identifiable information (PII), sensitive personally identifiable information (SPII), and protected health information (PHI)
+
+
+
+
+
+
+
+
+
+
+Protecting the data and assets of an organization is the primary goal of a security team.
+
+
+
+
