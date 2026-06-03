@@ -1687,7 +1687,87 @@ This kind of message works well because it is direct, polite, and clearly states
 
 
 
+STAR method
+Situation
+Task
+Action
+Results
 
 
 
+
+
+
+
+
+
+
+
+### What are technical interviews?
+
+After applying for a cybersecurity role, the hiring process may include several stages such as an initial recruiter call, interviews with hiring managers, and sometimes panel interviews. In addition to these, candidates may also go through a **technical interview**, which focuses more on job-related skills and practical knowledge rather than general background or behavioral questions.
+
+### Focus of technical interviews
+
+Technical interviews are designed to assess how well you understand key cybersecurity concepts and tools. Unlike general interviews, they often require you to demonstrate your thinking process, problem-solving ability, and familiarity with technical topics used in real-world security work.
+
+### Python in technical interviews
+
+Python is one of the commonly discussed skills in cybersecurity technical interviews. Since it is widely used for automation and security-related tasks, interviewers may ask about your understanding of it or give simple coding scenarios. You might even be asked to explain or write basic pseudocode in Python. Being comfortable with Python fundamentals and terminology helps show that you understand how it is applied in security environments.
+
+### Core cybersecurity concepts
+
+Interviewers may also test your knowledge of key security topics, such as:
+
+* Security frameworks used to reduce risks and protect data (for example, NIST guidelines like the Cybersecurity Framework)
+* Network security principles, which involve protecting systems and data from unauthorized access
+
+Having a clear understanding of these concepts and being able to explain them in simple terms is important during the interview.
+
+### How to approach technical questions
+
+Technical questions can sometimes have multiple parts, so it helps to carefully break them down before answering. A useful strategy is to restate or write down the question first, then structure your response step by step. This ensures you address every part of the question clearly and don’t miss important details.
+
+### Examples of technical interview topics
+
+Depending on the company, you may be asked questions such as:
+
+* How does the TCP/IP model describe data transmission in a network?
+* What is the OSI model and how do its layers work together in communication?
+* What are SIEM tools, and how are they used in cybersecurity monitoring and threat detection?
+
+These questions are designed to evaluate your understanding of networking fundamentals and security monitoring tools, which are essential in cybersecurity roles.
+
+
+
+
+
+
+
+
+
+
+AI bias: Risks involved when bias is present in artificial intelligence (AI) data, potentially leading to inaccurate, unfair, or unreliable outputs
+
+Artificial intelligence (AI): Computer programs designed to perform cognitive tasks typically associated with human intelligence, such as learning, problem-solving, and understanding language
+
+Context (in prompting): The necessary details provided to an artificial intelligence (AI) tool to help it understand what you need from it
+
+Evaluate (in prompting): The step in the TCREI framework where you review the output from an artificial intelligence (AI) tool to determine if it meets your needs and expectations
+
+Generative AI (Gen AI): A type of artificial intelligence (AI) that is capable of creating new content, such as text, images, code, or other media, in response to prompts
+
+Human-in-the-loop approach: A method of using artificial intelligence (AI) responsibly that combines the strengths of machine intelligence with human oversight, involvement, and validation to train, use, verify, and refine AI results
+
+Iterate (in prompting): The process in the TCREI framework of refining and improving artificial intelligence (AI) prompts and outputs through repeated cycles of testing and adjustments to achieve desired results
+
+Prompt: The input (which can be text, images, or other data) you provide to an artificial intelligence (AI) model to elicit a specific response or generate new content
+
+References (in prompting): Examples or specific information provided to an artificial intelligence (AI) tool to use as a guide when creating its output
+
+STAR method: A storytelling framework that helps you communicate your experience and skills in a clear, concise, and compelling way to help interviewer understand exactly how you successfully managed certain situation; stands for Situation, Task, Action, and Result; you’ll learn more about this method in the last course of the certificate 
+
+Task (in prompting): The specific instruction or goal you give to an artificial intelligence (AI) model, often including details about the desired persona and format for the output
+
+TCREI framework: A practical framework for writing effective prompts for generative artificial intelligence (AI) tools, which stands for Task, Context, References, Evaluate, and Iterate
 
