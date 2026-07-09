@@ -1,4 +1,4 @@
-#### Nmap Scan ####
+#### Nmap Scan 
 
 We need to Scan the machine to know the open ports, in this case we use stealthy scan:
 
@@ -7,14 +7,16 @@ nmap -sS -sV $IP_addr
 ```
 
 After our scan , we get 3 open ports:
-**port 21 (ftp)**
 
-**port 22 (ssh)**
+1. **port 21 (ftp)**
 
-**port 80 (http)**
+2. **port 22 (ssh)**
 
+3. **port 80 (http)**
 
-#### ftp ####
+---
+
+#### ftp 
 
 We ftp into the machine using ftp command.
 
@@ -26,12 +28,12 @@ Guessed the username as **anonymous** and got access.
 
 Downloaded the file **task.txt** and **locks.txt** using **get** command.
 
-
+---
 
 #### Hydra ####
 
 
-Now that we know the username and got a list of passwords in locks.txt, we can Brute force into it using Hydra By SSH.
+Now that we know the username and got a list of passwords in **locks.txt**, we can **Brute force** into it using Hydra By **SSH**.
 
 
 Command goes as follows:
@@ -43,9 +45,9 @@ hydra -l (username) -P /home/kali/Desktop/locks.txt ssh://$IP_ADDR -t 4
 
 By Brute forcing, we receive the password required to login through ssh.
 
-After we login, we immediately get the flag in user.txt.
+After we login, we immediately get the flag in ***user.txt***.
 
-
+---
 
 #### Privilege Escalation ####
 
@@ -64,7 +66,7 @@ User (user) may run the following commands on ip-($IP):
 
 
 
-We can visit gtfobins to abuse this privilege.
+We can visit **gtfobins** to abuse this privilege.
 
 
 

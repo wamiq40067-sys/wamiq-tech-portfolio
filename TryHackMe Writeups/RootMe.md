@@ -1,4 +1,4 @@
-#### nmap scan ####
+#### nmap scan 
 
 first we scan the open ports of the vulnerable machine using nmap.
 
@@ -13,9 +13,9 @@ we found 2 open ports-
 
 The version of Apache running was 2.4.41
 
+---
 
-
-#### Gobuster tool####
+#### Gobuster tool
 
 we ran gobuster tool for enumerating the number of directories available in the machine
 
@@ -31,13 +31,13 @@ By using this command, we found hidden directories:
 **js**
 **panel**
 
+---
 
-
-#### Reverse shell ####
+#### Reverse shell
 
 After finding the hidden directories, I went to the panel directory and found out we can upload files.
 
-Note: we can use this particular command to bundle multiple files and directories into a single archive file-
+**Note:** we can use this particular command to bundle multiple files and directories into a single archive file-
 ```Terminal
 tar -xzf php-reverse-shell-1.0.tar.gz
 ```
@@ -57,9 +57,9 @@ After attempting to upload the .php file, it throws an error for not accepting p
 we can change the extension of the file from **.php** to .**php5**
 
 
+---
 
-
-#### Netcat ####
+#### Netcat 
 
 We use netcat to listen on a specific port in order to get a shell using reverse shell.
 
@@ -73,9 +73,9 @@ After hosting the netcat, we go to **uploads** directory and click on the **.php
 **Boom!! we get a shell!!**
 
 
+---
 
-
-#### Finding first flag####
+#### Finding first flag
 
 now we search for a txt file **user.txt**
 
@@ -85,16 +85,20 @@ we use this particular linux command to find the text file:
 find / -name user.txt 2>/dev/null
 ```
 
-**find** - finds the search the user wants.
-**/** - means to search everything.
-**-name** - specifies that the user is going to insert the name of the file.
-**user.txt** - file name.
-**2>/dev/null** - this means dont show the lines for permission denied.
+1. **find** - finds the search the user wants.
+
+2. **/** - means to search everything.
+
+3. **-name** - specifies that the user is going to insert the name of the file.
+
+4. **user.txt** - file name.
+
+5. **2>/dev/null** - this means dont show the lines for permission denied.
 
 
 Then we recieve our first flag.
 
-
+---
 
 #### Privilege escalation ####
 
@@ -106,8 +110,9 @@ we search for files with SUID permission (set user ID) .
 find / -user root -perm /4000 2>/dev/null
 ```
 
-**-perm** - this means permission.
-**/4000** - unique number for SUID.
+1. **-perm** - this means permission.
+
+2. **/4000** - unique number for SUID.
 
 from the files we get in stdout, we have a file named **/usr/bin/python**
 
@@ -117,10 +122,14 @@ this can give us access to use python and escalate our privileges.
 we go to a website named **gtfobins**, this site gives us the executable python command to escalate our privileges
 
 **steps:**
-1.go to gtfobins
-2.filter python
-3.choose category - SUID
-4.copy and paste
+
+1. go to gtfobins
+
+2. filter python
+
+3. choose category - SUID
+
+4. copy and paste
 
 
 **Note:** we paste the python code where python is available since we are unprivileged user.
